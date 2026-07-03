@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Runtime cache / local data
+.cache/
+*.log
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Bun
+bun-error.log

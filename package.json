@@ -1,0 +1,22 @@
+{
+  "name": "cyprus-fuel-map",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "start": "bun run src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "test": "bun test",
+    "check": "bun run typecheck && biome check . && bun test",
+    "cache:clear": "rm -rf .cache"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.2",
+    "@types/bun": "latest",
+    "typescript": "latest"
+  }
+}
