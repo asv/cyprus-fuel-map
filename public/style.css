@@ -50,10 +50,12 @@ body {
   min-height: 86px;
   padding: 12px;
   border: 1px solid rgb(217 224 234 / 88%);
-  border-radius: 18px;
+  border-radius: 22px;
   background: rgb(255 255 255 / 94%);
+  background-clip: padding-box;
   box-shadow: 0 12px 34px rgb(23 32 51 / 16%);
   backdrop-filter: blur(18px);
+  overflow: hidden;
 }
 
 .topbar-main {
@@ -98,7 +100,7 @@ h2 {
 
 .topbar-actions {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) 112px;
   align-items: center;
   gap: 8px;
   min-width: 0;
@@ -145,6 +147,8 @@ button:disabled {
 }
 
 .icon-button {
+  flex: 0 0 112px;
+  width: 112px;
   padding-inline: 12px;
   font-size: 13px;
 }
@@ -188,8 +192,8 @@ button:disabled {
 
 .summary {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 7px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .metric {
@@ -218,10 +222,6 @@ button:disabled {
   font-size: 17px;
   font-weight: 900;
   line-height: 1.15;
-}
-
-.metric.wide {
-  grid-column: 1 / -1;
 }
 
 .filters {
@@ -334,11 +334,13 @@ button:disabled {
     max-width: none;
   }
 
-  .icon-button {
-    padding-inline: 12px;
+  .topbar-actions {
+    grid-template-columns: minmax(0, 1fr) 104px;
   }
 
-  .summary {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .icon-button {
+    flex-basis: 104px;
+    width: 104px;
+    padding-inline: 12px;
   }
 }

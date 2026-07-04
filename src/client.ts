@@ -275,7 +275,6 @@ function clearStationMarkers(): void {
 
 function updateSummary(): void {
   if (!lastFuelData) return;
-  const unmapped = lastFuelData.stations.length - currentStations.length;
   summaryEl.innerHTML = `
     <div class="metric">
       <span class="metric-label">Average</span>
@@ -284,14 +283,6 @@ function updateSummary(): void {
     <div class="metric">
       <span class="metric-label">Cheapest</span>
       <strong class="metric-value">${formatPrice(lastFuelData.minPrice)}</strong>
-    </div>
-    <div class="metric">
-      <span class="metric-label">Shown</span>
-      <strong class="metric-value">${visibleStations.length}</strong>
-    </div>
-    <div class="metric wide">
-      <span class="metric-label">${escapeHtml(lastFuelData.fuelName)}${lastFuelData.stale ? " · stale cache" : ""}</span>
-      <strong class="metric-value">${lastFuelData.stations.length} stations, ${currentStations.length} mapped${unmapped > 0 ? `, ${unmapped} without coordinates` : ""}</strong>
     </div>
   `;
 }
