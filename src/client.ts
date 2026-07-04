@@ -296,18 +296,20 @@ function renderStationList(): void {
   stationListEl.innerHTML = sorted
     .slice(0, 30)
     .map((station) => {
-      const distance = lastUserLocation ? ` · ${distanceKm(station, lastUserLocation).toFixed(1)} km` : "";
+      const distance = lastUserLocation ? `${distanceKm(station, lastUserLocation).toFixed(1)} km` : "";
       const routes = routeUrls(station);
       return `
       <article class="station">
         <button class="station-main" type="button" data-lat="${station.lat}" data-lng="${station.lng}">
-          <span class="station-title">${escapeHtml(station.brand)} · ${escapeHtml(station.name)}</span>
-          <span class="station-meta">${escapeHtml(station.district)}${distance}</span>
+          <span class="station-copy">
+            <span class="station-title">${escapeHtml(station.brand)} · ${escapeHtml(station.name)}</span>
+            <span class="station-meta">${escapeHtml(station.district)}${distance ? ` · ${distance}` : ""}</span>
+          </span>
           <strong class="station-price">€${station.price.toFixed(3)}</strong>
         </button>
         <nav class="station-routes" aria-label="Route to ${escapeHtml(station.brand)} ${escapeHtml(station.name)}">
-          <a class="route-link" href="${routes.google}" target="_blank" rel="noopener noreferrer">Google</a>
-          <a class="route-link" href="${routes.waze}" target="_blank" rel="noopener noreferrer">Waze</a>
+          <a class="route-link" href="${routes.google}" target="_blank" rel="noopener noreferrer" aria-label="Open Google Maps route">Google</a>
+          <a class="route-link" href="${routes.waze}" target="_blank" rel="noopener noreferrer" aria-label="Open Waze route">Waze</a>
         </nav>
       </article>
     `;
