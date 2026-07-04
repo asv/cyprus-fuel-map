@@ -39,7 +39,7 @@ type StationMarker = {
   visible: boolean;
 };
 
-const map = L.map("map").setView([35.05, 33.22], 9);
+const map = L.map("map", { zoomControl: false }).setView([35.05, 33.22], 9);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -162,9 +162,7 @@ async function loadStations(): Promise<void> {
     resetPriceFilter();
     createStationMarkers();
     applyPriceFilter();
-    setStatus(
-      `${currentStations.length} mapped stations, updated ${formatDateTime(data.fetchedAt)}${data.stale ? " (stale)" : ""}`,
-    );
+    setStatus(`${data.stale ? "Stale cache" : "Updated"} ${formatTime(data.fetchedAt)}`);
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") return;
     console.error(error);
@@ -277,12 +275,12 @@ function updateSummary(): void {
   if (!lastFuelData) return;
   summaryEl.innerHTML = `
     <div class="metric">
-      <span class="metric-label">Average</span>
       <strong class="metric-value">${formatPrice(lastFuelData.avgPrice)}</strong>
+      <span class="metric-label">avg</span>
     </div>
     <div class="metric">
-      <span class="metric-label">Cheapest</span>
       <strong class="metric-value">${formatPrice(lastFuelData.minPrice)}</strong>
+      <span class="metric-label">low</span>
     </div>
   `;
 }
@@ -379,10 +377,10 @@ function formatPrice(value: number | null): string {
   return value === null ? "n/a" : `€${value.toFixed(3)}`;
 }
 
-function formatDateTime(value: string): string {
-  return new Date(value).toLocaleString([], {
-    dateStyle: "short",
-    timeStyle: "short",
+function formatTime(value: string): string {
+  return new Date(value).toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
   });
 }
 

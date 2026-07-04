@@ -13,38 +13,32 @@
       <section id="map" aria-label="Fuel station map"></section>
 
       <header class="topbar">
-        <div class="topbar-main">
-          <div class="brand">
-            <h1>Cyprus Fuel</h1>
-            <p id="status" class="status">Starting...</p>
-          </div>
+        <label class="fuel-picker" aria-label="Fuel type">
+          <span class="fuel-icon" aria-hidden="true"></span>
+          <select id="fuel">
+            <option value="1">Unleaded 95</option>
+            <option value="2">Unleaded 98</option>
+            <option value="3">Diesel</option>
+            <option value="4">Heating oil</option>
+            <option value="5">Kerosene</option>
+          </select>
+        </label>
 
-          <button id="locate" class="icon-button primary" type="button" aria-label="Use my location" title="Use my location">
-            Locate
-          </button>
-        </div>
-
-        <div class="topbar-actions">
-          <label class="fuel-picker" aria-label="Fuel type">
-            <select id="fuel">
-              <option value="1">Unleaded 95</option>
-              <option value="2">Unleaded 98</option>
-              <option value="3">Diesel</option>
-              <option value="4">Heating oil</option>
-              <option value="5">Kerosene</option>
-            </select>
-          </label>
-
-          <button id="refresh" class="icon-button" type="button" aria-label="Refresh prices" title="Refresh prices">
-            Refresh
-          </button>
-        </div>
+        <button id="locate" class="locate-button" type="button" aria-label="Use my location" title="Use my location">
+          <span class="locate-glyph" aria-hidden="true"></span>
+        </button>
       </header>
 
       <aside class="bottom-sheet" aria-label="Fuel station controls">
         <div class="sheet-handle" aria-hidden="true"></div>
 
-        <section id="summary" class="summary"></section>
+        <div class="summary-card">
+          <section id="summary" class="summary"></section>
+          <button id="refresh" class="refresh-button" type="button" aria-label="Refresh prices" title="Refresh prices">
+            <span class="refresh-glyph" aria-hidden="true"></span>
+            <span id="status" class="status">Starting...</span>
+          </button>
+        </div>
 
         <div class="filters">
           <label class="price-filter">
