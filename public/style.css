@@ -8,8 +8,10 @@
   --muted: #667085;
   --line: #d9e0ea;
   --accent: #229ed9;
+  --accent-text: #ffffff;
   --accent-strong: #168acd;
   --shadow: 0 18px 48px rgb(23 32 51 / 18%);
+  --app-height: 100vh;
   color: var(--text);
 }
 
@@ -26,7 +28,7 @@ body {
 .app-shell {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: var(--app-height);
   min-height: 100svh;
   overflow: hidden;
 }
@@ -138,7 +140,7 @@ button:disabled {
 .icon-button.primary {
   border-color: var(--accent);
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-text);
 }
 
 .icon-button.primary:hover {

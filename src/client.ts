@@ -2,6 +2,37 @@ import type { FuelResponse, FuelStation } from "./shared";
 
 declare const L: any;
 
+type TelegramThemeParams = {
+  bg_color?: string;
+  text_color?: string;
+  hint_color?: string;
+  button_color?: string;
+  button_text_color?: string;
+  secondary_bg_color?: string;
+  section_bg_color?: string;
+};
+
+type TelegramWebApp = {
+  colorScheme?: "light" | "dark";
+  themeParams?: TelegramThemeParams;
+  viewportHeight?: number;
+  stableViewportHeight?: number;
+  ready?: () => void;
+  expand?: () => void;
+  setHeaderColor?: (color: string) => void;
+  setBackgroundColor?: (color: string) => void;
+  disableVerticalSwipes?: () => void;
+  onEvent?: (eventType: "themeChanged" | "viewportChanged", eventHandler: () => void) => void;
+};
+
+declare global {
+  interface Window {
+    Telegram?: {
+      WebApp?: TelegramWebApp;
+    };
+  }
+}
+
 type StationMarker = {
   station: FuelStation;
   marker: any;
@@ -36,6 +67,7 @@ const summaryEl = byId<HTMLElement>("summary");
 const stationListEl = byId<HTMLElement>("station-list");
 const topbarEl = query<HTMLElement>(".topbar");
 const bottomSheetEl = query<HTMLElement>(".bottom-sheet");
+const telegramWebApp = initTelegramWebApp();
 
 fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
@@ -43,8 +75,59 @@ locateButton.addEventListener("click", locateUser);
 priceLimitInput.addEventListener("input", applyPriceFilter);
 showPricesCheckbox.addEventListener("change", updatePriceLabels);
 map.on("zoomend", updatePriceLabels);
+window.addEventListener("resize", handleViewportChange);
 
 void loadStations();
+
+function initTelegramWebApp(): TelegramWebApp | null {
+  const webApp = window.Telegram?.WebApp;
+  if (!webApp) return null;
+
+  applyTelegramTheme(webApp);
+  applyTelegramViewport(webApp);
+  webApp.expand?.();
+  webApp.disableVerticalSwipes?.();
+  webApp.ready?.();
+  webApp.onEvent?.("themeChanged", () => applyTelegramTheme(webApp));
+  webApp.onEvent?.("viewportChanged", () => handleViewportChange());
+  document.documentElement.dataset.telegram = "true";
+
+  return webApp;
+}
+
+function applyTelegramTheme(webApp: TelegramWebApp): void {
+  const theme = webApp.themeParams;
+  if (!theme) return;
+
+  setCssVar("--app-bg", theme.bg_color);
+  setCssVar("--panel", theme.section_bg_color ?? theme.secondary_bg_color ?? theme.bg_color);
+  setCssVar("--panel-strong", theme.secondary_bg_color);
+  setCssVar("--text", theme.text_color);
+  setCssVar("--muted", theme.hint_color);
+  setCssVar("--accent", theme.button_color);
+  setCssVar("--accent-text", theme.button_text_color);
+  if (webApp.colorScheme) document.documentElement.style.colorScheme = webApp.colorScheme;
+
+  if (theme.bg_color) webApp.setBackgroundColor?.(theme.bg_color);
+  const headerColor = theme.section_bg_color ?? theme.bg_color;
+  if (headerColor) webApp.setHeaderColor?.(headerColor);
+}
+
+function applyTelegramViewport(webApp: TelegramWebApp): void {
+  const height = webApp.stableViewportHeight ?? webApp.viewportHeight;
+  if (height && Number.isFinite(height)) {
+    document.documentElement.style.setProperty("--app-height", `${height}px`);
+  }
+}
+
+function handleViewportChange(): void {
+  if (telegramWebApp) applyTelegramViewport(telegramWebApp);
+  map.invalidateSize();
+}
+
+function setCssVar(name: string, value: string | undefined): void {
+  if (value) document.documentElement.style.setProperty(name, value);
+}
 
 async function loadStations(): Promise<void> {
   loadController?.abort();
