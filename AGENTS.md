@@ -52,6 +52,7 @@ Run `bun run format` when touching TS/JS/JSON/HTML/CSS files.
 ```text
 src/server.ts            # Bun server, API routes, static serving, TS frontend transpilation
 src/client.ts            # browser app: map, filtering, sidebar, geolocation
+src/theme.ts             # theme tokens, Telegram WebApp theme/viewport runtime, debug theme handling
 src/shared.ts            # shared API/domain types and fuel/city constants
 src/backend/stations.ts  # station service: cache lookup, in-flight dedupe, stale fallback
 src/backend/upstream.ts  # upstream HTTP GET/POST, token/cookie handling, timeout/retry
@@ -95,6 +96,8 @@ If changing parser logic, preserve support for both coordinate formats:
 - Keep geolocation permission user-driven via the existing button.
 - Escape user/upstream text before injecting HTML.
 - Remember that some stations have no coordinates. They should not be drawn, but counts should remain clear.
+- Add new colors as CSS tokens in `public/style.css` and/or `src/theme.ts`; avoid raw white/black component backgrounds.
+- Check both `?theme=light` and `?theme=dark` for visible text on controls, tooltips, and the bottom sheet.
 
 ## Backend rules
 

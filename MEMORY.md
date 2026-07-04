@@ -52,7 +52,8 @@ The source sometimes contains coordinates as decimal values like `35.1845,33.389
 - JSON cache: `src/backend/cache.ts`
 - Compatibility re-export: `src/scraper.ts`
 - Shared API types: `src/shared.ts`
-- Frontend app: `src/client.ts`, transpiled by Bun server to `/app.js`
+- Frontend app: `src/client.ts`, bundled by Bun server/build scripts to `/app.js`
+- Theme runtime/tokens: `src/theme.ts`
 - Static assets: `public/`
 - Leaflet assets are local:
   - `public/leaflet.js`
@@ -136,6 +137,7 @@ Tooling:
 - TypeScript strict mode.
 - Biome for formatting/linting.
 - Bun tests cover parser behavior using `test/fixtures/petroleum-sample.html`.
+- Bun tests cover Telegram/theme token generation in `test/theme.test.ts`.
 - `.editorconfig` present.
 - VS Code settings recommend/use Biome.
 
@@ -148,6 +150,8 @@ Tooling:
 - The app intentionally does not call the Cyprus source directly from the browser. Backend acts as proxy/parser to avoid CORS and token/cookie issues.
 - Some stations have no parseable coordinates. They are included in total count but not drawn on the map.
 - Leaflet CSS must be loaded. If the map appears as broken/tiled images, check `public/leaflet.css` and stylesheet loading first.
+- Theme debugging supports `?theme=light` and `?theme=dark`; Telegram theme params override debug tokens in the Mini App runtime.
+- Add new UI colors through CSS tokens and `src/theme.ts`; avoid raw white/black component backgrounds.
 
 ## Recent implementation notes
 
@@ -156,6 +160,7 @@ Tooling:
 - The frontend previously recreated markers on every slider move; this was optimized. Current filtering should show/hide existing markers instead of rebuilding them.
 - `AbortController` is used to avoid stale UI updates when switching fuel type quickly.
 - Static serving has basic path traversal protection and content-type handling.
+- Browser `app.js` is bundled with `Bun.build` so client-side modules such as `src/theme.ts` can be imported safely.
 
 ## Suggested next improvements
 
@@ -173,3 +178,4 @@ High-value next steps:
 5. Consider marker clustering if marker count grows.
 6. Add better typed Leaflet integration instead of `declare const L: any`.
 7. Consider background refresh: return stale cache immediately while refreshing in the background.
+8. Keep theme additions token-based; verify `?theme=light`, `?theme=dark`, and Telegram-provided theme params.
