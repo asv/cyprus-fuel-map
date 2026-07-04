@@ -6,6 +6,7 @@
       "!.cache",
       "!node_modules",
       "!dist",
+      "!public/data",
       "!bun.lock",
       "!public/leaflet.js",
       "!public/leaflet.css",
