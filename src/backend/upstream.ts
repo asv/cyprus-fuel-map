@@ -2,7 +2,8 @@ import type { City, FuelType } from "../shared";
 import { sourceUrl } from "./parser";
 
 const sourceOrigin = "https://eforms.eservices.cyprus.gov.cy";
-const upstreamTimeoutMs = 15_000;
+const upstreamTimeoutMs = 30_000;
+const upstreamMaxAttempts = 3;
 
 export async function fetchFuelHtml(fuel: FuelType, city: City): Promise<string> {
   return withRetry(async () => {
@@ -44,16 +45,18 @@ async function fetchWithTimeout(input: string | URL, init: RequestInit): Promise
 }
 
 async function withRetry<T>(operation: () => Promise<T>): Promise<T> {
-  try {
-    return await operation();
-  } catch (error) {
-    await Bun.sleep(750);
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= upstreamMaxAttempts; attempt += 1) {
     try {
       return await operation();
-    } catch {
-      throw error;
+    } catch (error) {
+      lastError = error;
+      if (attempt < upstreamMaxAttempts) await Bun.sleep(1_000 * attempt);
     }
   }
+
+  throw lastError;
 }
 
 function getRequestVerificationToken(html: string): string {

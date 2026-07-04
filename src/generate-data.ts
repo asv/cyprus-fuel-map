@@ -4,7 +4,7 @@ import { type City, cities, type FuelResponse, type FuelType, fuelTypes, type St
 
 const dataDir = new URL("../public/data/", import.meta.url);
 const defaultCity: City = "All";
-const requestDelayMs = 1_000;
+const requestDelayMs = 2_000;
 
 async function main(): Promise<void> {
   const fuels = selectedFuels();
