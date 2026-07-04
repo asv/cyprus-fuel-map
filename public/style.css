@@ -89,7 +89,7 @@ h2 {
   position: relative;
   display: flex;
   align-items: center;
-  width: min(292px, calc(100vw - 108px));
+  width: min(230px, calc(100vw - 108px));
   min-height: 48px;
   min-width: 0;
   padding: 0 14px;
@@ -208,7 +208,7 @@ button:disabled {
 
 .summary-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(132px, 0.78fr);
+  grid-template-columns: minmax(0, 1fr) 48px;
   align-items: stretch;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -231,7 +231,7 @@ button:disabled {
   gap: 3px;
   min-width: 0;
   min-height: 48px;
-  padding: 8px 9px 8px 12px;
+  padding: 8px 14px;
   border-right: 1px solid var(--line);
   background: transparent;
 }
@@ -249,7 +249,7 @@ button:disabled {
 .metric-value {
   overflow-wrap: anywhere;
   color: var(--green);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;
@@ -259,26 +259,44 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   min-width: 0;
+  width: 48px;
   min-height: 48px;
-  padding: 0 12px;
+  padding: 0;
   color: var(--muted);
-  font-size: 12px;
-  font-weight: 500;
+  border-left: 1px solid var(--line);
 }
 
 .refresh-icon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   stroke-width: 2;
 }
 
 .status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
-  min-width: 0;
-  text-overflow: ellipsis;
+  clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+.leaflet-tooltip.price-tooltip {
+  padding: 4px 7px;
+  border: 1px solid rgb(225 229 235 / 90%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 94%);
+  box-shadow: 0 3px 10px rgb(15 23 42 / 18%);
+  color: var(--text);
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.leaflet-tooltip.price-tooltip::before {
+  display: none;
 }
 
 .filters {
@@ -442,7 +460,7 @@ button:disabled {
   }
 
   .fuel-picker {
-    width: min(292px, calc(100vw - 104px));
+    width: min(230px, calc(100vw - 104px));
     min-height: 48px;
     padding-inline: 14px;
   }

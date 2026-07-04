@@ -39,6 +39,8 @@ type StationMarker = {
   visible: boolean;
 };
 
+const PRICE_LABEL_MIN_ZOOM = 14;
+
 const map = L.map("map", { zoomControl: false }).setView([35.05, 33.22], 9);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
@@ -72,6 +74,7 @@ refreshButton.addEventListener("click", loadStations);
 locateButton.addEventListener("click", locateUser);
 priceLimitInput.addEventListener("input", applyPriceFilter);
 window.addEventListener("resize", handleViewportChange);
+map.on("zoomend moveend", updateMarkerPriceLabels);
 
 void loadStations();
 
@@ -204,11 +207,13 @@ function applyPriceFilter(): void {
       entry.marker.addTo(markers);
       entry.visible = true;
     } else if (!shouldBeVisible && entry.visible) {
+      entry.marker.closeTooltip();
       entry.marker.remove();
       entry.visible = false;
     }
   }
 
+  updateMarkerPriceLabels();
   updateSummary();
   renderStationList();
 }
@@ -242,6 +247,13 @@ function createStationMarkers(): void {
       weight: 1,
     });
     marker.bindPopup(popupHtml(station));
+    marker.bindTooltip(formatPrice(station.price), {
+      className: "price-tooltip",
+      direction: "top",
+      offset: [0, -8],
+      opacity: 1,
+      permanent: true,
+    });
     stationMarkers.push({ station, marker, visible: false });
   }
 
@@ -283,6 +295,19 @@ function updateSummary(): void {
       <span class="metric-label">low</span>
     </div>
   `;
+}
+
+function updateMarkerPriceLabels(): void {
+  const showLabels = map.getZoom() >= PRICE_LABEL_MIN_ZOOM;
+  const bounds = map.getBounds();
+
+  for (const entry of stationMarkers) {
+    if (!entry.visible || !showLabels || !bounds.contains(entry.marker.getLatLng())) {
+      entry.marker.closeTooltip();
+      continue;
+    }
+    entry.marker.openTooltip();
+  }
 }
 
 function renderStationList(): void {
@@ -409,6 +434,8 @@ function formatTime(value: string): string {
 
 function setStatus(message: string): void {
   statusEl.textContent = message;
+  refreshButton.title = `Refresh prices. ${message}`;
+  refreshButton.setAttribute("aria-label", `Refresh prices. ${message}`);
 }
 
 function escapeHtml(value: string): string {
