@@ -79,16 +79,32 @@ function initTelegramWebApp(): TelegramWebApp | null {
   const webApp = window.Telegram?.WebApp;
   if (!webApp) return null;
 
-  applyTelegramTheme(webApp);
-  applyTelegramViewport(webApp);
-  webApp.expand?.();
-  webApp.disableVerticalSwipes?.();
-  webApp.ready?.();
-  webApp.onEvent?.("themeChanged", () => applyTelegramTheme(webApp));
-  webApp.onEvent?.("viewportChanged", () => handleViewportChange());
+  safeTelegramCall("apply theme", () => applyTelegramTheme(webApp));
+  safeTelegramCall("apply viewport", () => applyTelegramViewport(webApp));
+  safeTelegramCall("expand", () => webApp.expand?.());
+  safeTelegramCall("disable vertical swipes", () => webApp.disableVerticalSwipes?.());
+  safeTelegramCall("ready", () => webApp.ready?.());
+  safeTelegramCall("subscribe theme changes", () => {
+    webApp.onEvent?.("themeChanged", () => {
+      safeTelegramCall("handle theme change", () => applyTelegramTheme(webApp));
+    });
+  });
+  safeTelegramCall("subscribe viewport changes", () => {
+    webApp.onEvent?.("viewportChanged", () => {
+      safeTelegramCall("handle viewport change", () => handleViewportChange());
+    });
+  });
   document.documentElement.dataset.telegram = "true";
 
   return webApp;
+}
+
+function safeTelegramCall(label: string, action: () => void): void {
+  try {
+    action();
+  } catch (error) {
+    console.warn(`Telegram WebApp ${label} failed:`, error);
+  }
 }
 
 function applyTelegramTheme(webApp: TelegramWebApp): void {
@@ -104,9 +120,13 @@ function applyTelegramTheme(webApp: TelegramWebApp): void {
   setCssVar("--accent-text", theme.button_text_color);
   if (webApp.colorScheme) document.documentElement.style.colorScheme = webApp.colorScheme;
 
-  if (theme.bg_color) webApp.setBackgroundColor?.(theme.bg_color);
-  const headerColor = theme.section_bg_color ?? theme.bg_color;
-  if (headerColor) webApp.setHeaderColor?.(headerColor);
+  safeTelegramCall("set background color", () => {
+    if (theme.bg_color) webApp.setBackgroundColor?.(theme.bg_color);
+  });
+  safeTelegramCall("set header color", () => {
+    const headerColor = theme.section_bg_color ? "secondary_bg_color" : "bg_color";
+    webApp.setHeaderColor?.(headerColor);
+  });
 }
 
 function applyTelegramViewport(webApp: TelegramWebApp): void {
