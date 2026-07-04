@@ -1,31 +1,15 @@
+import { fetchStations } from "./client-api";
+import { createFuelMap } from "./client-map";
+import { createBottomSheetController } from "./client-sheet";
+import { byId, distanceKm, escapeHtml, formatPrice, formatTime, type LatLng, query, routeUrls } from "./client-utils";
 import type { FuelResponse, FuelStation } from "./shared";
 import { initTheme } from "./theme";
 
-declare const L: any;
-
-type StationMarker = {
-  station: FuelStation;
-  marker: any;
-  visible: boolean;
-};
-
 type StationSortMode = "price" | "distance";
-type SheetState = "collapsed" | "expanded";
 
-const PRICE_LABEL_MIN_ZOOM = 13;
 const GEOLOCATION_ENABLED_KEY = "cyprusFuelMap.geolocationEnabled";
-const SHEET_DRAG_THRESHOLD_PX = 24;
 
-const map = L.map("map", { zoomControl: false }).setView([35.05, 33.22], 9);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map);
-
-const markers = L.layerGroup().addTo(map);
-const stationMarkers: StationMarker[] = [];
-let userMarker: any = null;
-let lastUserLocation: { lat: number; lng: number } | null = null;
+let lastUserLocation: LatLng | null = null;
 let currentStations: FuelStation[] = [];
 let visibleStations: FuelStation[] = [];
 let lastFuelData: FuelResponse | null = null;
@@ -33,9 +17,6 @@ let loadController: AbortController | null = null;
 let hasFittedInitialBounds = false;
 let hasTriedAutoLocate = false;
 let stationSortMode: StationSortMode = "price";
-let sheetState: SheetState = "collapsed";
-let sheetDragStartY: number | null = null;
-let didDragSheet = false;
 
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
@@ -48,10 +29,19 @@ const stationListEl = byId<HTMLElement>("station-list");
 const sortCheapestButton = byId<HTMLButtonElement>("sort-cheapest");
 const sortNearbyButton = byId<HTMLButtonElement>("sort-nearby");
 const topbarEl = query<HTMLElement>(".topbar");
-const bottomSheetEl = query<HTMLElement>(".bottom-sheet");
 const sheetDragRegionEl = query<HTMLElement>(".sheet-drag-region");
 const sheetHandleButton = byId<HTMLButtonElement>("sheet-handle");
-const themeRuntime = initTheme({ onViewportChange: () => map.invalidateSize() });
+
+const fuelMap = createFuelMap({ popupHtml });
+const bottomSheet = createBottomSheetController({
+  bottomSheetEl: query<HTMLElement>(".bottom-sheet"),
+  sheetDragRegionEl,
+  sheetHandleButton,
+  invalidateMap: () => fuelMap.invalidateSize(),
+  updateMarkerPriceLabels: () => fuelMap.updatePriceLabels(),
+  panMapBy: (point) => fuelMap.panBy(point),
+});
+const themeRuntime = initTheme({ onViewportChange: () => fuelMap.invalidateSize() });
 
 fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
@@ -59,19 +49,14 @@ locateButton.addEventListener("click", () => locateUser({ rememberPreference: tr
 priceLimitInput.addEventListener("input", applyPriceFilter);
 sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
 sortNearbyButton.addEventListener("click", () => setStationSortMode("distance"));
-sheetHandleButton.addEventListener("click", toggleSheetFromHandle);
-sheetDragRegionEl.addEventListener("click", preventClickAfterSheetDrag, true);
-sheetDragRegionEl.addEventListener("pointerdown", startSheetDrag);
-sheetDragRegionEl.addEventListener("pointerup", finishSheetDrag);
-sheetDragRegionEl.addEventListener("pointercancel", cancelSheetDrag);
 window.addEventListener("resize", handleViewportChange);
-map.on("zoomend moveend", updateMarkerPriceLabels);
+fuelMap.onViewportChanged(() => fuelMap.updatePriceLabels());
 
 void loadStations();
 
 function handleViewportChange(): void {
   themeRuntime.refreshViewport();
-  map.invalidateSize();
+  fuelMap.invalidateSize();
 }
 
 async function loadStations(): Promise<void> {
@@ -80,7 +65,7 @@ async function loadStations(): Promise<void> {
 
   setStatus("Loading prices...");
   refreshButton.disabled = true;
-  clearStationMarkers();
+  fuelMap.setStations([]);
   stationListEl.innerHTML = "";
   hasFittedInitialBounds = false;
 
@@ -89,7 +74,7 @@ async function loadStations(): Promise<void> {
     lastFuelData = data;
     currentStations = data.stations.filter((station) => station.lat !== null && station.lng !== null);
     resetPriceFilter();
-    createStationMarkers();
+    fuelMap.setStations(currentStations);
     applyPriceFilter();
     setStatus(`${data.stale ? "Stale cache" : "Updated"} ${formatTime(data.fetchedAt)}`);
     maybeAutoLocateUser();
@@ -102,47 +87,21 @@ async function loadStations(): Promise<void> {
   }
 }
 
-async function fetchStations(fuel: string, signal: AbortSignal): Promise<FuelResponse> {
-  const staticResponse = await fetch(`data/stations-${encodeURIComponent(fuel)}.json`, {
-    signal,
-    cache: "no-cache",
-  });
-  if (staticResponse.ok) return (await staticResponse.json()) as FuelResponse;
-
-  if (!canUseBackendFallback()) {
-    throw new Error(`Static fuel data not found for fuel type ${fuel}`);
-  }
-
-  const apiResponse = await fetch(`api/stations?fuel=${encodeURIComponent(fuel)}`, { signal });
-  if (!apiResponse.ok) throw new Error(await apiResponse.text());
-  return (await apiResponse.json()) as FuelResponse;
-}
-
-function canUseBackendFallback(): boolean {
-  return ["localhost", "127.0.0.1", ""].includes(window.location.hostname);
-}
-
 function applyPriceFilter(): void {
   const maxPrice = Number(priceLimitInput.value);
   priceLimitLabel.textContent = `€${maxPrice.toFixed(3)} / l`;
   visibleStations = currentStations.filter((station) => station.price <= maxPrice);
 
-  const visibleSet = new Set(visibleStations);
-  for (const entry of stationMarkers) {
-    const shouldBeVisible = visibleSet.has(entry.station);
-    if (shouldBeVisible && !entry.visible) {
-      entry.marker.addTo(markers);
-      entry.visible = true;
-    } else if (!shouldBeVisible && entry.visible) {
-      entry.marker.closeTooltip();
-      entry.marker.remove();
-      entry.visible = false;
-    }
-  }
-
-  updateMarkerPriceLabels();
+  fuelMap.applyVisibleStations(visibleStations);
+  fuelMap.updatePriceLabels();
   updateSummary();
   renderStationList();
+
+  if (!hasFittedInitialBounds && currentStations.length > 0) {
+    fuelMap.fitStationBounds(currentStations, { topbarEl, bottomSheetEl: bottomSheet.element });
+    bottomSheet.panAboveSheet();
+    hasFittedInitialBounds = true;
+  }
 }
 
 function resetPriceFilter(): void {
@@ -155,59 +114,6 @@ function resetPriceFilter(): void {
   priceLimitInput.max = Number.isFinite(max) ? max.toFixed(3) : "1";
   priceLimitInput.value = Number.isFinite(max) ? max.toFixed(3) : "1";
   priceLimitLabel.textContent = prices.length === 0 ? "all" : `€${Number(priceLimitInput.value).toFixed(3)} / l`;
-}
-
-function createStationMarkers(): void {
-  clearStationMarkers();
-
-  const prices = currentStations.map((station) => station.price);
-  const min = Math.min(...prices);
-  const max = Math.max(...prices);
-
-  for (const station of currentStations) {
-    const color = priceColor(station.price, min, max);
-    const marker = L.circleMarker([station.lat, station.lng], {
-      radius: 7,
-      color,
-      fillColor: color,
-      fillOpacity: 0.8,
-      weight: 1,
-    });
-    marker.bindPopup(popupHtml(station));
-    marker.bindTooltip(formatPrice(station.price), {
-      className: "price-tooltip",
-      direction: "top",
-      offset: [0, -8],
-      opacity: 1,
-      permanent: true,
-    });
-    stationMarkers.push({ station, marker, visible: false });
-  }
-
-  updateSummary();
-
-  if (!hasFittedInitialBounds && currentStations.length > 0) {
-    fitStationBounds(currentStations);
-    hasFittedInitialBounds = true;
-  }
-}
-
-function fitStationBounds(stations: FuelStation[]): void {
-  const bounds = L.latLngBounds(stations.map((station) => [station.lat, station.lng]));
-  const topbar = topbarEl.getBoundingClientRect();
-  const bottomSheet = bottomSheetEl.getBoundingClientRect();
-
-  map.fitBounds(bounds.pad(0.08), {
-    animate: false,
-    paddingTopLeft: [20, Math.ceil(topbar.bottom + 20)],
-    paddingBottomRight: [20, Math.ceil(window.innerHeight - bottomSheet.top + 20)],
-  });
-  panAboveBottomSheet();
-}
-
-function clearStationMarkers(): void {
-  markers.clearLayers();
-  stationMarkers.length = 0;
 }
 
 function updateSummary(): void {
@@ -224,32 +130,8 @@ function updateSummary(): void {
   `;
 }
 
-function updateMarkerPriceLabels(): void {
-  const showLabels = map.getZoom() >= PRICE_LABEL_MIN_ZOOM;
-  const bounds = map.getBounds();
-
-  for (const entry of stationMarkers) {
-    if (!entry.visible || !showLabels || !bounds.contains(entry.marker.getLatLng())) {
-      entry.marker.closeTooltip();
-      continue;
-    }
-    entry.marker.openTooltip();
-  }
-}
-
 function renderStationList(): void {
-  const sorted = [...visibleStations].sort((a, b) => {
-    if (stationSortMode === "distance" && lastUserLocation) {
-      const distanceDiff = distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
-      if (distanceDiff !== 0) return distanceDiff;
-      return a.price - b.price;
-    }
-
-    const priceDiff = a.price - b.price;
-    if (priceDiff !== 0) return priceDiff;
-    if (lastUserLocation) return distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
-    return a.name.localeCompare(b.name);
-  });
+  const sorted = [...visibleStations].sort(compareStations);
 
   stationListEl.innerHTML = sorted
     .slice(0, 30)
@@ -276,10 +158,23 @@ function renderStationList(): void {
 
   stationListEl.querySelectorAll<HTMLButtonElement>(".station-main").forEach((button) => {
     button.addEventListener("click", () => {
-      map.setView([Number(button.dataset.lat), Number(button.dataset.lng)], 15);
-      panAboveBottomSheet();
+      fuelMap.setView([Number(button.dataset.lat), Number(button.dataset.lng)], 15);
+      bottomSheet.panAboveSheet();
     });
   });
+}
+
+function compareStations(a: FuelStation, b: FuelStation): number {
+  if (stationSortMode === "distance" && lastUserLocation) {
+    const distanceDiff = distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
+    if (distanceDiff !== 0) return distanceDiff;
+    return a.price - b.price;
+  }
+
+  const priceDiff = a.price - b.price;
+  if (priceDiff !== 0) return priceDiff;
+  if (lastUserLocation) return distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
+  return a.name.localeCompare(b.name);
 }
 
 function setStationSortMode(mode: StationSortMode): void {
@@ -301,75 +196,6 @@ function updateSortControls(): void {
   sortNearbyButton.classList.toggle("is-active", !isPriceSort);
   sortCheapestButton.setAttribute("aria-pressed", String(isPriceSort));
   sortNearbyButton.setAttribute("aria-pressed", String(!isPriceSort));
-}
-
-function toggleSheetFromHandle(): void {
-  if (didDragSheet) {
-    didDragSheet = false;
-    return;
-  }
-  setSheetState(sheetState === "expanded" ? "collapsed" : "expanded");
-}
-
-function preventClickAfterSheetDrag(event: MouseEvent): void {
-  if (!didDragSheet) return;
-
-  didDragSheet = false;
-  event.preventDefault();
-  event.stopPropagation();
-}
-
-function startSheetDrag(event: PointerEvent): void {
-  if (!event.isPrimary) return;
-
-  sheetDragStartY = event.clientY;
-  didDragSheet = false;
-  sheetDragRegionEl.setPointerCapture(event.pointerId);
-}
-
-function finishSheetDrag(event: PointerEvent): void {
-  if (sheetDragStartY === null) return;
-
-  const deltaY = event.clientY - sheetDragStartY;
-  sheetDragStartY = null;
-  if (sheetDragRegionEl.hasPointerCapture(event.pointerId)) {
-    sheetDragRegionEl.releasePointerCapture(event.pointerId);
-  }
-
-  if (Math.abs(deltaY) < SHEET_DRAG_THRESHOLD_PX) return;
-
-  didDragSheet = true;
-  setSheetState(deltaY < 0 ? "expanded" : "collapsed");
-}
-
-function cancelSheetDrag(event: PointerEvent): void {
-  sheetDragStartY = null;
-  didDragSheet = false;
-  if (sheetDragRegionEl.hasPointerCapture(event.pointerId)) {
-    sheetDragRegionEl.releasePointerCapture(event.pointerId);
-  }
-}
-
-function setSheetState(nextState: SheetState): void {
-  sheetState = nextState;
-  const isExpanded = sheetState === "expanded";
-
-  bottomSheetEl.classList.toggle("is-expanded", isExpanded);
-  bottomSheetEl.classList.toggle("is-collapsed", !isExpanded);
-  sheetHandleButton.setAttribute("aria-expanded", String(isExpanded));
-  sheetHandleButton.setAttribute("aria-label", isExpanded ? "Hide station list" : "Show station list");
-  sheetHandleButton.title = isExpanded ? "Hide station list" : "Show station list";
-
-  requestAnimationFrame(() => {
-    map.invalidateSize();
-    updateMarkerPriceLabels();
-  });
-}
-
-function panAboveBottomSheet(): void {
-  map.panBy([0, Math.round(bottomSheetEl.getBoundingClientRect().height / 5)], {
-    animate: false,
-  });
 }
 
 function maybeAutoLocateUser(): void {
@@ -394,9 +220,8 @@ function locateUser(
     (position) => {
       if (options.rememberPreference) setGeolocationRemembered(true);
       lastUserLocation = { lat: position.coords.latitude, lng: position.coords.longitude };
-      if (userMarker) userMarker.remove();
-      userMarker = L.marker([lastUserLocation.lat, lastUserLocation.lng]).addTo(map).bindPopup("You are here");
-      map.setView([lastUserLocation.lat, lastUserLocation.lng], 13);
+      fuelMap.addUserMarker([lastUserLocation.lat, lastUserLocation.lng]);
+      fuelMap.setView([lastUserLocation.lat, lastUserLocation.lng], 13);
       renderStationList();
       setStatus(stationSortMode === "distance" ? "Location found. Nearby first." : "Location found. Cheapest first.");
     },
@@ -449,66 +274,8 @@ function popupHtml(station: FuelStation): string {
   `;
 }
 
-function routeUrls(station: FuelStation): { google: string; waze: string } {
-  const lat = station.lat ?? 0;
-  const lng = station.lng ?? 0;
-  return {
-    google: `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`,
-    waze: `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`,
-  };
-}
-
-function priceColor(price: number, min: number, max: number): string {
-  if (!Number.isFinite(min) || !Number.isFinite(max) || min === max) return "#2b8a3e";
-  const ratio = (price - min) / (max - min);
-  if (ratio < 0.33) return "#2b8a3e";
-  if (ratio < 0.66) return "#f08c00";
-  return "#c92a2a";
-}
-
-function distanceKm(station: FuelStation, point: { lat: number; lng: number }): number {
-  const lat = station.lat ?? 0;
-  const lng = station.lng ?? 0;
-  const r = 6371;
-  const dLat = toRad(point.lat - lat);
-  const dLng = toRad(point.lng - lng);
-  const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat)) * Math.cos(toRad(point.lat)) * Math.sin(dLng / 2) ** 2;
-  return 2 * r * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-
-function toRad(value: number): number {
-  return (value * Math.PI) / 180;
-}
-
-function formatPrice(value: number | null): string {
-  return value === null ? "n/a" : `€${value.toFixed(3)}`;
-}
-
-function formatTime(value: string): string {
-  return new Date(value).toLocaleTimeString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-}
-
 function setStatus(message: string): void {
   statusEl.textContent = message;
   refreshButton.title = `Refresh prices. ${message}`;
   refreshButton.setAttribute("aria-label", `Refresh prices. ${message}`);
-}
-
-function escapeHtml(value: string): string {
-  return value.replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[char]!);
-}
-
-function byId<T extends HTMLElement>(id: string): T {
-  const element = document.getElementById(id);
-  if (!element) throw new Error(`Element #${id} not found`);
-  return element as T;
-}
-
-function query<T extends HTMLElement>(selector: string): T {
-  const element = document.querySelector(selector);
-  if (!element) throw new Error(`Element ${selector} not found`);
-  return element as T;
 }
