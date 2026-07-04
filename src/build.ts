@@ -10,9 +10,17 @@ async function main(): Promise<void> {
   await mkdir(distDir, { recursive: true });
   await cp(publicDir, distDir, { recursive: true });
 
-  const transpiler = new Bun.Transpiler({ loader: "ts", target: "browser" });
-  const clientJs = transpiler.transformSync(await Bun.file(clientEntry).text());
-  await Bun.write(appJs, clientJs);
+  const result = await Bun.build({
+    entrypoints: [clientEntry.pathname],
+    target: "browser",
+    format: "esm",
+    minify: false,
+  });
+  if (!result.success) throw new Error("Failed to build browser client");
+
+  const output = result.outputs[0];
+  if (!output) throw new Error("Browser client build produced no output");
+  await Bun.write(appJs, await output.text());
 
   console.log(`Built static app in ${distDir.pathname}`);
 }

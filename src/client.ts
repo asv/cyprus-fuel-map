@@ -1,37 +1,7 @@
 import type { FuelResponse, FuelStation } from "./shared";
+import { initTheme } from "./theme";
 
 declare const L: any;
-
-type TelegramThemeParams = {
-  bg_color?: string;
-  text_color?: string;
-  hint_color?: string;
-  button_color?: string;
-  button_text_color?: string;
-  secondary_bg_color?: string;
-  section_bg_color?: string;
-};
-
-type TelegramWebApp = {
-  colorScheme?: "light" | "dark";
-  themeParams?: TelegramThemeParams;
-  viewportHeight?: number;
-  stableViewportHeight?: number;
-  ready?: () => void;
-  expand?: () => void;
-  setHeaderColor?: (color: string) => void;
-  setBackgroundColor?: (color: string) => void;
-  disableVerticalSwipes?: () => void;
-  onEvent?: (eventType: "themeChanged" | "viewportChanged", eventHandler: () => void) => void;
-};
-
-declare global {
-  interface Window {
-    Telegram?: {
-      WebApp?: TelegramWebApp;
-    };
-  }
-}
 
 type StationMarker = {
   station: FuelStation;
@@ -81,7 +51,7 @@ const topbarEl = query<HTMLElement>(".topbar");
 const bottomSheetEl = query<HTMLElement>(".bottom-sheet");
 const sheetDragRegionEl = query<HTMLElement>(".sheet-drag-region");
 const sheetHandleButton = byId<HTMLButtonElement>("sheet-handle");
-const telegramWebApp = initTelegramWebApp();
+const themeRuntime = initTheme({ onViewportChange: () => map.invalidateSize() });
 
 fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
@@ -99,102 +69,9 @@ map.on("zoomend moveend", updateMarkerPriceLabels);
 
 void loadStations();
 
-function initTelegramWebApp(): TelegramWebApp | null {
-  const webApp = window.Telegram?.WebApp;
-  if (!webApp) return null;
-
-  safeTelegramCall("apply theme", () => applyTelegramTheme(webApp));
-  safeTelegramCall("apply viewport", () => applyTelegramViewport(webApp));
-  safeTelegramCall("expand", () => webApp.expand?.());
-  safeTelegramCall("disable vertical swipes", () => webApp.disableVerticalSwipes?.());
-  safeTelegramCall("ready", () => webApp.ready?.());
-  safeTelegramCall("subscribe theme changes", () => {
-    webApp.onEvent?.("themeChanged", () => {
-      safeTelegramCall("handle theme change", () => applyTelegramTheme(webApp));
-    });
-  });
-  safeTelegramCall("subscribe viewport changes", () => {
-    webApp.onEvent?.("viewportChanged", () => {
-      safeTelegramCall("handle viewport change", () => handleViewportChange());
-    });
-  });
-  document.documentElement.dataset.telegram = "true";
-
-  return webApp;
-}
-
-function safeTelegramCall(label: string, action: () => void): void {
-  try {
-    action();
-  } catch (error) {
-    console.warn(`Telegram WebApp ${label} failed:`, error);
-  }
-}
-
-function applyTelegramTheme(webApp: TelegramWebApp): void {
-  const theme = webApp.themeParams;
-  if (!theme) return;
-
-  const panel = theme.section_bg_color ?? theme.secondary_bg_color ?? theme.bg_color;
-  const panelStrong = theme.secondary_bg_color ?? panel;
-  const text = theme.text_color;
-  const muted = theme.hint_color;
-
-  setCssVar("--app-bg", theme.bg_color);
-  setCssVar("--panel", panel);
-  setCssVar("--panel-strong", panelStrong);
-  setCssVar("--text", text);
-  setCssVar("--muted", muted);
-  setCssVar("--line", alphaColor(muted ?? text, 0.28));
-  setCssVar("--accent", theme.button_color);
-  setCssVar("--accent-text", theme.button_text_color);
-  setCssVar("--control-bg", alphaColor(panel, 0.96));
-  setCssVar("--sheet-bg", alphaColor(panel, 0.97));
-  setCssVar("--card-bg", alphaColor(panelStrong ?? panel, 0.82));
-  setCssVar("--segmented-bg", alphaColor(panelStrong ?? panel, 0.82));
-  setCssVar("--list-bg", alphaColor(panel, 0.88));
-  setCssVar("--route-bg", alphaColor(panelStrong ?? panel, 0.86));
-  setCssVar("--tooltip-bg", alphaColor(panel, 0.94));
-  setCssVar("--tooltip-text", text);
-  setCssVar("--handle", alphaColor(muted ?? text, 0.55));
-  if (webApp.colorScheme) document.documentElement.style.colorScheme = webApp.colorScheme;
-
-  safeTelegramCall("set background color", () => {
-    if (theme.bg_color) webApp.setBackgroundColor?.(theme.bg_color);
-  });
-  safeTelegramCall("set header color", () => {
-    const headerColor = theme.section_bg_color ? "secondary_bg_color" : "bg_color";
-    webApp.setHeaderColor?.(headerColor);
-  });
-}
-
-function applyTelegramViewport(webApp: TelegramWebApp): void {
-  const height = webApp.stableViewportHeight ?? webApp.viewportHeight;
-  if (height && Number.isFinite(height)) {
-    document.documentElement.style.setProperty("--app-height", `${height}px`);
-  }
-}
-
 function handleViewportChange(): void {
-  if (telegramWebApp) applyTelegramViewport(telegramWebApp);
+  themeRuntime.refreshViewport();
   map.invalidateSize();
-}
-
-function setCssVar(name: string, value: string | undefined): void {
-  if (value) document.documentElement.style.setProperty(name, value);
-}
-
-function alphaColor(color: string | undefined, alpha: number): string | undefined {
-  if (!color) return undefined;
-
-  const hex = color.trim().match(/^#([0-9a-f]{3}|[0-9a-f]{6})$/i)?.[1];
-  if (!hex) return color;
-
-  const normalized = hex.length === 3 ? [...hex].map((char) => char + char).join("") : hex;
-  const red = Number.parseInt(normalized.slice(0, 2), 16);
-  const green = Number.parseInt(normalized.slice(2, 4), 16);
-  const blue = Number.parseInt(normalized.slice(4, 6), 16);
-  return `rgb(${red} ${green} ${blue} / ${alpha})`;
 }
 
 async function loadStations(): Promise<void> {

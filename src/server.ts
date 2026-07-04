@@ -3,7 +3,6 @@ import { type City, cities, type FuelType, fuelTypes } from "./shared";
 
 const port = Number(process.env.PORT ?? 3000);
 const publicDir = new URL("../public/", import.meta.url);
-const transpiler = new Bun.Transpiler({ loader: "ts", target: "browser" });
 let cachedClientJs: string | null = null;
 
 Bun.serve({
@@ -34,7 +33,7 @@ Bun.serve({
       }
 
       if (url.pathname === "/app.js") {
-        cachedClientJs ??= transpiler.transformSync(await Bun.file(new URL("./client.ts", import.meta.url)).text());
+        cachedClientJs ??= await buildClientJs();
         return new Response(cachedClientJs, {
           headers: { "content-type": "application/javascript; charset=utf-8" },
         });
@@ -52,6 +51,20 @@ Bun.serve({
 });
 
 console.log(`Cyprus fuel map: http://localhost:${port}`);
+
+async function buildClientJs(): Promise<string> {
+  const result = await Bun.build({
+    entrypoints: [new URL("./client.ts", import.meta.url).pathname],
+    target: "browser",
+    format: "esm",
+    minify: false,
+  });
+  if (!result.success) throw new Error("Failed to build browser client");
+
+  const output = result.outputs[0];
+  if (!output) throw new Error("Browser client build produced no output");
+  return output.text();
+}
 
 function isFuelType(value: string): value is FuelType {
   return Object.hasOwn(fuelTypes, value);

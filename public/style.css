@@ -50,8 +50,36 @@
   white-space: nowrap;
 }
 
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --app-bg: #0f1117;
+  --panel: #1c1c1e;
+  --panel-strong: #2c2c2e;
+  --text: #f5f5f7;
+  --muted: #a1a1aa;
+  --line: #3a3a3c;
+  --accent: #4a90ff;
+  --accent-text: #ffffff;
+  --accent-strong: #6aa4ff;
+  --green: #34c759;
+  --control-bg: rgb(28 28 30 / 94%);
+  --sheet-bg: rgb(28 28 30 / 97%);
+  --card-bg: rgb(44 44 46 / 82%);
+  --segmented-bg: rgb(44 44 46 / 82%);
+  --list-bg: rgb(28 28 30 / 88%);
+  --route-bg: rgb(44 44 46 / 86%);
+  --tooltip-bg: rgb(28 28 30 / 94%);
+  --tooltip-text: #f5f5f7;
+  --handle: #636366;
+  --shadow: 0 18px 44px rgb(0 0 0 / 42%);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     color-scheme: dark;
     --app-bg: #0f1117;
     --panel: #1c1c1e;
