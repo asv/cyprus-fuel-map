@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-04T14:00:53.707Z",
+  "fetchedAt": "2026-07-04T19:39:41.847Z",
   "avgPrice": 1.475,
   "minPrice": 1.389,
   "maxPrice": 1.639,
@@ -2204,7 +2204,7 @@
       "address": "Λεωφόρος Αρχ. Μιχαήλ 17 Τ.Κ 2057 τηλ: 22876187",
       "district": "Στρόβολος",
       "price": 1.469,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.156596,
       "lng": 33.335618
     },
@@ -2523,7 +2523,7 @@
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
       "price": 1.465,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.753826,
       "lng": 32.962765
     },
@@ -3270,7 +3270,7 @@
       "name": "ΝΙΚΟΛΑΟΥ Α. ΠΑΝΙΚΟΣ",
       "address": "Λεωφ. Αμμοχώστου 74 Τ.Κ 5380 τηλ: 23821322",
       "district": "Δερύνεια",
-      "price": 1.466,
+      "price": 1.465,
       "isOffline": false,
       "lat": 35.07041667,
       "lng": 33.9607
