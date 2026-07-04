@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-04T07:47:54.234Z",
+  "fetchedAt": "2026-07-04T08:06:30.923Z",
   "avgPrice": 1.368,
   "minPrice": 1.299,
   "maxPrice": 1.469,
