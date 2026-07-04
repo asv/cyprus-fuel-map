@@ -43,6 +43,24 @@ export type FuelResponse = {
   stations: FuelStation[];
 };
 
+export type StaticDataManifest = {
+  version: 1;
+  generatedAt: string;
+  city: City;
+  fuels: Array<{
+    fuel: FuelType;
+    fuelName: string;
+    path: string;
+    fetchedAt: string;
+    stationCount: number;
+    mappedStationCount: number;
+    avgPrice: number | null;
+    minPrice: number | null;
+    maxPrice: number | null;
+    stale: boolean;
+  }>;
+};
+
 export type ApiError = {
   error: {
     code: string;
