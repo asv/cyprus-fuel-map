@@ -135,13 +135,28 @@ function applyTelegramTheme(webApp: TelegramWebApp): void {
   const theme = webApp.themeParams;
   if (!theme) return;
 
+  const panel = theme.section_bg_color ?? theme.secondary_bg_color ?? theme.bg_color;
+  const panelStrong = theme.secondary_bg_color ?? panel;
+  const text = theme.text_color;
+  const muted = theme.hint_color;
+
   setCssVar("--app-bg", theme.bg_color);
-  setCssVar("--panel", theme.section_bg_color ?? theme.secondary_bg_color ?? theme.bg_color);
-  setCssVar("--panel-strong", theme.secondary_bg_color);
-  setCssVar("--text", theme.text_color);
-  setCssVar("--muted", theme.hint_color);
+  setCssVar("--panel", panel);
+  setCssVar("--panel-strong", panelStrong);
+  setCssVar("--text", text);
+  setCssVar("--muted", muted);
+  setCssVar("--line", alphaColor(muted ?? text, 0.28));
   setCssVar("--accent", theme.button_color);
   setCssVar("--accent-text", theme.button_text_color);
+  setCssVar("--control-bg", alphaColor(panel, 0.96));
+  setCssVar("--sheet-bg", alphaColor(panel, 0.97));
+  setCssVar("--card-bg", alphaColor(panelStrong ?? panel, 0.82));
+  setCssVar("--segmented-bg", alphaColor(panelStrong ?? panel, 0.82));
+  setCssVar("--list-bg", alphaColor(panel, 0.88));
+  setCssVar("--route-bg", alphaColor(panelStrong ?? panel, 0.86));
+  setCssVar("--tooltip-bg", alphaColor(panel, 0.94));
+  setCssVar("--tooltip-text", text);
+  setCssVar("--handle", alphaColor(muted ?? text, 0.55));
   if (webApp.colorScheme) document.documentElement.style.colorScheme = webApp.colorScheme;
 
   safeTelegramCall("set background color", () => {
@@ -167,6 +182,19 @@ function handleViewportChange(): void {
 
 function setCssVar(name: string, value: string | undefined): void {
   if (value) document.documentElement.style.setProperty(name, value);
+}
+
+function alphaColor(color: string | undefined, alpha: number): string | undefined {
+  if (!color) return undefined;
+
+  const hex = color.trim().match(/^#([0-9a-f]{3}|[0-9a-f]{6})$/i)?.[1];
+  if (!hex) return color;
+
+  const normalized = hex.length === 3 ? [...hex].map((char) => char + char).join("") : hex;
+  const red = Number.parseInt(normalized.slice(0, 2), 16);
+  const green = Number.parseInt(normalized.slice(2, 4), 16);
+  const blue = Number.parseInt(normalized.slice(4, 6), 16);
+  return `rgb(${red} ${green} ${blue} / ${alpha})`;
 }
 
 async function loadStations(): Promise<void> {

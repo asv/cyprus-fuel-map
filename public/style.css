@@ -16,6 +16,15 @@
   --accent-text: #ffffff;
   --accent-strong: #1474dc;
   --green: #22863a;
+  --control-bg: rgb(255 255 255 / 96%);
+  --sheet-bg: rgb(255 255 255 / 97%);
+  --card-bg: rgb(255 255 255 / 82%);
+  --segmented-bg: rgb(247 249 252 / 82%);
+  --list-bg: rgb(255 255 255 / 88%);
+  --route-bg: rgb(255 255 255 / 86%);
+  --tooltip-bg: rgb(255 255 255 / 94%);
+  --tooltip-text: #101828;
+  --handle: #c9c9cf;
   --shadow: 0 16px 42px rgb(15 23 42 / 18%);
   --app-height: 100vh;
   color: var(--text);
@@ -39,6 +48,32 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --app-bg: #0f1117;
+    --panel: #1c1c1e;
+    --panel-strong: #2c2c2e;
+    --text: #f5f5f7;
+    --muted: #a1a1aa;
+    --line: #3a3a3c;
+    --accent: #4a90ff;
+    --accent-text: #ffffff;
+    --accent-strong: #6aa4ff;
+    --green: #34c759;
+    --control-bg: rgb(28 28 30 / 94%);
+    --sheet-bg: rgb(28 28 30 / 97%);
+    --card-bg: rgb(44 44 46 / 82%);
+    --segmented-bg: rgb(44 44 46 / 82%);
+    --list-bg: rgb(28 28 30 / 88%);
+    --route-bg: rgb(44 44 46 / 86%);
+    --tooltip-bg: rgb(28 28 30 / 94%);
+    --tooltip-text: #f5f5f7;
+    --handle: #636366;
+    --shadow: 0 18px 44px rgb(0 0 0 / 42%);
+  }
 }
 
 @supports (font: -apple-system-body) {
@@ -102,9 +137,9 @@ h2 {
   min-height: 48px;
   min-width: 0;
   padding: 0 14px;
-  border: 1px solid rgb(225 229 235 / 86%);
+  border: 1px solid var(--line);
   border-radius: 22px;
-  background: rgb(255 255 255 / 96%);
+  background: var(--control-bg);
   box-shadow: 0 12px 32px rgb(15 23 42 / 14%);
   backdrop-filter: blur(18px);
   pointer-events: auto;
@@ -174,7 +209,7 @@ button:disabled {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgb(255 255 255 / 96%);
+  background: var(--control-bg);
   color: var(--accent);
   box-shadow: 0 12px 32px rgb(15 23 42 / 14%);
   line-height: 1;
@@ -198,10 +233,10 @@ button:disabled {
   gap: 12px;
   padding: 9px 16px max(16px, env(safe-area-inset-bottom));
   overflow: hidden;
-  border: 1px solid rgb(225 229 235 / 76%);
+  border: 1px solid var(--line);
   border-bottom: 0;
   border-radius: 26px 26px 0 0;
-  background: rgb(255 255 255 / 97%);
+  background: var(--sheet-bg);
   box-shadow: var(--shadow);
   backdrop-filter: blur(22px);
   transition:
@@ -243,7 +278,7 @@ button:disabled {
   height: 4px;
   margin: 6px auto;
   border-radius: 999px;
-  background: #c9c9cf;
+  background: var(--handle);
   content: "";
 }
 
@@ -254,8 +289,8 @@ button:disabled {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 17px;
-  background: rgb(255 255 255 / 82%);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 82%);
+  background: var(--card-bg);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 18%);
 }
 
 .summary {
@@ -325,11 +360,11 @@ button:disabled {
 
 .leaflet-tooltip.price-tooltip {
   padding: 4px 7px;
-  border: 1px solid rgb(225 229 235 / 90%);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgb(255 255 255 / 94%);
+  background: var(--tooltip-bg);
   box-shadow: 0 3px 10px rgb(15 23 42 / 18%);
-  color: var(--text);
+  color: var(--tooltip-text);
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: 700;
@@ -377,7 +412,7 @@ button:disabled {
   padding: 2px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgb(247 249 252 / 82%);
+  background: var(--segmented-bg);
 }
 
 .sort-option {
@@ -402,8 +437,8 @@ button:disabled {
   gap: 0;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgb(255 255 255 / 88%);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 86%);
+  background: var(--list-bg);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 14%);
 }
 
 .bottom-sheet.is-collapsed .section-title,
@@ -489,7 +524,7 @@ button:disabled {
   padding: 0 6px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgb(255 255 255 / 86%);
+  background: var(--route-bg);
   color: var(--accent);
   font-size: 11px;
   font-weight: 600;
@@ -513,8 +548,8 @@ button:disabled {
     left: 16px;
     max-width: 560px;
     margin-inline: auto;
-    border-right: 1px solid rgb(217 224 234 / 92%);
-    border-left: 1px solid rgb(217 224 234 / 92%);
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
     border-radius: 26px 26px 0 0;
   }
 }
