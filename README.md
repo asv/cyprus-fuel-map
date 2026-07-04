@@ -26,6 +26,8 @@ PORT=3010 bun run dev
 ```bash
 bun run dev           # run local server with watch mode
 bun run start         # run local server without watch mode
+bun run data:generate # fetch upstream data into public/data
+bun run build         # build static GitHub Pages app into dist
 bun run typecheck     # TypeScript checks
 bun run lint          # Biome lint
 bun run format        # Biome format
@@ -61,6 +63,19 @@ Supported cities:
 
 The backend caches each fuel response in `.cache/fuel-cache.json` for 6 hours and parses the government HTML form response.
 If the upstream source is unavailable after the cache expires, the backend returns stale cached data when available.
+
+## Static deploy
+
+The production path is static and suitable for GitHub Pages:
+
+```bash
+bun run data:generate
+bun run build
+```
+
+`data:generate` writes fuel snapshots to `public/data/`. `build` copies `public/` to `dist/` and transpiles the browser TypeScript to `dist/app.js`.
+
+The GitHub Pages workflow runs on pushes to `main`, manual dispatch, and a 6-hour cron. It regenerates fuel data, checks the project, builds `dist/`, and deploys it to Pages.
 
 ## Development notes
 
