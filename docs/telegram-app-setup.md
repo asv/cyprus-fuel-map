@@ -32,10 +32,11 @@ In the GitHub repository:
 The workflow will:
 
 1. Install dependencies.
-2. Fetch fuel snapshots into `public/data/`.
-3. Run checks.
-4. Build the static app into `dist/`.
-5. Deploy `dist/` to GitHub Pages.
+2. Run checks.
+3. Build the static app into `dist/` from committed `public/data/` snapshots.
+4. Deploy `dist/` to GitHub Pages.
+
+Fuel data is refreshed separately by the **Refresh Fuel Data** workflow. It runs every 6 hours, updates `public/data/` when the upstream source changes, commits the snapshots, and deploys Pages.
 
 Expected URL:
 

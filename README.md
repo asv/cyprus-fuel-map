@@ -75,7 +75,9 @@ bun run build
 
 `data:generate` writes fuel snapshots to `public/data/`. `build` copies `public/` to `dist/` and transpiles the browser TypeScript to `dist/app.js`.
 
-The GitHub Pages workflow runs on pushes to `main`, manual dispatch, and a 6-hour cron. It regenerates fuel data, checks the project, builds `dist/`, and deploys it to Pages.
+The main GitHub Pages workflow runs on pushes to `main` and manual dispatch. It uses the committed `public/data/` snapshots, runs checks, builds `dist/`, and deploys it to Pages.
+
+Fuel snapshots are refreshed by a separate scheduled workflow every 6 hours. That workflow runs `data:generate`, commits changed `public/data/` files, builds the static app, and deploys Pages.
 
 Telegram Mini App registration and deployment steps are documented in [docs/telegram-app-setup.md](docs/telegram-app-setup.md).
 

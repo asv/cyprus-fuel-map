@@ -1,0 +1,17 @@
+{
+  "fuelTypes": {
+    "1": "Unleaded 95",
+    "2": "Unleaded 98",
+    "3": "Diesel",
+    "4": "Heating oil",
+    "5": "Kerosene"
+  },
+  "cities": [
+    "All",
+    "Famagusta",
+    "Larnaca",
+    "Limassol",
+    "Nicosia",
+    "Paphos"
+  ]
+}
