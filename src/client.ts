@@ -79,6 +79,7 @@ const sortCheapestButton = byId<HTMLButtonElement>("sort-cheapest");
 const sortNearbyButton = byId<HTMLButtonElement>("sort-nearby");
 const topbarEl = query<HTMLElement>(".topbar");
 const bottomSheetEl = query<HTMLElement>(".bottom-sheet");
+const sheetDragRegionEl = query<HTMLElement>(".sheet-drag-region");
 const sheetHandleButton = byId<HTMLButtonElement>("sheet-handle");
 const telegramWebApp = initTelegramWebApp();
 
@@ -89,9 +90,10 @@ priceLimitInput.addEventListener("input", applyPriceFilter);
 sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
 sortNearbyButton.addEventListener("click", () => setStationSortMode("distance"));
 sheetHandleButton.addEventListener("click", toggleSheetFromHandle);
-sheetHandleButton.addEventListener("pointerdown", startSheetDrag);
-sheetHandleButton.addEventListener("pointerup", finishSheetDrag);
-sheetHandleButton.addEventListener("pointercancel", cancelSheetDrag);
+sheetDragRegionEl.addEventListener("click", preventClickAfterSheetDrag, true);
+sheetDragRegionEl.addEventListener("pointerdown", startSheetDrag);
+sheetDragRegionEl.addEventListener("pointerup", finishSheetDrag);
+sheetDragRegionEl.addEventListener("pointercancel", cancelSheetDrag);
 window.addEventListener("resize", handleViewportChange);
 map.on("zoomend moveend", updateMarkerPriceLabels);
 
@@ -404,10 +406,20 @@ function toggleSheetFromHandle(): void {
   setSheetState(sheetState === "expanded" ? "collapsed" : "expanded");
 }
 
+function preventClickAfterSheetDrag(event: MouseEvent): void {
+  if (!didDragSheet) return;
+
+  didDragSheet = false;
+  event.preventDefault();
+  event.stopPropagation();
+}
+
 function startSheetDrag(event: PointerEvent): void {
+  if (!event.isPrimary) return;
+
   sheetDragStartY = event.clientY;
   didDragSheet = false;
-  sheetHandleButton.setPointerCapture(event.pointerId);
+  sheetDragRegionEl.setPointerCapture(event.pointerId);
 }
 
 function finishSheetDrag(event: PointerEvent): void {
@@ -415,7 +427,9 @@ function finishSheetDrag(event: PointerEvent): void {
 
   const deltaY = event.clientY - sheetDragStartY;
   sheetDragStartY = null;
-  sheetHandleButton.releasePointerCapture(event.pointerId);
+  if (sheetDragRegionEl.hasPointerCapture(event.pointerId)) {
+    sheetDragRegionEl.releasePointerCapture(event.pointerId);
+  }
 
   if (Math.abs(deltaY) < SHEET_DRAG_THRESHOLD_PX) return;
 
@@ -426,8 +440,8 @@ function finishSheetDrag(event: PointerEvent): void {
 function cancelSheetDrag(event: PointerEvent): void {
   sheetDragStartY = null;
   didDragSheet = false;
-  if (sheetHandleButton.hasPointerCapture(event.pointerId)) {
-    sheetHandleButton.releasePointerCapture(event.pointerId);
+  if (sheetDragRegionEl.hasPointerCapture(event.pointerId)) {
+    sheetDragRegionEl.releasePointerCapture(event.pointerId);
   }
 }
 
