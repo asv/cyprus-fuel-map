@@ -52,7 +52,11 @@ The source sometimes contains coordinates as decimal values like `35.1845,33.389
 - JSON cache: `src/backend/cache.ts`
 - Compatibility re-export: `src/scraper.ts`
 - Shared API types: `src/shared.ts`
-- Frontend app: `src/client.ts`, bundled by Bun server/build scripts to `/app.js`
+- Frontend orchestration: `src/client.ts`, bundled by Bun server/build scripts to `/app.js`
+- Frontend data loading: `src/client-api.ts`
+- Leaflet map module: `src/client-map.ts`
+- Bottom sheet behavior: `src/client-sheet.ts`
+- Browser helpers: `src/client-utils.ts`
 - Theme runtime/tokens: `src/theme.ts`
 - Static assets: `public/`
 - Leaflet assets are local:
@@ -166,16 +170,10 @@ Tooling:
 
 High-value next steps:
 
-1. Split `src/client.ts` into smaller modules:
-   - `api.ts`
-   - `map.ts`
-   - `filters.ts`
-   - `dom.ts`
-   - `geo.ts`
-2. Add more parser fixtures from real upstream HTML when parser issues are found.
-3. Add a reset-filter button.
-4. Add map legend for marker colors.
-5. Consider marker clustering if marker count grows.
-6. Add better typed Leaflet integration instead of `declare const L: any`.
-7. Consider background refresh: return stale cache immediately while refreshing in the background.
-8. Keep theme additions token-based; verify `?theme=light`, `?theme=dark`, and Telegram-provided theme params.
+1. Add more parser fixtures from real upstream HTML when parser issues are found.
+2. Add a reset-filter button.
+3. Add map legend for marker colors.
+4. Consider marker clustering if marker count grows.
+5. Add better typed Leaflet integration instead of `declare const L: any`.
+6. Consider background refresh: return stale cache immediately while refreshing in the background.
+7. Keep theme additions token-based; verify `?theme=light`, `?theme=dark`, and Telegram-provided theme params.
