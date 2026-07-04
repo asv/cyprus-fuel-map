@@ -40,6 +40,7 @@ type StationMarker = {
 };
 
 const PRICE_LABEL_MIN_ZOOM = 13;
+const GEOLOCATION_ENABLED_KEY = "cyprusFuelMap.geolocationEnabled";
 
 const map = L.map("map", { zoomControl: false }).setView([35.05, 33.22], 9);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -56,6 +57,7 @@ let visibleStations: FuelStation[] = [];
 let lastFuelData: FuelResponse | null = null;
 let loadController: AbortController | null = null;
 let hasFittedInitialBounds = false;
+let hasTriedAutoLocate = false;
 
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
@@ -71,7 +73,7 @@ const telegramWebApp = initTelegramWebApp();
 
 fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
-locateButton.addEventListener("click", locateUser);
+locateButton.addEventListener("click", () => locateUser({ rememberPreference: true }));
 priceLimitInput.addEventListener("input", applyPriceFilter);
 window.addEventListener("resize", handleViewportChange);
 map.on("zoomend moveend", updateMarkerPriceLabels);
@@ -166,6 +168,7 @@ async function loadStations(): Promise<void> {
     createStationMarkers();
     applyPriceFilter();
     setStatus(`${data.stale ? "Stale cache" : "Updated"} ${formatTime(data.fetchedAt)}`);
+    maybeAutoLocateUser();
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") return;
     console.error(error);
@@ -355,15 +358,25 @@ function panAboveBottomSheet(): void {
   });
 }
 
-function locateUser(): void {
+function maybeAutoLocateUser(): void {
+  if (hasTriedAutoLocate || !isGeolocationRemembered()) return;
+  hasTriedAutoLocate = true;
+  locateUser({ automatic: true, rememberPreference: true });
+}
+
+function locateUser(options: { automatic?: boolean; rememberPreference?: boolean } = {}): void {
+  hasTriedAutoLocate = true;
+
   if (!navigator.geolocation) {
+    if (options.rememberPreference) setGeolocationRemembered(false);
     setStatus("Geolocation is not supported by this browser.");
     return;
   }
 
-  setStatus("Requesting location...");
+  setStatus(options.automatic ? "Finding your location..." : "Requesting location...");
   navigator.geolocation.getCurrentPosition(
     (position) => {
+      if (options.rememberPreference) setGeolocationRemembered(true);
       lastUserLocation = { lat: position.coords.latitude, lng: position.coords.longitude };
       if (userMarker) userMarker.remove();
       userMarker = L.marker([lastUserLocation.lat, lastUserLocation.lng]).addTo(map).bindPopup("You are here");
@@ -371,9 +384,34 @@ function locateUser(): void {
       renderStationList();
       setStatus("Location found. Cheapest first, distance shown.");
     },
-    (error) => setStatus(`Location error: ${error.message}`),
+    (error) => {
+      if (options.rememberPreference && error.code === error.PERMISSION_DENIED) {
+        setGeolocationRemembered(false);
+      }
+      setStatus(options.automatic ? "Location unavailable. Tap locate to retry." : `Location error: ${error.message}`);
+    },
     { enableHighAccuracy: true, timeout: 10000 },
   );
+}
+
+function isGeolocationRemembered(): boolean {
+  try {
+    return localStorage.getItem(GEOLOCATION_ENABLED_KEY) === "true";
+  } catch {
+    return false;
+  }
+}
+
+function setGeolocationRemembered(enabled: boolean): void {
+  try {
+    if (enabled) {
+      localStorage.setItem(GEOLOCATION_ENABLED_KEY, "true");
+    } else {
+      localStorage.removeItem(GEOLOCATION_ENABLED_KEY);
+    }
+  } catch {
+    // Storage can be unavailable in restricted webviews; geolocation still works for the current session.
+  }
 }
 
 function popupHtml(station: FuelStation): string {
