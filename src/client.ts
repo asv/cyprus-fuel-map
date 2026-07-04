@@ -39,6 +39,8 @@ type StationMarker = {
   visible: boolean;
 };
 
+type StationSortMode = "price" | "distance";
+
 const PRICE_LABEL_MIN_ZOOM = 13;
 const GEOLOCATION_ENABLED_KEY = "cyprusFuelMap.geolocationEnabled";
 
@@ -58,6 +60,7 @@ let lastFuelData: FuelResponse | null = null;
 let loadController: AbortController | null = null;
 let hasFittedInitialBounds = false;
 let hasTriedAutoLocate = false;
+let stationSortMode: StationSortMode = "price";
 
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
@@ -67,6 +70,8 @@ const priceLimitLabel = byId<HTMLElement>("price-limit-label");
 const statusEl = byId<HTMLElement>("status");
 const summaryEl = byId<HTMLElement>("summary");
 const stationListEl = byId<HTMLElement>("station-list");
+const sortCheapestButton = byId<HTMLButtonElement>("sort-cheapest");
+const sortNearbyButton = byId<HTMLButtonElement>("sort-nearby");
 const topbarEl = query<HTMLElement>(".topbar");
 const bottomSheetEl = query<HTMLElement>(".bottom-sheet");
 const telegramWebApp = initTelegramWebApp();
@@ -75,6 +80,8 @@ fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
 locateButton.addEventListener("click", () => locateUser({ rememberPreference: true }));
 priceLimitInput.addEventListener("input", applyPriceFilter);
+sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
+sortNearbyButton.addEventListener("click", () => setStationSortMode("distance"));
 window.addEventListener("resize", handleViewportChange);
 map.on("zoomend moveend", updateMarkerPriceLabels);
 
@@ -315,6 +322,12 @@ function updateMarkerPriceLabels(): void {
 
 function renderStationList(): void {
   const sorted = [...visibleStations].sort((a, b) => {
+    if (stationSortMode === "distance" && lastUserLocation) {
+      const distanceDiff = distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
+      if (distanceDiff !== 0) return distanceDiff;
+      return a.price - b.price;
+    }
+
     const priceDiff = a.price - b.price;
     if (priceDiff !== 0) return priceDiff;
     if (lastUserLocation) return distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
@@ -352,6 +365,27 @@ function renderStationList(): void {
   });
 }
 
+function setStationSortMode(mode: StationSortMode): void {
+  if (mode === "distance" && !lastUserLocation) {
+    stationSortMode = mode;
+    updateSortControls();
+    locateUser({ rememberPreference: true, sortModeOnError: "price" });
+    return;
+  }
+
+  stationSortMode = mode;
+  updateSortControls();
+  renderStationList();
+}
+
+function updateSortControls(): void {
+  const isPriceSort = stationSortMode === "price";
+  sortCheapestButton.classList.toggle("is-active", isPriceSort);
+  sortNearbyButton.classList.toggle("is-active", !isPriceSort);
+  sortCheapestButton.setAttribute("aria-pressed", String(isPriceSort));
+  sortNearbyButton.setAttribute("aria-pressed", String(!isPriceSort));
+}
+
 function panAboveBottomSheet(): void {
   map.panBy([0, Math.round(bottomSheetEl.getBoundingClientRect().height / 5)], {
     animate: false,
@@ -364,7 +398,9 @@ function maybeAutoLocateUser(): void {
   locateUser({ automatic: true, rememberPreference: true });
 }
 
-function locateUser(options: { automatic?: boolean; rememberPreference?: boolean } = {}): void {
+function locateUser(
+  options: { automatic?: boolean; rememberPreference?: boolean; sortModeOnError?: StationSortMode } = {},
+): void {
   hasTriedAutoLocate = true;
 
   if (!navigator.geolocation) {
@@ -382,11 +418,16 @@ function locateUser(options: { automatic?: boolean; rememberPreference?: boolean
       userMarker = L.marker([lastUserLocation.lat, lastUserLocation.lng]).addTo(map).bindPopup("You are here");
       map.setView([lastUserLocation.lat, lastUserLocation.lng], 13);
       renderStationList();
-      setStatus("Location found. Cheapest first, distance shown.");
+      setStatus(stationSortMode === "distance" ? "Location found. Nearby first." : "Location found. Cheapest first.");
     },
     (error) => {
       if (options.rememberPreference && error.code === error.PERMISSION_DENIED) {
         setGeolocationRemembered(false);
+      }
+      if (options.sortModeOnError) {
+        stationSortMode = options.sortModeOnError;
+        updateSortControls();
+        renderStationList();
       }
       setStatus(options.automatic ? "Location unavailable. Tap locate to retry." : `Location error: ${error.message}`);
     },

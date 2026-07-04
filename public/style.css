@@ -32,6 +32,15 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 @supports (font: -apple-system-body) {
   body {
     /* biome-ignore lint/a11y/useGenericFontNames: Apple Dynamic Type system font keyword, with font-family fallback below. */
@@ -328,10 +337,31 @@ button:disabled {
   gap: 12px;
 }
 
-.section-title span {
+.sort-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin: 0;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgb(247 249 252 / 82%);
+}
+
+.sort-option {
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
   color: var(--muted);
   font-size: 12px;
   font-weight: 600;
+  line-height: 1;
+}
+
+.sort-option.is-active {
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: 0 1px 5px rgb(15 23 42 / 10%);
 }
 
 .station-list {
