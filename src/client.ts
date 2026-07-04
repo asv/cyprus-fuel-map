@@ -40,9 +40,11 @@ type StationMarker = {
 };
 
 type StationSortMode = "price" | "distance";
+type SheetState = "collapsed" | "expanded";
 
 const PRICE_LABEL_MIN_ZOOM = 13;
 const GEOLOCATION_ENABLED_KEY = "cyprusFuelMap.geolocationEnabled";
+const SHEET_DRAG_THRESHOLD_PX = 24;
 
 const map = L.map("map", { zoomControl: false }).setView([35.05, 33.22], 9);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -61,6 +63,9 @@ let loadController: AbortController | null = null;
 let hasFittedInitialBounds = false;
 let hasTriedAutoLocate = false;
 let stationSortMode: StationSortMode = "price";
+let sheetState: SheetState = "collapsed";
+let sheetDragStartY: number | null = null;
+let didDragSheet = false;
 
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
@@ -74,6 +79,7 @@ const sortCheapestButton = byId<HTMLButtonElement>("sort-cheapest");
 const sortNearbyButton = byId<HTMLButtonElement>("sort-nearby");
 const topbarEl = query<HTMLElement>(".topbar");
 const bottomSheetEl = query<HTMLElement>(".bottom-sheet");
+const sheetHandleButton = byId<HTMLButtonElement>("sheet-handle");
 const telegramWebApp = initTelegramWebApp();
 
 fuelSelect.addEventListener("change", loadStations);
@@ -82,6 +88,10 @@ locateButton.addEventListener("click", () => locateUser({ rememberPreference: tr
 priceLimitInput.addEventListener("input", applyPriceFilter);
 sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
 sortNearbyButton.addEventListener("click", () => setStationSortMode("distance"));
+sheetHandleButton.addEventListener("click", toggleSheetFromHandle);
+sheetHandleButton.addEventListener("pointerdown", startSheetDrag);
+sheetHandleButton.addEventListener("pointerup", finishSheetDrag);
+sheetHandleButton.addEventListener("pointercancel", cancelSheetDrag);
 window.addEventListener("resize", handleViewportChange);
 map.on("zoomend moveend", updateMarkerPriceLabels);
 
@@ -384,6 +394,57 @@ function updateSortControls(): void {
   sortNearbyButton.classList.toggle("is-active", !isPriceSort);
   sortCheapestButton.setAttribute("aria-pressed", String(isPriceSort));
   sortNearbyButton.setAttribute("aria-pressed", String(!isPriceSort));
+}
+
+function toggleSheetFromHandle(): void {
+  if (didDragSheet) {
+    didDragSheet = false;
+    return;
+  }
+  setSheetState(sheetState === "expanded" ? "collapsed" : "expanded");
+}
+
+function startSheetDrag(event: PointerEvent): void {
+  sheetDragStartY = event.clientY;
+  didDragSheet = false;
+  sheetHandleButton.setPointerCapture(event.pointerId);
+}
+
+function finishSheetDrag(event: PointerEvent): void {
+  if (sheetDragStartY === null) return;
+
+  const deltaY = event.clientY - sheetDragStartY;
+  sheetDragStartY = null;
+  sheetHandleButton.releasePointerCapture(event.pointerId);
+
+  if (Math.abs(deltaY) < SHEET_DRAG_THRESHOLD_PX) return;
+
+  didDragSheet = true;
+  setSheetState(deltaY < 0 ? "expanded" : "collapsed");
+}
+
+function cancelSheetDrag(event: PointerEvent): void {
+  sheetDragStartY = null;
+  didDragSheet = false;
+  if (sheetHandleButton.hasPointerCapture(event.pointerId)) {
+    sheetHandleButton.releasePointerCapture(event.pointerId);
+  }
+}
+
+function setSheetState(nextState: SheetState): void {
+  sheetState = nextState;
+  const isExpanded = sheetState === "expanded";
+
+  bottomSheetEl.classList.toggle("is-expanded", isExpanded);
+  bottomSheetEl.classList.toggle("is-collapsed", !isExpanded);
+  sheetHandleButton.setAttribute("aria-expanded", String(isExpanded));
+  sheetHandleButton.setAttribute("aria-label", isExpanded ? "Hide station list" : "Show station list");
+  sheetHandleButton.title = isExpanded ? "Hide station list" : "Show station list";
+
+  requestAnimationFrame(() => {
+    map.invalidateSize();
+    updateMarkerPriceLabels();
+  });
 }
 
 function panAboveBottomSheet(): void {

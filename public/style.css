@@ -196,23 +196,50 @@ button:disabled {
   z-index: 450;
   display: grid;
   gap: 12px;
-  max-height: min(49vh, 520px);
   padding: 9px 16px max(16px, env(safe-area-inset-bottom));
-  overflow: auto;
+  overflow: hidden;
   border: 1px solid rgb(225 229 235 / 76%);
   border-bottom: 0;
   border-radius: 26px 26px 0 0;
   background: rgb(255 255 255 / 97%);
   box-shadow: var(--shadow);
   backdrop-filter: blur(22px);
+  transition:
+    max-height 180ms ease,
+    transform 180ms ease;
+}
+
+.bottom-sheet.is-collapsed {
+  max-height: min(178px, 38vh);
+}
+
+.bottom-sheet.is-expanded {
+  max-height: min(49vh, 520px);
+  overflow: auto;
 }
 
 .sheet-handle {
   justify-self: center;
   width: 42px;
+  height: 16px;
+  padding: 0;
+  border-radius: 999px;
+  cursor: grab;
+  touch-action: none;
+}
+
+.sheet-handle::before {
+  display: block;
+  width: 42px;
   height: 4px;
+  margin: 6px auto;
   border-radius: 999px;
   background: #c9c9cf;
+  content: "";
+}
+
+.sheet-handle:active {
+  cursor: grabbing;
 }
 
 .summary-card {
@@ -372,6 +399,11 @@ button:disabled {
   border-radius: 18px;
   background: rgb(255 255 255 / 88%);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 86%);
+}
+
+.bottom-sheet.is-collapsed .section-title,
+.bottom-sheet.is-collapsed .station-list {
+  display: none;
 }
 
 .station {

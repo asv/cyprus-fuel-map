@@ -40,8 +40,15 @@
         </button>
       </header>
 
-      <aside class="bottom-sheet" aria-label="Fuel station controls">
-        <div class="sheet-handle" aria-hidden="true"></div>
+      <aside class="bottom-sheet is-collapsed" aria-label="Fuel station controls">
+        <button
+          id="sheet-handle"
+          class="sheet-handle"
+          type="button"
+          aria-expanded="false"
+          aria-label="Show station list"
+          title="Show station list"
+        ></button>
 
         <div class="summary-card">
           <section id="summary" class="summary"></section>
