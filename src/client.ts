@@ -34,6 +34,8 @@ const showPricesCheckbox = byId<HTMLInputElement>("show-prices");
 const statusEl = byId<HTMLElement>("status");
 const summaryEl = byId<HTMLElement>("summary");
 const stationListEl = byId<HTMLElement>("station-list");
+const topbarEl = query<HTMLElement>(".topbar");
+const bottomSheetEl = query<HTMLElement>(".bottom-sheet");
 
 fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
@@ -48,7 +50,7 @@ async function loadStations(): Promise<void> {
   loadController?.abort();
   loadController = new AbortController();
 
-  setStatus("Loading Cyprus fuel prices…");
+  setStatus("Loading prices...");
   refreshButton.disabled = true;
   clearStationMarkers();
   stationListEl.innerHTML = "";
@@ -62,7 +64,7 @@ async function loadStations(): Promise<void> {
     createStationMarkers();
     applyPriceFilter();
     setStatus(
-      `Loaded ${currentStations.length} mapped stations. Updated ${new Date(data.fetchedAt).toLocaleString()}${data.stale ? " (stale cache)" : ""}.`,
+      `${currentStations.length} mapped stations, updated ${formatDateTime(data.fetchedAt)}${data.stale ? " (stale)" : ""}`,
     );
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") return;
@@ -156,10 +158,22 @@ function createStationMarkers(): void {
   updateSummary();
 
   if (!hasFittedInitialBounds && currentStations.length > 0) {
-    const bounds = L.latLngBounds(currentStations.map((station) => [station.lat, station.lng]));
-    map.fitBounds(bounds.pad(0.08));
+    fitStationBounds(currentStations);
     hasFittedInitialBounds = true;
   }
+}
+
+function fitStationBounds(stations: FuelStation[]): void {
+  const bounds = L.latLngBounds(stations.map((station) => [station.lat, station.lng]));
+  const topbar = topbarEl.getBoundingClientRect();
+  const bottomSheet = bottomSheetEl.getBoundingClientRect();
+
+  map.fitBounds(bounds.pad(0.08), {
+    animate: false,
+    paddingTopLeft: [20, Math.ceil(topbar.bottom + 20)],
+    paddingBottomRight: [20, Math.ceil(window.innerHeight - bottomSheet.top + 20)],
+  });
+  panAboveBottomSheet();
 }
 
 function clearStationMarkers(): void {
@@ -171,13 +185,22 @@ function updateSummary(): void {
   if (!lastFuelData) return;
   const unmapped = lastFuelData.stations.length - currentStations.length;
   summaryEl.innerHTML = `
-    <div><strong>${escapeHtml(lastFuelData.fuelName)}</strong>${lastFuelData.stale ? " · stale cache" : ""}</div>
-    <div>Average: <strong>${formatPrice(lastFuelData.avgPrice)}</strong></div>
-    <div>Cheapest: <strong>${formatPrice(lastFuelData.minPrice)}</strong></div>
-    <div>Most expensive: <strong>${formatPrice(lastFuelData.maxPrice)}</strong></div>
-    <div>Total stations: <strong>${lastFuelData.stations.length}</strong></div>
-    <div>Mapped stations: <strong>${currentStations.length}</strong>${unmapped > 0 ? ` (${unmapped} without coordinates)` : ""}</div>
-    <div>Shown by price filter: <strong>${visibleStations.length}</strong></div>
+    <div class="metric">
+      <span class="metric-label">Average</span>
+      <strong class="metric-value">${formatPrice(lastFuelData.avgPrice)}</strong>
+    </div>
+    <div class="metric">
+      <span class="metric-label">Cheapest</span>
+      <strong class="metric-value">${formatPrice(lastFuelData.minPrice)}</strong>
+    </div>
+    <div class="metric">
+      <span class="metric-label">Shown</span>
+      <strong class="metric-value">${visibleStations.length}</strong>
+    </div>
+    <div class="metric wide">
+      <span class="metric-label">${escapeHtml(lastFuelData.fuelName)}${lastFuelData.stale ? " · stale cache" : ""}</span>
+      <strong class="metric-value">${lastFuelData.stations.length} stations, ${currentStations.length} mapped${unmapped > 0 ? `, ${unmapped} without coordinates` : ""}</strong>
+    </div>
   `;
 }
 
@@ -203,7 +226,8 @@ function renderStationList(): void {
       return `
       <button class="station" data-lat="${station.lat}" data-lng="${station.lng}">
         <span class="station-title">${escapeHtml(station.brand)} · ${escapeHtml(station.name)}</span>
-        <span>${escapeHtml(station.district)} · <strong>€${station.price.toFixed(3)}</strong>${distance}</span>
+        <span class="station-meta">${escapeHtml(station.district)}${distance}</span>
+        <strong class="station-price">€${station.price.toFixed(3)}</strong>
       </button>
     `;
     })
@@ -212,7 +236,14 @@ function renderStationList(): void {
   stationListEl.querySelectorAll<HTMLButtonElement>(".station").forEach((button) => {
     button.addEventListener("click", () => {
       map.setView([Number(button.dataset.lat), Number(button.dataset.lng)], 15);
+      panAboveBottomSheet();
     });
+  });
+}
+
+function panAboveBottomSheet(): void {
+  map.panBy([0, Math.round(bottomSheetEl.getBoundingClientRect().height / 5)], {
+    animate: false,
   });
 }
 
@@ -222,7 +253,7 @@ function locateUser(): void {
     return;
   }
 
-  setStatus("Requesting location…");
+  setStatus("Requesting location...");
   navigator.geolocation.getCurrentPosition(
     (position) => {
       lastUserLocation = { lat: position.coords.latitude, lng: position.coords.longitude };
@@ -271,7 +302,14 @@ function toRad(value: number): number {
 }
 
 function formatPrice(value: number | null): string {
-  return value === null ? "n/a" : `€${value.toFixed(3)} / l`;
+  return value === null ? "n/a" : `€${value.toFixed(3)}`;
+}
+
+function formatDateTime(value: string): string {
+  return new Date(value).toLocaleString([], {
+    dateStyle: "short",
+    timeStyle: "short",
+  });
 }
 
 function setStatus(message: string): void {
@@ -285,5 +323,11 @@ function escapeHtml(value: string): string {
 function byId<T extends HTMLElement>(id: string): T {
   const element = document.getElementById(id);
   if (!element) throw new Error(`Element #${id} not found`);
+  return element as T;
+}
+
+function query<T extends HTMLElement>(selector: string): T {
+  const element = document.querySelector(selector);
+  if (!element) throw new Error(`Element ${selector} not found`);
   return element as T;
 }

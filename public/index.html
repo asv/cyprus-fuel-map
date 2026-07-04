@@ -3,50 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cyprus Fuel Map</title>
+    <title>Cyprus Fuel</title>
     <link rel="stylesheet" href="leaflet.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <aside class="sidebar">
-        <h1>Cyprus Fuel Map</h1>
-        <p class="muted">Retail Fuel Price Observatory + OpenStreetMap</p>
+    <main class="app-shell">
+      <section id="map" aria-label="Fuel station map"></section>
 
-        <label>
-          Fuel
-          <select id="fuel">
-            <option value="1">Unleaded 95</option>
-            <option value="2">Unleaded 98</option>
-            <option value="3">Diesel</option>
-            <option value="4">Heating oil</option>
-            <option value="5">Kerosene</option>
-          </select>
-        </label>
-
-        <div class="actions">
-          <button id="refresh" type="button">Refresh prices</button>
-          <button id="locate" type="button">Use my location</button>
+      <header class="topbar">
+        <div class="brand">
+          <h1>Cyprus Fuel</h1>
+          <p id="status" class="status">Starting...</p>
         </div>
 
-        <label class="price-filter">
-          Max price: <strong id="price-limit-label">all</strong>
-          <input id="price-limit" type="range" min="0" max="1" step="0.001" value="1" disabled />
-        </label>
+        <div class="topbar-actions">
+          <label class="fuel-picker" aria-label="Fuel type">
+            <select id="fuel">
+              <option value="1">Unleaded 95</option>
+              <option value="2">Unleaded 98</option>
+              <option value="3">Diesel</option>
+              <option value="4">Heating oil</option>
+              <option value="5">Kerosene</option>
+            </select>
+          </label>
 
-        <label class="checkbox-row">
-          <input id="show-prices" type="checkbox" checked />
-          Show price labels when zoomed in
-        </label>
+          <button id="refresh" class="icon-button" type="button" aria-label="Refresh prices" title="Refresh prices">
+            Refresh
+          </button>
+          <button id="locate" class="icon-button primary" type="button" aria-label="Use my location" title="Use my location">
+            Locate
+          </button>
+        </div>
+      </header>
+
+      <aside class="bottom-sheet" aria-label="Fuel station controls">
+        <div class="sheet-handle" aria-hidden="true"></div>
 
         <section id="summary" class="summary"></section>
-        <p id="status" class="status">Starting…</p>
 
-        <h2>Stations</h2>
+        <div class="filters">
+          <label class="price-filter">
+            <span>Max price</span>
+            <strong id="price-limit-label">all</strong>
+            <input id="price-limit" type="range" min="0" max="1" step="0.001" value="1" disabled />
+          </label>
+
+          <label class="checkbox-row">
+            <input id="show-prices" type="checkbox" checked />
+            <span>Price labels</span>
+          </label>
+        </div>
+
+        <div class="section-title">
+          <h2>Stations</h2>
+          <span>Cheapest first</span>
+        </div>
         <div id="station-list" class="station-list"></div>
       </aside>
-
-      <section id="map" aria-label="Fuel station map"></section>
     </main>
 
     <script src="leaflet.js"></script>
