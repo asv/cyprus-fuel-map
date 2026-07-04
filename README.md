@@ -77,6 +77,8 @@ bun run build
 
 The GitHub Pages workflow runs on pushes to `main`, manual dispatch, and a 6-hour cron. It regenerates fuel data, checks the project, builds `dist/`, and deploys it to Pages.
 
+Telegram Mini App registration and deployment steps are documented in [docs/telegram-app-setup.md](docs/telegram-app-setup.md).
+
 ## Development notes
 
 - TypeScript is strict.
