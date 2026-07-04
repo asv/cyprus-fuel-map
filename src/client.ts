@@ -287,25 +287,34 @@ function updateSummary(): void {
 
 function renderStationList(): void {
   const sorted = [...visibleStations].sort((a, b) => {
+    const priceDiff = a.price - b.price;
+    if (priceDiff !== 0) return priceDiff;
     if (lastUserLocation) return distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
-    return a.price - b.price;
+    return a.name.localeCompare(b.name);
   });
 
   stationListEl.innerHTML = sorted
     .slice(0, 30)
     .map((station) => {
       const distance = lastUserLocation ? ` · ${distanceKm(station, lastUserLocation).toFixed(1)} km` : "";
+      const routes = routeUrls(station);
       return `
-      <button class="station" data-lat="${station.lat}" data-lng="${station.lng}">
-        <span class="station-title">${escapeHtml(station.brand)} · ${escapeHtml(station.name)}</span>
-        <span class="station-meta">${escapeHtml(station.district)}${distance}</span>
-        <strong class="station-price">€${station.price.toFixed(3)}</strong>
-      </button>
+      <article class="station">
+        <button class="station-main" type="button" data-lat="${station.lat}" data-lng="${station.lng}">
+          <span class="station-title">${escapeHtml(station.brand)} · ${escapeHtml(station.name)}</span>
+          <span class="station-meta">${escapeHtml(station.district)}${distance}</span>
+          <strong class="station-price">€${station.price.toFixed(3)}</strong>
+        </button>
+        <nav class="station-routes" aria-label="Route to ${escapeHtml(station.brand)} ${escapeHtml(station.name)}">
+          <a class="route-link" href="${routes.google}" target="_blank" rel="noopener noreferrer">Google</a>
+          <a class="route-link" href="${routes.waze}" target="_blank" rel="noopener noreferrer">Waze</a>
+        </nav>
+      </article>
     `;
     })
     .join("");
 
-  stationListEl.querySelectorAll<HTMLButtonElement>(".station").forEach((button) => {
+  stationListEl.querySelectorAll<HTMLButtonElement>(".station-main").forEach((button) => {
     button.addEventListener("click", () => {
       map.setView([Number(button.dataset.lat), Number(button.dataset.lng)], 15);
       panAboveBottomSheet();
@@ -333,7 +342,7 @@ function locateUser(): void {
       userMarker = L.marker([lastUserLocation.lat, lastUserLocation.lng]).addTo(map).bindPopup("You are here");
       map.setView([lastUserLocation.lat, lastUserLocation.lng], 13);
       renderStationList();
-      setStatus("Location found. List is sorted by distance.");
+      setStatus("Location found. Cheapest first, distance shown.");
     },
     (error) => setStatus(`Location error: ${error.message}`),
     { enableHighAccuracy: true, timeout: 10000 },
@@ -341,14 +350,26 @@ function locateUser(): void {
 }
 
 function popupHtml(station: FuelStation): string {
+  const routes = routeUrls(station);
   return `
     <strong>${escapeHtml(station.brand)}</strong><br>
     ${escapeHtml(station.name)}<br>
     ${escapeHtml(station.address)}<br>
     ${escapeHtml(station.district)}<br>
     <strong>€${station.price.toFixed(3)}</strong> / l
+    <br><a href="${routes.google}" target="_blank" rel="noopener noreferrer">Google Maps</a>
+    · <a href="${routes.waze}" target="_blank" rel="noopener noreferrer">Waze</a>
     ${station.isOffline ? '<br><span class="offline">offline price may differ</span>' : ""}
   `;
+}
+
+function routeUrls(station: FuelStation): { google: string; waze: string } {
+  const lat = station.lat ?? 0;
+  const lng = station.lng ?? 0;
+  return {
+    google: `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`,
+    waze: `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`,
+  };
 }
 
 function priceColor(price: number, min: number, max: number): string {

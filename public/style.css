@@ -1,5 +1,8 @@
 :root {
   color-scheme: light;
+  --font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Roboto, "Segoe UI", "Helvetica Neue", Arial,
+    system-ui, sans-serif;
   font-family:
     -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Roboto, "Segoe UI", "Helvetica Neue", Arial,
     system-ui, sans-serif;
@@ -18,18 +21,30 @@
   color: var(--text);
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.25;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 * {
   box-sizing: border-box;
 }
 
+@supports (font: -apple-system-body) {
+  body {
+    /* biome-ignore lint/a11y/useGenericFontNames: Apple Dynamic Type system font keyword, with font-family fallback below. */
+    font: -apple-system-body;
+    font-family: var(--font-family);
+  }
+}
+
 body {
   margin: 0;
   overflow: hidden;
   background: var(--app-bg);
+  font-family: var(--font-family);
 }
 
 .app-shell {
@@ -306,14 +321,23 @@ button:disabled {
 
 .station {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 4px 12px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 8px;
   align-items: center;
   width: 100%;
-  min-height: 58px;
-  border-radius: 0;
-  padding: 10px 12px;
+  min-height: 64px;
+  padding: 0 10px 0 12px;
   border-top: 1px solid var(--line);
+}
+
+.station-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 3px 12px;
+  align-items: center;
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 0;
   text-align: left;
   font-size: 14px;
 }
@@ -325,6 +349,7 @@ button:disabled {
 .station-title {
   overflow: hidden;
   font-weight: 700;
+  line-height: 1.15;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -334,6 +359,7 @@ button:disabled {
   overflow: hidden;
   color: var(--muted);
   font-weight: 400;
+  line-height: 1.2;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -345,7 +371,31 @@ button:disabled {
   color: var(--green);
   font-size: 18px;
   font-weight: 600;
+  line-height: 1;
   white-space: nowrap;
+}
+
+.station-routes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+}
+
+.route-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 72%);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
 }
 
 .offline {
