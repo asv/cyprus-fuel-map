@@ -74,7 +74,7 @@ async function loadStations(): Promise<void> {
 }
 
 async function fetchStations(fuel: string, signal: AbortSignal): Promise<FuelResponse> {
-  const staticResponse = await fetch(`/data/stations-${encodeURIComponent(fuel)}.json`, {
+  const staticResponse = await fetch(`data/stations-${encodeURIComponent(fuel)}.json`, {
     signal,
     cache: "no-cache",
   });
@@ -84,7 +84,7 @@ async function fetchStations(fuel: string, signal: AbortSignal): Promise<FuelRes
     throw new Error(`Static fuel data not found for fuel type ${fuel}`);
   }
 
-  const apiResponse = await fetch(`/api/stations?fuel=${encodeURIComponent(fuel)}`, { signal });
+  const apiResponse = await fetch(`api/stations?fuel=${encodeURIComponent(fuel)}`, { signal });
   if (!apiResponse.ok) throw new Error(await apiResponse.text());
   return (await apiResponse.json()) as FuelResponse;
 }
