@@ -105,17 +105,29 @@ https://t.me/cyprus_fuel_map_bot/fuel
 
 ## 5. Add a bot menu button
 
-To show the Mini App as the bot's menu button, use:
+The menu button is configured outside the **Configure Mini App** screen.
+
+In `@BotFather`, go back to the bot settings:
+
+```text
+/mybots
+→ Cyprus Fuel
+→ Bot Settings
+→ Menu Button
+```
+
+Then select **Configure menu button** or **Edit menu button** and enter:
+
+- Button text: `Open Cyprus Fuel`
+- Mini App URL: `https://<owner>.github.io/cyprus-fuel-map/`
+
+If the menu does not show this item, type the command manually:
 
 ```text
 /setmenubutton
 ```
 
-Then select:
-
-- Bot: `Cyprus Fuel`
-- Button text: `Open Cyprus Fuel`
-- Web App URL: `https://<owner>.github.io/cyprus-fuel-map/`
+Then select the bot and enter the same button text and URL.
 
 ## 6. Test inside Telegram
 
