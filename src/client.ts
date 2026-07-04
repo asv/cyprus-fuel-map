@@ -47,7 +47,6 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 const markers = L.layerGroup().addTo(map);
 const stationMarkers: StationMarker[] = [];
-const minZoomForPriceLabels = 11;
 let userMarker: any = null;
 let lastUserLocation: { lat: number; lng: number } | null = null;
 let currentStations: FuelStation[] = [];
@@ -61,7 +60,6 @@ const refreshButton = byId<HTMLButtonElement>("refresh");
 const locateButton = byId<HTMLButtonElement>("locate");
 const priceLimitInput = byId<HTMLInputElement>("price-limit");
 const priceLimitLabel = byId<HTMLElement>("price-limit-label");
-const showPricesCheckbox = byId<HTMLInputElement>("show-prices");
 const statusEl = byId<HTMLElement>("status");
 const summaryEl = byId<HTMLElement>("summary");
 const stationListEl = byId<HTMLElement>("station-list");
@@ -73,8 +71,6 @@ fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
 locateButton.addEventListener("click", locateUser);
 priceLimitInput.addEventListener("input", applyPriceFilter);
-showPricesCheckbox.addEventListener("change", updatePriceLabels);
-map.on("zoomend", updatePriceLabels);
 window.addEventListener("resize", handleViewportChange);
 
 void loadStations();
@@ -196,7 +192,6 @@ function applyPriceFilter(): void {
   }
 
   updateSummary();
-  updatePriceLabels();
   renderStationList();
 }
 
@@ -229,12 +224,6 @@ function createStationMarkers(): void {
       weight: 1,
     });
     marker.bindPopup(popupHtml(station));
-    marker.bindTooltip(`€${station.price.toFixed(3)}`, {
-      className: "price-label",
-      direction: "top",
-      offset: [0, -8],
-      opacity: 1,
-    });
     stationMarkers.push({ station, marker, visible: false });
   }
 
@@ -285,15 +274,6 @@ function updateSummary(): void {
       <strong class="metric-value">${lastFuelData.stations.length} stations, ${currentStations.length} mapped${unmapped > 0 ? `, ${unmapped} without coordinates` : ""}</strong>
     </div>
   `;
-}
-
-function updatePriceLabels(): void {
-  const shouldShow = showPricesCheckbox.checked && map.getZoom() >= minZoomForPriceLabels;
-  for (const { marker, visible } of stationMarkers) {
-    if (!visible) continue;
-    if (shouldShow) marker.openTooltip();
-    else marker.closeTooltip();
-  }
 }
 
 function renderStationList(): void {
