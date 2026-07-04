@@ -39,7 +39,7 @@ type StationMarker = {
   visible: boolean;
 };
 
-const PRICE_LABEL_MIN_ZOOM = 14;
+const PRICE_LABEL_MIN_ZOOM = 13;
 
 const map = L.map("map", { zoomControl: false }).setView([35.05, 33.22], 9);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
