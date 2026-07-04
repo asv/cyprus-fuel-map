@@ -86,37 +86,21 @@ h2 {
   pointer-events: auto;
 }
 
+.control-icon {
+  display: block;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
 .fuel-icon {
-  position: relative;
-  flex: 0 0 28px;
-  width: 28px;
-  height: 28px;
-  margin-right: 10px;
+  width: 27px;
+  height: 27px;
+  margin-right: 11px;
   color: var(--green);
-}
-
-.fuel-icon::before {
-  position: absolute;
-  top: 3px;
-  left: 2px;
-  width: 15px;
-  height: 22px;
-  border: 3px solid currentColor;
-  border-radius: 4px 4px 2px 2px;
-  content: "";
-}
-
-.fuel-icon::after {
-  position: absolute;
-  top: 8px;
-  right: 3px;
-  width: 8px;
-  height: 14px;
-  border: 3px solid currentColor;
-  border-bottom: 0;
-  border-left: 0;
-  border-radius: 0 7px 0 0;
-  content: "";
 }
 
 select,
@@ -174,32 +158,10 @@ button:disabled {
   pointer-events: auto;
 }
 
-.locate-glyph {
-  position: relative;
-  width: 26px;
-  height: 26px;
-  border: 4px solid currentColor;
-  border-radius: 50%;
-}
-
-.locate-glyph::before,
-.locate-glyph::after {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  background: currentColor;
-  border-radius: 999px;
-  content: "";
-  transform: translate(-50%, -50%);
-}
-
-.locate-glyph::before {
-  width: 36px;
-  height: 4px;
-}
-
-.locate-glyph::after {
-  width: 4px;
-  height: 36px;
+.locate-icon {
+  width: 31px;
+  height: 31px;
+  stroke-width: 2.4;
 }
 
 .bottom-sheet {
@@ -284,26 +246,10 @@ button:disabled {
   font-size: 14px;
 }
 
-.refresh-glyph {
-  position: relative;
-  flex: 0 0 17px;
-  width: 17px;
-  height: 17px;
-  border: 2px solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-}
-
-.refresh-glyph::after {
-  position: absolute;
-  top: -3px;
-  right: -2px;
-  width: 7px;
-  height: 7px;
-  border-top: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  content: "";
-  transform: rotate(22deg);
+.refresh-icon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
 }
 
 .status {
