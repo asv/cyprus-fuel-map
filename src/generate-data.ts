@@ -9,40 +9,57 @@ const requestDelayMs = 2_000;
 async function main(): Promise<void> {
   const fuels = selectedFuels();
   const city = selectedCity();
-  const generatedAt = new Date().toISOString();
+  const existingManifest = await readJson<StaticDataManifest>("manifest.json");
   const manifest: StaticDataManifest = {
     version: 1,
-    generatedAt,
+    generatedAt: existingManifest?.generatedAt ?? new Date().toISOString(),
     city,
     fuels: [],
   };
+  let hasDataChanges = false;
 
   await mkdir(dataDir, { recursive: true });
-  await writeJson("fuel-types.json", { fuelTypes, cities });
+  hasDataChanges = (await writeJsonIfChanged("fuel-types.json", { fuelTypes, cities })) || hasDataChanges;
 
   for (const [index, fuel] of fuels.entries()) {
     console.log(`Generating static fuel data for ${fuelTypes[fuel]} (${fuel}) in ${city}`);
-    const response = await fetchFuelStations(fuel, city);
+    const response = toStaticFuelResponse(await fetchFuelStations(fuel, city));
     const path = `stations-${fuel}.json`;
+    const existingResponse = await readJson<FuelResponse>(path);
+    const meaningfulDataChanged = !existingResponse || !sameFuelData(existingResponse, response);
+    const snapshot = meaningfulDataChanged ? response : existingResponse;
 
-    await writeJson(path, toStaticFuelResponse(response));
+    if (meaningfulDataChanged) {
+      await writeJson(path, response);
+      hasDataChanges = true;
+    } else {
+      console.log(`No meaningful data changes for ${fuelTypes[fuel]} (${fuel}); keeping existing snapshot`);
+    }
+
     manifest.fuels.push({
       fuel,
-      fuelName: response.fuelName,
+      fuelName: snapshot.fuelName,
       path: `data/${path}`,
-      fetchedAt: response.fetchedAt,
-      stationCount: response.stations.length,
-      mappedStationCount: response.stations.filter((station) => station.lat !== null && station.lng !== null).length,
-      avgPrice: response.avgPrice,
-      minPrice: response.minPrice,
-      maxPrice: response.maxPrice,
-      stale: response.stale ?? false,
+      fetchedAt: snapshot.fetchedAt,
+      stationCount: snapshot.stations.length,
+      mappedStationCount: snapshot.stations.filter((station) => station.lat !== null && station.lng !== null).length,
+      avgPrice: snapshot.avgPrice,
+      minPrice: snapshot.minPrice,
+      maxPrice: snapshot.maxPrice,
+      stale: snapshot.stale ?? false,
     });
 
     if (index < fuels.length - 1) await Bun.sleep(requestDelayMs);
   }
 
-  await writeJson("manifest.json", manifest);
+  if (hasDataChanges || !existingManifest || !sameManifestData(existingManifest, manifest)) {
+    manifest.generatedAt =
+      hasDataChanges || !existingManifest ? new Date().toISOString() : existingManifest.generatedAt;
+    await writeJson("manifest.json", manifest);
+  } else {
+    console.log("No meaningful fuel data changes; keeping existing manifest");
+  }
+
   console.log(`Static data generated in ${new URL(".", dataDir).pathname}`);
 }
 
@@ -79,6 +96,34 @@ function isCity(value: string): value is City {
 function toStaticFuelResponse(response: FuelResponse): FuelResponse {
   const { cache: _cache, ...staticResponse } = response;
   return staticResponse;
+}
+
+function sameFuelData(a: FuelResponse, b: FuelResponse): boolean {
+  return JSON.stringify(stableFuelData(a)) === JSON.stringify(stableFuelData(b));
+}
+
+function stableFuelData(response: FuelResponse): Omit<FuelResponse, "fetchedAt" | "stale" | "cache"> {
+  const { cache: _cache, fetchedAt: _fetchedAt, stale: _stale, ...stable } = response;
+  return stable;
+}
+
+function sameManifestData(a: StaticDataManifest, b: StaticDataManifest): boolean {
+  return JSON.stringify({ ...a, generatedAt: "" }) === JSON.stringify({ ...b, generatedAt: "" });
+}
+
+async function readJson<T>(path: string): Promise<T | null> {
+  const file = Bun.file(new URL(path, dataDir));
+  if (!(await file.exists())) return null;
+  return (await file.json()) as T;
+}
+
+async function writeJsonIfChanged(path: string, value: unknown): Promise<boolean> {
+  const next = `${JSON.stringify(value, null, 2)}\n`;
+  const file = Bun.file(new URL(path, dataDir));
+  if ((await file.exists()) && (await file.text()) === next) return false;
+
+  await Bun.write(new URL(path, dataDir), next);
+  return true;
 }
 
 async function writeJson(path: string, value: unknown): Promise<void> {
