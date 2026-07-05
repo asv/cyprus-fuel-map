@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-05T09:24:20.906Z",
+  "fetchedAt": "2026-07-05T19:44:02.829Z",
   "avgPrice": 1.55,
   "minPrice": 1.439,
   "maxPrice": 1.799,
@@ -2841,7 +2841,7 @@
       "name": "Δ.Α. ΠΑΠΑΣΑΒΒΑΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Μεσόγης 51 Τ.Κ 8280 τηλ: 26819145",
       "district": "Μεσόγη",
-      "price": 1.619,
+      "price": 1.589,
       "isOffline": false,
       "lat": 34.7995610231833,
       "lng": 32.4410805932541
