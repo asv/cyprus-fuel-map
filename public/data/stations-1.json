@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-05T04:32:02.962Z",
+  "fetchedAt": "2026-07-05T09:24:05.917Z",
   "avgPrice": 1.475,
   "minPrice": 1.389,
   "maxPrice": 1.639,
@@ -905,7 +905,7 @@
       "name": "LINERIA SERVICES LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 80 Τ.Κ 8221 τηλ: 26271020",
       "district": "Χλώρακα",
-      "price": 1.525,
+      "price": 1.505,
       "isOffline": false,
       "lat": 34.8018981481481,
       "lng": 32.4133842592593
@@ -2204,7 +2204,7 @@
       "address": "Λεωφόρος Αρχ. Μιχαήλ 17 Τ.Κ 2057 τηλ: 22876187",
       "district": "Στρόβολος",
       "price": 1.469,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.156596,
       "lng": 33.335618
     },
@@ -2440,17 +2440,6 @@
       "lng": 33.31522222222222
     },
     {
-      "id": "8fcbe6d21c9de97c",
-      "brand": "STAROIL",
-      "name": "STAROIL (CYPRUS) LTD",
-      "address": "Μεγάλου Αλεξάνδρου 46, Παλιομέτοχο Τ.Κ 2682 τηλ: 22832066",
-      "district": "Παλιομέτοχο",
-      "price": 1.455,
-      "isOffline": false,
-      "lat": 35.137166666666666,
-      "lng": 33.21402777777778
-    },
-    {
       "id": "f62233d2bed9d708",
       "brand": "STAROIL",
       "name": "STAROIL (CYPRUS) LTD",
@@ -2460,6 +2449,17 @@
       "isOffline": false,
       "lat": 35.11961111111111,
       "lng": 33.315999999999995
+    },
+    {
+      "id": "8fcbe6d21c9de97c",
+      "brand": "STAROIL",
+      "name": "STAROIL (CYPRUS) LTD",
+      "address": "Μεγάλου Αλεξάνδρου 46, Παλιομέτοχο Τ.Κ 2682 τηλ: 22832066",
+      "district": "Παλιομέτοχο",
+      "price": 1.455,
+      "isOffline": false,
+      "lat": 35.137166666666666,
+      "lng": 33.21402777777778
     },
     {
       "id": "3ba701e8c82cf7cb",
@@ -2523,7 +2523,7 @@
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
       "price": 1.465,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.753826,
       "lng": 32.962765
     },
@@ -2599,7 +2599,7 @@
       "name": "TRIKENO LTD",
       "address": "Λεωφ.Γ.Γρίβα Διγενή 43 Τ.Κ 6045 τηλ: 24652200",
       "district": "Λάρνακα",
-      "price": 1.467,
+      "price": 1.457,
       "isOffline": false,
       "lat": 34.9187491493678,
       "lng": 33.6186334558197
