@@ -5,7 +5,7 @@ import { byId, distanceKm, escapeHtml, formatPrice, formatTime, type LatLng, que
 import type { FuelResponse, FuelStation } from "./shared";
 import { initTheme } from "./theme";
 
-type StationSortMode = "price" | "distance";
+type StationSortMode = "price" | "best" | "distance";
 
 const GEOLOCATION_ENABLED_KEY = "cyprusFuelMap.geolocationEnabled";
 
@@ -27,6 +27,7 @@ const statusEl = byId<HTMLElement>("status");
 const summaryEl = byId<HTMLElement>("summary");
 const stationListEl = byId<HTMLElement>("station-list");
 const sortCheapestButton = byId<HTMLButtonElement>("sort-cheapest");
+const sortBestButton = byId<HTMLButtonElement>("sort-best");
 const sortNearbyButton = byId<HTMLButtonElement>("sort-nearby");
 const topbarEl = query<HTMLElement>(".topbar");
 const sheetDragRegionEl = query<HTMLElement>(".sheet-drag-region");
@@ -48,6 +49,7 @@ refreshButton.addEventListener("click", loadStations);
 locateButton.addEventListener("click", () => locateUser({ rememberPreference: true }));
 priceLimitInput.addEventListener("input", applyPriceFilter);
 sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
+sortBestButton.addEventListener("click", () => setStationSortMode("best"));
 sortNearbyButton.addEventListener("click", () => setStationSortMode("distance"));
 window.addEventListener("resize", handleViewportChange);
 fuelMap.onViewportChanged(() => fuelMap.updatePriceLabels());
@@ -171,14 +173,31 @@ function compareStations(a: FuelStation, b: FuelStation): number {
     return a.price - b.price;
   }
 
+  if (stationSortMode === "best" && lastUserLocation) {
+    const scoreDiff = bestNearbyScore(a) - bestNearbyScore(b);
+    if (scoreDiff !== 0) return scoreDiff;
+    return a.price - b.price;
+  }
+
   const priceDiff = a.price - b.price;
   if (priceDiff !== 0) return priceDiff;
   if (lastUserLocation) return distanceKm(a, lastUserLocation) - distanceKm(b, lastUserLocation);
   return a.name.localeCompare(b.name);
 }
 
+function bestNearbyScore(station: FuelStation): number {
+  if (!lastFuelData || !lastUserLocation) return station.price;
+
+  const minPrice = lastFuelData.minPrice ?? station.price;
+  const maxPrice = lastFuelData.maxPrice ?? station.price;
+  const priceRange = Math.max(maxPrice - minPrice, 0.001);
+  const priceScore = (station.price - minPrice) / priceRange;
+  const distanceScore = Math.min(distanceKm(station, lastUserLocation), 10) / 10;
+  return priceScore * 0.68 + distanceScore * 0.32;
+}
+
 function setStationSortMode(mode: StationSortMode): void {
-  if (mode === "distance" && !lastUserLocation) {
+  if ((mode === "distance" || mode === "best") && !lastUserLocation) {
     stationSortMode = mode;
     updateSortControls();
     locateUser({ rememberPreference: true, sortModeOnError: "price" });
@@ -192,10 +211,20 @@ function setStationSortMode(mode: StationSortMode): void {
 
 function updateSortControls(): void {
   const isPriceSort = stationSortMode === "price";
+  const isBestSort = stationSortMode === "best";
+  const isDistanceSort = stationSortMode === "distance";
   sortCheapestButton.classList.toggle("is-active", isPriceSort);
-  sortNearbyButton.classList.toggle("is-active", !isPriceSort);
+  sortBestButton.classList.toggle("is-active", isBestSort);
+  sortNearbyButton.classList.toggle("is-active", isDistanceSort);
   sortCheapestButton.setAttribute("aria-pressed", String(isPriceSort));
-  sortNearbyButton.setAttribute("aria-pressed", String(!isPriceSort));
+  sortBestButton.setAttribute("aria-pressed", String(isBestSort));
+  sortNearbyButton.setAttribute("aria-pressed", String(isDistanceSort));
+}
+
+function locationFoundStatus(): string {
+  if (stationSortMode === "distance") return "Location found. Nearby first.";
+  if (stationSortMode === "best") return "Location found. Best nearby first.";
+  return "Location found. Cheapest first.";
 }
 
 function maybeAutoLocateUser(): void {
@@ -223,7 +252,7 @@ function locateUser(
       fuelMap.addUserMarker([lastUserLocation.lat, lastUserLocation.lng]);
       fuelMap.setView([lastUserLocation.lat, lastUserLocation.lng], 13);
       renderStationList();
-      setStatus(stationSortMode === "distance" ? "Location found. Nearby first." : "Location found. Cheapest first.");
+      setStatus(locationFoundStatus());
     },
     (error) => {
       if (options.rememberPreference && error.code === error.PERMISSION_DENIED) {

@@ -277,7 +277,7 @@ button:disabled {
 }
 
 .bottom-sheet.is-collapsed {
-  max-height: min(178px, 38vh);
+  max-height: min(224px, 44vh);
   transform: translate3d(0, 0, 0) scale(0.992);
 }
 
@@ -495,11 +495,15 @@ button:disabled {
     transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.bottom-sheet.is-collapsed .section-title,
 .bottom-sheet.is-collapsed .station-list {
   pointer-events: none;
   opacity: 0;
   transform: translateY(8px);
+}
+
+.bottom-sheet.is-collapsed .section-title {
+  opacity: 0.72;
+  transform: translateY(0);
 }
 
 .bottom-sheet.is-expanded .section-title,
