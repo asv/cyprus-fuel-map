@@ -15,11 +15,25 @@ export function emptyGlobalFuelHistory(fuel: FuelType): GlobalFuelHistory {
 }
 
 export function appendGlobalFuelPoint(history: GlobalFuelHistory, response: FuelResponse): GlobalFuelHistory {
+  const points = dedupeGlobalPoints(history.points);
   const point = buildGlobalFuelPoint(response);
-  const last = history.points.at(-1);
-  if (last && sameGlobalPointValues(last, point)) return history;
+  const last = points.at(-1);
+  if (last && sameGlobalPointValues(last, point)) return { ...history, points };
 
-  return { ...history, points: [...history.points, point].sort((a, b) => compareText(a.at, b.at)) };
+  return { ...history, points: dedupeGlobalPoints([...points, point]) };
+}
+
+export function dedupeGlobalPoints(points: GlobalFuelPoint[]): GlobalFuelPoint[] {
+  const sorted = [...points].sort((a, b) => compareText(a.at, b.at));
+  const deduped: GlobalFuelPoint[] = [];
+
+  for (const point of sorted) {
+    const last = deduped.at(-1);
+    if (last && sameGlobalPointValues(last, point)) continue;
+    deduped.push(point);
+  }
+
+  return deduped;
 }
 
 export function sameGlobalPointValues(a: GlobalFuelPoint, b: GlobalFuelPoint): boolean {

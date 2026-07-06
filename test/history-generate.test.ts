@@ -2,6 +2,7 @@ import { describe, expect, test } from "bun:test";
 import {
   appendGlobalFuelPoint,
   appendStationPriceChanges,
+  dedupeGlobalPoints,
   emptyGlobalFuelHistory,
   emptyStationFuelPriceHistory,
   mergeStationsIntoIndex,
@@ -44,6 +45,13 @@ describe("history generation", () => {
     expect(first.points).toHaveLength(1);
     expect(same.points).toHaveLength(1);
     expect(changed.points).toHaveLength(2);
+  });
+
+  test("deduplicates repeated global point values", () => {
+    const first = appendGlobalFuelPoint(emptyGlobalFuelHistory("1"), response("2026-07-06T00:00:00.000Z"));
+    const duplicate = { ...first.points[0]!, at: "2026-07-06T06:00:00.000Z" };
+
+    expect(dedupeGlobalPoints([...first.points, duplicate])).toHaveLength(1);
   });
 
   test("merges stations into a stable station index", () => {
