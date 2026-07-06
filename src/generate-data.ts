@@ -1,6 +1,14 @@
 import { mkdir } from "node:fs/promises";
 import { fetchFuelStations } from "./backend/stations";
-import { type City, cities, type FuelResponse, type FuelType, fuelTypes, type StaticDataManifest } from "./shared";
+import {
+  type City,
+  cities,
+  type FuelResponse,
+  type FuelStation,
+  type FuelType,
+  fuelTypes,
+  type StaticDataManifest,
+} from "./shared";
 
 const dataDir = new URL("../public/data/", import.meta.url);
 const defaultCity: City = "All";
@@ -27,11 +35,14 @@ async function main(): Promise<void> {
     const path = `stations-${fuel}.json`;
     const existingResponse = await readJson<FuelResponse>(path);
     const meaningfulDataChanged = !existingResponse || !sameFuelData(existingResponse, response);
-    const snapshot = meaningfulDataChanged ? response : existingResponse;
+    const snapshot = meaningfulDataChanged
+      ? response
+      : { ...existingResponse, stations: stableStations(existingResponse.stations) };
+    const canonicalSnapshotChanged = !existingResponse || JSON.stringify(existingResponse) !== JSON.stringify(snapshot);
 
-    if (meaningfulDataChanged) {
-      await writeJson(path, response);
-      hasDataChanges = true;
+    if (meaningfulDataChanged || canonicalSnapshotChanged) {
+      await writeJson(path, snapshot);
+      hasDataChanges = meaningfulDataChanged || hasDataChanges;
     } else {
       console.log(`No meaningful data changes for ${fuelTypes[fuel]} (${fuel}); keeping existing snapshot`);
     }
@@ -95,7 +106,7 @@ function isCity(value: string): value is City {
 
 function toStaticFuelResponse(response: FuelResponse): FuelResponse {
   const { cache: _cache, ...staticResponse } = response;
-  return staticResponse;
+  return { ...staticResponse, stations: stableStations(staticResponse.stations) };
 }
 
 function sameFuelData(a: FuelResponse, b: FuelResponse): boolean {
@@ -104,7 +115,26 @@ function sameFuelData(a: FuelResponse, b: FuelResponse): boolean {
 
 function stableFuelData(response: FuelResponse): Omit<FuelResponse, "fetchedAt" | "stale" | "cache"> {
   const { cache: _cache, fetchedAt: _fetchedAt, stale: _stale, ...stable } = response;
-  return stable;
+  return { ...stable, stations: stableStations(stable.stations) };
+}
+
+function stableStations(stations: FuelStation[]): FuelStation[] {
+  return [...stations].sort(compareStationsForSnapshot);
+}
+
+function compareStationsForSnapshot(a: FuelStation, b: FuelStation): number {
+  for (const field of ["brand", "name", "district", "address", "id"] as const) {
+    const diff = compareSnapshotText(a[field], b[field]);
+    if (diff !== 0) return diff;
+  }
+  return 0;
+}
+
+function compareSnapshotText(a: string, b: string): number {
+  const left = a.trim().toLowerCase();
+  const right = b.trim().toLowerCase();
+  if (left === right) return 0;
+  return left < right ? -1 : 1;
 }
 
 function sameManifestData(a: StaticDataManifest, b: StaticDataManifest): boolean {
