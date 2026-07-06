@@ -25,6 +25,7 @@ let stationInsights = new Map<string, string>();
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
 const trendButton = byId<HTMLButtonElement>("trends");
+const closeTrendsButton = byId<HTMLButtonElement>("close-trends");
 const locateButton = byId<HTMLButtonElement>("locate");
 const priceLimitInput = byId<HTMLInputElement>("price-limit");
 const priceLimitLabel = byId<HTMLElement>("price-limit-label");
@@ -54,6 +55,7 @@ const themeRuntime = initTheme({ onViewportChange: () => fuelMap.invalidateSize(
 fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
 trendButton.addEventListener("click", toggleMarketTrends);
+closeTrendsButton.addEventListener("click", hideMarketTrends);
 locateButton.addEventListener("click", () => locateUser({ rememberPreference: true }));
 priceLimitInput.addEventListener("input", applyPriceFilter);
 sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
@@ -70,13 +72,20 @@ function handleViewportChange(): void {
 }
 
 function toggleMarketTrends(): void {
-  const nextVisible = !marketTrendsEl.hidden;
-  marketTrendsEl.hidden = nextVisible;
-  trendButton.classList.toggle("is-active", !nextVisible);
-  trendButton.setAttribute("aria-pressed", String(!nextVisible));
-  trendButton.setAttribute("aria-label", nextVisible ? "Show market trends" : "Hide market trends");
-  trendButton.title = nextVisible ? "Show market trends" : "Hide market trends";
-  if (!nextVisible) bottomSheet.setState("expanded");
+  setMarketTrendsVisible(marketTrendsEl.hidden === true);
+}
+
+function hideMarketTrends(): void {
+  setMarketTrendsVisible(false);
+}
+
+function setMarketTrendsVisible(visible: boolean): void {
+  marketTrendsEl.hidden = !visible;
+  trendButton.classList.toggle("is-active", visible);
+  trendButton.setAttribute("aria-pressed", String(visible));
+  trendButton.setAttribute("aria-label", visible ? "Hide market trends" : "Show market trends");
+  trendButton.title = visible ? "Hide market trends" : "Show market trends";
+  if (visible) bottomSheet.setState("expanded");
 }
 
 async function loadStations(): Promise<void> {
@@ -361,12 +370,14 @@ function setGeolocationRemembered(enabled: boolean): void {
 
 function popupHtml(station: FuelStation): string {
   const routes = routeUrls(station);
+  const insight = stationInsights.get(station.id);
   return `
     <strong>${escapeHtml(station.brand)}</strong><br>
     ${escapeHtml(station.name)}<br>
     ${escapeHtml(station.address)}<br>
     ${escapeHtml(station.district)}<br>
     <strong>€${station.price.toFixed(3)}</strong> / l
+    ${insight ? `<br><span class="popup-insight">${escapeHtml(insight)}</span>` : ""}
     <br><a href="${routes.google}" target="_blank" rel="noopener noreferrer">Google Maps</a>
     · <a href="${routes.waze}" target="_blank" rel="noopener noreferrer">Waze</a>
     ${station.isOffline ? '<br><span class="offline">offline price may differ</span>' : ""}

@@ -46,13 +46,13 @@ export function createFuelMap(options: { popupHtml: (station: FuelStation) => st
     for (const station of stations) {
       const color = priceColor(station.price, min, max);
       const marker = L.circleMarker([station.lat, station.lng], {
-        radius: 7,
+        radius: 10,
         color,
         fillColor: color,
-        fillOpacity: 0.8,
-        weight: 1,
+        fillOpacity: 0.74,
+        weight: 2,
       });
-      marker.bindPopup(options.popupHtml(station));
+      marker.bindPopup(() => options.popupHtml(station));
       marker.bindTooltip(formatPrice(station.price), {
         className: "price-tooltip",
         direction: "top",

@@ -430,8 +430,17 @@ button:disabled {
   line-height: 1;
 }
 
+.leaflet-tooltip.price-tooltip {
+  pointer-events: none;
+}
+
 .leaflet-tooltip.price-tooltip::before {
   display: none;
+}
+
+.popup-insight {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .filters {
@@ -493,6 +502,16 @@ button:disabled {
 .market-trends {
   display: grid;
   gap: 8px;
+}
+
+.close-trends-button {
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 650;
 }
 
 .trend-card {

@@ -39,8 +39,9 @@
             title="Show market trends"
           >
             <svg class="control-icon trend-icon" aria-hidden="true" viewBox="0 0 24 24">
-              <path d="M3 17l5-5 4 4 7-9" />
-              <path d="M14 7h5v5" />
+              <path d="M4 19V5" />
+              <path d="M4 19h16" />
+              <path d="M7 15l3-4 4 3 5-7" />
             </svg>
           </button>
           <button id="locate" class="icon-button locate-button" type="button" aria-label="Use my location" title="Use my location">
@@ -91,6 +92,7 @@
         <section id="market-trends" class="market-trends" aria-labelledby="market-trends-title" hidden>
           <div class="section-title">
             <h2 id="market-trends-title">Market trends</h2>
+            <button id="close-trends" class="close-trends-button" type="button" aria-label="Hide market trends">Hide</button>
           </div>
           <div id="market-trend" class="trend-card"></div>
         </section>
