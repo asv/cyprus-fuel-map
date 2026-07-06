@@ -1,0 +1,4790 @@
+{
+  "stations": {
+    "station_00324dcdc7e38411": {
+      "address": "Ελευθερίας 1 Τ.Κ 8550 τηλ: 26632440",
+      "aliases": [
+        "00324dcdc7e38411"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "00324dcdc7e38411",
+      "district": "Στρουμπί",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.8767212796671,
+      "lng": 32.4822636908074,
+      "name": "Π. ΚΟΚΚΙΝΟΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΤΔ",
+      "stationKey": "station_00324dcdc7e38411"
+    },
+    "station_0040df0c16866021": {
+      "address": "Λεωφ. Γρηγόρη Αυξεντίου 16 Τ.Κ 2368 τηλ: 22778752",
+      "aliases": [
+        "0040df0c16866021"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "0040df0c16866021",
+      "district": "Άγιος Δομέτιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_0040df0c16866021"
+    },
+    "station_019f4c707fe926d2": {
+      "address": "Κωνσταντινουπόλεως 85 Τ.Κ 7041 τηλ: 24333038",
+      "aliases": [
+        "019f4c707fe926d2"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "019f4c707fe926d2",
+      "district": "Δρόμος Καλαβασού - Ζυγίου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.742285,
+      "lng": 33.326538,
+      "name": "D S KOMNINAKIS FUELS LTD",
+      "stationKey": "station_019f4c707fe926d2"
+    },
+    "station_02f170b57aaede30": {
+      "address": "Λεωφ. Σπ. Κυπριανού 75 Τ.Κ 2031 τηλ: 22511949",
+      "aliases": [
+        "02f170b57aaede30"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "02f170b57aaede30",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.124774,
+      "lng": 33.350359,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_02f170b57aaede30"
+    },
+    "station_0412b098af434e9a": {
+      "address": "Δρόμος Παλαιχωρίου - Αγρού Τ.Κ 4860",
+      "aliases": [
+        "0412b098af434e9a"
+      ],
+      "brand": "JACKOSON",
+      "currentSourceHash": "0412b098af434e9a",
+      "district": "Αγρός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "JACKOSON ENTERPRISES LIMITED",
+      "stationKey": "station_0412b098af434e9a"
+    },
+    "station_049043aa202bea11": {
+      "address": "Διεθνές Αεροδρόμιο Λάρνακας Τ.Κ 6650 τηλ: 24651011",
+      "aliases": [
+        "049043aa202bea11"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "049043aa202bea11",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.873222,
+      "lng": 33.605219,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_049043aa202bea11"
+    },
+    "station_04d6634dd8cb6ad0": {
+      "address": "Μανδριά Τ.Κ 8504 τηλ: 26422230",
+      "aliases": [
+        "04d6634dd8cb6ad0"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "04d6634dd8cb6ad0",
+      "district": "Μανδριά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.720734,
+      "lng": 32.535053,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_04d6634dd8cb6ad0"
+    },
+    "station_0525f26417c1a822": {
+      "address": "Πάφου 26 Τ.Κ 4607 τηλ: 25221010",
+      "aliases": [
+        "0525f26417c1a822"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "0525f26417c1a822",
+      "district": "Πισσούρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.68225,
+      "lng": 32.7024953703704,
+      "name": "DEMETRIS XANDRIS DEVELOPMENTS LTD",
+      "stationKey": "station_0525f26417c1a822"
+    },
+    "station_055d4a269d42d1b4": {
+      "address": "Αρχ. Μακαρίου Γ' 3 Τ.Κ 8507 τηλ: 26423777",
+      "aliases": [
+        "055d4a269d42d1b4"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "055d4a269d42d1b4",
+      "district": "Τίμη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.734655,
+      "lng": 32.496194,
+      "name": "ONELZIG LTD",
+      "stationKey": "station_055d4a269d42d1b4"
+    },
+    "station_0729d45b946030e7": {
+      "address": "Αρσινόης & Αρχ. Μακαρίου Γ΄ 32 Τ.Κ 8830 τηλ: 26321331",
+      "aliases": [
+        "0729d45b946030e7"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "0729d45b946030e7",
+      "district": "Πόλης Χρυσοχούς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.035702,
+      "lng": 32.427888,
+      "name": "NIGHTGARDEN LTD",
+      "stationKey": "station_0729d45b946030e7"
+    },
+    "station_08b6a1d0e58d772e": {
+      "address": "Παλαιός Δρόμος Λευκωσίας - Λεμεσού, Καλαβασός Τ.Κ 7733 τηλ: 24332277",
+      "aliases": [
+        "08b6a1d0e58d772e"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "08b6a1d0e58d772e",
+      "district": "Καλαβασός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.75458333,
+      "lng": 33.31711667,
+      "name": "ΜΗΛΙΑ ΣΩΖΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_08b6a1d0e58d772e"
+    },
+    "station_08bfce3d927a3e73": {
+      "address": "Λεώφ. Αγίου Αθανασίου 42 Τ.Κ 4102 τηλ: 25753385",
+      "aliases": [
+        "08bfce3d927a3e73"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "08bfce3d927a3e73",
+      "district": "Άγιος Αθανάσιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.701008,
+      "lng": 33.059786,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_08bfce3d927a3e73"
+    },
+    "station_097619f9fe040c6b": {
+      "address": "Λεωφ. Γρηγόρη Αυξεντίου 154 Τ.Κ 2365 τηλ: 22771034",
+      "aliases": [
+        "097619f9fe040c6b"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "097619f9fe040c6b",
+      "district": "Άγιος Δομέτιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1723546547892,
+      "lng": 33.3232578673897,
+      "name": "ANMAS LTD",
+      "stationKey": "station_097619f9fe040c6b"
+    },
+    "station_09b1d2feb7df9ebc": {
+      "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
+      "aliases": [
+        "09b1d2feb7df9ebc"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "09b1d2feb7df9ebc",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.117444444444445,
+      "lng": 33.356611111111114,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_09b1d2feb7df9ebc"
+    },
+    "station_09d4080ec8e4fb46": {
+      "address": "Λεώφ. Αποστόλου Παύλου 20 Τ.Κ 8046 τηλ: 26932437",
+      "aliases": [
+        "09d4080ec8e4fb46"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "09d4080ec8e4fb46",
+      "district": "Πάφος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.772555555555556,
+      "lng": 32.41813888888888,
+      "name": "ΑΝΔΡΕΑΣ Μ. ΚΟΜΜΑΤΟΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_09d4080ec8e4fb46"
+    },
+    "station_0b358a21b7f4da8b": {
+      "address": "Λεωφ. Σπ. Κυπριανού 61 Τ.Κ 4043 τηλ: 25311877",
+      "aliases": [
+        "0b358a21b7f4da8b"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "0b358a21b7f4da8b",
+      "district": "Γερμασόγεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.70479,
+      "lng": 33.082823,
+      "name": "ΚΥΠΡΙΑΝΟΥ & ΠΡΟΚΟΠΙΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_0b358a21b7f4da8b"
+    },
+    "station_0c3acd091c5a8960": {
+      "address": "Λεωφόρος Λεμεσού 4 Τ.Κ 7647 τηλ: 22533633",
+      "aliases": [
+        "0c3acd091c5a8960"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "0c3acd091c5a8960",
+      "district": "Μοσφιλωτή",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.952087962963,
+      "lng": 33.4192546296296,
+      "name": "Κ & Α ΑΝΔΡΕΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_0c3acd091c5a8960"
+    },
+    "station_0cf330d35d6131c2": {
+      "address": "Μάρκου Δράκου 1 Τ.Κ 5510 τηλ: 23922335",
+      "aliases": [
+        "0cf330d35d6131c2"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "0cf330d35d6131c2",
+      "district": "Αυγόρου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.04172,
+      "lng": 33.840063,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_0cf330d35d6131c2"
+    },
+    "station_0ed852d5f42dedd8": {
+      "address": "Γ. Κρανιδιώτη 5 Τ.Κ 2220 τηλ: 22489888",
+      "aliases": [
+        "0ed852d5f42dedd8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "0ed852d5f42dedd8",
+      "district": "Λατσιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.116846,
+      "lng": 33.377618,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_0ed852d5f42dedd8"
+    },
+    "station_0f32c9a70442d297": {
+      "address": "Γρίβα Διγενή 68 Τ.Κ 8873 τηλ: 26323237",
+      "aliases": [
+        "0f32c9a70442d297"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "0f32c9a70442d297",
+      "district": "Αργάκα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0692333,
+      "lng": 32.4743051,
+      "name": "SONSIRE HOLDINGS LTD",
+      "stationKey": "station_0f32c9a70442d297"
+    },
+    "station_10724e06262dc29f": {
+      "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
+      "aliases": [
+        "10724e06262dc29f"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "10724e06262dc29f",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.92283333,
+      "lng": 33.6335,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_10724e06262dc29f"
+    },
+    "station_10b43c590e9c62f4": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 276 Τ.Κ 2311 τηλ: 22050045",
+      "aliases": [
+        "10b43c590e9c62f4"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "10b43c590e9c62f4",
+      "district": "Λακατάμεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 35.103889,
+      "lng": 33.302389,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_10b43c590e9c62f4"
+    },
+    "station_10bb3e33c0b8a9fc": {
+      "address": "Παλαιός Δρόμος Λεμεσού-Πάφου Τ.Κ 4607 τηλ: 25221250",
+      "aliases": [
+        "10bb3e33c0b8a9fc"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "10bb3e33c0b8a9fc",
+      "district": "Πισσούρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.675178,
+      "lng": 32.697404,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_10bb3e33c0b8a9fc"
+    },
+    "station_11a47a29f1cebdef": {
+      "address": "Ευαγόρα Παλληκαρίδη 53 Τ.Κ 8010 τηλ: 26933657",
+      "aliases": [
+        "11a47a29f1cebdef"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "11a47a29f1cebdef",
+      "district": "Πάφος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7779977652251,
+      "lng": 32.4236665755325,
+      "name": "\"ΑΔΕΛΦΟΙ ΚΟΥΡΙΔΗ ΛΙΜΙΤΕΔ\"",
+      "stationKey": "station_11a47a29f1cebdef"
+    },
+    "station_1298ebb90a590a10": {
+      "address": "Λεωφ. Αμμοχώστου 83 Τ.Κ 5390 τηλ: 23828803",
+      "aliases": [
+        "1298ebb90a590a10"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "1298ebb90a590a10",
+      "district": "Σωτήρα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.037925,
+      "lng": 33.955026,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_1298ebb90a590a10"
+    },
+    "station_1358ae33e24bfaf5": {
+      "address": "Δρόμος Πάφου - Πόλης Χρυσοχούς Τ.Κ 8850 τηλ: 26021282",
+      "aliases": [
+        "1358ae33e24bfaf5"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "1358ae33e24bfaf5",
+      "district": "Γουδί",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.994387,
+      "lng": 32.448056,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_1358ae33e24bfaf5"
+    },
+    "station_13dc98912dadcba3": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 236 Τ.Κ 5281 τηλ: 23811008",
+      "aliases": [
+        "13dc98912dadcba3"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "13dc98912dadcba3",
+      "district": "Παραλίμνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0566759259259,
+      "lng": 33.9710046296296,
+      "name": "LI. MA. KA. & CO LTD",
+      "stationKey": "station_13dc98912dadcba3"
+    },
+    "station_14372a31a225bf92": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 162 Τ.Κ 3026 τηλ: 25381276",
+      "aliases": [
+        "14372a31a225bf92"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "14372a31a225bf92",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.687006,
+      "lng": 33.040061,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_14372a31a225bf92"
+    },
+    "station_148859c60f19b1ae": {
+      "address": "Αγίας Θέκλης 60 Τ.Κ 5390 τηλ: 23824959",
+      "aliases": [
+        "148859c60f19b1ae"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "148859c60f19b1ae",
+      "district": "Σωτήρα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.021017,
+      "lng": 33.945449,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_148859c60f19b1ae"
+    },
+    "station_153a6838780b96c5": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 23 Τ.Κ 6017 τηλ: 24652949",
+      "aliases": [
+        "153a6838780b96c5"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "153a6838780b96c5",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.919501,
+      "lng": 33.636545,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_153a6838780b96c5"
+    },
+    "station_15df39d49247888d": {
+      "address": "1ης Απριλίου 237 Τ.Κ 5280 τηλ: 23821328",
+      "aliases": [
+        "15df39d49247888d"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "15df39d49247888d",
+      "district": "Παραλίμνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0269,
+      "lng": 33.98285,
+      "name": "ΝΙΚΟΣ & ΜΑΡΚΟΣ ΠΙΤΤΑΚΗΣ",
+      "stationKey": "station_15df39d49247888d"
+    },
+    "station_17fc3b4892744b1a": {
+      "address": "Δρόμος Βάσεων Επισκοπής Τ.Κ 4153 τηλ: 25211547",
+      "aliases": [
+        "17fc3b4892744b1a"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "17fc3b4892744b1a",
+      "district": "Βάση Επισκοπής",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.6753994208012,
+      "lng": 32.8429807049629,
+      "name": "DI FORCES TRADING LTD",
+      "stationKey": "station_17fc3b4892744b1a"
+    },
+    "station_18fb1bc3c86e431d": {
+      "address": "Στροβόλου 19 Τ.Κ 2480 τηλ: 22385359",
+      "aliases": [
+        "18fb1bc3c86e431d"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "18fb1bc3c86e431d",
+      "district": "Τσέρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0787361111111,
+      "lng": 33.3254490740741,
+      "name": "C.K.M. PETROLEUM LIMITED",
+      "stationKey": "station_18fb1bc3c86e431d"
+    },
+    "station_1a67cab0b142e1fc": {
+      "address": "Λεωφ. Λάρνακος 1 Τ.Κ 7648 τηλ: 22532828",
+      "aliases": [
+        "1a67cab0b142e1fc"
+      ],
+      "brand": "FILL N GO",
+      "currentSourceHash": "1a67cab0b142e1fc",
+      "district": "Πυργά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.92639,
+      "lng": 33.44032,
+      "name": "FILL N GO STATIONS LTD",
+      "stationKey": "station_1a67cab0b142e1fc"
+    },
+    "station_1decb01f3cf9f422": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 16 Τ.Κ 6010 τηλ: 24652402",
+      "aliases": [
+        "1decb01f3cf9f422"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "1decb01f3cf9f422",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.91798333,
+      "lng": 33.62123333,
+      "name": "ΚΩΣΤΑΣ ΣΩΤΗΡΙΟΥ & ΥΙΟΣ (ΣΤΑΘΜΟΣ ΒΕΝΖΙΝΗΣ) ΛΙΜΙΤΕΔ",
+      "stationKey": "station_1decb01f3cf9f422"
+    },
+    "station_1eeec036066ca6e1": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 7 Τ.Κ 6010 τηλ: 24664300",
+      "aliases": [
+        "1eeec036066ca6e1"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "1eeec036066ca6e1",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.916785,
+      "lng": 33.623624,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_1eeec036066ca6e1"
+    },
+    "station_1f4e31a949a35e79": {
+      "address": "Αγίου Γεωργίου 99 Τ.Κ 4180 τηλ: 25390691",
+      "aliases": [
+        "1f4e31a949a35e79"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "1f4e31a949a35e79",
+      "district": "Ύψωνας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.682444,
+      "lng": 32.952385,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_1f4e31a949a35e79"
+    },
+    "station_1f6e905f4b6fefba": {
+      "address": "Λεωφ. Ευρώπης 11 Τ.Κ 8042 τηλ: 26600022",
+      "aliases": [
+        "1f6e905f4b6fefba"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "1f6e905f4b6fefba",
+      "district": "Γεροσκήπου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.759422,
+      "lng": 32.434744,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_1f6e905f4b6fefba"
+    },
+    "station_216d6f29c2dc7a7a": {
+      "address": "Παλαιός Δρόμος Λευκωσίας-Λεμεσού, Κοφίνου Τ.Κ 7735 τηλ: 24322215",
+      "aliases": [
+        "216d6f29c2dc7a7a"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "216d6f29c2dc7a7a",
+      "district": "Κοφίνου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.829318,
+      "lng": 33.392834,
+      "name": "ΧΡΥΣΟΥΛΛΑ & ΚΥΡΙΑΚΟΣ ΧΑΤΖΗΠΑΝΑΓΗ & ΥΙΟΙ ΛΤΔ",
+      "stationKey": "station_216d6f29c2dc7a7a"
+    },
+    "station_218a67d5b91e1d5b": {
+      "address": "Λεωφ. Λεμεσού 7 Τ.Κ 2112 τηλ: 22336653",
+      "aliases": [
+        "218a67d5b91e1d5b"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "218a67d5b91e1d5b",
+      "district": "Αγλαντζιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.153483,
+      "lng": 33.375317,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_218a67d5b91e1d5b"
+    },
+    "station_219788b62ca078e5": {
+      "address": "Λεώφ. Δημητρίου Παπανικολή 6, Άγιοι Ανάργυροι Τ.Κ 6053 τηλ: 24668200",
+      "aliases": [
+        "219788b62ca078e5"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "219788b62ca078e5",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.93123,
+      "lng": 33.623506,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_219788b62ca078e5"
+    },
+    "station_219d958c2b7b3501": {
+      "address": "Λεωφ. Γιώργου Χριστοδουλίδη (Νέο ΓΣΖ) Τ.Κ 6043 τηλ: 24532222",
+      "aliases": [
+        "219d958c2b7b3501"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "219d958c2b7b3501",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.92536667,
+      "lng": 33.60203333,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_219d958c2b7b3501"
+    },
+    "station_21f9f00f5ddb28b7": {
+      "address": "Λεώφ. Λεμεσού 30 Τ.Κ 4525 τηλ: 25360101",
+      "aliases": [
+        "21f9f00f5ddb28b7"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "21f9f00f5ddb28b7",
+      "district": "Μονή",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7264675925926,
+      "lng": 33.2053657407407,
+      "name": "ANTHOUSIA HOLDINGS LIMITED",
+      "stationKey": "station_21f9f00f5ddb28b7"
+    },
+    "station_22538308881b48d5": {
+      "address": "Λεωφ. Στροβόλου 37 Τ.Κ 2018 τηλ: 22421248",
+      "aliases": [
+        "22538308881b48d5"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "22538308881b48d5",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1487856870168,
+      "lng": 33.346567328836,
+      "name": "ΑΝΔΡΕΑΣ & ΚΩΣΤΑΣ ΙΩΑΝΝΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_22538308881b48d5"
+    },
+    "station_22a8e387ee3e195c": {
+      "address": "Κάτω Πύργος Τ.Κ 2940",
+      "aliases": [
+        "22a8e387ee3e195c"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "22a8e387ee3e195c",
+      "district": "Κάτω Πύργος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 35.184195,
+      "lng": 32.681915,
+      "name": "C.N PETROL STATION LTD",
+      "stationKey": "station_22a8e387ee3e195c"
+    },
+    "station_2372cc1db60e8267": {
+      "address": "Λεωφ. Αμμοχώστου 74 Τ.Κ 5380 τηλ: 23821322",
+      "aliases": [
+        "2372cc1db60e8267"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "2372cc1db60e8267",
+      "district": "Δερύνεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.07041667,
+      "lng": 33.9607,
+      "name": "ΝΙΚΟΛΑΟΥ Α. ΠΑΝΙΚΟΣ",
+      "stationKey": "station_2372cc1db60e8267"
+    },
+    "station_23742c697b777b7d": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 49 Τ.Κ 1065 τηλ: 22753252",
+      "aliases": [
+        "23742c697b777b7d"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "23742c697b777b7d",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": null,
+      "lng": null,
+      "name": "DEMETRIOS STAVROPOULOS LTD",
+      "stationKey": "station_23742c697b777b7d"
+    },
+    "station_23bb2fb1d309cc31": {
+      "address": "Λεωφ. Αρχ.Μακαρίου Γ' 4 Τ.Κ 8250 τηλ: 26273244",
+      "aliases": [
+        "23bb2fb1d309cc31"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "23bb2fb1d309cc31",
+      "district": "Έμπα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.790679,
+      "lng": 32.421952,
+      "name": "M.T. EFTHIMIOU ENTERPRISES LTD",
+      "stationKey": "station_23bb2fb1d309cc31"
+    },
+    "station_23d5d9b6fe436d9d": {
+      "address": "Γρηγόρη Αυξεντίου 29, Πέρα Ορεινής Τ.Κ 2650 τηλ: 22621264",
+      "aliases": [
+        "23d5d9b6fe436d9d"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "23d5d9b6fe436d9d",
+      "district": "Πέρα Ορεινής",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.04547222222222,
+      "lng": 33.25463888888889,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_23d5d9b6fe436d9d"
+    },
+    "station_259b68326cfb2d5c": {
+      "address": "Αποστόλου Λουκά 66 Τ.Κ 4632 τηλ: 25432188",
+      "aliases": [
+        "259b68326cfb2d5c"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "259b68326cfb2d5c",
+      "district": "Κολόσσι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.6708,
+      "lng": 32.9342,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_259b68326cfb2d5c"
+    },
+    "station_25bc727ccf0be59a": {
+      "address": "1ης Απριλίου 138 Τ.Κ 5280 τηλ: 23821343",
+      "aliases": [
+        "25bc727ccf0be59a"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "25bc727ccf0be59a",
+      "district": "Παραλίμνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.035846,
+      "lng": 33.977612,
+      "name": "ΧΡΥΣΟΥΛΛΑ ΣΤΑΘΗ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_25bc727ccf0be59a"
+    },
+    "station_263ab49334febdd9": {
+      "address": "Λεωφ. Τσερίου 127 Στρόβολος Τ.Κ 2045 τηλ: 22324668",
+      "aliases": [
+        "263ab49334febdd9"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "263ab49334febdd9",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.128667,
+      "lng": 33.33847,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_263ab49334febdd9"
+    },
+    "station_27ff73dd4db2f084": {
+      "address": "Φρ. Ρούσβελτ 263 Τ.Κ 3046 τηλ: 25713540",
+      "aliases": [
+        "27ff73dd4db2f084"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "27ff73dd4db2f084",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6575143350589,
+      "lng": 33.0002166319466,
+      "name": "S & K TIGGER TRADING LIMITED",
+      "stationKey": "station_27ff73dd4db2f084"
+    },
+    "station_285ca20c2373dae6": {
+      "address": "Ελευθερίας 27 Τ.Κ 7102 τηλ: 24531780",
+      "aliases": [
+        "285ca20c2373dae6"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "285ca20c2373dae6",
+      "district": "Αραδίππου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.935446,
+      "lng": 33.59272,
+      "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_285ca20c2373dae6"
+    },
+    "station_2b8a8302bfb0a311": {
+      "address": "Γρηγόρη Αυξεντίου 24, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22835192",
+      "aliases": [
+        "2b8a8302bfb0a311"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "2b8a8302bfb0a311",
+      "district": "Κοκκινοτριμιθιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1481674279843,
+      "lng": 33.2034919828034,
+      "name": "FREGIO LTD",
+      "stationKey": "station_2b8a8302bfb0a311"
+    },
+    "station_2bd81f78452a3c75": {
+      "address": "Λεωφ. Δημοκρατίας 41 Τ.Κ 8028 τηλ: 26952346",
+      "aliases": [
+        "2bd81f78452a3c75"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "2bd81f78452a3c75",
+      "district": "Πάφος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7761232569837,
+      "lng": 32.4426496318772,
+      "name": "SPLS TRADING CO LIMITED",
+      "stationKey": "station_2bd81f78452a3c75"
+    },
+    "station_2c753963c40cf676": {
+      "address": "Λεωφ. Γρηγόρη Αυξεντίου 29, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22622222",
+      "aliases": [
+        "2c753963c40cf676"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "2c753963c40cf676",
+      "district": "Δευτερά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.081014,
+      "lng": 33.273498,
+      "name": "EUROORBIT LIMITED",
+      "stationKey": "station_2c753963c40cf676"
+    },
+    "station_2e6960e8837a39ee": {
+      "address": "Λεωφ. Σπύρου Κυπριανού 51 Τ.Κ 7040 τηλ: 24648082",
+      "aliases": [
+        "2e6960e8837a39ee"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "2e6960e8837a39ee",
+      "district": "Ορόκλινη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.971337,
+      "lng": 33.654541,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_2e6960e8837a39ee"
+    },
+    "station_2f7c0afd351759c6": {
+      "address": "14ος Δρόμος 22 Τ.Κ 4620 τηλ: 25932665",
+      "aliases": [
+        "2f7c0afd351759c6"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "2f7c0afd351759c6",
+      "district": "Επισκοπή",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.665401,
+      "lng": 32.904576,
+      "name": "ΜΙΧΑΛΑΚΗΣ ΙΑΚΩΒΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_2f7c0afd351759c6"
+    },
+    "station_30271dfd478656a8": {
+      "address": "Λεωφ. Καντάρας 23 Τ.Κ 1037 τηλ: 22431814",
+      "aliases": [
+        "30271dfd478656a8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "30271dfd478656a8",
+      "district": "Καϊμακλί",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.183991,
+      "lng": 33.387964,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_30271dfd478656a8"
+    },
+    "station_30328eae8837f4da": {
+      "address": "Λεωφόρος Αμαθούντος 56 Τ.Κ 4047 τηλ: 25311165",
+      "aliases": [
+        "30328eae8837f4da"
+      ],
+      "brand": "AGIP",
+      "currentSourceHash": "30328eae8837f4da",
+      "district": "Γερμασόγεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.706009,
+      "lng": 33.116081,
+      "name": "VERMIC PETROLEUM LIMIΤΕD",
+      "stationKey": "station_30328eae8837f4da"
+    },
+    "station_3044150a6a3e38f2": {
+      "address": "Μακεδονίας 15 Τ.Κ 4540 τηλ: 25452326",
+      "aliases": [
+        "3044150a6a3e38f2"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "3044150a6a3e38f2",
+      "district": "Παραμύθα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7566851851852,
+      "lng": 32.9910046296296,
+      "name": "ΠΑΝΙΚΟΣ Σ. ΜΑΠΠΑΣ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΙΜΙΤΕΔ",
+      "stationKey": "station_3044150a6a3e38f2"
+    },
+    "station_311207cda532d973": {
+      "address": "Λεωφ. Αμμοχώστου 67 Τ.Κ 1048 τηλ: 22730333",
+      "aliases": [
+        "311207cda532d973"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "311207cda532d973",
+      "district": "Παλλουριώτισσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.168195,
+      "lng": 33.39786,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_311207cda532d973"
+    },
+    "station_31541eccde220067": {
+      "address": "Τάφοι των Βασιλέων 108 Τ.Κ 8015 τηλ: 26932429",
+      "aliases": [
+        "31541eccde220067"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "31541eccde220067",
+      "district": "Τάφοι των Βασιλέων",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7839,
+      "lng": 32.406,
+      "name": "Κ. ΜΑΡΜΑΡΑΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_31541eccde220067"
+    },
+    "station_32353ef76bddc2a9": {
+      "address": "Αρχ. Μακαρίου Γ΄ 17 Τ.Κ 2800 τηλ: 22922437",
+      "aliases": [
+        "32353ef76bddc2a9"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "32353ef76bddc2a9",
+      "district": "Κακοπετριά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.991233,
+      "lng": 32.902827,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_32353ef76bddc2a9"
+    },
+    "station_362890b045c61e05": {
+      "address": "Αγίου Νικολάου 37 Τ.Κ 2408 τηλ: 22590586",
+      "aliases": [
+        "362890b045c61e05"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "362890b045c61e05",
+      "district": "Έγκωμη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1641275288475,
+      "lng": 33.3331814245369,
+      "name": "G.K.S SAMATAS LIMITED",
+      "stationKey": "station_362890b045c61e05"
+    },
+    "station_370b629396b976d5": {
+      "address": "Αγίας Φυλάξεως 109 Τ.Κ 3087 τηλ: 25382888",
+      "aliases": [
+        "370b629396b976d5"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "370b629396b976d5",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6921,
+      "lng": 33.0352,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_370b629396b976d5"
+    },
+    "station_3a0ac8cbb9162460": {
+      "address": "Λεωφ. Χλώρακας 104 - 106 Τ.Κ 8220 τηλ: 26967073",
+      "aliases": [
+        "3a0ac8cbb9162460"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "3a0ac8cbb9162460",
+      "district": "Χλώρακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.80347222222222,
+      "lng": 32.39747222222222,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_3a0ac8cbb9162460"
+    },
+    "station_3a155ba0b3614c95": {
+      "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
+      "aliases": [
+        "3a155ba0b3614c95"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "3a155ba0b3614c95",
+      "district": "Πεδουλάς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.97021,
+      "lng": 32.82599,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_3a155ba0b3614c95"
+    },
+    "station_3ba701e8c82cf7cb": {
+      "address": "Ακανθούς 4, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22575112",
+      "aliases": [
+        "3ba701e8c82cf7cb"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "3ba701e8c82cf7cb",
+      "district": "Δευτερά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.090188221784366,
+      "lng": 33.26715483191825,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_3ba701e8c82cf7cb"
+    },
+    "station_3d15ef648656bab8": {
+      "address": "Λεωφ. Στασίνου Τ.Κ 1060 τηλ: 22755121",
+      "aliases": [
+        "3d15ef648656bab8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "3d15ef648656bab8",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.168758,
+      "lng": 33.363069,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_3d15ef648656bab8"
+    },
+    "station_3dc41bc497d6f7b8": {
+      "address": "Πάφου 37 Τ.Κ 3052 τηλ: 25566155",
+      "aliases": [
+        "3dc41bc497d6f7b8"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "3dc41bc497d6f7b8",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_3dc41bc497d6f7b8"
+    },
+    "station_3dd82d1b96d792ac": {
+      "address": "Λεωφ. Αθαλάσσας 33 Τ.Κ 2012 τηλ: 22025430",
+      "aliases": [
+        "3dd82d1b96d792ac"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "3dd82d1b96d792ac",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.14863888888889,
+      "lng": 33.35194444444445,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_3dd82d1b96d792ac"
+    },
+    "station_3e55ef49d785e4c9": {
+      "address": "Ανδρέα Σουρουκλή 14 (δρόμος Λειβαδιών προς Κελλιά - πλησίον Κοιν. Σταδίου Λειβαδιών) Τ.Κ 7060 τηλ: 24663338",
+      "aliases": [
+        "3e55ef49d785e4c9"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "3e55ef49d785e4c9",
+      "district": "Λειβάδια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "PKP FUEL CO. LTD",
+      "stationKey": "station_3e55ef49d785e4c9"
+    },
+    "station_3e603852c72a968d": {
+      "address": "Γρηγόρη Αυξεντίου, Δρόμος Παρεκκλησιάς Τ.Κ τηλ: 25636261",
+      "aliases": [
+        "3e603852c72a968d"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "3e603852c72a968d",
+      "district": "Παρεκκλησιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7180787037037,
+      "lng": 33.1634259259259,
+      "name": "YIANNAKIS & ΑΝΝΑ TSANGARIDES LIMITED",
+      "stationKey": "station_3e603852c72a968d"
+    },
+    "station_3ecb4b318e158c97": {
+      "address": "Γιάννου Κρανιδιώτη 247 Τ.Κ 2233 τηλ: 22312313",
+      "aliases": [
+        "3ecb4b318e158c97"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "3ecb4b318e158c97",
+      "district": "Λατσιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.078424,
+      "lng": 33.381658,
+      "name": "C.A.R.S PETROL STATION C.P. LTD",
+      "stationKey": "station_3ecb4b318e158c97"
+    },
+    "station_3f043db421db6187": {
+      "address": "Αγγελικής Σωτηρίου 25 Τ.Κ τηλ: 25942536",
+      "aliases": [
+        "3f043db421db6187"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "3f043db421db6187",
+      "district": "Πάνω Κυβίδες",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7607,
+      "lng": 32.8449,
+      "name": "Christina S. Andreou",
+      "stationKey": "station_3f043db421db6187"
+    },
+    "station_3f25e13991868031": {
+      "address": "Λεωφ. Φανερωμένης Τ.Κ 6035 τηλ: 24620506",
+      "aliases": [
+        "3f25e13991868031"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "3f25e13991868031",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.9110137181411,
+      "lng": 33.6136392020691,
+      "name": "P2 PETROLEUM LIMITED",
+      "stationKey": "station_3f25e13991868031"
+    },
+    "station_3f524698142bb4c3": {
+      "address": "Σπύρου Κυπριανού και Σωτηράκη Μαρκίδη Τ.Κ 8041 τηλ: 26949140",
+      "aliases": [
+        "3f524698142bb4c3"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "3f524698142bb4c3",
+      "district": "Πάφος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.760461,
+      "lng": 32.422081,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_3f524698142bb4c3"
+    },
+    "station_4116645c17b094b6": {
+      "address": "Κώστα Λοϊζου 195 Τ.Κ τηλ: 26812900",
+      "aliases": [
+        "4116645c17b094b6"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "4116645c17b094b6",
+      "district": "Κάτω Πύργος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 35.17763,
+      "lng": 32.69205,
+      "name": "Eleni Savva",
+      "stationKey": "station_4116645c17b094b6"
+    },
+    "station_412784d40b267ac0": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 80 Τ.Κ 8221 τηλ: 26271020",
+      "aliases": [
+        "412784d40b267ac0"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "412784d40b267ac0",
+      "district": "Χλώρακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.8018981481481,
+      "lng": 32.4133842592593,
+      "name": "LINERIA SERVICES LTD",
+      "stationKey": "station_412784d40b267ac0"
+    },
+    "station_4491af94d4dac518": {
+      "address": "Κινύρα 9 Τ.Κ 1102 τηλ: 22664520",
+      "aliases": [
+        "4491af94d4dac518"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "4491af94d4dac518",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "Κ. ΚΟΦΤΕΡΟΣ & Γ. ΓΕΡΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_4491af94d4dac518"
+    },
+    "station_4537f207771bffde": {
+      "address": "Δρόμος Αραδίππου - Αβδελλερού Τ.Κ τηλ: 24531122",
+      "aliases": [
+        "4537f207771bffde"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "4537f207771bffde",
+      "district": "Αβδελλερό",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.975216,
+      "lng": 33.581264,
+      "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_4537f207771bffde"
+    },
+    "station_45d47966b1bf4469": {
+      "address": "Παλαιός Δρόμος Λάρνακας-Ορμήδειας Τ.Κ 7530 τηλ: 24721030",
+      "aliases": [
+        "45d47966b1bf4469"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "45d47966b1bf4469",
+      "district": "Ορμήδεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.981977,
+      "lng": 33.776835,
+      "name": "ΔΗΜΟΣ ΚΑΛΛΕΝΟΣ & ΥΙΟΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_45d47966b1bf4469"
+    },
+    "station_45d4995dd194653e": {
+      "address": "Νίκου και Δέσποινας Παττίχη 5Γ Τ.Κ 3071 τηλ: 25336107",
+      "aliases": [
+        "45d4995dd194653e"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "45d4995dd194653e",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.684808,
+      "lng": 33.027048,
+      "name": "ΚΙΚΗΣ Π. ΜΙΧΑΗΛΟΥΔΗΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_45d4995dd194653e"
+    },
+    "station_45e3f0a0a623edbc": {
+      "address": "Λεωφ. Λάρνακος 103 Τ.Κ 2103 τηλ: 22333340",
+      "aliases": [
+        "45e3f0a0a623edbc"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "45e3f0a0a623edbc",
+      "district": "Αγλαντζιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.155545,
+      "lng": 33.398449,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_45e3f0a0a623edbc"
+    },
+    "station_47107c40c91e4003": {
+      "address": "Λεωφ. Σπ. Κυπριανού 135 Τ.Κ 3083 τηλ: 25333066",
+      "aliases": [
+        "47107c40c91e4003"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "47107c40c91e4003",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_47107c40c91e4003"
+    },
+    "station_47637b128a21c40d": {
+      "address": "Λεωφ. Αμμοχώστου 58 Τ.Κ 5380 τηλ: 23821431",
+      "aliases": [
+        "47637b128a21c40d"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "47637b128a21c40d",
+      "district": "Δερύνεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_47637b128a21c40d"
+    },
+    "station_47df90b8335f69d9": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 28 Τ.Κ 4003 τηλ: 25752509",
+      "aliases": [
+        "47df90b8335f69d9"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "47df90b8335f69d9",
+      "district": "Μέσα Γειτονιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.695169,
+      "lng": 33.045024,
+      "name": "GRECHARCO SERVICES LIMITED",
+      "stationKey": "station_47df90b8335f69d9"
+    },
+    "station_4969815432da1304": {
+      "address": "Μισιαούλη & Καβάζογλου 73 Τ.Κ 3016 τηλ: 25877422",
+      "aliases": [
+        "4969815432da1304"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "4969815432da1304",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.673561,
+      "lng": 33.02208,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_4969815432da1304"
+    },
+    "station_4969c69279b95e35": {
+      "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24364365",
+      "aliases": [
+        "4969c69279b95e35"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "4969c69279b95e35",
+      "district": "Καλό Χωριό Λάρνακας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.92598333,
+      "lng": 33.54103333,
+      "name": "ΚΩΣΤΑΣ ΓΕΩΡΓΙΟΥ (ΒΙΤΤΗΣ)",
+      "stationKey": "station_4969c69279b95e35"
+    },
+    "station_4a1e05cf02b70ed0": {
+      "address": "Αναστάσιου Μανώλη 4 Τ.Κ 7520 τηλ: 24725356",
+      "aliases": [
+        "4a1e05cf02b70ed0"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "4a1e05cf02b70ed0",
+      "district": "Ξυλοφάγου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.977419,
+      "lng": 33.847539,
+      "name": "ΜΙΧΑΛΗΣ ΚΑΤΖΗΣ & ΚΥΡΙΑΚΟΣ ΕΓΓΛΕΖΟΣ",
+      "stationKey": "station_4a1e05cf02b70ed0"
+    },
+    "station_4aebc6aca466bf07": {
+      "address": "Λεωφ. Λεμεσού 9 Τ.Κ 2112 τηλ: 22331138",
+      "aliases": [
+        "4aebc6aca466bf07"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "4aebc6aca466bf07",
+      "district": "Αγλαντζιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.153083,
+      "lng": 33.375177,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_4aebc6aca466bf07"
+    },
+    "station_4b823363d3f944ab": {
+      "address": "Αγίας Φυλάξεως 205 Τ.Κ 3083 τηλ: 25386476",
+      "aliases": [
+        "4b823363d3f944ab"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "4b823363d3f944ab",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.702301022437,
+      "lng": 33.0279642974838,
+      "name": "CHR. PELENDRIDES ENTERPRISES LTD",
+      "stationKey": "station_4b823363d3f944ab"
+    },
+    "station_4bdbd3621fcde692": {
+      "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
+      "aliases": [
+        "4bdbd3621fcde692"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "4bdbd3621fcde692",
+      "district": "Αργάκα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 35.065318,
+      "lng": 32.467592,
+      "name": "G.M. (LEONTIOS) LIMITED",
+      "stationKey": "station_4bdbd3621fcde692"
+    },
+    "station_4e1b0a301483bf9f": {
+      "address": "Τάφοι των Βασιλέων 82 Τ.Κ 8015 τηλ: 26933861",
+      "aliases": [
+        "4e1b0a301483bf9f"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "4e1b0a301483bf9f",
+      "district": "Τάφοι των Βασιλέων",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7781365861625,
+      "lng": 32.4068489693809,
+      "name": "ΧΑΡΙΛΑΟΣ ΔΑΝΙΗΛ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_4e1b0a301483bf9f"
+    },
+    "station_4e3aad19a377e535": {
+      "address": "Λεωφ. Σταυρού 25 Τ.Κ 2035 τηλ: 22496831",
+      "aliases": [
+        "4e3aad19a377e535"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "4e3aad19a377e535",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.137332,
+      "lng": 33.350634,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_4e3aad19a377e535"
+    },
+    "station_4e6417ccc96fa71a": {
+      "address": "Λεωφ. Τζων Κέννετυ 78 Τ.Κ 1046 τηλ: 22431888",
+      "aliases": [
+        "4e6417ccc96fa71a"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "4e6417ccc96fa71a",
+      "district": "Παλλουριώτισσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.172382618025,
+      "lng": 33.3880451055572,
+      "name": "R N.E.P. FUEL LTD",
+      "stationKey": "station_4e6417ccc96fa71a"
+    },
+    "station_4ea6fc2db724c4d5": {
+      "address": "Γεωργίου Καλογεροπούλου 50 Τ.Κ 4007 τηλ: 25028563",
+      "aliases": [
+        "4ea6fc2db724c4d5"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "4ea6fc2db724c4d5",
+      "district": "Μέσα Γειτονιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.708686,
+      "lng": 33.038429,
+      "name": "GREENOIL LIMITED",
+      "stationKey": "station_4ea6fc2db724c4d5"
+    },
+    "station_4ff25ca7a75f448b": {
+      "address": "Πουλίου και Καποτά 6 Τ.Κ 1035 τηλ: 22349984",
+      "aliases": [
+        "4ff25ca7a75f448b"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "4ff25ca7a75f448b",
+      "district": "Παλλουριώτισσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "ΣΟΦΟΚΛΗΣ ΣΟΦΟΚΛΕΟΥΣ",
+      "stationKey": "station_4ff25ca7a75f448b"
+    },
+    "station_509d1a0c848bb24a": {
+      "address": "Γιάννου Κρανιδιώτη 34 Τ.Κ 6051 τηλ: 24668111",
+      "aliases": [
+        "509d1a0c848bb24a"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "509d1a0c848bb24a",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.9255425378298,
+      "lng": 33.6158680546311,
+      "name": "Μ.Α.Ν.Ι. ΠΑΝΑΓΙΩΤΟΥ ΛΤΔ",
+      "stationKey": "station_509d1a0c848bb24a"
+    },
+    "station_51325aa880414a55": {
+      "address": "Σώτος Χατζηπροκοπίου 22 Τ.Κ 5330 τηλ: 23723868",
+      "aliases": [
+        "51325aa880414a55"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "51325aa880414a55",
+      "district": "Αγία Νάπα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.991937,
+      "lng": 33.96196,
+      "name": "Α/ΦΟΙ Α. & Ν. ΝΙΚΗΦΟΡΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_51325aa880414a55"
+    },
+    "station_5185f2a1237e92cb": {
+      "address": "Γιάννου Κρανιδιώτη Τ.Κ 3110 τηλ: 25336300",
+      "aliases": [
+        "5185f2a1237e92cb"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "5185f2a1237e92cb",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7043776604692,
+      "lng": 33.003317245369,
+      "name": "Μ.Κ. ΓΕΝΕΘΛΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_5185f2a1237e92cb"
+    },
+    "station_51a95992bac322c3": {
+      "address": "Λεωφ. Τσερίου 228 Τ.Κ 2044 τηλ: 22322871",
+      "aliases": [
+        "51a95992bac322c3"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "51a95992bac322c3",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_51a95992bac322c3"
+    },
+    "station_520055cc8ce7c607": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 57 Τ.Κ 6017 τηλ: 24652236",
+      "aliases": [
+        "520055cc8ce7c607"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "520055cc8ce7c607",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_520055cc8ce7c607"
+    },
+    "station_52fca9751f52fc11": {
+      "address": "Λεωφ. Αγλαντζιάς 35 Τ.Κ 2108 τηλ: 22333916",
+      "aliases": [
+        "52fca9751f52fc11"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "52fca9751f52fc11",
+      "district": "Αγλαντζιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.156854,
+      "lng": 33.389026,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_52fca9751f52fc11"
+    },
+    "station_53a941ff35dd43a3": {
+      "address": "Λεωφ. Κωνσταντίνου & Ευριπίδου 1 Τ.Κ 4651 τηλ: 25873040",
+      "aliases": [
+        "53a941ff35dd43a3"
+      ],
+      "brand": "ΑΝΕΞΑΡΤΗΤΟ ΠΡΑΤΗΡΙΟ",
+      "currentSourceHash": "53a941ff35dd43a3",
+      "district": "Τραχώνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.653749999999995,
+      "lng": 32.97397222222222,
+      "name": "ARTEMIS A. GEORGIOU PETROL STATION LTD",
+      "stationKey": "station_53a941ff35dd43a3"
+    },
+    "station_546514341b48988c": {
+      "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
+      "aliases": [
+        "546514341b48988c"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "546514341b48988c",
+      "district": "Καϊμακλί",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1845138888889,
+      "lng": 33.3895,
+      "name": "I.G. MAKRIS ENTERPRISES LTD",
+      "stationKey": "station_546514341b48988c"
+    },
+    "station_55433dfb5b4e1674": {
+      "address": "Λεωφ. Τάσσου Παπαδόπουλου (δρόμος Λάρνακας - Δεκέλειας) Τ.Κ 6019 τηλ: 24635023",
+      "aliases": [
+        "55433dfb5b4e1674"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "55433dfb5b4e1674",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.937023,
+      "lng": 33.640902,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_55433dfb5b4e1674"
+    },
+    "station_56bf033b0c16b3fc": {
+      "address": "Παναγίας Ελεούσας 55 Τ.Κ 4730 τηλ: 25432020",
+      "aliases": [
+        "56bf033b0c16b3fc"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "56bf033b0c16b3fc",
+      "district": "Τριμίκλινη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.8458,
+      "lng": 32.9121,
+      "name": "A. K. Konnaris Service Station Ltd",
+      "stationKey": "station_56bf033b0c16b3fc"
+    },
+    "station_5748537cc71d2087": {
+      "address": "Μισιαούλη & Καβάζογλου 86-88 Τ.Κ 3016 τηλ: 25565274",
+      "aliases": [
+        "5748537cc71d2087"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "5748537cc71d2087",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.673999828282,
+      "lng": 33.0231830443581,
+      "name": "JENKERA LIMITED",
+      "stationKey": "station_5748537cc71d2087"
+    },
+    "station_577fd20675644585": {
+      "address": "Γρηγόρη Αυξεντίου 30 Τ.Κ 2368 τηλ: 22775117",
+      "aliases": [
+        "577fd20675644585"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "577fd20675644585",
+      "district": "Άγιος Δομέτιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.17131667,
+      "lng": 33.3369,
+      "name": "J & S PETROL STATION LIMITED",
+      "stationKey": "station_577fd20675644585"
+    },
+    "station_579a534668dcad57": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 20 Τ.Κ 7080 τηλ: 24661133",
+      "aliases": [
+        "579a534668dcad57"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "579a534668dcad57",
+      "district": "Πύλα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.992258,
+      "lng": 33.683025,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_579a534668dcad57"
+    },
+    "station_57d1438ceba0a6dc": {
+      "address": "28ης Οκτωβρίου 12, Κόρνος Τ.Κ 7640 τηλ: 22533238",
+      "aliases": [
+        "57d1438ceba0a6dc"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "57d1438ceba0a6dc",
+      "district": "Κόρνος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.927328,
+      "lng": 33.413823,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_57d1438ceba0a6dc"
+    },
+    "station_5847788bc93c7d60": {
+      "address": "Γλάδστωνος 133 Τ.Κ 3032 τηλ: 25363675",
+      "aliases": [
+        "5847788bc93c7d60"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "5847788bc93c7d60",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.684173,
+      "lng": 33.050839,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_5847788bc93c7d60"
+    },
+    "station_5873f26a0008e169": {
+      "address": "Λεωφ.Τιμίου Προδρόμου 44 Τ.Κ 7020 τηλ: 24426868",
+      "aliases": [
+        "5873f26a0008e169"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "5873f26a0008e169",
+      "district": "Δρομολαξιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.876254,
+      "lng": 33.595478,
+      "name": "ΑΝΔΡΕΑΣ ΖΑΧΑΡΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_5873f26a0008e169"
+    },
+    "station_5b183880337ae406": {
+      "address": "Κάθετος Δρόμος Νέου Λιμανιού Τ.Κ 4150 τηλ: 25715042",
+      "aliases": [
+        "5b183880337ae406"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "5b183880337ae406",
+      "district": "Κάτω Πολεμίδια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.6754556,
+      "lng": 32.988516,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_5b183880337ae406"
+    },
+    "station_5e91d55e97bd83f4": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 105 Τ.Κ 8200 τηλ: 26963231",
+      "aliases": [
+        "5e91d55e97bd83f4"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "5e91d55e97bd83f4",
+      "district": "Γεροσκήπου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.758,
+      "lng": 32.45901667,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_5e91d55e97bd83f4"
+    },
+    "station_5fbef25ad8c5efb5": {
+      "address": "Βαρωσίων 39 Τ.Κ 5522 τηλ: 23962424",
+      "aliases": [
+        "5fbef25ad8c5efb5"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "5fbef25ad8c5efb5",
+      "district": "Βρυσούλες",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0810134192706,
+      "lng": 33.8734175948288,
+      "name": "TSOIL ENTERPRISES LIMITED",
+      "stationKey": "station_5fbef25ad8c5efb5"
+    },
+    "station_60b4899bc0526633": {
+      "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
+      "aliases": [
+        "60b4899bc0526633"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "60b4899bc0526633",
+      "district": "Ευρύχου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.05938888888888,
+      "lng": 32.91291666666667,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_60b4899bc0526633"
+    },
+    "station_6125f19ef87cddb9": {
+      "address": "Ηλία Καννάουρου 20 Τ.Κ 4187 τηλ: 25391284",
+      "aliases": [
+        "6125f19ef87cddb9"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "6125f19ef87cddb9",
+      "district": "Ύψωνας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.683127,
+      "lng": 32.966629,
+      "name": "ΝΤΙΝΟΣ ΑΠΟΣΤΟΛΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_6125f19ef87cddb9"
+    },
+    "station_61ae1845f416d156": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 17 & Αγίας Λαύρας Τ.Κ 6010 τηλ: 24652638",
+      "aliases": [
+        "61ae1845f416d156"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "61ae1845f416d156",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.91728333,
+      "lng": 33.62233333,
+      "name": "ΓΕΩΡΓΙΑ ΝΙΚΟΛΑΟΥ ΛΤΔ",
+      "stationKey": "station_61ae1845f416d156"
+    },
+    "station_61b77c18ac2a19d6": {
+      "address": "Λεωφ. Μεσόγης 51 Τ.Κ 8280 τηλ: 26819145",
+      "aliases": [
+        "61b77c18ac2a19d6"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "61b77c18ac2a19d6",
+      "district": "Μεσόγη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7995610231833,
+      "lng": 32.4410805932541,
+      "name": "Δ.Α. ΠΑΠΑΣΑΒΒΑΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_61b77c18ac2a19d6"
+    },
+    "station_637c5b88a59b6e14": {
+      "address": "Κυριάκου Μάτση 100 Τ.Κ 7102 τηλ: 24532888",
+      "aliases": [
+        "637c5b88a59b6e14"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "637c5b88a59b6e14",
+      "district": "Αραδίππου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.939014,
+      "lng": 33.601698,
+      "name": "PETROU ENERGY SOLUTION LIMITED",
+      "stationKey": "station_637c5b88a59b6e14"
+    },
+    "station_64249051ef91af56": {
+      "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
+      "aliases": [
+        "64249051ef91af56"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "64249051ef91af56",
+      "district": "Λατσιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0976900488074,
+      "lng": 33.3792905141556,
+      "name": "ΛΕΟΝΤΙΟΣ ΙΕΡΟΔΙΑΚΟΝΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_64249051ef91af56"
+    },
+    "station_647a5272b3633427": {
+      "address": "Παναγίας Φανερωμένης 57 Τ.Κ τηλ: 25421100",
+      "aliases": [
+        "647a5272b3633427"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "647a5272b3633427",
+      "district": "Πάνω Πλάτρες",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.8843,
+      "lng": 32.8633,
+      "name": "A. K. Konnaris Service Station Ltd (Platres)",
+      "stationKey": "station_647a5272b3633427"
+    },
+    "station_65fab51bfeaf5b10": {
+      "address": "Δημοκρατίας 91 Τ.Κ 8028 τηλ: 26221190",
+      "aliases": [
+        "65fab51bfeaf5b10"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "65fab51bfeaf5b10",
+      "district": "Πάφος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.781441,
+      "lng": 32.444345,
+      "name": "J.K PETROL STATION AND CARWASH LTD",
+      "stationKey": "station_65fab51bfeaf5b10"
+    },
+    "station_661554f053d42d60": {
+      "address": "Λεωφ.Ανεξαρτησίας 1 Τ.Κ 7570 τηλ: 24432830",
+      "aliases": [
+        "661554f053d42d60"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "661554f053d42d60",
+      "district": "Αλεθρικό",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "ΑΡΓΥΡΟΥΛΛΑ & ΒΑΣΙΛΙΚΗ ΜΗΝΑ ΠΡΑΤΗΡΙΟ ΠΕΤΡΕΛΑΙΟΕΙΔΩΝ ΛΤΔ",
+      "stationKey": "station_661554f053d42d60"
+    },
+    "station_6887d7c10b5c8db1": {
+      "address": "Δρόμος Αμιάντου – Καρβουνά Τ.Κ 4876 τηλ: 25550055",
+      "aliases": [
+        "6887d7c10b5c8db1"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "6887d7c10b5c8db1",
+      "district": "Κυπερούντα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.940097,
+      "lng": 32.931017,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_6887d7c10b5c8db1"
+    },
+    "station_6992113ed3f0e344": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 50 Τ.Κ 5350 τηλ: 23821472",
+      "aliases": [
+        "6992113ed3f0e344"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "6992113ed3f0e344",
+      "district": "Φρέναρος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0461658674545,
+      "lng": 33.9290050382369,
+      "name": "ΑΝΤΩΝΑΚΗΣ ΚΟΥΡΡΗΣ & ΥΙΟΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_6992113ed3f0e344"
+    },
+    "station_69f8b50d54eb5b0b": {
+      "address": "Λεωφ. Λεμεσού 5 Τ.Κ 2563 τηλ: 22496037",
+      "aliases": [
+        "69f8b50d54eb5b0b"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "69f8b50d54eb5b0b",
+      "district": "Αλάμπρα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 35.00055,
+      "lng": 33.397957,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_69f8b50d54eb5b0b"
+    },
+    "station_6a031b85c4c6a0ad": {
+      "address": "Λεωφ. Αρτέμιδος 67 Τ.Κ 6027 τηλ: 24664409",
+      "aliases": [
+        "6a031b85c4c6a0ad"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "6a031b85c4c6a0ad",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_6a031b85c4c6a0ad"
+    },
+    "station_6a12d967dcc21313": {
+      "address": "Λεωφ. Στροβόλου 327 Τ.Κ 2052 τηλ: 22327758",
+      "aliases": [
+        "6a12d967dcc21313"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "6a12d967dcc21313",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1238564814815,
+      "lng": 33.3221111111111,
+      "name": "PYCEGA LTD",
+      "stationKey": "station_6a12d967dcc21313"
+    },
+    "station_6a63a4c4125cff3f": {
+      "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24360270",
+      "aliases": [
+        "6a63a4c4125cff3f"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "6a63a4c4125cff3f",
+      "district": "Καλό Χωριό Λάρνακας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.927671,
+      "lng": 33.536158,
+      "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_6a63a4c4125cff3f"
+    },
+    "station_6bcb1d546bc70597": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 79, Αστρομερίτης Τ.Κ 2722 τηλ: 22823774",
+      "aliases": [
+        "6bcb1d546bc70597"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "6bcb1d546bc70597",
+      "district": "Αστρομερίτης",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.138114,
+      "lng": 33.053639,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_6bcb1d546bc70597"
+    },
+    "station_6c57bc560c8a0d07": {
+      "address": "Λεωφ. Λουκή Ακρίτα 1 Τ.Κ 1100 τηλ: 22774819",
+      "aliases": [
+        "6c57bc560c8a0d07"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "6c57bc560c8a0d07",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.17265,
+      "lng": 33.350405,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_6c57bc560c8a0d07"
+    },
+    "station_6d1c6cac38cbc01e": {
+      "address": "Αγίας Παρασκευής 15 Τ.Κ 7741 τηλ: 24322761",
+      "aliases": [
+        "6d1c6cac38cbc01e"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "6d1c6cac38cbc01e",
+      "district": "Χοιροκιτία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.80214,
+      "lng": 33.35117,
+      "name": "V. Theodorou Bro Petrol Station LTD",
+      "stationKey": "station_6d1c6cac38cbc01e"
+    },
+    "station_6d595c8fe6efdfd8": {
+      "address": "Γ.Γρίβα Διγενή 12 Τ.Κ 2614 τηλ: 22635005",
+      "aliases": [
+        "6d595c8fe6efdfd8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "6d595c8fe6efdfd8",
+      "district": "Αρεδιού",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.058393,
+      "lng": 33.206986,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_6d595c8fe6efdfd8"
+    },
+    "station_6d6656d3d6949073": {
+      "address": "Οδυσσέα Γεωργίου 2 Τ.Κ 4651 τηλ: 25390062",
+      "aliases": [
+        "6d6656d3d6949073"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "6d6656d3d6949073",
+      "district": "Τραχώνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.654152777777774,
+      "lng": 32.976061111111115,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_6d6656d3d6949073"
+    },
+    "station_6f8465030b0b6424": {
+      "address": "Λεωφ. Σπ. Κυπριανού 28 Τ.Κ 4154 τηλ: 25822228",
+      "aliases": [
+        "6f8465030b0b6424"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "6f8465030b0b6424",
+      "district": "Κάτω Πολεμίδια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.685318,
+      "lng": 33.013874,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_6f8465030b0b6424"
+    },
+    "station_702708aebb6ea559": {
+      "address": "Λεώφ. Αγίου Γεωργίου Τ.Κ 8560 τηλ: 26622612",
+      "aliases": [
+        "702708aebb6ea559"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "702708aebb6ea559",
+      "district": "Πέγεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.87136,
+      "lng": 32.36097,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_702708aebb6ea559"
+    },
+    "station_70a04a442296e6ed": {
+      "address": "Λεώφ. Λεμεσού 5 Τ.Κ 4525 τηλ: 25632877",
+      "aliases": [
+        "70a04a442296e6ed"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "70a04a442296e6ed",
+      "district": "Μονή",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.721313,
+      "lng": 33.199702,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_70a04a442296e6ed"
+    },
+    "station_713f24f6350d1c26": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄2, Πέρα Χωριό Τ.Κ 2572 τηλ: 22521930",
+      "aliases": [
+        "713f24f6350d1c26"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "713f24f6350d1c26",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.014335,
+      "lng": 33.394406,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_713f24f6350d1c26"
+    },
+    "station_7185236f8eae161c": {
+      "address": "Ελευθερίας 28 Τ.Κ 2566 τηλ: 22521825",
+      "aliases": [
+        "7185236f8eae161c"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "7185236f8eae161c",
+      "district": "Λύμπια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.9981508168812,
+      "lng": 33.4547390932541,
+      "name": "THEODOSIS OLYMBIOS PETROL STATION LTD",
+      "stationKey": "station_7185236f8eae161c"
+    },
+    "station_71fe1bac2de3405a": {
+      "address": "Πεύκου 71 Τ.Κ 2326 τηλ: 22313771",
+      "aliases": [
+        "71fe1bac2de3405a"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "71fe1bac2de3405a",
+      "district": "Λακατάμεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.09875,
+      "lng": 33.31522222222222,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_71fe1bac2de3405a"
+    },
+    "station_737278d1fd736ea8": {
+      "address": "Λεωφ. Πρωταρά - Κάβο Γκρέκο 280 Τ.Κ 5310 τηλ: 23814200",
+      "aliases": [
+        "737278d1fd736ea8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "737278d1fd736ea8",
+      "district": "Πρωταράς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.025105,
+      "lng": 34.035299,
+      "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΡΩΤΑΡΑΣ) ΛΙΜΙΤΕΔ",
+      "stationKey": "station_737278d1fd736ea8"
+    },
+    "station_74828a1c7019f63f": {
+      "address": "Λεωφ. Αγ.Γεωργίου 82 Τ.Κ 8560 τηλ: 26621132",
+      "aliases": [
+        "74828a1c7019f63f"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "74828a1c7019f63f",
+      "district": "Πέγεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.876967,
+      "lng": 32.35534,
+      "name": "S. KALLIKAS LIMITED",
+      "stationKey": "station_74828a1c7019f63f"
+    },
+    "station_756c5735c2cf0216": {
+      "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
+      "aliases": [
+        "756c5735c2cf0216"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "756c5735c2cf0216",
+      "district": "Μαζωτός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.80268333,
+      "lng": 33.51053333,
+      "name": "ΑΝΔΡΕΑΣ Β. ΓΕΩΡΓΙΟΥ ΛΤΔ",
+      "stationKey": "station_756c5735c2cf0216"
+    },
+    "station_77144c99913e8d3c": {
+      "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
+      "aliases": [
+        "77144c99913e8d3c"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "77144c99913e8d3c",
+      "district": "Δρόμος Λάρνακας - Δεκέλειας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.95398333,
+      "lng": 33.65163333,
+      "name": "M.S. PETROLEUM STATION LIMITED",
+      "stationKey": "station_77144c99913e8d3c"
+    },
+    "station_77b8e8a2b66bb0bf": {
+      "address": "Γιάννου Κρανιδιώτη 34, (Εκάλι, Αγία Φύλα) Τ.Κ - τηλ: 25772888",
+      "aliases": [
+        "77b8e8a2b66bb0bf"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "77b8e8a2b66bb0bf",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.698138888888884,
+      "lng": 33.01002777777778,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_77b8e8a2b66bb0bf"
+    },
+    "station_791a268179d9db23": {
+      "address": "Λεωφ. Τάσσου Παπαδόπουλου 7 (δίπλα από πρώην Διυλιστήριο) Τ.Κ 6059 τηλ: 24668180",
+      "aliases": [
+        "791a268179d9db23"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "791a268179d9db23",
+      "district": "Λειβάδια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.941497,
+      "lng": 33.642206,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_791a268179d9db23"
+    },
+    "station_7a177bbdabdeba1e": {
+      "address": "Κάθετος Δρόμος Νέου Λιμανιού Τ.Κ 4150 τηλ: 25391801",
+      "aliases": [
+        "7a177bbdabdeba1e"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "7a177bbdabdeba1e",
+      "district": "Κάτω Πολεμίδια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.673932,
+      "lng": 32.988493,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_7a177bbdabdeba1e"
+    },
+    "station_7a3c4774e005cdd3": {
+      "address": "Ευαγόρα Παλληκαρίδη 10 Τ.Κ 8010 τηλ: 26932494",
+      "aliases": [
+        "7a3c4774e005cdd3"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "7a3c4774e005cdd3",
+      "district": "Πάφος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_7a3c4774e005cdd3"
+    },
+    "station_7a64d2da7f7d100e": {
+      "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
+      "aliases": [
+        "7a64d2da7f7d100e"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "7a64d2da7f7d100e",
+      "district": "Αγλαντζιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1424861044572,
+      "lng": 33.3745368742744,
+      "name": "CADREC LTD",
+      "stationKey": "station_7a64d2da7f7d100e"
+    },
+    "station_7e383d53af2152e1": {
+      "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
+      "aliases": [
+        "7e383d53af2152e1"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "7e383d53af2152e1",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1668579182817,
+      "lng": 33.3703520423279,
+      "name": "ΣΙΜΟΣ ΚΑΔΗ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_7e383d53af2152e1"
+    },
+    "station_7f09c471e46078d2": {
+      "address": "Λεωφ. Νίκης 25 Τ.Κ 1086 τηλ: 22490521",
+      "aliases": [
+        "7f09c471e46078d2"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "7f09c471e46078d2",
+      "district": "Ακρόπολη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1579,
+      "lng": 33.358068,
+      "name": "ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΑΔΑΜΟΣ ΧΡΙΣΤΟΔΟΥΛΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_7f09c471e46078d2"
+    },
+    "station_7f2e635a58b27a93": {
+      "address": "Αγίας Φυλάξεως 23-25 Τ.Κ 3025 τηλ: 25358282",
+      "aliases": [
+        "7f2e635a58b27a93"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "7f2e635a58b27a93",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.681279,
+      "lng": 33.038879,
+      "name": "S.L. PETROLEUM SERVICES LTD",
+      "stationKey": "station_7f2e635a58b27a93"
+    },
+    "station_81cddde47c16d65a": {
+      "address": "Λεωφ. Αγίου Γεωργίου 107 Τ.Κ 2304 τηλ: 22371550",
+      "aliases": [
+        "81cddde47c16d65a"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "81cddde47c16d65a",
+      "district": "Λακατάμεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.11461111111111,
+      "lng": 33.28791666666667,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_81cddde47c16d65a"
+    },
+    "station_8243f95c29858226": {
+      "address": "Λεωφ.Αρχ. Μακαρίου Γ' 70, Αστρομερίτης Τ.Κ 2722 τηλ: 22821312",
+      "aliases": [
+        "8243f95c29858226"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "8243f95c29858226",
+      "district": "Αστρομερίτης",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.138374,
+      "lng": 33.051492,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_8243f95c29858226"
+    },
+    "station_827afeb5883d8011": {
+      "address": "Λεωφ. Καρύων 17 Τ.Κ 5510 τηλ: 23922182",
+      "aliases": [
+        "827afeb5883d8011"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "827afeb5883d8011",
+      "district": "Αυγόρου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.04402777777778,
+      "lng": 33.840444444444444,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_827afeb5883d8011"
+    },
+    "station_82cb465d1835afff": {
+      "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
+      "aliases": [
+        "82cb465d1835afff"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "82cb465d1835afff",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6744035108073,
+      "lng": 33.013875861377,
+      "name": "N.P PETROL STATION LTD",
+      "stationKey": "station_82cb465d1835afff"
+    },
+    "station_8322cc6bca7eaf33": {
+      "address": "Καλαμών 21 Τ.Κ 2032 τηλ: 22570720",
+      "aliases": [
+        "8322cc6bca7eaf33"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "8322cc6bca7eaf33",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.124269,
+      "lng": 33.372145,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_8322cc6bca7eaf33"
+    },
+    "station_859ed4fea53a3fc8": {
+      "address": "Λεωφ. Σπ. Κυπριανού 5 Τ.Κ 4155 τηλ: 25332203",
+      "aliases": [
+        "859ed4fea53a3fc8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "859ed4fea53a3fc8",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.686762,
+      "lng": 33.015375,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_859ed4fea53a3fc8"
+    },
+    "station_8602d799950f6708": {
+      "address": "Λεωφ. Σπ. Κυπριανού 26 Τ.Κ 4003 τηλ: 25752200",
+      "aliases": [
+        "8602d799950f6708"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "8602d799950f6708",
+      "district": "Μέσα Γειτονιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6979547037033,
+      "lng": 33.0435229086677,
+      "name": "STAVROS PANAYIOTOU OIL SERVICES LIMITED",
+      "stationKey": "station_8602d799950f6708"
+    },
+    "station_8756ea1a38d9034d": {
+      "address": "Λεωφ. Στροβόλου 279 Τ.Κ 2048 τηλ: 22326064",
+      "aliases": [
+        "8756ea1a38d9034d"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "8756ea1a38d9034d",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.128309,
+      "lng": 33.325049,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_8756ea1a38d9034d"
+    },
+    "station_87e0110e1d3b6fda": {
+      "address": "Λεωφ. Χλώρακας 70 Τ.Κ 8220 τηλ: 26812600",
+      "aliases": [
+        "87e0110e1d3b6fda"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "87e0110e1d3b6fda",
+      "district": "Χλώρακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.79908333333333,
+      "lng": 32.40002777777778,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_87e0110e1d3b6fda"
+    },
+    "station_884f3e483b24413b": {
+      "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
+      "aliases": [
+        "884f3e483b24413b"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "884f3e483b24413b",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.93068333,
+      "lng": 33.62813333,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_884f3e483b24413b"
+    },
+    "station_89f380d21829f5c8": {
+      "address": "Λεωφ. Σπ. Χριστοδούλου 47 Τ.Κ 1020 τηλ: 22344500",
+      "aliases": [
+        "89f380d21829f5c8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "89f380d21829f5c8",
+      "district": "Παλλουριώτισσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.175612,
+      "lng": 33.373034,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_89f380d21829f5c8"
+    },
+    "station_8a20f50bc4e14e74": {
+      "address": "Αναστάσιου Μανώλη 54 Τ.Κ 7520 τηλ: 24824610",
+      "aliases": [
+        "8a20f50bc4e14e74"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "8a20f50bc4e14e74",
+      "district": "Ξυλοφάγου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.976892,
+      "lng": 33.84441667,
+      "name": "D&J PAPETTA PETROL STATION LTD",
+      "stationKey": "station_8a20f50bc4e14e74"
+    },
+    "station_8b68e77c2a8f52a5": {
+      "address": "Λεωφ. Δημοκρατίας 54 Τ.Κ 2034 τηλ: 22429491",
+      "aliases": [
+        "8b68e77c2a8f52a5"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "8b68e77c2a8f52a5",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.131505,
+      "lng": 33.361001,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_8b68e77c2a8f52a5"
+    },
+    "station_8b921dcf143bd80a": {
+      "address": "Αγίας Ζώνης 14 Τ.Κ 3027 τηλ: 25344263",
+      "aliases": [
+        "8b921dcf143bd80a"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "8b921dcf143bd80a",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6829771920967,
+      "lng": 33.0441996858444,
+      "name": "E&P PETROL STATION LTD",
+      "stationKey": "station_8b921dcf143bd80a"
+    },
+    "station_8bd6432b6adad6ee": {
+      "address": "Γρηγόρη Αυξεντίου 128 Τ.Κ 4520 τηλ: 25366669",
+      "aliases": [
+        "8bd6432b6adad6ee"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "8bd6432b6adad6ee",
+      "district": "Παρεκκλησιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.748826,
+      "lng": 33.161061,
+      "name": "KOURKOUTIS ENTERPRISES LTD",
+      "stationKey": "station_8bd6432b6adad6ee"
+    },
+    "station_8c6d9789c36c06fd": {
+      "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
+      "aliases": [
+        "8c6d9789c36c06fd"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "8c6d9789c36c06fd",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.753826,
+      "lng": 32.962765,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_8c6d9789c36c06fd"
+    },
+    "station_8cf83187c81444f7": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 33 Τ.Κ 8820 τηλ: 26020010",
+      "aliases": [
+        "8cf83187c81444f7"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "8cf83187c81444f7",
+      "district": "Πόλης Χρυσοχούς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_8cf83187c81444f7"
+    },
+    "station_8e2aa15fc8880356": {
+      "address": "Δρόμος Καλού Χωριού Λάρνακας Τ.Κ 7643 τηλ: 24102172",
+      "aliases": [
+        "8e2aa15fc8880356"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "8e2aa15fc8880356",
+      "district": "Καλό Χωριό Λάρνακας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.91073084,
+      "lng": 33.562161,
+      "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_8e2aa15fc8880356"
+    },
+    "station_8fcbe6d21c9de97c": {
+      "address": "Μεγάλου Αλεξάνδρου 46, Παλιομέτοχο Τ.Κ 2682 τηλ: 22832066",
+      "aliases": [
+        "8fcbe6d21c9de97c"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "8fcbe6d21c9de97c",
+      "district": "Παλιομέτοχο",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.137166666666666,
+      "lng": 33.21402777777778,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_8fcbe6d21c9de97c"
+    },
+    "station_8fe156bf183d4e17": {
+      "address": "Δρόμος Κάθικα - Πάνω Αρόδες Τ.Κ 8703 τηλ: 26652654",
+      "aliases": [
+        "8fe156bf183d4e17"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "8fe156bf183d4e17",
+      "district": "Αρόδες",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.926162,
+      "lng": 32.418154,
+      "name": "S. KALLIKAS LIMITED",
+      "stationKey": "station_8fe156bf183d4e17"
+    },
+    "station_907b49480455ec18": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 35 Τ.Κ 6017 τηλ: 24652743",
+      "aliases": [
+        "907b49480455ec18"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "907b49480455ec18",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.922123,
+      "lng": 33.636282,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_907b49480455ec18"
+    },
+    "station_91254c98a1fd04ca": {
+      "address": "Tσερίου 36 Νήσου (Χαλεπιανές) Τ.Κ 2571 τηλ: 22485563",
+      "aliases": [
+        "91254c98a1fd04ca"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "91254c98a1fd04ca",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_91254c98a1fd04ca"
+    },
+    "station_91c7c15096eb0f6e": {
+      "address": "Φρ. Ρούσβελτ 245 Τ.Κ 3046 τηλ: 25391077",
+      "aliases": [
+        "91c7c15096eb0f6e"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "91c7c15096eb0f6e",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.65851667,
+      "lng": 33.0028,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_91c7c15096eb0f6e"
+    },
+    "station_91f111e4e72a9007": {
+      "address": "28ης Οκτωβρίου 305 Τ.Κ 3105 τηλ: 25101128",
+      "aliases": [
+        "91f111e4e72a9007"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "91f111e4e72a9007",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_91f111e4e72a9007"
+    },
+    "station_94193462229960ba": {
+      "address": "Λεωφ. Προδρόμου 111 Τ.Κ 2063 τηλ: 22661444",
+      "aliases": [
+        "94193462229960ba"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "94193462229960ba",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.162777,
+      "lng": 33.347181,
+      "name": "ΛΟΥΚΑΣ Θ. ΛΟΥΚΑ & ΥΙΟΙ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΤΔ",
+      "stationKey": "station_94193462229960ba"
+    },
+    "station_9770d7c5b0b67334": {
+      "address": "Λεωφόρος Αρχ. Μιχαήλ 17 Τ.Κ 2057 τηλ: 22876187",
+      "aliases": [
+        "9770d7c5b0b67334"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "9770d7c5b0b67334",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.156596,
+      "lng": 33.335618,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_9770d7c5b0b67334"
+    },
+    "station_984cf2ae0c732d34": {
+      "address": "Λεωφ. Λουκή Ακρίτα 15 Τ.Κ 1100 τηλ: 22771700",
+      "aliases": [
+        "984cf2ae0c732d34"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "984cf2ae0c732d34",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.17211667,
+      "lng": 33.34798333,
+      "name": "A.C.C. AVRAAM ENTERPRISES LIMITED",
+      "stationKey": "station_984cf2ae0c732d34"
+    },
+    "station_99218d880acb618d": {
+      "address": "Λεωφ. Κυριάκου Μάτση 28, Αγ.Ομολογητές Τ.Κ 1082 τηλ: 22317129",
+      "aliases": [
+        "99218d880acb618d"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "99218d880acb618d",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1591,
+      "lng": 33.35478333,
+      "name": "ΑΔΕΛΦΟΙ Π & Π ΧΡΙΣΤΟΔΟΥΛΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_99218d880acb618d"
+    },
+    "station_9975fe1af4b57365": {
+      "address": "Λεωφ. Δρομολαξιάς 61 Τ.Κ 7550 τηλ: 24828600",
+      "aliases": [
+        "9975fe1af4b57365"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "9975fe1af4b57365",
+      "district": "Κίτι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.861666666666665,
+      "lng": 33.57580555555556,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_9975fe1af4b57365"
+    },
+    "station_99bae61ebc0d980d": {
+      "address": "Γωνία Ναυαρίνου 2 & Ταγματάρχου Πουλίου Τ.Κ 1100 τηλ: 22774025",
+      "aliases": [
+        "99bae61ebc0d980d"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "99bae61ebc0d980d",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.171615,
+      "lng": 33.345687,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_99bae61ebc0d980d"
+    },
+    "station_9c0784b59dfcb7e0": {
+      "address": "Λεωφ. Διγενή Ακρίτα 7-9 Τ.Κ 1055 τηλ: 22347879",
+      "aliases": [
+        "9c0784b59dfcb7e0"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "9c0784b59dfcb7e0",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.170191,
+      "lng": 33.374402,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_9c0784b59dfcb7e0"
+    },
+    "station_9ce326186a92452a": {
+      "address": "Λεωφ. Λευκωσίας 74, Περιστερώνα Τ.Κ 2731 τηλ: 22821555",
+      "aliases": [
+        "9ce326186a92452a"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "9ce326186a92452a",
+      "district": "Περιστερώνα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_9ce326186a92452a"
+    },
+    "station_9d7dad5c32959116": {
+      "address": "Προμαχών Ελευθερίας 11 Τ.Κ 4103 τηλ: 25324935",
+      "aliases": [
+        "9d7dad5c32959116"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "9d7dad5c32959116",
+      "district": "Άγιος Αθανάσιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": null,
+      "lng": null,
+      "name": "OLSERVE LIMITED",
+      "stationKey": "station_9d7dad5c32959116"
+    },
+    "station_9da11a2cf62ed374": {
+      "address": "Θεοκρίτου 57 Τ.Κ 7600 τηλ: 24523240",
+      "aliases": [
+        "9da11a2cf62ed374"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "9da11a2cf62ed374",
+      "district": "Αθιένου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.058083,
+      "lng": 33.535842,
+      "name": "ΚΥΡΙΑΚΟΣ Π. ΠΟΙΗΤΗΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_9da11a2cf62ed374"
+    },
+    "station_9f833ed9647924ec": {
+      "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
+      "aliases": [
+        "9f833ed9647924ec"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "9f833ed9647924ec",
+      "district": "Κακοπετριά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "MOROTON ENTERPRISES LIMITED",
+      "stationKey": "station_9f833ed9647924ec"
+    },
+    "station_a0ddc50832276137": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
+      "aliases": [
+        "a0ddc50832276137"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "a0ddc50832276137",
+      "district": "Παραλίμνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.04151667,
+      "lng": 33.98011667,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_a0ddc50832276137"
+    },
+    "station_a17c87986a7bd888": {
+      "address": "Λεωφ. Ομονοίας 32 Τ.Κ 3052 τηλ: 25569893",
+      "aliases": [
+        "a17c87986a7bd888"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "a17c87986a7bd888",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "ΚΥΡΙΑΚΟΣ ΚΟΜΠΟΣ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_a17c87986a7bd888"
+    },
+    "station_a22f5ef0d4f4f080": {
+      "address": "Λεωφ. Πρωταρά 161 Τ.Κ 5289 τηλ: 23822030",
+      "aliases": [
+        "a22f5ef0d4f4f080"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "a22f5ef0d4f4f080",
+      "district": "Παραλίμνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.043444,
+      "lng": 33.994804,
+      "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΑΡΑΛΙΜΝΙ) ΛΙΜΙΤΕΔ",
+      "stationKey": "station_a22f5ef0d4f4f080"
+    },
+    "station_a4437b7faf3239f9": {
+      "address": "Αγίου Γεωργίου Νικοξυλίτη 75 Τ.Κ 8700 τηλ: 26843256",
+      "aliases": [
+        "a4437b7faf3239f9"
+      ],
+      "brand": "TOTAL PLUS",
+      "currentSourceHash": "a4437b7faf3239f9",
+      "district": "Δρούσια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.98419444444445,
+      "lng": 32.40555555555555,
+      "name": "TOTAL PLUS LIMITED",
+      "stationKey": "station_a4437b7faf3239f9"
+    },
+    "station_a46d9093788cc608": {
+      "address": "Λεωφ. Τσερίου 145, Στρόβολος Τ.Κ 2045 τηλ: 22326574",
+      "aliases": [
+        "a46d9093788cc608"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "a46d9093788cc608",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1267,
+      "lng": 33.3377,
+      "name": "NATAR PETROL STATION LIMITED",
+      "stationKey": "station_a46d9093788cc608"
+    },
+    "station_a4d84c6b7edc202d": {
+      "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
+      "aliases": [
+        "a4d84c6b7edc202d"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "a4d84c6b7edc202d",
+      "district": "Ξυλοφάγου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.977696,
+      "lng": 33.838823,
+      "name": "ΝΙΚΟΣ ΓΕΡΑΣΙΜΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_a4d84c6b7edc202d"
+    },
+    "station_a576adab12679a6e": {
+      "address": "Λεωφ. Γιάννου Κρανιδιώτη 7 Τ.Κ 3110 τηλ: 25822090",
+      "aliases": [
+        "a576adab12679a6e"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "a576adab12679a6e",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.698122,
+      "lng": 33.009215,
+      "name": "PAMBINOS PETROL STATION LIMITED",
+      "stationKey": "station_a576adab12679a6e"
+    },
+    "station_a6746a421ebdd5c6": {
+      "address": "Αγίας Φυλάξεως 231 Τ.Κ 3116 τηλ: 25820225",
+      "aliases": [
+        "a6746a421ebdd5c6"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "a6746a421ebdd5c6",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.706675,
+      "lng": 33.025237,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_a6746a421ebdd5c6"
+    },
+    "station_a97d71c544e0adf5": {
+      "address": "Λεωφ. Δημοσθένη Σεβέρη 49 Τ.Κ 1080 τηλ: 22661826",
+      "aliases": [
+        "a97d71c544e0adf5"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "a97d71c544e0adf5",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.15764,
+      "lng": 33.352016,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_a97d71c544e0adf5"
+    },
+    "station_a98fb390abf984da": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 31-35 Τ.Κ 1082 τηλ: 22761100",
+      "aliases": [
+        "a98fb390abf984da"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "a98fb390abf984da",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1628065376475,
+      "lng": 33.3572777748687,
+      "name": "TROPALI PETROLEUM TWO LTD",
+      "stationKey": "station_a98fb390abf984da"
+    },
+    "station_a9b1a0986fadbe85": {
+      "address": "Λεωφ. Κυριάκου Μάτση 22 Τ.Κ 2408 τηλ: 22354708",
+      "aliases": [
+        "a9b1a0986fadbe85"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "a9b1a0986fadbe85",
+      "district": "Έγκωμη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.168024,
+      "lng": 33.32996,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_a9b1a0986fadbe85"
+    },
+    "station_aae9392f974dc3be": {
+      "address": "Ονησίλου 1 Τ.Κ 4532 τηλ: 25310136",
+      "aliases": [
+        "aae9392f974dc3be"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "aae9392f974dc3be",
+      "district": "Τουριστική Περ. Αγίου Τύχωνα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7085527677969,
+      "lng": 33.123785642714,
+      "name": "DERESIO PETROLEUM LTD",
+      "stationKey": "station_aae9392f974dc3be"
+    },
+    "station_ac5490a8f018434c": {
+      "address": "Λεωφ. Νίκης 37 Τ.Κ 1087 τηλ: 22490810",
+      "aliases": [
+        "ac5490a8f018434c"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "ac5490a8f018434c",
+      "district": "Ακρόπολη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1565679511699,
+      "lng": 33.3580602362457,
+      "name": "ANGIO TRADING LIMITED",
+      "stationKey": "station_ac5490a8f018434c"
+    },
+    "station_adf85b8e0e959bc4": {
+      "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
+      "aliases": [
+        "adf85b8e0e959bc4"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "adf85b8e0e959bc4",
+      "district": "Σαϊτάς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_adf85b8e0e959bc4"
+    },
+    "station_af6fc589aff28c37": {
+      "address": "Γρηγόρη Αυξεντίου Ακάκι Τ.Κ 2720 τηλ: 22821452",
+      "aliases": [
+        "af6fc589aff28c37"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "af6fc589aff28c37",
+      "district": "Ακάκι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "ΠΑΥΛΟΣ ΔΙΑΚΟΣ & ΥΙΟΙ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΙΜΙΤΕΔ",
+      "stationKey": "station_af6fc589aff28c37"
+    },
+    "station_b1372950611d5072": {
+      "address": "Γεώργιου Χ\" Χαραλάμπους 58 Τ.Κ 7700 τηλ: 24342417",
+      "aliases": [
+        "b1372950611d5072"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "b1372950611d5072",
+      "district": "Λεύκαρα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.86518333,
+      "lng": 33.30683333,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_b1372950611d5072"
+    },
+    "station_b1b967044e240a25": {
+      "address": "Ευαγόρα Παλληκαρίδη 105 Τ.Κ 8010 τηλ: 26932185",
+      "aliases": [
+        "b1b967044e240a25"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "b1b967044e240a25",
+      "district": "Πάφος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7798,
+      "lng": 32.4248,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_b1b967044e240a25"
+    },
+    "station_b1f445af962eead1": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 35 Τ.Κ 7550 τηλ: 24828666",
+      "aliases": [
+        "b1f445af962eead1"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "b1f445af962eead1",
+      "district": "Κίτι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.8520915281319,
+      "lng": 33.5795308018523,
+      "name": "ΘΕΟΠΕΤΡΟ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_b1f445af962eead1"
+    },
+    "station_b215fce0166a4217": {
+      "address": "Λεωφ. Στροβόλου 60 Τ.Κ 2018 τηλ: 22422060",
+      "aliases": [
+        "b215fce0166a4217"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "b215fce0166a4217",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.146567,
+      "lng": 33.34512,
+      "name": "Π. ΛΟΙΖΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_b215fce0166a4217"
+    },
+    "station_b2c2fb2b404422ea": {
+      "address": "Λεωφ. Αναλιόντα 155 Τ.Κ 2480 τηλ: 22521770",
+      "aliases": [
+        "b2c2fb2b404422ea"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "b2c2fb2b404422ea",
+      "district": "Τσέρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.053153,
+      "lng": 33.325129,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_b2c2fb2b404422ea"
+    },
+    "station_b355b926416f0780": {
+      "address": "Λεωφ. Καντάρας 78 Τ.Κ 1027 τηλ: 22433293",
+      "aliases": [
+        "b355b926416f0780"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "b355b926416f0780",
+      "district": "Καϊμακλί",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.185485,
+      "lng": 33.39097,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_b355b926416f0780"
+    },
+    "station_b36377f5dfdf9229": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 18 Τ.Κ 3061 τηλ: 25573984",
+      "aliases": [
+        "b36377f5dfdf9229"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "b36377f5dfdf9229",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.67531667,
+      "lng": 33.0203,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_b36377f5dfdf9229"
+    },
+    "station_b4278d696ad30ec7": {
+      "address": "Λεωφ. Αρχ. Μιχαήλ 37 (Παρισσινός) Τ.Κ 2057 τηλ: 22352414",
+      "aliases": [
+        "b4278d696ad30ec7"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "b4278d696ad30ec7",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.155440807824,
+      "lng": 33.3337053472214,
+      "name": "SOFT \"N\" FOAMY CAR WASH LIMITED",
+      "stationKey": "station_b4278d696ad30ec7"
+    },
+    "station_b5fd98dcbaf3ac7e": {
+      "address": "Λεωφ. Λάρνακος - Αμμοχώστου Τ.Κ 5523 τηλ: 24721122",
+      "aliases": [
+        "b5fd98dcbaf3ac7e"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "b5fd98dcbaf3ac7e",
+      "district": "Δασάκι της Άχνας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0325305321652,
+      "lng": 33.7577889277862,
+      "name": "ΜΑΡΙΟΣ Γ. ΠΑΝΑΓΗ & ΣΙΑ ΛΤΔ",
+      "stationKey": "station_b5fd98dcbaf3ac7e"
+    },
+    "station_b6a3d89e1b765ddb": {
+      "address": "Λεωφ. Λεμεσού 21, Πέρα Χωριό Τ.Κ 2572 τηλ: 22524366",
+      "aliases": [
+        "b6a3d89e1b765ddb"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "b6a3d89e1b765ddb",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.008912,
+      "lng": 33.39358,
+      "name": "VASOU EXPRESS LYBE CENTER LIMITED",
+      "stationKey": "station_b6a3d89e1b765ddb"
+    },
+    "station_b7550e74fd707936": {
+      "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
+      "aliases": [
+        "b7550e74fd707936"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "b7550e74fd707936",
+      "district": "Λακατάμεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.110876,
+      "lng": 33.309251,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_b7550e74fd707936"
+    },
+    "station_b7ab37f6a79a5995": {
+      "address": "1ης Απριλίου 33 Τ.Κ 5320 τηλ: 23943060",
+      "aliases": [
+        "b7ab37f6a79a5995"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "b7ab37f6a79a5995",
+      "district": "Λιοπέτρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0125205261968,
+      "lng": 33.8983047001923,
+      "name": "ΣΤΥΛΛΗ & ΙΩΣΗΦ ΕΠΙΧΕΙΡΗΣΕΙΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_b7ab37f6a79a5995"
+    },
+    "station_bd07e8470f4f57f1": {
+      "address": "Λεωφ. Σπ. Κυπριανού 219 Τ.Κ 2045 τηλ: 22322181",
+      "aliases": [
+        "bd07e8470f4f57f1"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "bd07e8470f4f57f1",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1216151736056,
+      "lng": 33.3404218637543,
+      "name": "LOUKA & ODYSSEOS TRADING LTD",
+      "stationKey": "station_bd07e8470f4f57f1"
+    },
+    "station_bdcf7d9cb80dc099": {
+      "address": "Λεωφ. Στροβόλου 223 Τ.Κ 2048 τηλ: 22326903",
+      "aliases": [
+        "bdcf7d9cb80dc099"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "bdcf7d9cb80dc099",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.13313,
+      "lng": 33.329338,
+      "name": "ΠΑΝΑΓΙΩΤΗΣ ΘΕΟΔΟΣΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_bdcf7d9cb80dc099"
+    },
+    "station_c03843677fad79a2": {
+      "address": "Κολωνακίου 27 Τ.Κ 4103 τηλ: 25322880",
+      "aliases": [
+        "c03843677fad79a2"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "c03843677fad79a2",
+      "district": "Άγιος Αθανάσιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.69845,
+      "lng": 33.072361,
+      "name": "ΠΑΝΑΓΙΩΤΗΣ ΠΕΓΛΙΤΣΗΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_c03843677fad79a2"
+    },
+    "station_c0392203089ae7cc": {
+      "address": "Ηλία Καννάουρου 64 Τ.Κ 4188 τηλ: 25714801",
+      "aliases": [
+        "c0392203089ae7cc"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "c0392203089ae7cc",
+      "district": "Ύψωνας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "N.P.M. GABRIEL LIMITED",
+      "stationKey": "station_c0392203089ae7cc"
+    },
+    "station_c1044ac0e370cda1": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 65 Τ.Κ 1070 τηλ: 22375297",
+      "aliases": [
+        "c1044ac0e370cda1"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "c1044ac0e370cda1",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1623148148148,
+      "lng": 33.3666851851852,
+      "name": "Π. & Φ. ΖΑΝΤΗ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_c1044ac0e370cda1"
+    },
+    "station_c17b80ab354df418": {
+      "address": "Λεωφ. Πρωταρά - Κάβο Γκρέκο 227 Τ.Κ 5295 τηλ: 23831601",
+      "aliases": [
+        "c17b80ab354df418"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "c17b80ab354df418",
+      "district": "Πρωταράς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.027565,
+      "lng": 34.031999,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_c17b80ab354df418"
+    },
+    "station_c2c8d24039d318b4": {
+      "address": "Νίκου και Δέσποινας Παττίχη 17 Τ.Κ 3071 τηλ: 25334111",
+      "aliases": [
+        "c2c8d24039d318b4"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c2c8d24039d318b4",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.685832,
+      "lng": 33.024152,
+      "name": "PAMBINOS & SONS LIMITED",
+      "stationKey": "station_c2c8d24039d318b4"
+    },
+    "station_c2cd66d1d51c1430": {
+      "address": "Θεόκριτου 67 Τ.Κ 7600 τηλ: 24522336",
+      "aliases": [
+        "c2cd66d1d51c1430"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "c2cd66d1d51c1430",
+      "district": "Αθιένου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0552526086954,
+      "lng": 33.5329100466271,
+      "name": "DEANSON LIMITED",
+      "stationKey": "station_c2cd66d1d51c1430"
+    },
+    "station_c2e50b98ea2ce25f": {
+      "address": "Μακεδονιτίσσης 105 Τ.Κ 2057 τηλ: 22513003",
+      "aliases": [
+        "c2e50b98ea2ce25f"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "c2e50b98ea2ce25f",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1464221046094,
+      "lng": 33.3278149601883,
+      "name": "DOUBLE N. GAS STATION LIMITED",
+      "stationKey": "station_c2e50b98ea2ce25f"
+    },
+    "station_c3165a13c9a1be9e": {
+      "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
+      "aliases": [
+        "c3165a13c9a1be9e"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "c3165a13c9a1be9e",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0424,
+      "lng": 33.387107,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_c3165a13c9a1be9e"
+    },
+    "station_c3cf9bc727f04264": {
+      "address": "Λεωφ.Αφροδίτης 21 Τ.Κ 8270 τηλ: 26654694",
+      "aliases": [
+        "c3cf9bc727f04264"
+      ],
+      "brand": "TOTAL PLUS",
+      "currentSourceHash": "c3cf9bc727f04264",
+      "district": "Τρεμιθούσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.819505,
+      "lng": 32.452114,
+      "name": "CIRCLEOFFICES LTD",
+      "stationKey": "station_c3cf9bc727f04264"
+    },
+    "station_c4b4c7c857b05997": {
+      "address": "Λεωφ.Γ.Γρίβα Διγενή 43 Τ.Κ 6045 τηλ: 24652200",
+      "aliases": [
+        "c4b4c7c857b05997"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "c4b4c7c857b05997",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.9187491493678,
+      "lng": 33.6186334558197,
+      "name": "TRIKENO LTD",
+      "stationKey": "station_c4b4c7c857b05997"
+    },
+    "station_c4c816c1c3e49163": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 82 Τ.Κ 7550 τηλ: 24424020",
+      "aliases": [
+        "c4c816c1c3e49163"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c4c816c1c3e49163",
+      "district": "Κίτι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.852781,
+      "lng": 33.581026,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_c4c816c1c3e49163"
+    },
+    "station_c543c64365ffe0fe": {
+      "address": "Αρχ. Μακαρίου Γ΄ 18 (Παλαιός Δρόμος Λάρνακας-Λεμεσού) Τ.Κ 7571 τηλ: 24432522",
+      "aliases": [
+        "c543c64365ffe0fe"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c543c64365ffe0fe",
+      "district": "Αγγλισίδες",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.852791,
+      "lng": 33.455066,
+      "name": "LESONI PETROLIUM LTD",
+      "stationKey": "station_c543c64365ffe0fe"
+    },
+    "station_c54ebfd89bbee489": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 4 Τ.Κ 7550 τηλ: 24422132",
+      "aliases": [
+        "c54ebfd89bbee489"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "c54ebfd89bbee489",
+      "district": "Κίτι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.84668333,
+      "lng": 33.573,
+      "name": "ANTONIS KKOULOS PETROL STATION LIMITED",
+      "stationKey": "station_c54ebfd89bbee489"
+    },
+    "station_c5b71a7754ca60b6": {
+      "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
+      "aliases": [
+        "c5b71a7754ca60b6"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "c5b71a7754ca60b6",
+      "district": "Γαλάτα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
+      "stationKey": "station_c5b71a7754ca60b6"
+    },
+    "station_c5e5768f985a7839": {
+      "address": "Λεωφ. Φρ. Ρούσβελτ 29 Τ.Κ 3012 τηλ: 25819782",
+      "aliases": [
+        "c5e5768f985a7839"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c5e5768f985a7839",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.670055,
+      "lng": 33.030746,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_c5e5768f985a7839"
+    },
+    "station_c707018b9ddda8ae": {
+      "address": "Λεωφόρος Στροβόλου 98 Τ.Κ 2325 τηλ: 22107231",
+      "aliases": [
+        "c707018b9ddda8ae"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c707018b9ddda8ae",
+      "district": "Λακατάμεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.106167,
+      "lng": 33.330644,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_c707018b9ddda8ae"
+    },
+    "station_c7482d63456b3f30": {
+      "address": "Πάφου 11 Τ.Κ 3052 τηλ: 25563791",
+      "aliases": [
+        "c7482d63456b3f30"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c7482d63456b3f30",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.673891,
+      "lng": 33.015811,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_c7482d63456b3f30"
+    },
+    "station_c76b38ae8d560c23": {
+      "address": "Μαρίου 10 Τ.Κ 8820 τηλ: 26321425",
+      "aliases": [
+        "c76b38ae8d560c23"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "c76b38ae8d560c23",
+      "district": "Πόλης Χρυσοχούς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.036047,
+      "lng": 32.429827,
+      "name": "IOSIF. P. IOSIF TRADING LIMITED",
+      "stationKey": "station_c76b38ae8d560c23"
+    },
+    "station_c7adf5ce5b0320c9": {
+      "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
+      "aliases": [
+        "c7adf5ce5b0320c9"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c7adf5ce5b0320c9",
+      "district": "Δερύνεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.055028,
+      "lng": 33.942739,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_c7adf5ce5b0320c9"
+    },
+    "station_c879eb84fa4db739": {
+      "address": "Λεωφ. Λευκωσίας 108 Τ.Κ 2540 τηλ: 22815686",
+      "aliases": [
+        "c879eb84fa4db739"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c879eb84fa4db739",
+      "district": "Δάλι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0342474332179,
+      "lng": 33.4088325048936,
+      "name": "Ι. ΧΑΣΙΚΟΣ ΛΤΔ",
+      "stationKey": "station_c879eb84fa4db739"
+    },
+    "station_c9d1eeef996ca0ed": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 204 Τ.Κ 3030 τηλ: 25362096",
+      "aliases": [
+        "c9d1eeef996ca0ed"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "c9d1eeef996ca0ed",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.68753,
+      "lng": 33.045896,
+      "name": "LEFKIOS NICOLAOU ENTERPRISES LIMITED",
+      "stationKey": "station_c9d1eeef996ca0ed"
+    },
+    "station_c9f0555d23c8d109": {
+      "address": "Διονυσίου Σολωμού 3 Τ.Κ 7741 τηλ: 24817478",
+      "aliases": [
+        "c9f0555d23c8d109"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "c9f0555d23c8d109",
+      "district": "Χοιροκιτία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.795864,
+      "lng": 33.346365,
+      "name": "Z. ΖΗΝΩΝΟΣ & ΥΙΟΙ ΛΤΔ",
+      "stationKey": "station_c9f0555d23c8d109"
+    },
+    "station_cadae5ac134b71c3": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄44, Κλήρου Τ.Κ 2600 τηλ: 22632327",
+      "aliases": [
+        "cadae5ac134b71c3"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "cadae5ac134b71c3",
+      "district": "Κλήρου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_cadae5ac134b71c3"
+    },
+    "station_cb00bc1f052442e8": {
+      "address": "Αρχ. Μακαρίου Γ΄ 42, Πέρα Χωριό Τ.Κ 2572 τηλ: 22521556",
+      "aliases": [
+        "cb00bc1f052442e8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "cb00bc1f052442e8",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.015708,
+      "lng": 33.401891,
+      "name": "ΦΟΙΒΟΣ ΠΑΠΑΛΕΟΝΤΙΟΥ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_cb00bc1f052442e8"
+    },
+    "station_cb2f572baf094d17": {
+      "address": "Κώστα Μισιαούλη 168 Τ.Κ 2480 τηλ: 22370234",
+      "aliases": [
+        "cb2f572baf094d17"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "cb2f572baf094d17",
+      "district": "Τσέρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.080333333333336,
+      "lng": 33.305138888888884,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_cb2f572baf094d17"
+    },
+    "station_cc51881e36380f6d": {
+      "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
+      "aliases": [
+        "cc51881e36380f6d"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "cc51881e36380f6d",
+      "district": "Τίμη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.710452,
+      "lng": 32.490238,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_cc51881e36380f6d"
+    },
+    "station_cc98d8946a1a4375": {
+      "address": "Νίκου Ευαγόρου 50 Τ.Κ 3091 τηλ: 25771999",
+      "aliases": [
+        "cc98d8946a1a4375"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "cc98d8946a1a4375",
+      "district": "Παλώδια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.745754,
+      "lng": 32.998862,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_cc98d8946a1a4375"
+    },
+    "station_cca2102553d93820": {
+      "address": "Παραλιμνίου 56 Τ.Κ 5311 τηλ: 23742550",
+      "aliases": [
+        "cca2102553d93820"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "cca2102553d93820",
+      "district": "Σωτήρα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.024897,
+      "lng": 33.963177,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_cca2102553d93820"
+    },
+    "station_ccbaf3419200c8c3": {
+      "address": "Λεωφ. Λάρνακος 125 Τ.Κ 1048 τηλ: 22435320",
+      "aliases": [
+        "ccbaf3419200c8c3"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "ccbaf3419200c8c3",
+      "district": "Παλλουριώτισσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1658,
+      "lng": 33.3822,
+      "name": "COSTAS SAVVIDES (PETROL STATION) LIMITED",
+      "stationKey": "station_ccbaf3419200c8c3"
+    },
+    "station_cd71e5205cf081a2": {
+      "address": "Αγίας Φυλάξεως 161 Τ.Κ 3083 τηλ: 25336641",
+      "aliases": [
+        "cd71e5205cf081a2"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "cd71e5205cf081a2",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.697668,
+      "lng": 33.032372,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_cd71e5205cf081a2"
+    },
+    "station_cdbe9406383f20db": {
+      "address": "Λεωφ. Κυριάκου Μάτση 54 Τ.Κ 2368 τηλ: 22449148",
+      "aliases": [
+        "cdbe9406383f20db"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "cdbe9406383f20db",
+      "district": "Άγιος Δομέτιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_cdbe9406383f20db"
+    },
+    "station_cfcbd4f5440a332e": {
+      "address": "Αγίου Λουκά 7 Τ.Κ 7731 τηλ: 24333172",
+      "aliases": [
+        "cfcbd4f5440a332e"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "cfcbd4f5440a332e",
+      "district": "Σκαρίνου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.815172222222216,
+      "lng": 33.36078055555556,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_cfcbd4f5440a332e"
+    },
+    "station_cfed7bc7cca9cc9a": {
+      "address": "Λεωφ. Σπ. Κυπριανού 22 Τ.Κ 2237 τηλ: 22467548",
+      "aliases": [
+        "cfed7bc7cca9cc9a"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "cfed7bc7cca9cc9a",
+      "district": "Λατσιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1056,
+      "lng": 33.3644,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_cfed7bc7cca9cc9a"
+    },
+    "station_d0984a7b9282c272": {
+      "address": "Γρηγόρη Αυξεντίου, Ακάκι Τ.Κ 2720 τηλ: 22821449",
+      "aliases": [
+        "d0984a7b9282c272"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "d0984a7b9282c272",
+      "district": "Ακάκι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1370534076704,
+      "lng": 33.1417384202377,
+      "name": "ΝΙΚΟΣ Χ. ΠΙΕΡΙΔΗΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_d0984a7b9282c272"
+    },
+    "station_d1fd65c9a844248c": {
+      "address": "Λεωφ. Ελλάδος 65 Τ.Κ 7101 τηλ: 24323063",
+      "aliases": [
+        "d1fd65c9a844248c"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "d1fd65c9a844248c",
+      "district": "Αραδίππου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.92766666666667,
+      "lng": 33.58225,
+      "name": "M.D.N. ITALOS FUELS LIMITED",
+      "stationKey": "station_d1fd65c9a844248c"
+    },
+    "station_d30a624638cf7391": {
+      "address": "Γ.Γρίβα Διγενή (Δρόμος Λευκωσίας - Παλαιχωρίου) Αρεδιού Τ.Κ 2614 τηλ: 22634780",
+      "aliases": [
+        "d30a624638cf7391"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "d30a624638cf7391",
+      "district": "Αρεδιού",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0588173178675,
+      "lng": 33.2073254528481,
+      "name": "N. ANDRONICOU SERVICE CENTER LIMITED",
+      "stationKey": "station_d30a624638cf7391"
+    },
+    "station_d432e6aee8a7f29a": {
+      "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
+      "aliases": [
+        "d432e6aee8a7f29a"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "d432e6aee8a7f29a",
+      "district": "Μεσόγη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.805,
+      "lng": 32.44541667,
+      "name": "P. DIOGENOUS PETROL STATION LTD",
+      "stationKey": "station_d432e6aee8a7f29a"
+    },
+    "station_d4357054a27b3116": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 89 Τ.Κ 1071 τηλ: 22376724",
+      "aliases": [
+        "d4357054a27b3116"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "d4357054a27b3116",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1609,
+      "lng": 33.3711,
+      "name": "POWERPULLS LIMITED",
+      "stationKey": "station_d4357054a27b3116"
+    },
+    "station_d438fbb88dc48183": {
+      "address": "Δρόμος προς Δασάκι Άχνας Τ.Κ 7510 τηλ: 24723940",
+      "aliases": [
+        "d438fbb88dc48183"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "d438fbb88dc48183",
+      "district": "Περιφερειακός Δρόμος Ξυλοτύμπου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.023449,
+      "lng": 33.744123,
+      "name": "ΒΑΣΟΣ ΜΑΤΩΛΗΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_d438fbb88dc48183"
+    },
+    "station_d5b77685d158efdf": {
+      "address": "Λεωφ. Γρηγόρη Αυξεντίου 67, Αγία Βαρβάρα Τ.Κ 2560 τηλ: 22523162",
+      "aliases": [
+        "d5b77685d158efdf"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "d5b77685d158efdf",
+      "district": "Αγία Βαρβάρα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.002166,
+      "lng": 33.380229,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_d5b77685d158efdf"
+    },
+    "station_d5b7ecd1dfbb91fd": {
+      "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
+      "aliases": [
+        "d5b7ecd1dfbb91fd"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "d5b7ecd1dfbb91fd",
+      "district": "Ευρύχου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.070157,
+      "lng": 32.930054,
+      "name": "Marios Miltiadous Petrol Station Ltd",
+      "stationKey": "station_d5b7ecd1dfbb91fd"
+    },
+    "station_d607fbe3597e7ab4": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 17 Τ.Κ 1082 τηλ: 22765623",
+      "aliases": [
+        "d607fbe3597e7ab4"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "d607fbe3597e7ab4",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.162832,
+      "lng": 33.35741,
+      "name": "ΚΩΣΤΑΚΗΣ Δ. ΚΩΝΣΤΑΝΤΙΝΟΥ",
+      "stationKey": "station_d607fbe3597e7ab4"
+    },
+    "station_d697cd7a32e9219a": {
+      "address": "14ος Δρόμος 40 Τ.Κ 4620 τηλ: 25932671",
+      "aliases": [
+        "d697cd7a32e9219a"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "d697cd7a32e9219a",
+      "district": "Επισκοπή",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6675050830376,
+      "lng": 32.9093575055572,
+      "name": "ΣΑΒΒΑΣ ΛΙΛΗ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_d697cd7a32e9219a"
+    },
+    "station_d709a6b85da868a3": {
+      "address": "Θεσσαλονίκης 16 Τ.Κ 3025 τηλ: 25584639",
+      "aliases": [
+        "d709a6b85da868a3"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "d709a6b85da868a3",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.681925,
+      "lng": 33.041939,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_d709a6b85da868a3"
+    },
+    "station_d738d0755e3fa8b1": {
+      "address": "Γρηγόρη Αυξεντίου 76, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22834160",
+      "aliases": [
+        "d738d0755e3fa8b1"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "d738d0755e3fa8b1",
+      "district": "Κοκκινοτριμιθιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.148666,
+      "lng": 33.212235,
+      "name": "MICHALIS KNEKNAS TRADING LTD",
+      "stationKey": "station_d738d0755e3fa8b1"
+    },
+    "station_d7f7a3958704cff5": {
+      "address": "Ασπρόκρεμου 10 Τ.Κ 8505 τηλ: 26222507",
+      "aliases": [
+        "d7f7a3958704cff5"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "d7f7a3958704cff5",
+      "district": "Νικόκλεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.727105,
+      "lng": 32.569073,
+      "name": "SONSIRE HOLDINGS LTD",
+      "stationKey": "station_d7f7a3958704cff5"
+    },
+    "station_d81a646cd3a6eb75": {
+      "address": "Λεωφ. Μιχαλάκη Κυπριανού 121 Τ.Κ 8560 τηλ: 26343943",
+      "aliases": [
+        "d81a646cd3a6eb75"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "d81a646cd3a6eb75",
+      "district": "Πέγεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.864528,
+      "lng": 32.379294,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_d81a646cd3a6eb75"
+    },
+    "station_d9e90255a47886bf": {
+      "address": "Λεωφ. Αθαλάσσας 110 Τ.Κ 2024 τηλ: 22424452",
+      "aliases": [
+        "d9e90255a47886bf"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "d9e90255a47886bf",
+      "district": "Δασούπολη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.143786,
+      "lng": 33.36403,
+      "name": "LODELIA LIMITED",
+      "stationKey": "station_d9e90255a47886bf"
+    },
+    "station_da8a5f367651a094": {
+      "address": "Γ. Κρανιδιώτη 47 Τ.Κ 2220 τηλ: 22481428",
+      "aliases": [
+        "da8a5f367651a094"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "da8a5f367651a094",
+      "district": "Λατσιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1096,
+      "lng": 33.3779,
+      "name": "ΑΓΓΕΛΗΣ ΧΡ. ΨΥΛΛΟΣ ΚΑΙ ΥΙΟΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_da8a5f367651a094"
+    },
+    "station_dadf2e9265efbd81": {
+      "address": "Λεωφ. Αθαλάσσας 152 Τ.Κ 2024 τηλ: 22514700",
+      "aliases": [
+        "dadf2e9265efbd81"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "dadf2e9265efbd81",
+      "district": "Δασούπολη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.141992,
+      "lng": 33.368785,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_dadf2e9265efbd81"
+    },
+    "station_daecbc4350a99116": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 31 Τ.Κ 8200 τηλ: 26962471",
+      "aliases": [
+        "daecbc4350a99116"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "daecbc4350a99116",
+      "district": "Γεροσκήπου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.761499,
+      "lng": 32.451182,
+      "name": "N & C FAKONDIS BROS PETROLEUM LTD",
+      "stationKey": "station_daecbc4350a99116"
+    },
+    "station_dc8cb9bac5426c4e": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄1, Κάτω Δευτερά Τ.Κ 2450 τηλ: 22621331",
+      "aliases": [
+        "dc8cb9bac5426c4e"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "dc8cb9bac5426c4e",
+      "district": "Δευτερά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.088858,
+      "lng": 33.285772,
+      "name": "ΝΕΟΦΥΤΟΣ ΤΣΙΑΜΑΝΕΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_dc8cb9bac5426c4e"
+    },
+    "station_dd6d300fecdf5b8e": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 61, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22833573",
+      "aliases": [
+        "dd6d300fecdf5b8e"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "dd6d300fecdf5b8e",
+      "district": "Κοκκινοτριμιθιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.146893,
+      "lng": 33.187866,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_dd6d300fecdf5b8e"
+    },
+    "station_dd7128ea03e8c20f": {
+      "address": "Αγίας Φυλάξεως 185 Τ.Κ 3083 τηλ: 25387666",
+      "aliases": [
+        "dd7128ea03e8c20f"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "dd7128ea03e8c20f",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": null,
+      "lng": null,
+      "name": "INDEXICO LIMITED",
+      "stationKey": "station_dd7128ea03e8c20f"
+    },
+    "station_de9f63b7b9d5dc1a": {
+      "address": "Γεωργίου Π.Κατσιάρη 100 Τ.Κ 5320 τηλ: 23942333",
+      "aliases": [
+        "de9f63b7b9d5dc1a"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "de9f63b7b9d5dc1a",
+      "district": "Λιοπέτρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.00248333,
+      "lng": 33.88023333,
+      "name": "Α. ΤΡΙΣΟΚΚΑΣ & ΥΙΟΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_de9f63b7b9d5dc1a"
+    },
+    "station_df96a5b542eb860e": {
+      "address": "1ης Απριλίου 372 Τ.Κ 5280 τηλ: 23723031",
+      "aliases": [
+        "df96a5b542eb860e"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "df96a5b542eb860e",
+      "district": "Παραλίμνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 35.010508,
+      "lng": 33.993417,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_df96a5b542eb860e"
+    },
+    "station_dfdcb2fd4480d93e": {
+      "address": "Λεωφ. Ελλάδος 76 Τ.Κ 7101 τηλ: 24533460",
+      "aliases": [
+        "dfdcb2fd4480d93e"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "dfdcb2fd4480d93e",
+      "district": "Αραδίππου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.927460394756885,
+      "lng": 33.58150402848419,
+      "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_dfdcb2fd4480d93e"
+    },
+    "station_e09042a96045ab32": {
+      "address": "Λεωφ. Τσερίου 20, Νήσου (Χαλεπιανές) Τ.Κ 2571 τηλ: 22483355",
+      "aliases": [
+        "e09042a96045ab32"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "e09042a96045ab32",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.055571,
+      "lng": 33.374225,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_e09042a96045ab32"
+    },
+    "station_e0e5d0db9e09c24f": {
+      "address": "Λεωφ. Έμπας 144 Τ.Κ 8250 τηλ: 26270301",
+      "aliases": [
+        "e0e5d0db9e09c24f"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "e0e5d0db9e09c24f",
+      "district": "Έμπα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.811703,
+      "lng": 32.430424,
+      "name": "SPECTO LTD",
+      "stationKey": "station_e0e5d0db9e09c24f"
+    },
+    "station_e129d766946e1862": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή 4 Τ.Κ 6010 τηλ: 24622133",
+      "aliases": [
+        "e129d766946e1862"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "e129d766946e1862",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.916723,
+      "lng": 33.624357,
+      "name": "KALL-ENI CITY GAS STATION LTD",
+      "stationKey": "station_e129d766946e1862"
+    },
+    "station_e16fee582d3c3aa9": {
+      "address": "Λεωφ. Γερίου Τ.Κ 2200 τηλ: 22488555",
+      "aliases": [
+        "e16fee582d3c3aa9"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "e16fee582d3c3aa9",
+      "district": "Γέρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1061438772506,
+      "lng": 33.3969139903519,
+      "name": "Ι. ΧΑΣΙΚΟΣ ΛΤΔ",
+      "stationKey": "station_e16fee582d3c3aa9"
+    },
+    "station_e1d23e8d02762291": {
+      "address": "Αγνοουμένων 15 Τ.Κ 4528 τηλ: 25633102",
+      "aliases": [
+        "e1d23e8d02762291"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "e1d23e8d02762291",
+      "district": "Πεντάκωμο",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 34.734273,
+      "lng": 33.22358,
+      "name": "Μ. Σ. ΓΕΩΡΓΙΟΣ ΧΡΙΣΤΟΦΟΡΟΥ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_e1d23e8d02762291"
+    },
+    "station_e25c054138608945": {
+      "address": "Λεωφ. Κυριάκου Μάτση 12 Τ.Κ 2368 τηλ: 22355727",
+      "aliases": [
+        "e25c054138608945"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "e25c054138608945",
+      "district": "Άγιος Δομέτιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1680794501581,
+      "lng": 33.331874064418,
+      "name": "ΓΕΝΙΚΑΙ ΕΠΙΧΕΙΡΗΣΕΙΣ \"ΜΑΡΠΙΣΣΑ\" ΛΙΜΙΤΕΔ",
+      "stationKey": "station_e25c054138608945"
+    },
+    "station_e3084891930f6bff": {
+      "address": "Φρ. Ρούσβελτ 92 Τ.Κ 3011",
+      "aliases": [
+        "e3084891930f6bff"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "e3084891930f6bff",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": null,
+      "lng": null,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_e3084891930f6bff"
+    },
+    "station_e3349916771cf644": {
+      "address": "Σταδίου 9 (Χαλεπιανές) Τ.Κ 2571 τηλ: 22524580",
+      "aliases": [
+        "e3349916771cf644"
+      ],
+      "brand": "FILL N GO",
+      "currentSourceHash": "e3349916771cf644",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.0533941,
+      "lng": 33.3820345,
+      "name": "M.G. PETROL SERVICES LTD",
+      "stationKey": "station_e3349916771cf644"
+    },
+    "station_e33763fdba82ad3d": {
+      "address": "Φώτη Πίττα 85 Τ.Κ 5350 τηλ: 23731111",
+      "aliases": [
+        "e33763fdba82ad3d"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "e33763fdba82ad3d",
+      "district": "Φρέναρος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.02766666666667,
+      "lng": 33.911249999999995,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_e33763fdba82ad3d"
+    },
+    "station_e3561566109dbfb2": {
+      "address": "Λεωφ. Αμμοχώστου 57 Τ.Κ 1016 τηλ: 22347110",
+      "aliases": [
+        "e3561566109dbfb2"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "e3561566109dbfb2",
+      "district": "Παλλουριώτισσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": 35.170154,
+      "lng": 33.397329,
+      "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
+      "stationKey": "station_e3561566109dbfb2"
+    },
+    "station_e38ef05f32cb1c56": {
+      "address": "Λεωφ. Τάσσου Παπαδόπουλου . Τ.Κ 6019 τηλ: 24668676",
+      "aliases": [
+        "e38ef05f32cb1c56"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "e38ef05f32cb1c56",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 34.9385837635713,
+      "lng": 33.641533390213,
+      "name": "P1 PETROLEUM LIMITED",
+      "stationKey": "station_e38ef05f32cb1c56"
+    },
+    "station_e3fa601590fd0276": {
+      "address": "Λεωφ. Λάρνακος 5 Τ.Κ 1035 τηλ: 22349326",
+      "aliases": [
+        "e3fa601590fd0276"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "e3fa601590fd0276",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1727,
+      "lng": 33.3726,
+      "name": "Δ. ΚΤΩΡΙΔΗΣ & ΥΙΟΣ ΛΤΔ",
+      "stationKey": "station_e3fa601590fd0276"
+    },
+    "station_e54d198baed94609": {
+      "address": "Τζελάλ Μπαγιάρ 4 Τ.Κ 3042 τηλ: 25370210",
+      "aliases": [
+        "e54d198baed94609"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "e54d198baed94609",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6720404678677,
+      "lng": 33.0372434981475,
+      "name": "AΡΙΣΤΟΣ Θ. ΑΡΙΣΤΕΙΔΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_e54d198baed94609"
+    },
+    "station_e63fb61d889d5e70": {
+      "address": "Λεωφ. Σπ. Κυπριανού 220 Τ.Κ 2045 τηλ: 22326688",
+      "aliases": [
+        "e63fb61d889d5e70"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "e63fb61d889d5e70",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.122355,
+      "lng": 33.340534,
+      "name": "ΠΑΡΑΣΧΟΣ ΣΤΥΛΙΑΝΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_e63fb61d889d5e70"
+    },
+    "station_e865c8d52f8e7267": {
+      "address": "Πάφου 33 Τ.Κ 3052 τηλ: 25571717",
+      "aliases": [
+        "e865c8d52f8e7267"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "e865c8d52f8e7267",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.674485,
+      "lng": 33.013897,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_e865c8d52f8e7267"
+    },
+    "station_ead91c2e2f861841": {
+      "address": "Λεωφ. Στροβόλου 278 Τ.Κ 2048 τηλ: 22322441",
+      "aliases": [
+        "ead91c2e2f861841"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "ead91c2e2f861841",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1287232428282,
+      "lng": 33.324758841803,
+      "name": "CC CRUDE ENERGY LTD",
+      "stationKey": "station_ead91c2e2f861841"
+    },
+    "station_ebd542923a8d61e1": {
+      "address": "1ης Απριλίου 165 Τ.Κ 5280 τηλ: 23822600",
+      "aliases": [
+        "ebd542923a8d61e1"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "ebd542923a8d61e1",
+      "district": "Παραλίμνι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:40.160Z",
+      "lat": 35.0226158167266,
+      "lng": 33.9849366847252,
+      "name": "ΛΕΥΤΕΡΗΣ ΚΑΜΗΛΑΡΗΣ (ΕΠΙΧΕΙΡΗΣΕΙΣ) ΛΙΜΙΤΕΔ",
+      "stationKey": "station_ebd542923a8d61e1"
+    },
+    "station_ec051e3c2dc1caeb": {
+      "address": "Γωνία Ναυαρίνου 10 & Ταγματάρχου Πουλίου Τ.Κ 1100 τηλ: 22775886",
+      "aliases": [
+        "ec051e3c2dc1caeb"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "ec051e3c2dc1caeb",
+      "district": "Άγιος Δομέτιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.171026,
+      "lng": 33.34434,
+      "name": "NAVATA PETROL LTD",
+      "stationKey": "station_ec051e3c2dc1caeb"
+    },
+    "station_ec40ed04522cccd4": {
+      "address": "Λεωφ. Αρτέμιδος 29 Τ.Κ 6025 τηλ: 24652131",
+      "aliases": [
+        "ec40ed04522cccd4"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "ec40ed04522cccd4",
+      "district": "Λάρνακα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.909094,
+      "lng": 33.629607,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_ec40ed04522cccd4"
+    },
+    "station_ec510d442a7bb62d": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ' 99 Τ.Κ 2565 τηλ: 22543375",
+      "aliases": [
+        "ec510d442a7bb62d"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "ec510d442a7bb62d",
+      "district": "Λυθροδόντας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.9493055555556,
+      "lng": 33.3128657407407,
+      "name": "ΚΩΣΤΑΣ Σ. ΣΑΒΒΑ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΤΔ",
+      "stationKey": "station_ec510d442a7bb62d"
+    },
+    "station_ed69aae17760c5be": {
+      "address": "Λεωφ. Λεμεσού 69 Τ.Κ 2121 τηλ: 22422670",
+      "aliases": [
+        "ed69aae17760c5be"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "ed69aae17760c5be",
+      "district": "Αγλαντζιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.143044,
+      "lng": 33.374496,
+      "name": "Α. Ν. & Σ. ΕΥΘΥΜΙΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_ed69aae17760c5be"
+    },
+    "station_ed7d451997c821c2": {
+      "address": "Λεωφ. Αρχ.Μιχαήλ 43 (Παρισσινός) Τ.Κ 2057 τηλ: 22353335",
+      "aliases": [
+        "ed7d451997c821c2"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "ed7d451997c821c2",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.154783,
+      "lng": 33.331971,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_ed7d451997c821c2"
+    },
+    "station_eda6151708744068": {
+      "address": "Κολωνακίου 5 Τ.Κ 4103 τηλ: 25324880",
+      "aliases": [
+        "eda6151708744068"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "eda6151708744068",
+      "district": "Άγιος Αθανάσιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.696745040803,
+      "lng": 33.0690321662705,
+      "name": "CEMARIUS LTD",
+      "stationKey": "station_eda6151708744068"
+    },
+    "station_efb679184451acbe": {
+      "address": "Λεωφ. Σπ. Κυπριανού 14 Τ.Κ 2033 τηλ: 22427528",
+      "aliases": [
+        "efb679184451acbe"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "efb679184451acbe",
+      "district": "Στρόβολος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1292268518519,
+      "lng": 33.3640740740741,
+      "name": "BLUEKEY TRADING LIMITED",
+      "stationKey": "station_efb679184451acbe"
+    },
+    "station_f0d0646ea0553579": {
+      "address": "Λεώφ. Αγίου Αθανασίου 13 Τ.Κ 4107 τηλ: 25221121",
+      "aliases": [
+        "f0d0646ea0553579"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "f0d0646ea0553579",
+      "district": "Άγιος Αθανάσιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.709661,
+      "lng": 33.060646,
+      "name": "G.A. PETROLEUM LIMITED",
+      "stationKey": "station_f0d0646ea0553579"
+    },
+    "station_f0d53784506b71a2": {
+      "address": "Λεωφ. Κυριάκου Μάτση Τ.Κ 8300 τηλ: 26322007",
+      "aliases": [
+        "f0d53784506b71a2"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "f0d53784506b71a2",
+      "district": "Κονιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.7740602,
+      "lng": 32.4592027,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_f0d53784506b71a2"
+    },
+    "station_f1e205208bf17787": {
+      "address": "Κωνσταντινουπόλεως 2 Τ.Κ 8820 τηλ: 26321515",
+      "aliases": [
+        "f1e205208bf17787"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "f1e205208bf17787",
+      "district": "Πόλης Χρυσοχούς",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.032195,
+      "lng": 32.427352,
+      "name": "G & K Kouppas Ltd",
+      "stationKey": "station_f1e205208bf17787"
+    },
+    "station_f2ca45c4cd29443f": {
+      "address": "Λεωφ. Νίκης 1 Τ.Κ 1086 τηλ: 22347010",
+      "aliases": [
+        "f2ca45c4cd29443f"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "f2ca45c4cd29443f",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.162387,
+      "lng": 33.35887,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_f2ca45c4cd29443f"
+    },
+    "station_f4db702791112456": {
+      "address": "Λεωφόρος Λεμεσού 341, Πέρα Χωριό (Βιομηχανική Περιοχή Νήσου) Τ.Κ 2571 τηλ: 22610240",
+      "aliases": [
+        "f4db702791112456"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "f4db702791112456",
+      "district": "Πέρα Χωριό Νήσου",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.052276,
+      "lng": 33.387661,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_f4db702791112456"
+    },
+    "station_f51cc100d299d22f": {
+      "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
+      "aliases": [
+        "f51cc100d299d22f"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "f51cc100d299d22f",
+      "district": "Άγιος Αθανάσιος",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6901,
+      "lng": 33.0733,
+      "name": "Α. ΑΡΓΥΡΟΥ ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΛΤΔ",
+      "stationKey": "station_f51cc100d299d22f"
+    },
+    "station_f62233d2bed9d708": {
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 54 Τ.Κ 2324 τηλ: 22780022",
+      "aliases": [
+        "f62233d2bed9d708"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "f62233d2bed9d708",
+      "district": "Λακατάμεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.11961111111111,
+      "lng": 33.315999999999995,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_f62233d2bed9d708"
+    },
+    "station_f723d15777f662be": {
+      "address": "Λεωφ. Λάρνακος 184 Τ.Κ 2103 τηλ: 70070062",
+      "aliases": [
+        "f723d15777f662be"
+      ],
+      "brand": "FILL N GO",
+      "currentSourceHash": "f723d15777f662be",
+      "district": "Αγλαντζιά",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.146412,
+      "lng": 33.418324,
+      "name": "KNM CITYOIL LIMITED",
+      "stationKey": "station_f723d15777f662be"
+    },
+    "station_f726d68a655ee1a2": {
+      "address": "Νίκου και Δέσποινας Παττίχη 117 Τ.Κ 3070 τηλ: 25335300",
+      "aliases": [
+        "f726d68a655ee1a2"
+      ],
+      "brand": "ENI",
+      "currentSourceHash": "f726d68a655ee1a2",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.6925,
+      "lng": 33.01538333,
+      "name": "ΝΙΚΟΣ Σ. ΝΙΚΟΛΑΙΔΗΣ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_f726d68a655ee1a2"
+    },
+    "station_f840331b5710e464": {
+      "address": "Δημοκρατίας 40 Τ.Κ 3012 τηλ: 25370503",
+      "aliases": [
+        "f840331b5710e464"
+      ],
+      "brand": "STAROIL",
+      "currentSourceHash": "f840331b5710e464",
+      "district": "Λεμεσός",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.66911111111111,
+      "lng": 33.02386111111111,
+      "name": "STAROIL (CYPRUS) LTD",
+      "stationKey": "station_f840331b5710e464"
+    },
+    "station_f9ba8572735624fe": {
+      "address": "Δεκέλεια Τ.Κ τηλ: 24723251",
+      "aliases": [
+        "f9ba8572735624fe"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "f9ba8572735624fe",
+      "district": "Δεκέλεια",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.98291,
+      "lng": 33.71689,
+      "name": "K.L.D. PETROLEUM LIMITED",
+      "stationKey": "station_f9ba8572735624fe"
+    },
+    "station_fc64b655c9e9b7ab": {
+      "address": "Λεωφ. Αθαλάσσας 113 Τ.Κ 2024 τηλ: 22421258",
+      "aliases": [
+        "fc64b655c9e9b7ab"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "fc64b655c9e9b7ab",
+      "district": "Δασούπολη",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.14405,
+      "lng": 33.36443,
+      "name": "Γ. & Δ. ΧΡΙΣΤΟΔΟΥΛΟΥ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_fc64b655c9e9b7ab"
+    },
+    "station_fd5bf19426dc6fd8": {
+      "address": "Μαργαρίτας 45 Τ.Κ 4878 τηλ: 25550025",
+      "aliases": [
+        "fd5bf19426dc6fd8"
+      ],
+      "brand": "EKO",
+      "currentSourceHash": "fd5bf19426dc6fd8",
+      "district": "Πελένδρι",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.890934,
+      "lng": 32.957813,
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "stationKey": "station_fd5bf19426dc6fd8"
+    },
+    "station_fd7375753a390070": {
+      "address": "Λεωφ. Σπ. Χριστοδούλου 42 Τ.Κ 1020 τηλ: 22431925",
+      "aliases": [
+        "fd7375753a390070"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "fd7375753a390070",
+      "district": "Παλλουριώτισσα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.1755856806026,
+      "lng": 33.3730663994056,
+      "name": "TSOSACO OIL LIMITED",
+      "stationKey": "station_fd7375753a390070"
+    },
+    "station_fd8d2f8ddb048471": {
+      "address": "Τεύκρου Ανθία 54 Τ.Κ 5330 τηλ: 23721742",
+      "aliases": [
+        "fd8d2f8ddb048471"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "fd8d2f8ddb048471",
+      "district": "Αγία Νάπα",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 34.993175,
+      "lng": 33.99039,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_fd8d2f8ddb048471"
+    },
+    "station_fde13dbb5e0b157e": {
+      "address": "Λεωφ. Λόρδου Βύρωνος 5 Τ.Κ 1096 τηλ: 22674988",
+      "aliases": [
+        "fde13dbb5e0b157e"
+      ],
+      "brand": "SHELL",
+      "currentSourceHash": "fde13dbb5e0b157e",
+      "district": "Λευκωσία",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:20:54.040Z",
+      "lat": null,
+      "lng": null,
+      "name": "ΑΝΔΡΕΑΣ ΔΩΡΟΘΕΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
+      "stationKey": "station_fde13dbb5e0b157e"
+    },
+    "station_fe99f74669361b6c": {
+      "address": "Λεωφ. Γ.Γρίβα Διγενή Τ.Κ 5523 τηλ: 24720179",
+      "aliases": [
+        "fe99f74669361b6c"
+      ],
+      "brand": "PETROLINA",
+      "currentSourceHash": "fe99f74669361b6c",
+      "district": "Δασάκι της Άχνας",
+      "firstSeenAt": "2026-07-06T18:20:12.843Z",
+      "lastSeenAt": "2026-07-06T18:21:07.398Z",
+      "lat": 35.02498333,
+      "lng": 33.77823333,
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "stationKey": "station_fe99f74669361b6c"
+    }
+  },
+  "version": 1
+}
