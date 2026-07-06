@@ -161,7 +161,7 @@ h2 {
   position: relative;
   display: flex;
   align-items: center;
-  width: min(230px, calc(100vw - 164px));
+  width: min(230px, calc(100vw - 108px));
   min-height: 48px;
   min-width: 0;
   padding: 0 14px;
@@ -229,13 +229,6 @@ button:disabled {
   opacity: 0.58;
 }
 
-.topbar-actions {
-  display: flex;
-  flex: 0 0 auto;
-  gap: 10px;
-  pointer-events: auto;
-}
-
 .icon-button {
   position: relative;
   display: grid;
@@ -256,8 +249,7 @@ button:disabled {
   color: var(--accent-text);
 }
 
-.locate-icon,
-.trend-icon {
+.locate-icon {
   width: 27px;
   height: 27px;
   stroke-width: 2.3;
@@ -343,7 +335,7 @@ button:disabled {
 
 .summary-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 48px;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: stretch;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -353,21 +345,18 @@ button:disabled {
 }
 
 .summary {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
   min-width: 0;
 }
 
 .metric {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   align-items: baseline;
   justify-content: center;
-  gap: 3px;
+  gap: 5px;
   min-width: 0;
   min-height: 48px;
-  padding: 8px 14px;
-  border-right: 1px solid var(--line);
+  padding: 8px 10px 8px 14px;
   background: transparent;
 }
 
@@ -390,16 +379,38 @@ button:disabled {
   white-space: nowrap;
 }
 
+.summary-actions {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  border-left: 1px solid var(--line);
+}
+
+.trend-toggle-button {
+  min-height: 32px;
+  margin-left: 8px;
+  padding: 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.trend-toggle-button.is-active {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
 .refresh-button {
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 0;
-  width: 48px;
+  width: 44px;
   min-height: 48px;
   padding: 0;
   color: var(--muted);
-  border-left: 1px solid var(--line);
 }
 
 .refresh-icon {
@@ -502,16 +513,6 @@ button:disabled {
 .market-trends {
   display: grid;
   gap: 8px;
-}
-
-.close-trends-button {
-  min-height: 28px;
-  padding: 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 650;
 }
 
 .trend-card {
@@ -661,19 +662,29 @@ button:disabled {
   white-space: nowrap;
 }
 
+.station-price-stack {
+  display: grid;
+  grid-column: 2;
+  gap: 4px;
+  align-self: center;
+  justify-items: end;
+  min-width: 76px;
+}
+
 .station-insight {
-  grid-column: 1;
   overflow: hidden;
+  max-width: 92px;
   color: var(--accent);
   font-size: 12px;
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: right;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .station-price {
-  grid-column: 2;
+  grid-column: auto;
   align-self: center;
   color: var(--green);
   font-size: 18px;
@@ -755,7 +766,7 @@ button:disabled {
   }
 
   .fuel-picker {
-    width: min(230px, calc(100vw - 160px));
+    width: min(230px, calc(100vw - 104px));
     min-height: 48px;
     padding-inline: 14px;
   }

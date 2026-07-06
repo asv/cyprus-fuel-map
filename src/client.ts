@@ -25,7 +25,6 @@ let stationInsights = new Map<string, string>();
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
 const trendButton = byId<HTMLButtonElement>("trends");
-const closeTrendsButton = byId<HTMLButtonElement>("close-trends");
 const locateButton = byId<HTMLButtonElement>("locate");
 const priceLimitInput = byId<HTMLInputElement>("price-limit");
 const priceLimitLabel = byId<HTMLElement>("price-limit-label");
@@ -55,7 +54,6 @@ const themeRuntime = initTheme({ onViewportChange: () => fuelMap.invalidateSize(
 fuelSelect.addEventListener("change", loadStations);
 refreshButton.addEventListener("click", loadStations);
 trendButton.addEventListener("click", toggleMarketTrends);
-closeTrendsButton.addEventListener("click", hideMarketTrends);
 locateButton.addEventListener("click", () => locateUser({ rememberPreference: true }));
 priceLimitInput.addEventListener("input", applyPriceFilter);
 sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
@@ -75,14 +73,11 @@ function toggleMarketTrends(): void {
   setMarketTrendsVisible(marketTrendsEl.hidden === true);
 }
 
-function hideMarketTrends(): void {
-  setMarketTrendsVisible(false);
-}
-
 function setMarketTrendsVisible(visible: boolean): void {
   marketTrendsEl.hidden = !visible;
   trendButton.classList.toggle("is-active", visible);
   trendButton.setAttribute("aria-pressed", String(visible));
+  trendButton.textContent = visible ? "Hide" : "Trends";
   trendButton.setAttribute("aria-label", visible ? "Hide market trends" : "Show market trends");
   trendButton.title = visible ? "Hide market trends" : "Show market trends";
   if (visible) bottomSheet.setState("expanded");
@@ -224,9 +219,11 @@ function renderStationList(): void {
           <span class="station-copy">
             <span class="station-title">${escapeHtml(station.brand)} · ${escapeHtml(station.name)}</span>
             <span class="station-meta">${escapeHtml(station.district)}${distance ? ` · ${distance}` : ""}</span>
+          </span>
+          <span class="station-price-stack">
+            <strong class="station-price">€${station.price.toFixed(3)}</strong>
             ${insight ? `<span class="station-insight">${escapeHtml(insight)}</span>` : ""}
           </span>
-          <strong class="station-price">€${station.price.toFixed(3)}</strong>
         </button>
         <nav class="station-routes" aria-label="Route to ${escapeHtml(station.brand)} ${escapeHtml(station.name)}">
           <a class="route-link" href="${routes.google}" target="_blank" rel="noopener noreferrer" aria-label="Open Google Maps route">Google</a>
