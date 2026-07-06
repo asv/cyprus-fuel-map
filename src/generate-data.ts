@@ -1,6 +1,12 @@
 import { mkdir } from "node:fs/promises";
 import { fetchFuelStations } from "./backend/stations";
-import { appendGlobalFuelPoint, emptyGlobalFuelHistory, mergeStationsIntoIndex } from "./history-generate";
+import {
+  appendGlobalFuelPoint,
+  appendStationPriceChanges,
+  emptyGlobalFuelHistory,
+  emptyStationFuelPriceHistory,
+  mergeStationsIntoIndex,
+} from "./history-generate";
 import {
   emptyHistoryManifest,
   emptyStationHistoryIndex,
@@ -16,6 +22,7 @@ import {
   fuelTypes,
   type GlobalFuelHistory,
   type StaticDataManifest,
+  type StationFuelPriceHistory,
   type StationHistoryIndex,
 } from "./shared";
 
@@ -43,6 +50,7 @@ async function main(): Promise<void> {
     const response = toStaticFuelResponse(await fetchFuelStations(fuel, city));
     await updateGlobalHistory(fuel, response);
     await updateStationIndex(response);
+    await updateStationPriceHistory(fuel, response);
     const path = `stations-${fuel}.json`;
     const existingResponse = await readJson<FuelResponse>(path);
     const meaningfulDataChanged = !existingResponse || !sameFuelData(existingResponse, response);
@@ -99,6 +107,12 @@ async function updateStationIndex(response: FuelResponse): Promise<void> {
     "station-index.json",
     mergeStationsIntoIndex(index, response.stations, response.fetchedAt),
   );
+}
+
+async function updateStationPriceHistory(fuel: FuelType, response: FuelResponse): Promise<void> {
+  const path = `station-prices-${fuel}.json`;
+  const history = await readHistoryJson<StationFuelPriceHistory>(path, emptyStationFuelPriceHistory(fuel));
+  await writeHistoryJsonIfChanged(path, appendStationPriceChanges(history, response.stations, response.fetchedAt));
 }
 
 function selectedFuels(): FuelType[] {
