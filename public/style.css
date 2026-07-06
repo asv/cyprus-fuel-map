@@ -161,7 +161,7 @@ h2 {
   position: relative;
   display: flex;
   align-items: center;
-  width: min(230px, calc(100vw - 108px));
+  width: min(230px, calc(100vw - 164px));
   min-height: 48px;
   min-width: 0;
   padding: 0 14px;
@@ -229,7 +229,14 @@ button:disabled {
   opacity: 0.58;
 }
 
-.locate-button {
+.topbar-actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.icon-button {
   position: relative;
   display: grid;
   place-items: center;
@@ -242,10 +249,15 @@ button:disabled {
   box-shadow: 0 12px 32px rgb(15 23 42 / 14%);
   line-height: 1;
   backdrop-filter: blur(18px);
-  pointer-events: auto;
 }
 
-.locate-icon {
+.icon-button.is-active {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.locate-icon,
+.trend-icon {
   width: 27px;
   height: 27px;
   stroke-width: 2.3;
@@ -580,7 +592,7 @@ button:disabled {
 
 .station {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto 60px;
+  grid-template-columns: minmax(0, 1fr) 60px;
   column-gap: 10px;
   align-items: center;
   width: 100%;
@@ -724,7 +736,7 @@ button:disabled {
   }
 
   .fuel-picker {
-    width: min(230px, calc(100vw - 104px));
+    width: min(230px, calc(100vw - 160px));
     min-height: 48px;
     padding-inline: 14px;
   }
@@ -734,7 +746,7 @@ button:disabled {
     font-size: 16px;
   }
 
-  .locate-button {
+  .icon-button {
     flex-basis: 48px;
     width: 48px;
     height: 48px;
