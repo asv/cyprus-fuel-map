@@ -515,6 +515,10 @@ button:disabled {
   gap: 8px;
 }
 
+.market-trends[hidden] {
+  display: none;
+}
+
 .trend-card {
   min-height: 74px;
   padding: 10px 12px;
