@@ -1,5 +1,7 @@
 import { mkdir } from "node:fs/promises";
 import { fetchFuelStations } from "./backend/stations";
+import { appendGlobalFuelPoint, emptyGlobalFuelHistory } from "./history-generate";
+import { emptyHistoryManifest, readHistoryJson, writeHistoryJsonIfChanged } from "./history-storage";
 import {
   type City,
   cities,
@@ -7,6 +9,7 @@ import {
   type FuelStation,
   type FuelType,
   fuelTypes,
+  type GlobalFuelHistory,
   type StaticDataManifest,
 } from "./shared";
 
@@ -32,6 +35,7 @@ async function main(): Promise<void> {
   for (const [index, fuel] of fuels.entries()) {
     console.log(`Generating static fuel data for ${fuelTypes[fuel]} (${fuel}) in ${city}`);
     const response = toStaticFuelResponse(await fetchFuelStations(fuel, city));
+    await updateGlobalHistory(fuel, response);
     const path = `stations-${fuel}.json`;
     const existingResponse = await readJson<FuelResponse>(path);
     const meaningfulDataChanged = !existingResponse || !sameFuelData(existingResponse, response);
@@ -71,7 +75,15 @@ async function main(): Promise<void> {
     console.log("No meaningful fuel data changes; keeping existing manifest");
   }
 
+  await writeHistoryJsonIfChanged("manifest.json", emptyHistoryManifest(manifest.generatedAt));
+
   console.log(`Static data generated in ${new URL(".", dataDir).pathname}`);
+}
+
+async function updateGlobalHistory(fuel: FuelType, response: FuelResponse): Promise<void> {
+  const path = `global-${fuel}.json`;
+  const history = await readHistoryJson<GlobalFuelHistory>(path, emptyGlobalFuelHistory(fuel));
+  await writeHistoryJsonIfChanged(path, appendGlobalFuelPoint(history, response));
 }
 
 function selectedFuels(): FuelType[] {

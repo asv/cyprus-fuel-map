@@ -1,0 +1,37 @@
+{
+  "fuels": [
+    {
+      "fuel": "1",
+      "fuelName": "Unleaded 95",
+      "globalPath": "data/history/global-1.json",
+      "stationPricesPath": "data/history/station-prices-1.json"
+    },
+    {
+      "fuel": "2",
+      "fuelName": "Unleaded 98",
+      "globalPath": "data/history/global-2.json",
+      "stationPricesPath": "data/history/station-prices-2.json"
+    },
+    {
+      "fuel": "3",
+      "fuelName": "Diesel",
+      "globalPath": "data/history/global-3.json",
+      "stationPricesPath": "data/history/station-prices-3.json"
+    },
+    {
+      "fuel": "4",
+      "fuelName": "Heating oil",
+      "globalPath": "data/history/global-4.json",
+      "stationPricesPath": "data/history/station-prices-4.json"
+    },
+    {
+      "fuel": "5",
+      "fuelName": "Kerosene",
+      "globalPath": "data/history/global-5.json",
+      "stationPricesPath": "data/history/station-prices-5.json"
+    }
+  ],
+  "generatedAt": "2026-07-06T18:21:52.799Z",
+  "stationIndexPath": "data/history/station-index.json",
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "fuel": "2",
+  "points": [
+    {
+      "at": "2026-07-06T18:20:26.695Z",
+      "avgPrice": 1.53,
+      "mappedStationCount": 283,
+      "maxPrice": 1.699,
+      "medianPrice": 1.524,
+      "minPrice": 1.423,
+      "offlineCount": 10,
+      "p25Price": 1.504,
+      "p75Price": 1.549,
+      "stationCount": 312
+    },
+    {
+      "at": "2026-07-06T18:20:26.695Z",
+      "avgPrice": 1.53,
+      "mappedStationCount": 283,
+      "maxPrice": 1.699,
+      "medianPrice": 1.524,
+      "minPrice": 1.423,
+      "offlineCount": 10,
+      "p25Price": 1.504,
+      "p75Price": 1.549,
+      "stationCount": 312
+    }
+  ],
+  "version": 1
+}
