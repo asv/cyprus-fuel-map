@@ -2,7 +2,7 @@ import { fetchStations } from "./client-api";
 import { fetchGlobalHistory, fetchStationPriceHistory } from "./client-history-api";
 import { createFuelMap } from "./client-map";
 import { createBottomSheetController } from "./client-sheet";
-import { renderMarketTrend } from "./client-trends";
+import { renderMarketTrend, stationSparkline } from "./client-trends";
 import { byId, distanceKm, escapeHtml, formatPrice, formatTime, type LatLng, query, routeUrls } from "./client-utils";
 import { buildStationStepSeries, priceDeltaOverDays, priceVsLatestMarketMedian } from "./history-series";
 import type { FuelResponse, FuelStation, FuelType, GlobalFuelHistory, StationFuelPriceHistory } from "./shared";
@@ -21,6 +21,7 @@ let hasFittedInitialBounds = false;
 let hasTriedAutoLocate = false;
 let stationSortMode: StationSortMode = "price";
 let stationInsights = new Map<string, string>();
+let stationCharts = new Map<string, string>();
 
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
@@ -83,6 +84,7 @@ async function loadStations(): Promise<void> {
     resetPriceFilter();
     fuelMap.setStations(currentStations);
     stationInsights = new Map();
+    stationCharts = new Map();
     applyPriceFilter();
     loadHistoryInsights(data.fuel);
     setStatus(`${data.stale ? "Stale cache" : "Updated"} ${formatTime(data.fetchedAt)}`);
@@ -120,15 +122,19 @@ function updateStationInsights(
   if (!globalHistory || !stationHistory) return;
 
   const next = new Map<string, string>();
+  const charts = new Map<string, string>();
   for (const station of currentStations) {
     const series = buildStationStepSeries(stationHistory, `station_${station.id}`);
     const delta7d = priceDeltaOverDays(series, new Date(lastFuelData?.fetchedAt ?? Date.now()), 7);
     const vsMarket = priceVsLatestMarketMedian(station.price, globalHistory);
     const insight = formatStationInsight(delta7d, vsMarket);
+    const chart = stationSparkline(series);
     if (insight) next.set(station.id, insight);
+    if (chart) charts.set(station.id, chart);
   }
 
   stationInsights = next;
+  stationCharts = charts;
   renderStationList();
 }
 
@@ -196,6 +202,7 @@ function renderStationList(): void {
       const distance = lastUserLocation ? `${distanceKm(station, lastUserLocation).toFixed(1)} km` : "";
       const routes = routeUrls(station);
       const insight = stationInsights.get(station.id);
+      const chart = stationCharts.get(station.id);
       return `
       <article class="station">
         <button class="station-main" type="button" data-lat="${station.lat}" data-lng="${station.lng}">
@@ -206,6 +213,7 @@ function renderStationList(): void {
           </span>
           <strong class="station-price">€${station.price.toFixed(3)}</strong>
         </button>
+        ${chart ? `<div class="station-chart-wrap">${chart}</div>` : ""}
         <nav class="station-routes" aria-label="Route to ${escapeHtml(station.brand)} ${escapeHtml(station.name)}">
           <a class="route-link" href="${routes.google}" target="_blank" rel="noopener noreferrer" aria-label="Open Google Maps route">Google</a>
           <a class="route-link" href="${routes.waze}" target="_blank" rel="noopener noreferrer" aria-label="Open Waze route">Waze</a>

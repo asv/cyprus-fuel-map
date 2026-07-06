@@ -8,5 +8,7 @@ describe("client trends module", () => {
     expect(source).toContain("trend-chart");
     expect(source).toContain("trend-line-avg");
     expect(source).toContain("No trend history yet");
+    expect(source).toContain("stationSparkline");
+    expect(source).toContain("station-chart");
   });
 });

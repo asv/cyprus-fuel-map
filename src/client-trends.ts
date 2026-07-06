@@ -1,3 +1,4 @@
+import type { StationSeriesPoint } from "./history-series";
 import type { GlobalFuelHistory } from "./shared";
 
 export function renderMarketTrend(container: HTMLElement, history: GlobalFuelHistory | null): void {
@@ -61,6 +62,23 @@ export function renderMarketTrend(container: HTMLElement, history: GlobalFuelHis
       <polyline class="trend-line trend-line-median" points="${line("medianPrice")}"></polyline>
     </svg>
   `;
+}
+
+export function stationSparkline(series: StationSeriesPoint[]): string {
+  if (series.length < 2) return "";
+
+  const width = 92;
+  const height = 28;
+  const padding = 3;
+  const prices = series.map((point) => point.price);
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  const range = Math.max(max - min, 0.001);
+  const x = (index: number) => padding + (index / (series.length - 1)) * (width - padding * 2);
+  const y = (price: number) => height - padding - ((price - min) / range) * (height - padding * 2);
+  const line = series.map((point, index) => `${x(index).toFixed(1)},${y(point.price).toFixed(1)}`).join(" ");
+
+  return `<svg class="station-chart" viewBox="0 0 ${width} ${height}" aria-hidden="true"><polyline points="${line}"></polyline></svg>`;
 }
 
 function isNumber(value: number | null): value is number {
