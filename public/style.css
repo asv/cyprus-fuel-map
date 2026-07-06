@@ -630,6 +630,17 @@ button:disabled {
   white-space: nowrap;
 }
 
+.station-insight {
+  grid-column: 1;
+  overflow: hidden;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .station-price {
   grid-column: 2;
   align-self: center;

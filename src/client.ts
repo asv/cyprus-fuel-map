@@ -1,10 +1,11 @@
 import { fetchStations } from "./client-api";
-import { fetchGlobalHistory } from "./client-history-api";
+import { fetchGlobalHistory, fetchStationPriceHistory } from "./client-history-api";
 import { createFuelMap } from "./client-map";
 import { createBottomSheetController } from "./client-sheet";
 import { renderMarketTrend } from "./client-trends";
 import { byId, distanceKm, escapeHtml, formatPrice, formatTime, type LatLng, query, routeUrls } from "./client-utils";
-import type { FuelResponse, FuelStation, FuelType } from "./shared";
+import { buildStationStepSeries, priceDeltaOverDays, priceVsLatestMarketMedian } from "./history-series";
+import type { FuelResponse, FuelStation, FuelType, GlobalFuelHistory, StationFuelPriceHistory } from "./shared";
 import { initTheme } from "./theme";
 
 type StationSortMode = "price" | "best" | "distance";
@@ -19,6 +20,7 @@ let loadController: AbortController | null = null;
 let hasFittedInitialBounds = false;
 let hasTriedAutoLocate = false;
 let stationSortMode: StationSortMode = "price";
+let stationInsights = new Map<string, string>();
 
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
@@ -80,8 +82,9 @@ async function loadStations(): Promise<void> {
     currentStations = data.stations.filter((station) => station.lat !== null && station.lng !== null);
     resetPriceFilter();
     fuelMap.setStations(currentStations);
+    stationInsights = new Map();
     applyPriceFilter();
-    loadMarketTrend(data.fuel);
+    loadHistoryInsights(data.fuel);
     setStatus(`${data.stale ? "Stale cache" : "Updated"} ${formatTime(data.fetchedAt)}`);
     maybeAutoLocateUser();
   } catch (error) {
@@ -93,15 +96,52 @@ async function loadStations(): Promise<void> {
   }
 }
 
-function loadMarketTrend(fuel: FuelType): void {
+function loadHistoryInsights(fuel: FuelType): void {
   marketTrendEl.innerHTML = '<p class="trend-empty">Loading trend...</p>';
-  fetchGlobalHistory(fuel, loadController?.signal)
-    .then((history) => renderMarketTrend(marketTrendEl, history))
+  Promise.all([
+    fetchGlobalHistory(fuel, loadController?.signal),
+    fetchStationPriceHistory(fuel, loadController?.signal),
+  ])
+    .then(([globalHistory, stationHistory]) => {
+      renderMarketTrend(marketTrendEl, globalHistory);
+      updateStationInsights(globalHistory, stationHistory);
+    })
     .catch((error) => {
       if (error instanceof DOMException && error.name === "AbortError") return;
-      console.warn("Failed to load market trend:", error);
+      console.warn("Failed to load history insights:", error);
       marketTrendEl.innerHTML = '<p class="trend-empty">Trend unavailable.</p>';
     });
+}
+
+function updateStationInsights(
+  globalHistory: GlobalFuelHistory | null,
+  stationHistory: StationFuelPriceHistory | null,
+): void {
+  if (!globalHistory || !stationHistory) return;
+
+  const next = new Map<string, string>();
+  for (const station of currentStations) {
+    const series = buildStationStepSeries(stationHistory, `station_${station.id}`);
+    const delta7d = priceDeltaOverDays(series, new Date(lastFuelData?.fetchedAt ?? Date.now()), 7);
+    const vsMarket = priceVsLatestMarketMedian(station.price, globalHistory);
+    const insight = formatStationInsight(delta7d, vsMarket);
+    if (insight) next.set(station.id, insight);
+  }
+
+  stationInsights = next;
+  renderStationList();
+}
+
+function formatStationInsight(delta7d: number | null, vsMarket: number | null): string {
+  const parts: string[] = [];
+  if (delta7d !== null && Math.abs(delta7d) >= 0.0005) parts.push(`7d ${formatSignedPrice(delta7d)}`);
+  if (vsMarket !== null) parts.push(`${formatSignedPrice(vsMarket)} vs market`);
+  return parts.join(" · ");
+}
+
+function formatSignedPrice(value: number): string {
+  const sign = value > 0 ? "+" : value < 0 ? "−" : "±";
+  return `${sign}€${Math.abs(value).toFixed(3)}`;
 }
 
 function applyPriceFilter(): void {
@@ -155,12 +195,14 @@ function renderStationList(): void {
     .map((station) => {
       const distance = lastUserLocation ? `${distanceKm(station, lastUserLocation).toFixed(1)} km` : "";
       const routes = routeUrls(station);
+      const insight = stationInsights.get(station.id);
       return `
       <article class="station">
         <button class="station-main" type="button" data-lat="${station.lat}" data-lng="${station.lng}">
           <span class="station-copy">
             <span class="station-title">${escapeHtml(station.brand)} · ${escapeHtml(station.name)}</span>
             <span class="station-meta">${escapeHtml(station.district)}${distance ? ` · ${distance}` : ""}</span>
+            ${insight ? `<span class="station-insight">${escapeHtml(insight)}</span>` : ""}
           </span>
           <strong class="station-price">€${station.price.toFixed(3)}</strong>
         </button>
