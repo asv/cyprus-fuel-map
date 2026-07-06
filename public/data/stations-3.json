@@ -3,8 +3,8 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-06T04:42:08.323Z",
-  "avgPrice": 1.579,
+  "fetchedAt": "2026-07-06T11:06:12.246Z",
+  "avgPrice": 1.576,
   "minPrice": 1.484,
   "maxPrice": 1.807,
   "stations": [
@@ -245,7 +245,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.543,
+      "price": 1.539,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -520,7 +520,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Δρόμος Πάφου - Πόλης Χρυσοχούς Τ.Κ 8850 τηλ: 26021282",
       "district": "Γουδί",
-      "price": 1.649,
+      "price": 1.638,
       "isOffline": false,
       "lat": 34.994387,
       "lng": 32.448056
@@ -531,7 +531,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 33 Τ.Κ 8820 τηλ: 26020010",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.649,
+      "price": 1.638,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -575,7 +575,7 @@
       "name": "DEANSON LIMITED",
       "address": "Θεόκριτου 67 Τ.Κ 7600 τηλ: 24522336",
       "district": "Αθιένου",
-      "price": 1.604,
+      "price": 1.574,
       "isOffline": false,
       "lat": 35.0552526086954,
       "lng": 33.5329100466271
@@ -619,7 +619,7 @@
       "name": "DI FORCES TRADING LTD",
       "address": "Δρόμος Βάσεων Επισκοπής Τ.Κ 4153 τηλ: 25211547",
       "district": "Βάση Επισκοπής",
-      "price": 1.629,
+      "price": 1.599,
       "isOffline": false,
       "lat": 34.6753994208012,
       "lng": 32.8429807049629
@@ -707,7 +707,7 @@
       "name": "G.A. PETROLEUM LIMITED",
       "address": "Λεώφ. Αγίου Αθανασίου 13 Τ.Κ 4107 τηλ: 25221121",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.589,
+      "price": 1.569,
       "isOffline": false,
       "lat": 34.709661,
       "lng": 33.060646
@@ -718,7 +718,7 @@
       "name": "G.K.S SAMATAS LIMITED",
       "address": "Αγίου Νικολάου 37 Τ.Κ 2408 τηλ: 22590586",
       "district": "Έγκωμη",
-      "price": 1.689,
+      "price": 1.599,
       "isOffline": false,
       "lat": 35.1641275288475,
       "lng": 33.3331814245369
@@ -730,7 +730,7 @@
       "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
       "district": "Αργάκα",
       "price": 1.699,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.065318,
       "lng": 32.467592
     },
@@ -773,7 +773,7 @@
       "name": "IOSIF. P. IOSIF TRADING LIMITED",
       "address": "Μαρίου 10 Τ.Κ 8820 τηλ: 26321425",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.699,
+      "price": 1.649,
       "isOffline": false,
       "lat": 35.036047,
       "lng": 32.429827
@@ -784,7 +784,7 @@
       "name": "J & S PETROL STATION LIMITED",
       "address": "Γρηγόρη Αυξεντίου 30 Τ.Κ 2368 τηλ: 22775117",
       "district": "Άγιος Δομέτιος",
-      "price": 1.598,
+      "price": 1.568,
       "isOffline": false,
       "lat": 35.17131667,
       "lng": 33.3369
@@ -861,7 +861,7 @@
       "name": "KOURKOUTIS ENTERPRISES LTD",
       "address": "Γρηγόρη Αυξεντίου 128 Τ.Κ 4520 τηλ: 25366669",
       "district": "Παρεκκλησιά",
-      "price": 1.599,
+      "price": 1.569,
       "isOffline": false,
       "lat": 34.748826,
       "lng": 33.161061
@@ -905,7 +905,7 @@
       "name": "LINERIA SERVICES LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 80 Τ.Κ 8221 τηλ: 26271020",
       "district": "Χλώρακα",
-      "price": 1.625,
+      "price": 1.595,
       "isOffline": false,
       "lat": 34.8018981481481,
       "lng": 32.4133842592593
@@ -982,7 +982,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.547,
+      "price": 1.539,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -1439,17 +1439,6 @@
       "lng": 33.394406
     },
     {
-      "id": "370b629396b976d5",
-      "brand": "PETROLINA",
-      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
-      "address": "Αγίας Φυλάξεως 109 Τ.Κ 3087 τηλ: 25382888",
-      "district": "Λεμεσός",
-      "price": 1.568,
-      "isOffline": false,
-      "lat": 34.6921,
-      "lng": 33.0352
-    },
-    {
       "id": "e33763fdba82ad3d",
       "brand": "PETROLINA",
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
@@ -1459,6 +1448,17 @@
       "isOffline": false,
       "lat": 35.02766666666667,
       "lng": 33.911249999999995
+    },
+    {
+      "id": "fd8d2f8ddb048471",
+      "brand": "PETROLINA",
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "address": "Τεύκρου Ανθία 54 Τ.Κ 5330 τηλ: 23721742",
+      "district": "Αγία Νάπα",
+      "price": 1.568,
+      "isOffline": false,
+      "lat": 34.993175,
+      "lng": 33.99039
     },
     {
       "id": "4aebc6aca466bf07",
@@ -1472,15 +1472,15 @@
       "lng": 33.375177
     },
     {
-      "id": "fd8d2f8ddb048471",
+      "id": "370b629396b976d5",
       "brand": "PETROLINA",
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
-      "address": "Τεύκρου Ανθία 54 Τ.Κ 5330 τηλ: 23721742",
-      "district": "Αγία Νάπα",
+      "address": "Αγίας Φυλάξεως 109 Τ.Κ 3087 τηλ: 25382888",
+      "district": "Λεμεσός",
       "price": 1.568,
       "isOffline": false,
-      "lat": 34.993175,
-      "lng": 33.99039
+      "lat": 34.6921,
+      "lng": 33.0352
     },
     {
       "id": "884f3e483b24413b",
@@ -1503,6 +1503,17 @@
       "isOffline": false,
       "lat": 35.128309,
       "lng": 33.325049
+    },
+    {
+      "id": "3a155ba0b3614c95",
+      "brand": "PETROLINA",
+      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
+      "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
+      "district": "Πεδουλάς",
+      "price": 1.568,
+      "isOffline": false,
+      "lat": 34.97021,
+      "lng": 32.82599
     },
     {
       "id": "c17b80ab354df418",
@@ -1536,17 +1547,6 @@
       "isOffline": false,
       "lat": 34.675178,
       "lng": 32.697404
-    },
-    {
-      "id": "3a155ba0b3614c95",
-      "brand": "PETROLINA",
-      "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
-      "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
-      "district": "Πεδουλάς",
-      "price": 1.568,
-      "isOffline": false,
-      "lat": 34.97021,
-      "lng": 32.82599
     },
     {
       "id": "f0d53784506b71a2",
@@ -1653,7 +1653,7 @@
       "name": "R N.E.P. FUEL LTD",
       "address": "Λεωφ. Τζων Κέννετυ 78 Τ.Κ 1046 τηλ: 22431888",
       "district": "Παλλουριώτισσα",
-      "price": 1.599,
+      "price": 1.519,
       "isOffline": false,
       "lat": 35.172382618025,
       "lng": 33.3880451055572
@@ -1753,7 +1753,7 @@
       "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
       "district": "Λακατάμεια",
       "price": 1.545,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.110876,
       "lng": 33.309251
     },
@@ -1778,6 +1778,17 @@
       "isOffline": false,
       "lat": 34.745754,
       "lng": 32.998862
+    },
+    {
+      "id": "ec40ed04522cccd4",
+      "brand": "EKO",
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "address": "Λεωφ. Αρτέμιδος 29 Τ.Κ 6025 τηλ: 24652131",
+      "district": "Λάρνακα",
+      "price": 1.565,
+      "isOffline": false,
+      "lat": 34.909094,
+      "lng": 33.629607
     },
     {
       "id": "c7482d63456b3f30",
@@ -1934,17 +1945,6 @@
       "lng": 33.032372
     },
     {
-      "id": "ec40ed04522cccd4",
-      "brand": "EKO",
-      "name": "R.A.M. OIL CYPRUS LIMITED",
-      "address": "Λεωφ. Αρτέμιδος 29 Τ.Κ 6025 τηλ: 24652131",
-      "district": "Λάρνακα",
-      "price": 1.568,
-      "isOffline": false,
-      "lat": 34.909094,
-      "lng": 33.629607
-    },
-    {
       "id": "55433dfb5b4e1674",
       "brand": "EKO",
       "name": "R.A.M. OIL CYPRUS LIMITED",
@@ -1978,6 +1978,17 @@
       "lng": 33.361001
     },
     {
+      "id": "0cf330d35d6131c2",
+      "brand": "EKO",
+      "name": "R.A.M. OIL CYPRUS LIMITED",
+      "address": "Μάρκου Δράκου 1 Τ.Κ 5510 τηλ: 23922335",
+      "district": "Αυγόρου",
+      "price": 1.568,
+      "isOffline": false,
+      "lat": 35.04172,
+      "lng": 33.840063
+    },
+    {
       "id": "7a177bbdabdeba1e",
       "brand": "EKO",
       "name": "R.A.M. OIL CYPRUS LIMITED",
@@ -1995,7 +2006,7 @@
       "address": "Γωνία Ναυαρίνου 2 & Ταγματάρχου Πουλίου Τ.Κ 1100 τηλ: 22774025",
       "district": "Λευκωσία",
       "price": 1.568,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.171615,
       "lng": 33.345687
     },
@@ -2020,17 +2031,6 @@
       "isOffline": false,
       "lat": 35.17265,
       "lng": 33.350405
-    },
-    {
-      "id": "0cf330d35d6131c2",
-      "brand": "EKO",
-      "name": "R.A.M. OIL CYPRUS LIMITED",
-      "address": "Μάρκου Δράκου 1 Τ.Κ 5510 τηλ: 23922335",
-      "district": "Αυγόρου",
-      "price": 1.568,
-      "isOffline": false,
-      "lat": 35.04172,
-      "lng": 33.840063
     },
     {
       "id": "263ab49334febdd9",
@@ -2335,7 +2335,7 @@
       "name": "S. KALLIKAS LIMITED",
       "address": "Δρόμος Κάθικα - Πάνω Αρόδες Τ.Κ 8703 τηλ: 26652654",
       "district": "Αρόδες",
-      "price": 1.648,
+      "price": 1.588,
       "isOffline": false,
       "lat": 34.926162,
       "lng": 32.418154
@@ -2368,7 +2368,7 @@
       "name": "SOFT \"N\" FOAMY CAR WASH LIMITED",
       "address": "Λεωφ. Αρχ. Μιχαήλ 37 (Παρισσινός) Τ.Κ 2057 τηλ: 22352414",
       "district": "Στρόβολος",
-      "price": 1.659,
+      "price": 1.599,
       "isOffline": false,
       "lat": 35.155440807824,
       "lng": 33.3337053472214
@@ -2416,6 +2416,17 @@
       "isOffline": false,
       "lat": 34.7761232569837,
       "lng": 32.4426496318772
+    },
+    {
+      "id": "60b4899bc0526633",
+      "brand": "STAROIL",
+      "name": "STAROIL (CYPRUS) LTD",
+      "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
+      "district": "Ευρύχου",
+      "price": 1.541,
+      "isOffline": false,
+      "lat": 35.05938888888888,
+      "lng": 32.91291666666667
     },
     {
       "id": "71fe1bac2de3405a",
@@ -2473,17 +2484,6 @@
       "lng": 33.28791666666667
     },
     {
-      "id": "23d5d9b6fe436d9d",
-      "brand": "STAROIL",
-      "name": "STAROIL (CYPRUS) LTD",
-      "address": "Γρηγόρη Αυξεντίου 29, Πέρα Ορεινής Τ.Κ 2650 τηλ: 22621264",
-      "district": "Πέρα Ορεινής",
-      "price": 1.545,
-      "isOffline": false,
-      "lat": 35.04547222222222,
-      "lng": 33.25463888888889
-    },
-    {
       "id": "cb2f572baf094d17",
       "brand": "STAROIL",
       "name": "STAROIL (CYPRUS) LTD",
@@ -2495,15 +2495,15 @@
       "lng": 33.305138888888884
     },
     {
-      "id": "60b4899bc0526633",
+      "id": "23d5d9b6fe436d9d",
       "brand": "STAROIL",
       "name": "STAROIL (CYPRUS) LTD",
-      "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
-      "district": "Ευρύχου",
-      "price": 1.549,
+      "address": "Γρηγόρη Αυξεντίου 29, Πέρα Ορεινής Τ.Κ 2650 τηλ: 22621264",
+      "district": "Πέρα Ορεινής",
+      "price": 1.545,
       "isOffline": false,
-      "lat": 35.05938888888888,
-      "lng": 32.91291666666667
+      "lat": 35.04547222222222,
+      "lng": 33.25463888888889
     },
     {
       "id": "8c6d9789c36c06fd",
@@ -2731,7 +2731,7 @@
       "name": "Α/ΦΟΙ Α. & Ν. ΝΙΚΗΦΟΡΟΥ ΛΙΜΙΤΕΔ",
       "address": "Σώτος Χατζηπροκοπίου 22 Τ.Κ 5330 τηλ: 23723868",
       "district": "Αγία Νάπα",
-      "price": 1.649,
+      "price": 1.595,
       "isOffline": false,
       "lat": 34.991937,
       "lng": 33.96196
@@ -2775,7 +2775,7 @@
       "name": "ΑΔΕΛΦΟΙ Π & Π ΧΡΙΣΤΟΔΟΥΛΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Κυριάκου Μάτση 28, Αγ.Ομολογητές Τ.Κ 1082 τηλ: 22317129",
       "district": "Λευκωσία",
-      "price": 1.538,
+      "price": 1.545,
       "isOffline": false,
       "lat": 35.1591,
       "lng": 33.35478333
@@ -2896,7 +2896,7 @@
       "name": "ΓΕΩΡΓΙΑ ΝΙΚΟΛΑΟΥ ΛΤΔ",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 17 & Αγίας Λαύρας Τ.Κ 6010 τηλ: 24652638",
       "district": "Λάρνακα",
-      "price": 1.597,
+      "price": 1.567,
       "isOffline": false,
       "lat": 34.91728333,
       "lng": 33.62233333
@@ -3023,17 +3023,6 @@
       "lng": 33.58150402848419
     },
     {
-      "id": "285ca20c2373dae6",
-      "brand": "EKO",
-      "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
-      "address": "Ελευθερίας 27 Τ.Κ 7102 τηλ: 24531780",
-      "district": "Αραδίππου",
-      "price": 1.545,
-      "isOffline": false,
-      "lat": 34.935446,
-      "lng": 33.59272
-    },
-    {
       "id": "6a63a4c4125cff3f",
       "brand": "EKO",
       "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
@@ -3043,6 +3032,17 @@
       "isOffline": false,
       "lat": 34.927671,
       "lng": 33.536158
+    },
+    {
+      "id": "285ca20c2373dae6",
+      "brand": "EKO",
+      "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
+      "address": "Ελευθερίας 27 Τ.Κ 7102 τηλ: 24531780",
+      "district": "Αραδίππου",
+      "price": 1.545,
+      "isOffline": false,
+      "lat": 34.935446,
+      "lng": 33.59272
     },
     {
       "id": "4537f207771bffde",
@@ -3094,7 +3094,7 @@
       "name": "ΚΥΡΙΑΚΟΣ Π. ΠΟΙΗΤΗΣ ΛΙΜΙΤΕΔ",
       "address": "Θεοκρίτου 57 Τ.Κ 7600 τηλ: 24523240",
       "district": "Αθιένου",
-      "price": 1.604,
+      "price": 1.574,
       "isOffline": false,
       "lat": 35.058083,
       "lng": 33.535842
@@ -3215,7 +3215,7 @@
       "name": "ΜΑΡΙΟΣ Γ. ΠΑΝΑΓΗ & ΣΙΑ ΛΤΔ",
       "address": "Λεωφ. Λάρνακος - Αμμοχώστου Τ.Κ 5523 τηλ: 24721122",
       "district": "Δασάκι της Άχνας",
-      "price": 1.619,
+      "price": 1.569,
       "isOffline": false,
       "lat": 35.0325305321652,
       "lng": 33.7577889277862
@@ -3369,7 +3369,7 @@
       "name": "ΠΑΝΑΓΙΩΤΗΣ ΘΕΟΔΟΣΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Στροβόλου 223 Τ.Κ 2048 τηλ: 22326903",
       "district": "Στρόβολος",
-      "price": 1.599,
+      "price": 1.569,
       "isOffline": false,
       "lat": 35.13313,
       "lng": 33.329338
@@ -3490,7 +3490,7 @@
       "name": "ΧΑΡΙΛΑΟΣ ΔΑΝΙΗΛ ΛΙΜΙΤΕΔ",
       "address": "Τάφοι των Βασιλέων 82 Τ.Κ 8015 τηλ: 26933861",
       "district": "Τάφοι των Βασιλέων",
-      "price": 1.649,
+      "price": 1.598,
       "isOffline": false,
       "lat": 34.7781365861625,
       "lng": 32.4068489693809

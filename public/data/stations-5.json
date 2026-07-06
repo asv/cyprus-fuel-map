@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-06T04:42:39.198Z",
+  "fetchedAt": "2026-07-06T11:06:41.669Z",
   "avgPrice": 1.332,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -223,7 +223,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.284,
+      "price": 1.283,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -751,7 +751,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.284,
+      "price": 1.283,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -1654,7 +1654,7 @@
       "address": "Γωνία Ναυαρίνου 2 & Ταγματάρχου Πουλίου Τ.Κ 1100 τηλ: 22774025",
       "district": "Λευκωσία",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.171615,
       "lng": 33.345687
     },
@@ -1841,7 +1841,7 @@
       "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
       "district": "Λακατάμεια",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.110876,
       "lng": 33.309251
     },
