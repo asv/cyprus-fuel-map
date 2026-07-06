@@ -1,8 +1,10 @@
 import { fetchStations } from "./client-api";
+import { fetchGlobalHistory } from "./client-history-api";
 import { createFuelMap } from "./client-map";
 import { createBottomSheetController } from "./client-sheet";
+import { renderMarketTrend } from "./client-trends";
 import { byId, distanceKm, escapeHtml, formatPrice, formatTime, type LatLng, query, routeUrls } from "./client-utils";
-import type { FuelResponse, FuelStation } from "./shared";
+import type { FuelResponse, FuelStation, FuelType } from "./shared";
 import { initTheme } from "./theme";
 
 type StationSortMode = "price" | "best" | "distance";
@@ -26,6 +28,7 @@ const priceLimitLabel = byId<HTMLElement>("price-limit-label");
 const statusEl = byId<HTMLElement>("status");
 const summaryEl = byId<HTMLElement>("summary");
 const stationListEl = byId<HTMLElement>("station-list");
+const marketTrendEl = byId<HTMLElement>("market-trend");
 const sortCheapestButton = byId<HTMLButtonElement>("sort-cheapest");
 const sortBestButton = byId<HTMLButtonElement>("sort-best");
 const sortNearbyButton = byId<HTMLButtonElement>("sort-nearby");
@@ -78,6 +81,7 @@ async function loadStations(): Promise<void> {
     resetPriceFilter();
     fuelMap.setStations(currentStations);
     applyPriceFilter();
+    loadMarketTrend(data.fuel);
     setStatus(`${data.stale ? "Stale cache" : "Updated"} ${formatTime(data.fetchedAt)}`);
     maybeAutoLocateUser();
   } catch (error) {
@@ -87,6 +91,17 @@ async function loadStations(): Promise<void> {
   } finally {
     refreshButton.disabled = false;
   }
+}
+
+function loadMarketTrend(fuel: FuelType): void {
+  marketTrendEl.innerHTML = '<p class="trend-empty">Loading trend...</p>';
+  fetchGlobalHistory(fuel, loadController?.signal)
+    .then((history) => renderMarketTrend(marketTrendEl, history))
+    .catch((error) => {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+      console.warn("Failed to load market trend:", error);
+      marketTrendEl.innerHTML = '<p class="trend-empty">Trend unavailable.</p>';
+    });
 }
 
 function applyPriceFilter(): void {
