@@ -165,6 +165,7 @@ Tooling:
 - `AbortController` is used to avoid stale UI updates when switching fuel type quickly.
 - Static serving has basic path traversal protection and content-type handling.
 - Browser `app.js` is bundled with `Bun.build` so client-side modules such as `src/theme.ts` can be imported safely.
+- Historical price data is designed as optional static files under `public/data/history/`; see `docs/history-data.md`.
 
 ## Suggested next improvements
 
