@@ -335,7 +335,7 @@ button:disabled {
 
 .summary-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 44px 44px;
   align-items: stretch;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -345,8 +345,7 @@ button:disabled {
 }
 
 .summary {
-  display: flex;
-  min-width: 0;
+  display: contents;
 }
 
 .metric {
@@ -356,7 +355,8 @@ button:disabled {
   gap: 5px;
   min-width: 0;
   min-height: 48px;
-  padding: 8px 10px 8px 14px;
+  padding: 8px 8px;
+  border-right: 1px solid var(--line);
   background: transparent;
 }
 
@@ -379,22 +379,22 @@ button:disabled {
   white-space: nowrap;
 }
 
-.summary-actions {
-  display: inline-flex;
-  align-items: center;
+.summary-action-button {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  width: 44px;
   min-height: 48px;
-  border-left: 1px solid var(--line);
+  padding: 0;
+  border-right: 1px solid var(--line);
+}
+
+.summary-action-button:last-child {
+  border-right: 0;
 }
 
 .trend-toggle-button {
-  min-height: 32px;
-  margin-left: 8px;
-  padding: 0 11px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
   color: var(--accent);
-  font-size: 12px;
-  font-weight: 700;
 }
 
 .trend-toggle-button.is-active {
@@ -403,17 +403,11 @@ button:disabled {
 }
 
 .refresh-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
-  width: 44px;
-  min-height: 48px;
-  padding: 0;
   color: var(--muted);
 }
 
-.refresh-icon {
+.refresh-icon,
+.trend-summary-icon {
   width: 18px;
   height: 18px;
   stroke-width: 2;
@@ -447,6 +441,13 @@ button:disabled {
 
 .leaflet-tooltip.price-tooltip::before {
   display: none;
+}
+
+.popup-price-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  align-items: baseline;
 }
 
 .popup-insight {

@@ -77,7 +77,6 @@ function setMarketTrendsVisible(visible: boolean): void {
   marketTrendsEl.hidden = !visible;
   trendButton.classList.toggle("is-active", visible);
   trendButton.setAttribute("aria-pressed", String(visible));
-  trendButton.textContent = visible ? "Hide" : "Trends";
   trendButton.setAttribute("aria-label", visible ? "Hide market trends" : "Show market trends");
   trendButton.title = visible ? "Hide market trends" : "Show market trends";
   if (visible) bottomSheet.setState("expanded");
@@ -150,10 +149,9 @@ function updateStationInsights(
 }
 
 function formatStationInsight(delta7d: number | null, vsMarket: number | null): string {
-  const parts: string[] = [];
-  if (delta7d !== null && Math.abs(delta7d) >= 0.0005) parts.push(`7d ${formatSignedPrice(delta7d)}`);
-  if (vsMarket !== null) parts.push(`${formatSignedPrice(vsMarket)} vs market`);
-  return parts.join(" · ");
+  if (vsMarket !== null) return formatSignedPrice(vsMarket);
+  if (delta7d !== null && Math.abs(delta7d) >= 0.0005) return `7d ${formatSignedPrice(delta7d)}`;
+  return "";
 }
 
 function formatSignedPrice(value: number): string {
@@ -373,12 +371,18 @@ function popupHtml(station: FuelStation): string {
     ${escapeHtml(station.name)}<br>
     ${escapeHtml(station.address)}<br>
     ${escapeHtml(station.district)}<br>
-    <strong>€${station.price.toFixed(3)}</strong> / l
-    ${insight ? `<br><span class="popup-insight">${escapeHtml(insight)}</span>` : ""}
+    <span class="popup-price-row">
+      <span><strong>€${station.price.toFixed(3)}</strong> / l</span>
+      ${insight ? `<span class="popup-insight">${escapeHtml(popupInsightText(insight))}</span>` : ""}
+    </span>
     <br><a href="${routes.google}" target="_blank" rel="noopener noreferrer">Google Maps</a>
     · <a href="${routes.waze}" target="_blank" rel="noopener noreferrer">Waze</a>
     ${station.isOffline ? '<br><span class="offline">offline price may differ</span>' : ""}
   `;
+}
+
+function popupInsightText(insight: string): string {
+  return insight.startsWith("7d") ? insight : `${insight} vs market`;
 }
 
 function setStatus(message: string): void {
