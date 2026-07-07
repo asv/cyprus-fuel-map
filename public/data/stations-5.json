@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-07T04:19:29.983Z",
+  "fetchedAt": "2026-07-07T10:03:16.607Z",
   "avgPrice": 1.332,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -136,7 +136,7 @@
       "address": "Νίκου και Δέσποινας Παττίχη 17 Τ.Κ 3071 τηλ: 25334111",
       "district": "Λεμεσός",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.685832,
       "lng": 33.024152
     },
@@ -169,7 +169,7 @@
       "address": "Λεώφ. Αγίου Αθανασίου 42 Τ.Κ 4102 τηλ: 25753385",
       "district": "Άγιος Αθανάσιος",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.701008,
       "lng": 33.059786
     },
@@ -422,7 +422,7 @@
       "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
       "district": "Λακατάμεια",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.110876,
       "lng": 33.309251
     },
@@ -1345,7 +1345,7 @@
       "name": "E&P PETROL STATION LTD",
       "address": "Αγίας Ζώνης 14 Τ.Κ 3027 τηλ: 25344263",
       "district": "Λεμεσός",
-      "price": 1.349,
+      "price": 1.339,
       "isOffline": false,
       "lat": 34.6829771920967,
       "lng": 33.0441996858444

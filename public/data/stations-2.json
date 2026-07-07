@@ -3,8 +3,8 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-07T04:18:39.034Z",
-  "avgPrice": 1.545,
+  "fetchedAt": "2026-07-07T10:02:35.431Z",
+  "avgPrice": 1.544,
   "minPrice": 1.439,
   "maxPrice": 1.729,
   "stations": [
@@ -124,7 +124,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.522,
+      "price": 1.459,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -147,7 +147,7 @@
       "address": "Νίκου και Δέσποινας Παττίχη 17 Τ.Κ 3071 τηλ: 25334111",
       "district": "Λεμεσός",
       "price": 1.599,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.685832,
       "lng": 33.024152
     },
@@ -180,7 +180,7 @@
       "address": "Λεώφ. Αγίου Αθανασίου 42 Τ.Κ 4102 τηλ: 25753385",
       "district": "Άγιος Αθανάσιος",
       "price": 1.504,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.701008,
       "lng": 33.059786
     },
@@ -433,7 +433,7 @@
       "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
       "district": "Λακατάμεια",
       "price": 1.504,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.110876,
       "lng": 33.309251
     },
@@ -861,7 +861,7 @@
       "name": "SPECTO LTD",
       "address": "Λεωφ. Έμπας 144 Τ.Κ 8250 τηλ: 26270301",
       "district": "Έμπα",
-      "price": 1.589,
+      "price": 1.559,
       "isOffline": false,
       "lat": 34.811703,
       "lng": 32.430424
@@ -1202,7 +1202,7 @@
       "name": "ΝΙΚΟΣ & ΜΑΡΚΟΣ ΠΙΤΤΑΚΗΣ",
       "address": "1ης Απριλίου 237 Τ.Κ 5280 τηλ: 23821328",
       "district": "Παραλίμνι",
-      "price": 1.599,
+      "price": 1.539,
       "isOffline": false,
       "lat": 35.0269,
       "lng": 33.98285
@@ -1334,7 +1334,7 @@
       "name": "CEMARIUS LTD",
       "address": "Κολωνακίου 5 Τ.Κ 4103 τηλ: 25324880",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.569,
+      "price": 1.555,
       "isOffline": false,
       "lat": 34.696745040803,
       "lng": 33.0690321662705
@@ -1411,7 +1411,7 @@
       "name": "E&P PETROL STATION LTD",
       "address": "Αγίας Ζώνης 14 Τ.Κ 3027 τηλ: 25344263",
       "district": "Λεμεσός",
-      "price": 1.569,
+      "price": 1.529,
       "isOffline": false,
       "lat": 34.6829771920967,
       "lng": 33.0441996858444
@@ -1653,7 +1653,7 @@
       "name": "STAVROS PANAYIOTOU OIL SERVICES LIMITED",
       "address": "Λεωφ. Σπ. Κυπριανού 26 Τ.Κ 4003 τηλ: 25752200",
       "district": "Μέσα Γειτονιά",
-      "price": 1.557,
+      "price": 1.537,
       "isOffline": false,
       "lat": 34.6979547037033,
       "lng": 33.0435229086677
@@ -2885,7 +2885,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αμμοχώστου 58 Τ.Κ 5380 τηλ: 23821431",
       "district": "Δερύνεια",
-      "price": 1.495,
+      "price": 1.615,
       "isOffline": false,
       "lat": null,
       "lng": null
