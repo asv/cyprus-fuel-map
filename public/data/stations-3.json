@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-07T10:02:49.206Z",
+  "fetchedAt": "2026-07-07T15:18:20.618Z",
   "avgPrice": 1.573,
   "minPrice": 1.484,
   "maxPrice": 1.807,
@@ -807,7 +807,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.588,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -1840,7 +1840,7 @@
       "name": "ΛΕΥΤΕΡΗΣ ΚΑΜΗΛΑΡΗΣ (ΕΠΙΧΕΙΡΗΣΕΙΣ) ΛΙΜΙΤΕΔ",
       "address": "1ης Απριλίου 165 Τ.Κ 5280 τηλ: 23822600",
       "district": "Παραλίμνι",
-      "price": 1.599,
+      "price": 1.569,
       "isOffline": false,
       "lat": 35.0226158167266,
       "lng": 33.9849366847252
@@ -2314,7 +2314,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.568,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2710,7 +2710,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },

@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-07T10:02:35.431Z",
+  "fetchedAt": "2026-07-07T15:18:05.722Z",
   "avgPrice": 1.544,
   "minPrice": 1.439,
   "maxPrice": 1.729,
@@ -785,7 +785,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.519,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -1532,7 +1532,7 @@
       "name": "N. ANDRONICOU SERVICE CENTER LIMITED",
       "address": "Γ.Γρίβα Διγενή (Δρόμος Λευκωσίας - Παλαιχωρίου) Αρεδιού Τ.Κ 2614 τηλ: 22634780",
       "district": "Αρεδιού",
-      "price": 1.599,
+      "price": 1.527,
       "isOffline": false,
       "lat": 35.0588173178675,
       "lng": 33.2073254528481
@@ -1796,7 +1796,7 @@
       "name": "ΚΩΣΤΑΣ Σ. ΣΑΒΒΑ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΤΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 99 Τ.Κ 2565 τηλ: 22543375",
       "district": "Λυθροδόντας",
-      "price": 1.557,
+      "price": 1.527,
       "isOffline": false,
       "lat": 34.9493055555556,
       "lng": 33.3128657407407
@@ -1818,7 +1818,7 @@
       "name": "ΛΕΥΤΕΡΗΣ ΚΑΜΗΛΑΡΗΣ (ΕΠΙΧΕΙΡΗΣΕΙΣ) ΛΙΜΙΤΕΔ",
       "address": "1ης Απριλίου 165 Τ.Κ 5280 τηλ: 23822600",
       "district": "Παραλίμνι",
-      "price": 1.557,
+      "price": 1.529,
       "isOffline": false,
       "lat": 35.0226158167266,
       "lng": 33.9849366847252
@@ -2270,7 +2270,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.524,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2655,7 +2655,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.639,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
