@@ -3,10 +3,10 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-07T20:17:31.991Z",
-  "avgPrice": 1.544,
+  "fetchedAt": "2026-07-08T03:47:40.511Z",
+  "avgPrice": 1.543,
   "minPrice": 1.439,
-  "maxPrice": 1.729,
+  "maxPrice": 1.768,
   "stations": [
     {
       "id": "30328eae8837f4da",
@@ -1224,7 +1224,7 @@
       "name": "ΠΑΡΑΣΧΟΣ ΣΤΥΛΙΑΝΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Σπ. Κυπριανού 220 Τ.Κ 2045 τηλ: 22326688",
       "district": "Στρόβολος",
-      "price": 1.619,
+      "price": 1.599,
       "isOffline": false,
       "lat": 35.122355,
       "lng": 33.340534
@@ -1873,7 +1873,7 @@
       "name": "Π. & Φ. ΖΑΝΤΗ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 65 Τ.Κ 1070 τηλ: 22375297",
       "district": "Λευκωσία",
-      "price": 1.589,
+      "price": 1.529,
       "isOffline": false,
       "lat": 35.1623148148148,
       "lng": 33.3666851851852
@@ -2270,7 +2270,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.524,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2479,7 +2479,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.524,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.524,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2632,7 +2632,7 @@
       "name": "ΑΓΓΕΛΗΣ ΧΡ. ΨΥΛΛΟΣ ΚΑΙ ΥΙΟΣ ΛΙΜΙΤΕΔ",
       "address": "Γ. Κρανιδιώτη 47 Τ.Κ 2220 τηλ: 22481428",
       "district": "Λατσιά",
-      "price": 1.619,
+      "price": 1.599,
       "isOffline": false,
       "lat": 35.1096,
       "lng": 33.3779
@@ -2655,7 +2655,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.639,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2720,7 +2720,7 @@
       "name": "ΚΙΚΗΣ Π. ΜΙΧΑΗΛΟΥΔΗΣ ΛΙΜΙΤΕΔ",
       "address": "Νίκου και Δέσποινας Παττίχη 5Γ Τ.Κ 3071 τηλ: 25336107",
       "district": "Λεμεσός",
-      "price": 1.664,
+      "price": 1.565,
       "isOffline": false,
       "lat": 34.684808,
       "lng": 33.027048
@@ -2874,7 +2874,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Δρόμος Πάφου - Πόλης Χρυσοχούς Τ.Κ 8850 τηλ: 26021282",
       "district": "Γουδί",
-      "price": 1.669,
+      "price": 1.768,
       "isOffline": false,
       "lat": 34.994387,
       "lng": 32.448056
@@ -3061,7 +3061,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 33 Τ.Κ 8820 τηλ: 26020010",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.669,
+      "price": 1.659,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3116,7 +3116,7 @@
       "name": "DEMETRIOS STAVROPOULOS LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 49 Τ.Κ 1065 τηλ: 22753252",
       "district": "Λευκωσία",
-      "price": 1.639,
+      "price": 1.605,
       "isOffline": false,
       "lat": null,
       "lng": null
