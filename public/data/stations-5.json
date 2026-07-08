@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-08T03:48:24.544Z",
+  "fetchedAt": "2026-07-08T08:46:42.098Z",
   "avgPrice": 1.332,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -136,7 +136,7 @@
       "address": "Νίκου και Δέσποινας Παττίχη 17 Τ.Κ 3071 τηλ: 25334111",
       "district": "Λεμεσός",
       "price": 1.379,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.685832,
       "lng": 33.024152
     },
@@ -169,7 +169,7 @@
       "address": "Λεώφ. Αγίου Αθανασίου 42 Τ.Κ 4102 τηλ: 25753385",
       "district": "Άγιος Αθανάσιος",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.701008,
       "lng": 33.059786
     },
@@ -202,7 +202,7 @@
       "address": "Λεωφ. Αγλαντζιάς 35 Τ.Κ 2108 τηλ: 22333916",
       "district": "Αγλαντζιά",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.156854,
       "lng": 33.389026
     },
@@ -730,7 +730,7 @@
       "address": "Λεωφ. Σταυρού 25 Τ.Κ 2035 τηλ: 22496831",
       "district": "Στρόβολος",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.137332,
       "lng": 33.350634
     },
@@ -752,7 +752,7 @@
       "address": "Λεωφόρος Αρχ. Μιχαήλ 17 Τ.Κ 2057 τηλ: 22876187",
       "district": "Στρόβολος",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.156596,
       "lng": 33.335618
     },

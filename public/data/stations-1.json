@@ -3,8 +3,8 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-08T03:47:26.097Z",
-  "avgPrice": 1.469,
+  "fetchedAt": "2026-07-08T08:45:41.689Z",
+  "avgPrice": 1.468,
   "minPrice": 1.389,
   "maxPrice": 1.639,
   "stations": [
@@ -168,8 +168,8 @@
       "name": "PAMBINOS & SONS LIMITED",
       "address": "Νίκου και Δέσποινας Παττίχη 17 Τ.Κ 3071 τηλ: 25334111",
       "district": "Λεμεσός",
-      "price": 1.502,
-      "isOffline": true,
+      "price": 1.469,
+      "isOffline": false,
       "lat": 34.685832,
       "lng": 33.024152
     },
@@ -202,7 +202,7 @@
       "address": "Λεώφ. Αγίου Αθανασίου 42 Τ.Κ 4102 τηλ: 25753385",
       "district": "Άγιος Αθανάσιος",
       "price": 1.469,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.701008,
       "lng": 33.059786
     },
@@ -235,7 +235,7 @@
       "address": "Λεωφ. Αγλαντζιάς 35 Τ.Κ 2108 τηλ: 22333916",
       "district": "Αγλαντζιά",
       "price": 1.428,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.156854,
       "lng": 33.389026
     },
@@ -763,7 +763,7 @@
       "address": "Λεωφ. Σταυρού 25 Τ.Κ 2035 τηλ: 22496831",
       "district": "Στρόβολος",
       "price": 1.469,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.137332,
       "lng": 33.350634
     },
@@ -785,7 +785,7 @@
       "address": "Λεωφόρος Αρχ. Μιχαήλ 17 Τ.Κ 2057 τηλ: 22876187",
       "district": "Στρόβολος",
       "price": 1.469,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.156596,
       "lng": 33.335618
     },
@@ -905,7 +905,7 @@
       "name": "Α/ΦΟΙ Α. & Ν. ΝΙΚΗΦΟΡΟΥ ΛΙΜΙΤΕΔ",
       "address": "Σώτος Χατζηπροκοπίου 22 Τ.Κ 5330 τηλ: 23723868",
       "district": "Αγία Νάπα",
-      "price": 1.499,
+      "price": 1.485,
       "isOffline": false,
       "lat": 34.991937,
       "lng": 33.96196
@@ -1246,7 +1246,7 @@
       "name": "ΠΑΡΑΣΧΟΣ ΣΤΥΛΙΑΝΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Σπ. Κυπριανού 220 Τ.Κ 2045 τηλ: 22326688",
       "district": "Στρόβολος",
-      "price": 1.539,
+      "price": 1.499,
       "isOffline": false,
       "lat": 35.122355,
       "lng": 33.340534
@@ -1279,7 +1279,7 @@
       "name": "ANMAS LTD",
       "address": "Λεωφ. Γρηγόρη Αυξεντίου 154 Τ.Κ 2365 τηλ: 22771034",
       "district": "Άγιος Δομέτιος",
-      "price": 1.499,
+      "price": 1.469,
       "isOffline": false,
       "lat": 35.1723546547892,
       "lng": 33.3232578673897
@@ -1543,7 +1543,7 @@
       "name": "LOUKA & ODYSSEOS TRADING LTD",
       "address": "Λεωφ. Σπ. Κυπριανού 219 Τ.Κ 2045 τηλ: 22322181",
       "district": "Στρόβολος",
-      "price": 1.519,
+      "price": 1.499,
       "isOffline": false,
       "lat": 35.1216151736056,
       "lng": 33.3404218637543
@@ -2005,7 +2005,7 @@
       "name": "JACKOSON ENTERPRISES LIMITED",
       "address": "Δρόμος Παλαιχωρίου - Αγρού Τ.Κ 4860",
       "district": "Αγρός",
-      "price": 1.477,
+      "price": 1.467,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2104,7 +2104,7 @@
       "name": "GRECHARCO SERVICES LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 28 Τ.Κ 4003 τηλ: 25752509",
       "district": "Μέσα Γειτονιά",
-      "price": 1.499,
+      "price": 1.487,
       "isOffline": false,
       "lat": 34.695169,
       "lng": 33.045024
@@ -2885,7 +2885,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.427,
+      "price": 1.426,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3193,7 +3193,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.428,
+      "price": 1.427,
       "isOffline": false,
       "lat": null,
       "lng": null
