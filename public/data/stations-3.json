@@ -3,10 +3,10 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-08T08:46:12.250Z",
+  "fetchedAt": "2026-07-08T14:43:13.495Z",
   "avgPrice": 1.571,
   "minPrice": 1.484,
-  "maxPrice": 1.807,
+  "maxPrice": 1.767,
   "stations": [
     {
       "id": "30328eae8837f4da",
@@ -25,7 +25,7 @@
       "name": "C.N PETROL STATION LTD",
       "address": "Κάτω Πύργος Τ.Κ 2940",
       "district": "Κάτω Πύργος",
-      "price": 1.807,
+      "price": 1.767,
       "isOffline": false,
       "lat": 35.184195,
       "lng": 32.681915
@@ -1571,17 +1571,6 @@
       "lng": 33.013875861377
     },
     {
-      "id": "e38ef05f32cb1c56",
-      "brand": "ESSO",
-      "name": "P1 PETROLEUM LIMITED",
-      "address": "Λεωφ. Τάσσου Παπαδόπουλου . Τ.Κ 6019 τηλ: 24668676",
-      "district": "Λάρνακα",
-      "price": 1.598,
-      "isOffline": true,
-      "lat": 34.9385837635713,
-      "lng": 33.641533390213
-    },
-    {
       "id": "3f25e13991868031",
       "brand": "ESSO",
       "name": "P2 PETROLEUM LIMITED",
@@ -1598,7 +1587,7 @@
       "name": "PYCEGA LTD",
       "address": "Λεωφ. Στροβόλου 327 Τ.Κ 2052 τηλ: 22327758",
       "district": "Στρόβολος",
-      "price": 1.639,
+      "price": 1.619,
       "isOffline": false,
       "lat": 35.1238564814815,
       "lng": 33.3221111111111
@@ -2523,7 +2512,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.538,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2556,7 +2545,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.568,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },

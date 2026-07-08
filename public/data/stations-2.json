@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-08T08:45:56.742Z",
+  "fetchedAt": "2026-07-08T14:42:58.956Z",
   "avgPrice": 1.542,
   "minPrice": 1.439,
   "maxPrice": 1.729,
@@ -1549,17 +1549,6 @@
       "lng": 33.013875861377
     },
     {
-      "id": "e38ef05f32cb1c56",
-      "brand": "ESSO",
-      "name": "P1 PETROLEUM LIMITED",
-      "address": "Λεωφ. Τάσσου Παπαδόπουλου . Τ.Κ 6019 τηλ: 24668676",
-      "district": "Λάρνακα",
-      "price": 1.594,
-      "isOffline": true,
-      "lat": 34.9385837635713,
-      "lng": 33.641533390213
-    },
-    {
       "id": "3f25e13991868031",
       "brand": "ESSO",
       "name": "P2 PETROLEUM LIMITED",
@@ -1851,7 +1840,7 @@
       "name": "ΜΑΡΙΟΣ Γ. ΠΑΝΑΓΗ & ΣΙΑ ΛΤΔ",
       "address": "Λεωφ. Λάρνακος - Αμμοχώστου Τ.Κ 5523 τηλ: 24721122",
       "district": "Δασάκι της Άχνας",
-      "price": 1.557,
+      "price": 1.527,
       "isOffline": false,
       "lat": 35.0325305321652,
       "lng": 33.7577889277862
@@ -2479,7 +2468,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.524,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2512,7 +2501,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.524,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
