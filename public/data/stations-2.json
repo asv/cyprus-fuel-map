@@ -3,8 +3,8 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-09T04:15:46.721Z",
-  "avgPrice": 1.542,
+  "fetchedAt": "2026-07-09T10:04:24.972Z",
+  "avgPrice": 1.541,
   "minPrice": 1.439,
   "maxPrice": 1.729,
   "stations": [
@@ -135,7 +135,7 @@
       "name": "N & C FAKONDIS BROS PETROLEUM LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 31 Τ.Κ 8200 τηλ: 26962471",
       "district": "Γεροσκήπου",
-      "price": 1.539,
+      "price": 1.524,
       "isOffline": false,
       "lat": 34.761499,
       "lng": 32.451182
@@ -905,7 +905,7 @@
       "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΡΩΤΑΡΑΣ) ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Πρωταρά - Κάβο Γκρέκο 280 Τ.Κ 5310 τηλ: 23814200",
       "district": "Πρωταράς",
-      "price": 1.539,
+      "price": 1.495,
       "isOffline": false,
       "lat": 35.025105,
       "lng": 34.035299
@@ -1433,7 +1433,7 @@
       "name": "FREGIO LTD",
       "address": "Γρηγόρη Αυξεντίου 24, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22835192",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.524,
+      "price": 1.514,
       "isOffline": false,
       "lat": 35.1481674279843,
       "lng": 33.2034919828034
@@ -2731,7 +2731,7 @@
       "name": "ΚΩΣΤΑΣ ΓΕΩΡΓΙΟΥ (ΒΙΤΤΗΣ)",
       "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24364365",
       "district": "Καλό Χωριό Λάρνακας",
-      "price": 1.579,
+      "price": 1.533,
       "isOffline": false,
       "lat": 34.92598333,
       "lng": 33.54103333
