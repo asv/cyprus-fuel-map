@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-09T10:04:38.893Z",
+  "fetchedAt": "2026-07-09T15:36:09.027Z",
   "avgPrice": 1.57,
   "minPrice": 1.484,
   "maxPrice": 1.767,
@@ -2171,7 +2171,7 @@
       "address": "Αρσινόης & Αρχ. Μακαρίου Γ΄ 32 Τ.Κ 8830 τηλ: 26321331",
       "district": "Πόλης Χρυσοχούς",
       "price": 1.699,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.035702,
       "lng": 32.427888
     },

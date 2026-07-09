@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-09T10:04:10.878Z",
+  "fetchedAt": "2026-07-09T15:35:33.273Z",
   "avgPrice": 1.467,
   "minPrice": 1.389,
   "maxPrice": 1.569,
@@ -1818,7 +1818,7 @@
       "name": "ΛΕΟΝΤΙΟΣ ΙΕΡΟΔΙΑΚΟΝΟΥ ΛΙΜΙΤΕΔ",
       "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
       "district": "Λατσιά",
-      "price": 1.447,
+      "price": 1.437,
       "isOffline": false,
       "lat": 35.0976900488074,
       "lng": 33.3792905141556
@@ -2171,7 +2171,7 @@
       "address": "Αρσινόης & Αρχ. Μακαρίου Γ΄ 32 Τ.Κ 8830 τηλ: 26321331",
       "district": "Πόλης Χρυσοχούς",
       "price": 1.555,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.035702,
       "lng": 32.427888
     },
