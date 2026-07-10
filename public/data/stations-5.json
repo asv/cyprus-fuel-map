@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-10T04:18:13.089Z",
+  "fetchedAt": "2026-07-10T15:04:53.890Z",
   "avgPrice": 1.332,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -1362,6 +1362,17 @@
       "lng": 33.273498
     },
     {
+      "id": "837127ad630e83aa",
+      "brand": "ESSO",
+      "name": "EWISE RETAIL LTD",
+      "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
+      "district": "Λευκωσία",
+      "price": 1.319,
+      "isOffline": false,
+      "lat": 35.1668579182817,
+      "lng": 33.3703520423279
+    },
+    {
       "id": "2b8a8302bfb0a311",
       "brand": "ESSO",
       "name": "FREGIO LTD",
@@ -1822,17 +1833,6 @@
       "isOffline": false,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
-    },
-    {
-      "id": "7e383d53af2152e1",
-      "brand": "ESSO",
-      "name": "ΣΙΜΟΣ ΚΑΔΗ ΛΙΜΙΤΕΔ",
-      "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
-      "district": "Λευκωσία",
-      "price": 1.319,
-      "isOffline": false,
-      "lat": 35.1668579182817,
-      "lng": 33.3703520423279
     },
     {
       "id": "b7ab37f6a79a5995",

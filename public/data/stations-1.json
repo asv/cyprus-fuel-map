@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-10T09:54:44.230Z",
+  "fetchedAt": "2026-07-10T15:03:53.966Z",
   "avgPrice": 1.467,
   "minPrice": 1.389,
   "maxPrice": 1.569,
@@ -1411,7 +1411,7 @@
       "name": "DI FORCES TRADING LTD",
       "address": "Δρόμος Βάσεων Επισκοπής Τ.Κ 4153 τηλ: 25211547",
       "district": "Βάση Επισκοπής",
-      "price": 1.489,
+      "price": 1.479,
       "isOffline": false,
       "lat": 34.6753994208012,
       "lng": 32.8429807049629
@@ -1448,6 +1448,17 @@
       "isOffline": false,
       "lat": 35.081014,
       "lng": 33.273498
+    },
+    {
+      "id": "837127ad630e83aa",
+      "brand": "ESSO",
+      "name": "EWISE RETAIL LTD",
+      "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
+      "district": "Λευκωσία",
+      "price": 1.437,
+      "isOffline": false,
+      "lat": 35.1668579182817,
+      "lng": 33.3703520423279
     },
     {
       "id": "2b8a8302bfb0a311",
@@ -1921,17 +1932,6 @@
       "isOffline": false,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
-    },
-    {
-      "id": "7e383d53af2152e1",
-      "brand": "ESSO",
-      "name": "ΣΙΜΟΣ ΚΑΔΗ ΛΙΜΙΤΕΔ",
-      "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
-      "district": "Λευκωσία",
-      "price": 1.437,
-      "isOffline": false,
-      "lat": 35.1668579182817,
-      "lng": 33.3703520423279
     },
     {
       "id": "b7ab37f6a79a5995",
@@ -3358,7 +3358,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
       "district": "Ευρύχου",
-      "price": 1.42,
+      "price": 1.417,
       "isOffline": false,
       "lat": 35.05938888888888,
       "lng": 32.91291666666667
