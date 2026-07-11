@@ -3,8 +3,8 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-11T03:45:10.055Z",
-  "avgPrice": 1.541,
+  "fetchedAt": "2026-07-11T13:57:00.613Z",
+  "avgPrice": 1.54,
   "minPrice": 1.439,
   "maxPrice": 1.729,
   "stations": [
@@ -124,7 +124,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.459,
+      "price": 1.457,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -1147,7 +1147,7 @@
       "name": "P. DIOGENOUS PETROL STATION LTD",
       "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
       "district": "Μεσόγη",
-      "price": 1.548,
+      "price": 1.528,
       "isOffline": false,
       "lat": 34.805,
       "lng": 32.44541667
@@ -1499,7 +1499,7 @@
       "name": "KOURKOUTIS ENTERPRISES LTD",
       "address": "Γρηγόρη Αυξεντίου 128 Τ.Κ 4520 τηλ: 25366669",
       "district": "Παρεκκλησιά",
-      "price": 1.527,
+      "price": 1.517,
       "isOffline": false,
       "lat": 34.748826,
       "lng": 33.161061
@@ -1675,7 +1675,7 @@
       "name": "TRIKENO LTD",
       "address": "Λεωφ.Γ.Γρίβα Διγενή 43 Τ.Κ 6045 τηλ: 24652200",
       "district": "Λάρνακα",
-      "price": 1.527,
+      "price": 1.517,
       "isOffline": false,
       "lat": 34.9187491493678,
       "lng": 33.6186334558197
@@ -1719,7 +1719,7 @@
       "name": "YIANNAKIS & ΑΝΝΑ TSANGARIDES LIMITED",
       "address": "Γρηγόρη Αυξεντίου, Δρόμος Παρεκκλησιάς Τ.Κ τηλ: 25636261",
       "district": "Παρεκκλησιά",
-      "price": 1.527,
+      "price": 1.517,
       "isOffline": false,
       "lat": 34.7180787037037,
       "lng": 33.1634259259259
@@ -1862,7 +1862,7 @@
       "name": "ΝΙΚΟΣ Χ. ΠΙΕΡΙΔΗΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου, Ακάκι Τ.Κ 2720 τηλ: 22821449",
       "district": "Ακάκι",
-      "price": 1.528,
+      "price": 1.518,
       "isOffline": false,
       "lat": 35.1370534076704,
       "lng": 33.1417384202377
@@ -2259,7 +2259,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.524,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2501,7 +2501,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.524,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2522,7 +2522,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Παλαιός Δρόμος Λεμεσού-Πάφου Τ.Κ 4607 τηλ: 25221250",
       "district": "Πισσούρι",
-      "price": 1.524,
+      "price": 1.517,
       "isOffline": false,
       "lat": 34.675178,
       "lng": 32.697404
@@ -2644,7 +2644,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.639,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -3292,7 +3292,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
       "district": "Ευρύχου",
-      "price": 1.459,
+      "price": 1.457,
       "isOffline": false,
       "lat": 35.05938888888888,
       "lng": 32.91291666666667
