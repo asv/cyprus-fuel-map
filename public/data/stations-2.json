@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-13T09:49:29.250Z",
+  "fetchedAt": "2026-07-13T15:13:47.094Z",
   "avgPrice": 1.523,
   "minPrice": 1.423,
   "maxPrice": 1.699,
@@ -124,7 +124,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.435,
+      "price": 1.429,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -1840,7 +1840,7 @@
       "name": "Μ.Κ. ΓΕΝΕΘΛΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Γιάννου Κρανιδιώτη Τ.Κ 3110 τηλ: 25336300",
       "district": "Λεμεσός",
-      "price": 1.526,
+      "price": 1.517,
       "isOffline": false,
       "lat": 34.7043776604692,
       "lng": 33.003317245369
