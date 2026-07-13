@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-13T04:03:25.197Z",
+  "fetchedAt": "2026-07-13T09:49:58.370Z",
   "avgPrice": 1.363,
   "minPrice": 1.299,
   "maxPrice": 1.469,
@@ -36,7 +36,7 @@
       "name": "G & K Kouppas Ltd",
       "address": "Κωνσταντινουπόλεως 2 Τ.Κ 8820 τηλ: 26321515",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.409,
+      "price": 1.399,
       "isOffline": false,
       "lat": 35.032195,
       "lng": 32.427352
@@ -48,7 +48,7 @@
       "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
       "district": "Αργάκα",
       "price": 1.419,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.065318,
       "lng": 32.467592
     },
@@ -675,7 +675,7 @@
       "address": "Αγίου Λουκά 7 Τ.Κ 7731 τηλ: 24333172",
       "district": "Σκαρίνου",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.815172222222216,
       "lng": 33.36078055555556
     },
@@ -719,7 +719,7 @@
       "address": "Λεωφ. Δημοκρατίας 54 Τ.Κ 2034 τηλ: 22429491",
       "district": "Στρόβολος",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.131505,
       "lng": 33.361001
     },
@@ -1389,7 +1389,7 @@
       "name": "DOUBLE N. GAS STATION LIMITED",
       "address": "Μακεδονιτίσσης 105 Τ.Κ 2057 τηλ: 22513003",
       "district": "Στρόβολος",
-      "price": 1.389,
+      "price": 1.359,
       "isOffline": false,
       "lat": 35.1464221046094,
       "lng": 33.3278149601883
@@ -2632,7 +2632,7 @@
       "name": "ΑΝΔΡΕΑΣ Β. ΓΕΩΡΓΙΟΥ ΛΤΔ",
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
-      "price": 1.459,
+      "price": 1.399,
       "isOffline": false,
       "lat": 34.80268333,
       "lng": 33.51053333
@@ -2665,7 +2665,7 @@
       "name": "ΓΕΩΡΓΙΑ ΝΙΚΟΛΑΟΥ ΛΤΔ",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 17 & Αγίας Λαύρας Τ.Κ 6010 τηλ: 24652638",
       "district": "Λάρνακα",
-      "price": 1.365,
+      "price": 1.3,
       "isOffline": false,
       "lat": 34.91728333,
       "lng": 33.62233333
