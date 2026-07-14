@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-13T19:51:49.843Z",
+  "fetchedAt": "2026-07-14T03:37:29.246Z",
   "avgPrice": 1.465,
   "minPrice": 1.389,
   "maxPrice": 1.596,
@@ -916,7 +916,7 @@
       "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΑΡΑΛΙΜΝΙ) ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Πρωταρά 161 Τ.Κ 5289 τηλ: 23822030",
       "district": "Παραλίμνι",
-      "price": 1.455,
+      "price": 1.468,
       "isOffline": false,
       "lat": 35.043444,
       "lng": 33.994804
@@ -938,7 +938,7 @@
       "name": "ΑΝΔΡΕΑΣ Μ. ΚΟΜΜΑΤΟΣ ΛΙΜΙΤΕΔ",
       "address": "Λεώφ. Αποστόλου Παύλου 20 Τ.Κ 8046 τηλ: 26932437",
       "district": "Πάφος",
-      "price": 1.479,
+      "price": 1.489,
       "isOffline": false,
       "lat": 34.772555555555556,
       "lng": 32.41813888888888
@@ -1048,7 +1048,7 @@
       "name": "ΜΙΧΑΛΑΚΗΣ ΙΑΚΩΒΟΥ ΛΙΜΙΤΕΔ",
       "address": "14ος Δρόμος 22 Τ.Κ 4620 τηλ: 25932665",
       "district": "Επισκοπή",
-      "price": 1.479,
+      "price": 1.469,
       "isOffline": false,
       "lat": 34.665401,
       "lng": 32.904576
@@ -1510,7 +1510,7 @@
       "name": "JENKERA LIMITED",
       "address": "Μισιαούλη & Καβάζογλου 86-88 Τ.Κ 3016 τηλ: 25565274",
       "district": "Λεμεσός",
-      "price": 1.465,
+      "price": 1.457,
       "isOffline": false,
       "lat": 34.673999828282,
       "lng": 33.0231830443581
@@ -2038,7 +2038,7 @@
       "name": "ANTONIS KKOULOS PETROL STATION LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 4 Τ.Κ 7550 τηλ: 24422132",
       "district": "Κίτι",
-      "price": 1.499,
+      "price": 1.479,
       "isOffline": false,
       "lat": 34.84668333,
       "lng": 33.573
@@ -2303,7 +2303,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.469,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2390,7 +2390,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Γιάννου Κρανιδιώτη 34, (Εκάλι, Αγία Φύλα) Τ.Κ - τηλ: 25772888",
       "district": "Λεμεσός",
-      "price": 1.465,
+      "price": 1.456,
       "isOffline": false,
       "lat": 34.698138888888884,
       "lng": 33.01002777777778
@@ -2456,7 +2456,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Γεώργιου Χ\" Χαραλάμπους 58 Τ.Κ 7700 τηλ: 24342417",
       "district": "Λεύκαρα",
-      "price": 1.468,
+      "price": 1.454,
       "isOffline": false,
       "lat": 34.86518333,
       "lng": 33.30683333
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.428,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2545,7 +2545,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.469,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2699,7 +2699,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.489,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
