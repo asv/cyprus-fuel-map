@@ -21,6 +21,7 @@ let hasFittedInitialBounds = false;
 let hasTriedAutoLocate = false;
 let stationSortMode: StationSortMode = "price";
 let stationInsights = new Map<string, string>();
+let locateErrorTimer: number | null = null;
 
 const fuelSelect = byId<HTMLSelectElement>("fuel");
 const refreshButton = byId<HTMLButtonElement>("refresh");
@@ -39,6 +40,7 @@ const sortNearbyButton = byId<HTMLButtonElement>("sort-nearby");
 const topbarEl = query<HTMLElement>(".topbar");
 const sheetDragRegionEl = query<HTMLElement>(".sheet-drag-region");
 const sheetHandleButton = byId<HTMLButtonElement>("sheet-handle");
+const showStationsButton = byId<HTMLButtonElement>("show-stations");
 
 const fuelMap = createFuelMap({ popupHtml });
 const bottomSheet = createBottomSheetController({
@@ -56,6 +58,7 @@ refreshButton.addEventListener("click", loadStations);
 trendButton.addEventListener("click", toggleMarketTrends);
 locateButton.addEventListener("click", () => locateUser({ rememberPreference: true }));
 priceLimitInput.addEventListener("input", applyPriceFilter);
+showStationsButton.addEventListener("click", () => bottomSheet.setState("expanded"));
 sortCheapestButton.addEventListener("click", () => setStationSortMode("price"));
 sortBestButton.addEventListener("click", () => setStationSortMode("best"));
 sortNearbyButton.addEventListener("click", () => setStationSortMode("distance"));
@@ -90,7 +93,6 @@ async function loadStations(): Promise<void> {
   refreshButton.disabled = true;
   fuelMap.setStations([]);
   stationListEl.innerHTML = "";
-  hasFittedInitialBounds = false;
 
   try {
     const data = await fetchStations(fuelSelect.value, loadController.signal);
@@ -161,7 +163,7 @@ function formatSignedPrice(value: number): string {
 
 function applyPriceFilter(): void {
   const maxPrice = Number(priceLimitInput.value);
-  priceLimitLabel.textContent = `€${maxPrice.toFixed(3)} / l`;
+  priceLimitLabel.textContent = `Up to €${maxPrice.toFixed(3)}`;
   visibleStations = currentStations.filter((station) => station.price <= maxPrice);
 
   fuelMap.applyVisibleStations(visibleStations);
@@ -185,7 +187,8 @@ function resetPriceFilter(): void {
   priceLimitInput.min = Number.isFinite(min) ? min.toFixed(3) : "0";
   priceLimitInput.max = Number.isFinite(max) ? max.toFixed(3) : "1";
   priceLimitInput.value = Number.isFinite(max) ? max.toFixed(3) : "1";
-  priceLimitLabel.textContent = prices.length === 0 ? "all" : `€${Number(priceLimitInput.value).toFixed(3)} / l`;
+  priceLimitLabel.textContent =
+    prices.length === 0 ? "All prices" : `Up to €${Number(priceLimitInput.value).toFixed(3)}`;
 }
 
 function updateSummary(): void {
@@ -193,11 +196,11 @@ function updateSummary(): void {
   summaryEl.innerHTML = `
     <div class="metric">
       <strong class="metric-value">${formatPrice(lastFuelData.avgPrice)}</strong>
-      <span class="metric-label">avg</span>
+      <span class="metric-label">Average</span>
     </div>
     <div class="metric">
       <strong class="metric-value">${formatPrice(lastFuelData.minPrice)}</strong>
-      <span class="metric-label">low</span>
+      <span class="metric-label">Lowest</span>
     </div>
   `;
 }
@@ -224,8 +227,11 @@ function renderStationList(): void {
           </span>
         </button>
         <nav class="station-routes" aria-label="Route to ${escapeHtml(station.brand)} ${escapeHtml(station.name)}">
-          <a class="route-link" href="${routes.google}" target="_blank" rel="noopener noreferrer" aria-label="Open Google Maps route">Google</a>
-          <a class="route-link" href="${routes.waze}" target="_blank" rel="noopener noreferrer" aria-label="Open Waze route">Waze</a>
+          <a class="route-link route-link-primary" href="${routes.waze}" target="_blank" rel="noopener noreferrer" aria-label="Open Waze route" title="Open in Waze">
+            <svg class="control-icon route-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m20 4-7.5 16-2.4-6.1L4 11.5 20 4Z" />
+            </svg>
+          </a>
         </nav>
       </article>
     `;
@@ -312,21 +318,25 @@ function locateUser(
 ): void {
   hasTriedAutoLocate = true;
 
+  if (lastUserLocation) focusUserLocation(lastUserLocation);
+
   if (!navigator.geolocation) {
     if (options.rememberPreference) setGeolocationRemembered(false);
     setStatus("Geolocation is not supported by this browser.");
+    setLocateButtonState("error", "Geolocation is not supported");
     return;
   }
 
   setStatus(options.automatic ? "Finding your location..." : "Requesting location...");
+  setLocateButtonState("locating", "Finding your location");
   navigator.geolocation.getCurrentPosition(
     (position) => {
       if (options.rememberPreference) setGeolocationRemembered(true);
       lastUserLocation = { lat: position.coords.latitude, lng: position.coords.longitude };
-      fuelMap.addUserMarker([lastUserLocation.lat, lastUserLocation.lng]);
-      fuelMap.setView([lastUserLocation.lat, lastUserLocation.lng], 13);
+      focusUserLocation(lastUserLocation);
       renderStationList();
       setStatus(locationFoundStatus());
+      setLocateButtonState("idle", "Use my location");
     },
     (error) => {
       if (options.rememberPreference && error.code === error.PERMISSION_DENIED) {
@@ -337,10 +347,44 @@ function locateUser(
         updateSortControls();
         renderStationList();
       }
-      setStatus(options.automatic ? "Location unavailable. Tap locate to retry." : `Location error: ${error.message}`);
+      const message = options.automatic
+        ? "Location unavailable. Tap locate to retry."
+        : `Location error: ${error.message}`;
+      setStatus(message);
+      setLocateButtonState("error", message);
     },
-    { enableHighAccuracy: true, timeout: 10000 },
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 },
   );
+}
+
+function focusUserLocation(location: LatLng): void {
+  fuelMap.addUserMarker([location.lat, location.lng]);
+  fuelMap.setView([location.lat, location.lng], 13);
+  bottomSheet.panAboveSheet();
+}
+
+function setLocateButtonState(state: "idle" | "locating" | "error", message: string): void {
+  if (locateErrorTimer !== null) {
+    window.clearTimeout(locateErrorTimer);
+    locateErrorTimer = null;
+  }
+
+  const isLocating = state === "locating";
+  locateButton.disabled = isLocating;
+  locateButton.classList.toggle("is-locating", isLocating);
+  locateButton.classList.toggle("has-error", state === "error");
+  locateButton.setAttribute("aria-busy", String(isLocating));
+  locateButton.setAttribute("aria-label", message);
+  locateButton.title = message;
+
+  if (state === "error") {
+    locateErrorTimer = window.setTimeout(() => {
+      locateButton.classList.remove("has-error");
+      locateButton.setAttribute("aria-label", "Use my location");
+      locateButton.title = "Use my location";
+      locateErrorTimer = null;
+    }, 3000);
+  }
 }
 
 function isGeolocationRemembered(): boolean {
@@ -375,8 +419,9 @@ function popupHtml(station: FuelStation): string {
       <span><strong>€${station.price.toFixed(3)}</strong> / l</span>
       ${insight ? `<span class="popup-insight">${escapeHtml(popupInsightText(insight))}</span>` : ""}
     </span>
-    <br><a href="${routes.google}" target="_blank" rel="noopener noreferrer">Google Maps</a>
-    · <a href="${routes.waze}" target="_blank" rel="noopener noreferrer">Waze</a>
+    <div class="popup-routes">
+      <a class="popup-route-primary" href="${routes.waze}" target="_blank" rel="noopener noreferrer">Waze</a>
+    </div>
     ${station.isOffline ? '<br><span class="offline">offline price may differ</span>' : ""}
   `;
 }

@@ -2,11 +2,10 @@ import type { FuelStation } from "./shared";
 
 export type LatLng = { lat: number; lng: number };
 
-export function routeUrls(station: FuelStation): { google: string; waze: string } {
+export function routeUrls(station: FuelStation): { waze: string } {
   const lat = station.lat ?? 0;
   const lng = station.lng ?? 0;
   return {
-    google: `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`,
     waze: `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`,
   };
 }

@@ -23,6 +23,7 @@ type FuelMap = {
 };
 
 const PRICE_LABEL_MIN_ZOOM = 13;
+const COMPACT_MARKER_MAX_ZOOM = 10;
 
 export function createFuelMap(options: { popupHtml: (station: FuelStation) => string }): FuelMap {
   const map = L.map("map", { zoomControl: false }).setView([35.05, 33.22], 9);
@@ -46,11 +47,11 @@ export function createFuelMap(options: { popupHtml: (station: FuelStation) => st
     for (const station of stations) {
       const color = priceColor(station.price, min, max);
       const marker = L.circleMarker([station.lat, station.lng], {
-        radius: 10,
+        radius: markerRadius(map.getZoom()),
         color,
         fillColor: color,
-        fillOpacity: 0.74,
-        weight: 2,
+        fillOpacity: 0.82,
+        weight: 1.4,
       });
       marker.bindPopup(() => options.popupHtml(station));
       marker.bindTooltip(formatPrice(station.price), {
@@ -92,6 +93,11 @@ export function createFuelMap(options: { popupHtml: (station: FuelStation) => st
     }
   }
 
+  function updateMarkerScale(): void {
+    const radius = markerRadius(map.getZoom());
+    for (const entry of stationMarkers) entry.marker.setRadius(radius);
+  }
+
   function fitStationBounds(
     stations: FuelStation[],
     layout: { topbarEl: HTMLElement; bottomSheetEl: HTMLElement },
@@ -99,6 +105,17 @@ export function createFuelMap(options: { popupHtml: (station: FuelStation) => st
     const bounds = L.latLngBounds(stations.map((station) => [station.lat, station.lng]));
     const topbar = layout.topbarEl.getBoundingClientRect();
     const bottomSheet = layout.bottomSheetEl.getBoundingClientRect();
+    const isSidebarLayout =
+      bottomSheet.height >= window.innerHeight * 0.9 && bottomSheet.width < window.innerWidth * 0.5;
+
+    if (isSidebarLayout) {
+      map.fitBounds(bounds.pad(0.06), {
+        animate: false,
+        paddingTopLeft: [32, 32],
+        paddingBottomRight: [32, 32],
+      });
+      return;
+    }
 
     map.fitBounds(bounds.pad(0.08), {
       animate: false,
@@ -122,6 +139,16 @@ export function createFuelMap(options: { popupHtml: (station: FuelStation) => st
     addUserMarker,
     panBy: (point) => map.panBy(point, { animate: false }),
     invalidateSize: () => map.invalidateSize(),
-    onViewportChanged: (handler) => map.on("zoomend moveend", handler),
+    onViewportChanged: (handler) =>
+      map.on("zoomend moveend", () => {
+        updateMarkerScale();
+        handler();
+      }),
   };
+}
+
+function markerRadius(zoom: number): number {
+  if (zoom <= COMPACT_MARKER_MAX_ZOOM) return 4.5;
+  if (zoom < PRICE_LABEL_MIN_ZOOM) return 6.5;
+  return 9;
 }

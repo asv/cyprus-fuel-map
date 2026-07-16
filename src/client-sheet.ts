@@ -75,6 +75,8 @@ export function createBottomSheetController(options: {
     sheetState = nextState;
     const isExpanded = sheetState === "expanded";
 
+    if (isExpanded) options.bottomSheetEl.scrollTop = 0;
+
     options.bottomSheetEl.classList.toggle("is-expanded", isExpanded);
     options.bottomSheetEl.classList.toggle("is-collapsed", !isExpanded);
     options.sheetHandleButton.setAttribute("aria-expanded", String(isExpanded));
@@ -88,7 +90,11 @@ export function createBottomSheetController(options: {
   }
 
   function panAboveSheet(): void {
-    options.panMapBy([0, Math.round(options.bottomSheetEl.getBoundingClientRect().height / 5)]);
+    const sheet = options.bottomSheetEl.getBoundingClientRect();
+    const isSidebarLayout = sheet.height >= window.innerHeight * 0.9 && sheet.width < window.innerWidth * 0.5;
+    if (isSidebarLayout) return;
+
+    options.panMapBy([0, Math.round(sheet.height / 2)]);
   }
 
   return { element: options.bottomSheetEl, setState, panAboveSheet };
