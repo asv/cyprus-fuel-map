@@ -3,8 +3,8 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-16T03:41:42.069Z",
-  "avgPrice": 1.37,
+  "fetchedAt": "2026-07-16T08:36:54.358Z",
+  "avgPrice": 1.371,
   "minPrice": 1.3,
   "maxPrice": 1.475,
   "stations": [
@@ -102,8 +102,8 @@
       "name": "LESONI PETROLIUM LTD",
       "address": "Αρχ. Μακαρίου Γ΄ 18 (Παλαιός Δρόμος Λάρνακας-Λεμεσού) Τ.Κ 7571 τηλ: 24432522",
       "district": "Αγγλισίδες",
-      "price": 1.352,
-      "isOffline": false,
+      "price": 1.402,
+      "isOffline": true,
       "lat": 34.852791,
       "lng": 33.455066
     },
@@ -146,7 +146,7 @@
       "name": "N & C FAKONDIS BROS PETROLEUM LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 31 Τ.Κ 8200 τηλ: 26962471",
       "district": "Γεροσκήπου",
-      "price": 1.36,
+      "price": 1.39,
       "isOffline": false,
       "lat": 34.761499,
       "lng": 32.451182
@@ -455,7 +455,7 @@
       "address": "Αγίας Φυλάξεως 161 Τ.Κ 3083 τηλ: 25336641",
       "district": "Λεμεσός",
       "price": 1.379,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.697668,
       "lng": 33.032372
     },
@@ -1048,7 +1048,7 @@
       "name": "ΝΙΚΟΣ ΓΕΡΑΣΙΜΟΥ ΛΙΜΙΤΕΔ",
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
-      "price": 1.399,
+      "price": 1.449,
       "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
@@ -1093,7 +1093,7 @@
       "address": "Αρχ. Μακαρίου Γ΄ 42, Πέρα Χωριό Τ.Κ 2572 τηλ: 22521556",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.35,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.015708,
       "lng": 33.401891
     },
@@ -1236,7 +1236,7 @@
       "address": "Ευαγόρα Παλληκαρίδη 53 Τ.Κ 8010 τηλ: 26933657",
       "district": "Πάφος",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.7779977652251,
       "lng": 32.4236665755325
     },
@@ -1302,7 +1302,7 @@
       "address": "Στροβόλου 19 Τ.Κ 2480 τηλ: 22385359",
       "district": "Τσέρι",
       "price": 1.348,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0787361111111,
       "lng": 33.3254490740741
     },
@@ -1313,7 +1313,7 @@
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
       "price": 1.4,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
     },
@@ -1335,7 +1335,7 @@
       "address": "Κολωνακίου 5 Τ.Κ 4103 τηλ: 25324880",
       "district": "Άγιος Αθανάσιος",
       "price": 1.389,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.696745040803,
       "lng": 33.0690321662705
     },
@@ -1368,7 +1368,7 @@
       "address": "Πάφου 26 Τ.Κ 4607 τηλ: 25221010",
       "district": "Πισσούρι",
       "price": 1.348,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.68225,
       "lng": 32.7024953703704
     },
@@ -1467,7 +1467,7 @@
       "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
       "district": "Καϊμακλί",
       "price": 1.39,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1845138888889,
       "lng": 33.3895
     },
@@ -1544,7 +1544,7 @@
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
       "price": 1.359,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
     },
@@ -1664,7 +1664,7 @@
       "name": "TRIKENO LTD",
       "address": "Λεωφ.Γ.Γρίβα Διγενή 43 Τ.Κ 6045 τηλ: 24652200",
       "district": "Λάρνακα",
-      "price": 1.359,
+      "price": 1.345,
       "isOffline": false,
       "lat": 34.9187491493678,
       "lng": 33.6186334558197
@@ -1698,7 +1698,7 @@
       "address": "Λεωφ. Σπ. Χριστοδούλου 42 Τ.Κ 1020 τηλ: 22431925",
       "district": "Παλλουριώτισσα",
       "price": 1.349,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1755856806026,
       "lng": 33.3730663994056
     },
@@ -1720,7 +1720,7 @@
       "address": "Λεωφ. Στροβόλου 37 Τ.Κ 2018 τηλ: 22421248",
       "district": "Στρόβολος",
       "price": 1.378,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1487856870168,
       "lng": 33.346567328836
     },
@@ -1742,7 +1742,7 @@
       "address": "Λεωφ. Κυριάκου Μάτση 12 Τ.Κ 2368 τηλ: 22355727",
       "district": "Άγιος Δομέτιος",
       "price": 1.389,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1680794501581,
       "lng": 33.331874064418
     },
@@ -1874,7 +1874,7 @@
       "address": "Μακεδονίας 15 Τ.Κ 4540 τηλ: 25452326",
       "district": "Παραμύθα",
       "price": 1.359,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.7566851851852,
       "lng": 32.9910046296296
     },
@@ -1885,7 +1885,7 @@
       "address": "14ος Δρόμος 40 Τ.Κ 4620 τηλ: 25932671",
       "district": "Επισκοπή",
       "price": 1.359,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
     },
@@ -2060,7 +2060,7 @@
       "name": "IOSIF. P. IOSIF TRADING LIMITED",
       "address": "Μαρίου 10 Τ.Κ 8820 τηλ: 26321425",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.399,
+      "price": 1.419,
       "isOffline": false,
       "lat": 35.036047,
       "lng": 32.429827
@@ -2225,7 +2225,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Δρόμος Αμιάντου – Καρβουνά Τ.Κ 4876 τηλ: 25550055",
       "district": "Κυπερούντα",
-      "price": 1.319,
+      "price": 1.349,
       "isOffline": false,
       "lat": 34.940097,
       "lng": 32.931017
@@ -2368,7 +2368,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Φρ. Ρούσβελτ 245 Τ.Κ 3046 τηλ: 25391077",
       "district": "Λεμεσός",
-      "price": 1.319,
+      "price": 1.349,
       "isOffline": false,
       "lat": 34.65851667,
       "lng": 33.0028
@@ -2379,7 +2379,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Λεωφ. Νίκης 1 Τ.Κ 1086 τηλ: 22347010",
       "district": "Λευκωσία",
-      "price": 1.319,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.162387,
       "lng": 33.35887
@@ -2401,7 +2401,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Λεώφ. Λεμεσού 5 Τ.Κ 4525 τηλ: 25632877",
       "district": "Μονή",
-      "price": 1.319,
+      "price": 1.349,
       "isOffline": false,
       "lat": 34.721313,
       "lng": 33.199702
@@ -2445,7 +2445,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
-      "price": 1.319,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.0424,
       "lng": 33.387107
@@ -2467,7 +2467,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Λεωφ. Αμμοχώστου 67 Τ.Κ 1048 τηλ: 22730333",
       "district": "Παλλουριώτισσα",
-      "price": 1.319,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.168195,
       "lng": 33.39786
@@ -2479,7 +2479,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.369,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2489,7 +2489,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
       "district": "Πεδουλάς",
-      "price": 1.319,
+      "price": 1.369,
       "isOffline": false,
       "lat": 34.97021,
       "lng": 32.82599
@@ -2764,7 +2764,7 @@
       "name": "ΝΙΚΟΛΑΟΥ Α. ΠΑΝΙΚΟΣ",
       "address": "Λεωφ. Αμμοχώστου 74 Τ.Κ 5380 τηλ: 23821322",
       "district": "Δερύνεια",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.07041667,
       "lng": 33.9607
@@ -2775,7 +2775,7 @@
       "name": "Π. ΛΟΙΖΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Στροβόλου 60 Τ.Κ 2018 τηλ: 22422060",
       "district": "Στρόβολος",
-      "price": 1.319,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.146567,
       "lng": 33.34512
@@ -3050,7 +3050,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.309,
+      "price": 1.305,
       "isOffline": false,
       "lat": null,
       "lng": null
