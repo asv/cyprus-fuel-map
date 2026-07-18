@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-18T13:53:11.800Z",
+  "fetchedAt": "2026-07-18T19:34:55.930Z",
   "avgPrice": 1.332,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -2765,7 +2765,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 57 Τ.Κ 6017 τηλ: 24652236",
       "district": "Λάρνακα",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": null,
       "lng": null
     },

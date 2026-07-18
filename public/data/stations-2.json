@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-18T13:52:28.038Z",
+  "fetchedAt": "2026-07-18T19:34:12.033Z",
   "avgPrice": 1.555,
   "minPrice": 1.433,
   "maxPrice": 1.729,
@@ -2919,7 +2919,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 57 Τ.Κ 6017 τηλ: 24652236",
       "district": "Λάρνακα",
       "price": 1.637,
-      "isOffline": true,
+      "isOffline": false,
       "lat": null,
       "lng": null
     },
@@ -3182,7 +3182,7 @@
       "name": "ΑΡΓΥΡΟΥΛΛΑ & ΒΑΣΙΛΙΚΗ ΜΗΝΑ ΠΡΑΤΗΡΙΟ ΠΕΤΡΕΛΑΙΟΕΙΔΩΝ ΛΤΔ",
       "address": "Λεωφ.Ανεξαρτησίας 1 Τ.Κ 7570 τηλ: 24432830",
       "district": "Αλεθρικό",
-      "price": 1.629,
+      "price": 1.649,
       "isOffline": false,
       "lat": null,
       "lng": null

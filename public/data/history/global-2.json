@@ -468,6 +468,18 @@
       "p25Price": 1.528,
       "p75Price": 1.565,
       "stationCount": 311
+    },
+    {
+      "at": "2026-07-18T19:34:12.033Z",
+      "avgPrice": 1.555,
+      "mappedStationCount": 282,
+      "maxPrice": 1.729,
+      "medianPrice": 1.538,
+      "minPrice": 1.433,
+      "offlineCount": 11,
+      "p25Price": 1.528,
+      "p75Price": 1.565,
+      "stationCount": 311
     }
   ],
   "version": 1

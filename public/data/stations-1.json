@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-18T13:52:13.396Z",
+  "fetchedAt": "2026-07-18T19:33:57.294Z",
   "avgPrice": 1.481,
   "minPrice": 1.389,
   "maxPrice": 1.596,
@@ -2974,7 +2974,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 57 Τ.Κ 6017 τηλ: 24652236",
       "district": "Λάρνακα",
       "price": 1.487,
-      "isOffline": true,
+      "isOffline": false,
       "lat": null,
       "lng": null
     },

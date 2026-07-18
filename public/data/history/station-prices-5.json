@@ -3263,6 +3263,12 @@
       "isOffline": true,
       "price": 1.299,
       "stationKey": "station_cfcbd4f5440a332e"
+    },
+    {
+      "at": "2026-07-18T19:34:55.930Z",
+      "isOffline": false,
+      "price": 1.358,
+      "stationKey": "station_520055cc8ce7c607"
     }
   ],
   "fuel": "5",
