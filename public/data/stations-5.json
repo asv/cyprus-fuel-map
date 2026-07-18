@@ -3,8 +3,8 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-18T03:35:57.421Z",
-  "avgPrice": 1.331,
+  "fetchedAt": "2026-07-18T08:11:59.913Z",
+  "avgPrice": 1.332,
   "minPrice": 1.169,
   "maxPrice": 1.449,
   "stations": [
@@ -102,7 +102,7 @@
       "name": "M.T. EFTHIMIOU ENTERPRISES LTD",
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 4 Τ.Κ 8250 τηλ: 26273244",
       "district": "Έμπα",
-      "price": 1.309,
+      "price": 1.339,
       "isOffline": false,
       "lat": 34.790679,
       "lng": 32.421952
@@ -147,7 +147,7 @@
       "address": "Λεωφ. Γιάννου Κρανιδιώτη 7 Τ.Κ 3110 τηλ: 25822090",
       "district": "Λεμεσός",
       "price": 1.379,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.698122,
       "lng": 33.009215
     },
@@ -279,7 +279,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -510,7 +510,7 @@
       "address": "Γωνία Ναυαρίνου 2 & Ταγματάρχου Πουλίου Τ.Κ 1100 τηλ: 22774025",
       "district": "Λευκωσία",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.171615,
       "lng": 33.345687
     },
@@ -664,7 +664,7 @@
       "address": "Αγίου Λουκά 7 Τ.Κ 7731 τηλ: 24333172",
       "district": "Σκαρίνου",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.815172222222216,
       "lng": 33.36078055555556
     },
@@ -697,7 +697,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -730,7 +730,7 @@
       "address": "Λεωφ. Σταυρού 25 Τ.Κ 2035 τηλ: 22496831",
       "district": "Στρόβολος",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.137332,
       "lng": 33.350634
     },
@@ -850,7 +850,7 @@
       "name": "SPECTO LTD",
       "address": "Λεωφ. Έμπας 144 Τ.Κ 8250 τηλ: 26270301",
       "district": "Έμπα",
-      "price": 1.309,
+      "price": 1.339,
       "isOffline": false,
       "lat": 34.811703,
       "lng": 32.430424
@@ -950,7 +950,7 @@
       "address": "Ελευθερίας 27 Τ.Κ 7102 τηλ: 24531780",
       "district": "Αραδίππου",
       "price": 1.269,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.935446,
       "lng": 33.59272
     },
@@ -1005,7 +1005,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.408,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -2545,7 +2545,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.44,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
