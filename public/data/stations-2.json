@@ -3,9 +3,9 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-19T08:35:01.972Z",
+  "fetchedAt": "2026-07-19T13:56:01.545Z",
   "avgPrice": 1.555,
-  "minPrice": 1.433,
+  "minPrice": 1.395,
   "maxPrice": 1.729,
   "stations": [
     {
@@ -1236,7 +1236,7 @@
       "address": "Ευαγόρα Παλληκαρίδη 53 Τ.Κ 8010 τηλ: 26933657",
       "district": "Πάφος",
       "price": 1.547,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.7779977652251,
       "lng": 32.4236665755325
     },
@@ -1302,7 +1302,7 @@
       "address": "Στροβόλου 19 Τ.Κ 2480 τηλ: 22385359",
       "district": "Τσέρι",
       "price": 1.528,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0787361111111,
       "lng": 33.3254490740741
     },
@@ -1313,7 +1313,7 @@
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
       "price": 1.554,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
     },
@@ -1335,7 +1335,7 @@
       "address": "Κολωνακίου 5 Τ.Κ 4103 τηλ: 25324880",
       "district": "Άγιος Αθανάσιος",
       "price": 1.535,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.696745040803,
       "lng": 33.0690321662705
     },
@@ -1368,7 +1368,7 @@
       "address": "Πάφου 26 Τ.Κ 4607 τηλ: 25221010",
       "district": "Πισσούρι",
       "price": 1.527,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.68225,
       "lng": 32.7024953703704
     },
@@ -1478,7 +1478,7 @@
       "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
       "district": "Καϊμακλί",
       "price": 1.658,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1845138888889,
       "lng": 33.3895
     },
@@ -1555,7 +1555,7 @@
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
       "price": 1.517,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
     },
@@ -1632,7 +1632,7 @@
       "address": "Ασπρόκρεμου 10 Τ.Κ 8505 τηλ: 26222507",
       "district": "Νικόκλεια",
       "price": 1.527,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.727105,
       "lng": 32.569073
     },
@@ -1709,7 +1709,7 @@
       "address": "Λεωφ. Σπ. Χριστοδούλου 42 Τ.Κ 1020 τηλ: 22431925",
       "district": "Παλλουριώτισσα",
       "price": 1.527,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1755856806026,
       "lng": 33.3730663994056
     },
@@ -1731,7 +1731,7 @@
       "address": "Λεωφ. Στροβόλου 37 Τ.Κ 2018 τηλ: 22421248",
       "district": "Στρόβολος",
       "price": 1.504,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1487856870168,
       "lng": 33.346567328836
     },
@@ -1753,7 +1753,7 @@
       "address": "Λεωφ. Κυριάκου Μάτση 12 Τ.Κ 2368 τηλ: 22355727",
       "district": "Άγιος Δομέτιος",
       "price": 1.549,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1680794501581,
       "lng": 33.331874064418
     },
@@ -1896,7 +1896,7 @@
       "address": "Μακεδονίας 15 Τ.Κ 4540 τηλ: 25452326",
       "district": "Παραμύθα",
       "price": 1.527,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.7566851851852,
       "lng": 32.9910046296296
     },
@@ -1907,7 +1907,7 @@
       "address": "14ος Δρόμος 40 Τ.Κ 4620 τηλ: 25932671",
       "district": "Επισκοπή",
       "price": 1.529,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
     },
@@ -3205,7 +3205,7 @@
       "address": "Δρόμος Αραδίππου - Αβδελλερού Τ.Κ τηλ: 24531122",
       "district": "Αβδελλερό",
       "price": 1.559,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.975216,
       "lng": 33.581264
     },
@@ -3292,7 +3292,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
       "district": "Ευρύχου",
-      "price": 1.433,
+      "price": 1.395,
       "isOffline": false,
       "lat": 35.05938888888888,
       "lng": 32.91291666666667
