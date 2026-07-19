@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-19T13:56:31.099Z",
+  "fetchedAt": "2026-07-19T19:35:08.893Z",
   "avgPrice": 1.374,
   "minPrice": 1.305,
   "maxPrice": 1.475,
@@ -48,7 +48,7 @@
       "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
       "district": "Αργάκα",
       "price": 1.419,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.065318,
       "lng": 32.467592
     },
