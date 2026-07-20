@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-20T04:07:41.258Z",
+  "fetchedAt": "2026-07-20T09:36:12.171Z",
   "avgPrice": 1.374,
   "minPrice": 1.305,
   "maxPrice": 1.475,
@@ -48,7 +48,7 @@
       "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
       "district": "Αργάκα",
       "price": 1.419,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.065318,
       "lng": 32.467592
     },
@@ -400,7 +400,7 @@
       "address": "Λεωφ. Τάσσου Παπαδόπουλου (δρόμος Λάρνακας - Δεκέλειας) Τ.Κ 6019 τηλ: 24635023",
       "district": "Λάρνακα",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.937023,
       "lng": 33.640902
     },
@@ -1037,7 +1037,7 @@
       "name": "ΝΕΟΦΥΤΟΣ ΤΣΙΑΜΑΝΕΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄1, Κάτω Δευτερά Τ.Κ 2450 τηλ: 22621331",
       "district": "Δευτερά",
-      "price": 1.369,
+      "price": 1.379,
       "isOffline": false,
       "lat": 35.088858,
       "lng": 33.285772
@@ -1103,7 +1103,7 @@
       "name": "ΧΡΥΣΟΥΛΛΑ ΣΤΑΘΗ ΛΙΜΙΤΕΔ",
       "address": "1ης Απριλίου 138 Τ.Κ 5280 τηλ: 23821343",
       "district": "Παραλίμνι",
-      "price": 1.349,
+      "price": 1.389,
       "isOffline": false,
       "lat": 35.035846,
       "lng": 33.977612
@@ -2127,7 +2127,7 @@
       "address": "Αρσινόης & Αρχ. Μακαρίου Γ΄ 32 Τ.Κ 8830 τηλ: 26321331",
       "district": "Πόλης Χρυσοχούς",
       "price": 1.419,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.035702,
       "lng": 32.427888
     },
@@ -2665,7 +2665,7 @@
       "name": "ΓΕΩΡΓΙΑ ΝΙΚΟΛΑΟΥ ΛΤΔ",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 17 & Αγίας Λαύρας Τ.Κ 6010 τηλ: 24652638",
       "district": "Λάρνακα",
-      "price": 1.368,
+      "price": 1.318,
       "isOffline": false,
       "lat": 34.91728333,
       "lng": 33.62233333
@@ -2962,7 +2962,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "1ης Απριλίου 372 Τ.Κ 5280 τηλ: 23723031",
       "district": "Παραλίμνι",
-      "price": 1.368,
+      "price": 1.379,
       "isOffline": false,
       "lat": 35.010508,
       "lng": 33.993417
@@ -2995,7 +2995,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
-      "price": 1.349,
+      "price": 1.368,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3006,7 +3006,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αθαλάσσας 33 Τ.Κ 2012 τηλ: 22025430",
       "district": "Στρόβολος",
-      "price": 1.368,
+      "price": 1.379,
       "isOffline": false,
       "lat": 35.14863888888889,
       "lng": 33.35194444444445
