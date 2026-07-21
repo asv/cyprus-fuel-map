@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-20T14:35:52.743Z",
+  "fetchedAt": "2026-07-21T03:49:34.536Z",
   "avgPrice": 1.332,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -598,7 +598,7 @@
       "address": "Λεωφ. Μιχαλάκη Κυπριανού 121 Τ.Κ 8560 τηλ: 26343943",
       "district": "Πέγεια",
       "price": 1.309,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.864528,
       "lng": 32.379294
     },
@@ -883,7 +883,7 @@
       "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΑΡΑΛΙΜΝΙ) ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Πρωταρά 161 Τ.Κ 5289 τηλ: 23822030",
       "district": "Παραλίμνι",
-      "price": 1.29,
+      "price": 1.299,
       "isOffline": false,
       "lat": 35.043444,
       "lng": 33.994804
@@ -894,7 +894,7 @@
       "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΡΩΤΑΡΑΣ) ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Πρωταρά - Κάβο Γκρέκο 280 Τ.Κ 5310 τηλ: 23814200",
       "district": "Πρωταράς",
-      "price": 1.29,
+      "price": 1.299,
       "isOffline": false,
       "lat": 35.025105,
       "lng": 34.035299
@@ -905,7 +905,7 @@
       "name": "ΑΝΔΡΕΑΣ Μ. ΚΟΜΜΑΤΟΣ ΛΙΜΙΤΕΔ",
       "address": "Λεώφ. Αποστόλου Παύλου 20 Τ.Κ 8046 τηλ: 26932437",
       "district": "Πάφος",
-      "price": 1.309,
+      "price": 1.319,
       "isOffline": false,
       "lat": 34.772555555555556,
       "lng": 32.41813888888888
@@ -994,7 +994,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄1, Κάτω Δευτερά Τ.Κ 2450 τηλ: 22621331",
       "district": "Δευτερά",
       "price": 1.295,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.088858,
       "lng": 33.285772
     },
@@ -2391,7 +2391,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.358,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
