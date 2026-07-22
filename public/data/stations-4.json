@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-21T19:54:51.071Z",
+  "fetchedAt": "2026-07-22T03:50:19.277Z",
   "avgPrice": 1.375,
   "minPrice": 1.305,
   "maxPrice": 1.475,
@@ -102,7 +102,7 @@
       "name": "LESONI PETROLIUM LTD",
       "address": "Αρχ. Μακαρίου Γ΄ 18 (Παλαιός Δρόμος Λάρνακας-Λεμεσού) Τ.Κ 7571 τηλ: 24432522",
       "district": "Αγγλισίδες",
-      "price": 1.412,
+      "price": 1.362,
       "isOffline": false,
       "lat": 34.852791,
       "lng": 33.455066
@@ -135,7 +135,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.305,
+      "price": 1.357,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -960,7 +960,7 @@
       "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
       "address": "Ελευθερίας 27 Τ.Κ 7102 τηλ: 24531780",
       "district": "Αραδίππου",
-      "price": 1.369,
+      "price": 1.329,
       "isOffline": false,
       "lat": 34.935446,
       "lng": 33.59272
@@ -971,7 +971,7 @@
       "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24360270",
       "district": "Καλό Χωριό Λάρνακας",
-      "price": 1.369,
+      "price": 1.329,
       "isOffline": false,
       "lat": 34.927671,
       "lng": 33.536158
@@ -1367,7 +1367,7 @@
       "name": "DEMETRIS XANDRIS DEVELOPMENTS LTD",
       "address": "Πάφου 26 Τ.Κ 4607 τηλ: 25221010",
       "district": "Πισσούρι",
-      "price": 1.348,
+      "price": 1.368,
       "isOffline": false,
       "lat": 34.68225,
       "lng": 32.7024953703704
@@ -1389,7 +1389,7 @@
       "name": "DOUBLE N. GAS STATION LIMITED",
       "address": "Μακεδονιτίσσης 105 Τ.Κ 2057 τηλ: 22513003",
       "district": "Στρόβολος",
-      "price": 1.359,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.1464221046094,
       "lng": 33.3278149601883
@@ -1488,7 +1488,7 @@
       "name": "KOURKOUTIS ENTERPRISES LTD",
       "address": "Γρηγόρη Αυξεντίου 128 Τ.Κ 4520 τηλ: 25366669",
       "district": "Παρεκκλησιά",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 34.748826,
       "lng": 33.161061
@@ -1708,7 +1708,7 @@
       "name": "YIANNAKIS & ΑΝΝΑ TSANGARIDES LIMITED",
       "address": "Γρηγόρη Αυξεντίου, Δρόμος Παρεκκλησιάς Τ.Κ τηλ: 25636261",
       "district": "Παρεκκλησιά",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 34.7180787037037,
       "lng": 33.1634259259259
@@ -1873,7 +1873,7 @@
       "name": "ΠΑΝΙΚΟΣ Σ. ΜΑΠΠΑΣ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΙΜΙΤΕΔ",
       "address": "Μακεδονίας 15 Τ.Κ 4540 τηλ: 25452326",
       "district": "Παραμύθα",
-      "price": 1.359,
+      "price": 1.369,
       "isOffline": false,
       "lat": 34.7566851851852,
       "lng": 32.9910046296296
@@ -1884,7 +1884,7 @@
       "name": "ΣΑΒΒΑΣ ΛΙΛΗ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "14ος Δρόμος 40 Τ.Κ 4620 τηλ: 25932671",
       "district": "Επισκοπή",
-      "price": 1.359,
+      "price": 1.379,
       "isOffline": false,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
@@ -2237,7 +2237,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.369,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2479,7 +2479,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.369,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2633,7 +2633,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.449,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -3127,7 +3127,7 @@
       "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
       "address": "Δρόμος Αραδίππου - Αβδελλερού Τ.Κ τηλ: 24531122",
       "district": "Αβδελλερό",
-      "price": 1.329,
+      "price": 1.349,
       "isOffline": false,
       "lat": 34.975216,
       "lng": 33.581264
