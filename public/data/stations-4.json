@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-22T14:25:57.200Z",
+  "fetchedAt": "2026-07-22T19:46:49.493Z",
   "avgPrice": 1.377,
   "minPrice": 1.305,
   "maxPrice": 1.475,
@@ -37,7 +37,7 @@
       "address": "Κωνσταντινουπόλεως 2 Τ.Κ 8820 τηλ: 26321515",
       "district": "Πόλης Χρυσοχούς",
       "price": 1.399,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.032195,
       "lng": 32.427352
     },
@@ -102,7 +102,7 @@
       "name": "LESONI PETROLIUM LTD",
       "address": "Αρχ. Μακαρίου Γ΄ 18 (Παλαιός Δρόμος Λάρνακας-Λεμεσού) Τ.Κ 7571 τηλ: 24432522",
       "district": "Αγγλισίδες",
-      "price": 1.362,
+      "price": 1.412,
       "isOffline": false,
       "lat": 34.852791,
       "lng": 33.455066
@@ -829,7 +829,7 @@
       "address": "Αγίου Γεωργίου 99 Τ.Κ 4180 τηλ: 25390691",
       "district": "Ύψωνας",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.682444,
       "lng": 32.952385
     },
@@ -2237,7 +2237,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2633,7 +2633,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.449,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2808,7 +2808,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.305,
+      "price": 1.357,
       "isOffline": false,
       "lat": null,
       "lng": null
