@@ -3,8 +3,8 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-22T03:50:19.277Z",
-  "avgPrice": 1.375,
+  "fetchedAt": "2026-07-22T08:46:57.653Z",
+  "avgPrice": 1.376,
   "minPrice": 1.305,
   "maxPrice": 1.475,
   "stations": [
@@ -81,7 +81,7 @@
       "address": "Δεκέλεια Τ.Κ τηλ: 24723251",
       "district": "Δεκέλεια",
       "price": 1.39,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.98291,
       "lng": 33.71689
     },
@@ -169,7 +169,7 @@
       "address": "Κυριάκου Μάτση 100 Τ.Κ 7102 τηλ: 24532888",
       "district": "Αραδίππου",
       "price": 1.378,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.939014,
       "lng": 33.601698
     },
@@ -477,7 +477,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 162 Τ.Κ 3026 τηλ: 25381276",
       "district": "Λεμεσός",
       "price": 1.379,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.687006,
       "lng": 33.040061
     },
@@ -741,7 +741,7 @@
       "address": "Λεωφ. Σταυρού 25 Τ.Κ 2035 τηλ: 22496831",
       "district": "Στρόβολος",
       "price": 1.379,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.137332,
       "lng": 33.350634
     },
@@ -1059,7 +1059,7 @@
       "name": "ΝΤΙΝΟΣ ΑΠΟΣΤΟΛΟΥ ΛΙΜΙΤΕΔ",
       "address": "Ηλία Καννάουρου 20 Τ.Κ 4187 τηλ: 25391284",
       "district": "Ύψωνας",
-      "price": 1.379,
+      "price": 1.389,
       "isOffline": false,
       "lat": 34.683127,
       "lng": 32.966629
@@ -1114,7 +1114,7 @@
       "name": "COSTAS SAVVIDES (PETROL STATION) LIMITED",
       "address": "Λεωφ. Λάρνακος 125 Τ.Κ 1048 τηλ: 22435320",
       "district": "Παλλουριώτισσα",
-      "price": 1.319,
+      "price": 1.338,
       "isOffline": false,
       "lat": 35.1658,
       "lng": 33.3822
@@ -1235,7 +1235,7 @@
       "name": "\"ΑΔΕΛΦΟΙ ΚΟΥΡΙΔΗ ΛΙΜΙΤΕΔ\"",
       "address": "Ευαγόρα Παλληκαρίδη 53 Τ.Κ 8010 τηλ: 26933657",
       "district": "Πάφος",
-      "price": 1.369,
+      "price": 1.389,
       "isOffline": false,
       "lat": 34.7779977652251,
       "lng": 32.4236665755325
@@ -1290,7 +1290,7 @@
       "name": "BLUEKEY TRADING LIMITED",
       "address": "Λεωφ. Σπ. Κυπριανού 14 Τ.Κ 2033 τηλ: 22427528",
       "district": "Στρόβολος",
-      "price": 1.399,
+      "price": 1.409,
       "isOffline": false,
       "lat": 35.1292268518519,
       "lng": 33.3640740740741
@@ -1477,7 +1477,7 @@
       "name": "JENKERA LIMITED",
       "address": "Μισιαούλη & Καβάζογλου 86-88 Τ.Κ 3016 τηλ: 25565274",
       "district": "Λεμεσός",
-      "price": 1.359,
+      "price": 1.379,
       "isOffline": false,
       "lat": 34.673999828282,
       "lng": 33.0231830443581
@@ -1521,7 +1521,7 @@
       "name": "LOUKA & ODYSSEOS TRADING LTD",
       "address": "Λεωφ. Σπ. Κυπριανού 219 Τ.Κ 2045 τηλ: 22322181",
       "district": "Στρόβολος",
-      "price": 1.399,
+      "price": 1.409,
       "isOffline": false,
       "lat": 35.1216151736056,
       "lng": 33.3404218637543
@@ -1532,7 +1532,7 @@
       "name": "N. ANDRONICOU SERVICE CENTER LIMITED",
       "address": "Γ.Γρίβα Διγενή (Δρόμος Λευκωσίας - Παλαιχωρίου) Αρεδιού Τ.Κ 2614 τηλ: 22634780",
       "district": "Αρεδιού",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.0588173178675,
       "lng": 33.2073254528481
@@ -1543,7 +1543,7 @@
       "name": "N.P PETROL STATION LTD",
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
-      "price": 1.359,
+      "price": 1.379,
       "isOffline": false,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
@@ -1675,7 +1675,7 @@
       "name": "TROPALI PETROLEUM TWO LTD",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 31-35 Τ.Κ 1082 τηλ: 22761100",
       "district": "Λευκωσία",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.1628065376475,
       "lng": 33.3572777748687
@@ -1730,7 +1730,7 @@
       "name": "ΑΝΤΩΝΑΚΗΣ ΚΟΥΡΡΗΣ & ΥΙΟΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 50 Τ.Κ 5350 τηλ: 23821472",
       "district": "Φρέναρος",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.0461658674545,
       "lng": 33.9290050382369
@@ -1829,7 +1829,7 @@
       "name": "ΜΑΡΙΟΣ Γ. ΠΑΝΑΓΗ & ΣΙΑ ΛΤΔ",
       "address": "Λεωφ. Λάρνακος - Αμμοχώστου Τ.Κ 5523 τηλ: 24721122",
       "district": "Δασάκι της Άχνας",
-      "price": 1.359,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.0325305321652,
       "lng": 33.7577889277862
@@ -1950,7 +1950,7 @@
       "name": "JACKOSON ENTERPRISES LIMITED",
       "address": "Δρόμος Παλαιχωρίου - Αγρού Τ.Κ 4860",
       "district": "Αγρός",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2391,7 +2391,7 @@
       "address": "Γεώργιου Χ\" Χαραλάμπους 58 Τ.Κ 7700 τηλ: 24342417",
       "district": "Λεύκαρα",
       "price": 1.319,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.86518333,
       "lng": 33.30683333
     },
@@ -2446,7 +2446,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.369,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2676,7 +2676,7 @@
       "name": "Δ. ΚΤΩΡΙΔΗΣ & ΥΙΟΣ ΛΤΔ",
       "address": "Λεωφ. Λάρνακος 5 Τ.Κ 1035 τηλ: 22349326",
       "district": "Λευκωσία",
-      "price": 1.319,
+      "price": 1.338,
       "isOffline": false,
       "lat": 35.1727,
       "lng": 33.3726
