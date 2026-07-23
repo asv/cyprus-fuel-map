@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-23T08:47:29.938Z",
+  "fetchedAt": "2026-07-23T14:35:30.052Z",
   "avgPrice": 1.378,
   "minPrice": 1.305,
   "maxPrice": 1.475,
@@ -1697,7 +1697,7 @@
       "name": "TSOSACO OIL LIMITED",
       "address": "Λεωφ. Σπ. Χριστοδούλου 42 Τ.Κ 1020 τηλ: 22431925",
       "district": "Παλλουριώτισσα",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 35.1755856806026,
       "lng": 33.3730663994056
@@ -1818,7 +1818,7 @@
       "name": "Μ.Κ. ΓΕΝΕΘΛΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Γιάννου Κρανιδιώτη Τ.Κ 3110 τηλ: 25336300",
       "district": "Λεμεσός",
-      "price": 1.348,
+      "price": 1.368,
       "isOffline": false,
       "lat": 34.7043776604692,
       "lng": 33.003317245369
@@ -3270,7 +3270,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Δημοκρατίας 40 Τ.Κ 3012 τηλ: 25370503",
       "district": "Λεμεσός",
-      "price": 1.342,
+      "price": 1.347,
       "isOffline": false,
       "lat": 34.66911111111111,
       "lng": 33.02386111111111
