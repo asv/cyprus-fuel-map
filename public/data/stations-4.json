@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-23T14:35:30.052Z",
+  "fetchedAt": "2026-07-23T19:48:32.125Z",
   "avgPrice": 1.378,
   "minPrice": 1.305,
   "maxPrice": 1.475,
@@ -70,7 +70,7 @@
       "address": "Δημοκρατίας 91 Τ.Κ 8028 τηλ: 26221190",
       "district": "Πάφος",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.781441,
       "lng": 32.444345
     },
@@ -444,7 +444,7 @@
       "address": "Γ. Κρανιδιώτη 5 Τ.Κ 2220 τηλ: 22489888",
       "district": "Λατσιά",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.116846,
       "lng": 33.377618
     },
@@ -1137,7 +1137,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1653,7 +1653,7 @@
       "name": "THEODOSIS OLYMBIOS PETROL STATION LTD",
       "address": "Ελευθερίας 28 Τ.Κ 2566 τηλ: 22521825",
       "district": "Λύμπια",
-      "price": 1.349,
+      "price": 1.369,
       "isOffline": false,
       "lat": 34.9981508168812,
       "lng": 33.4547390932541
@@ -2237,7 +2237,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2446,7 +2446,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2479,7 +2479,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2633,7 +2633,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.449,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2643,7 +2643,7 @@
       "name": "ΑΝΔΡΕΑΣ ΖΑΧΑΡΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ.Τιμίου Προδρόμου 44 Τ.Κ 7020 τηλ: 24426868",
       "district": "Δρομολαξιά",
-      "price": 1.399,
+      "price": 1.403,
       "isOffline": false,
       "lat": 34.876254,
       "lng": 33.595478
