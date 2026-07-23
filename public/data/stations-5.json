@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-23T03:48:26.045Z",
+  "fetchedAt": "2026-07-23T08:47:44.841Z",
   "avgPrice": 1.333,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -26,7 +26,7 @@
       "address": "Κωνσταντινουπόλεως 2 Τ.Κ 8820 τηλ: 26321515",
       "district": "Πόλης Χρυσοχούς",
       "price": 1.308,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.032195,
       "lng": 32.427352
     },
@@ -59,7 +59,7 @@
       "address": "Δεκέλεια Τ.Κ τηλ: 24723251",
       "district": "Δεκέλεια",
       "price": 1.295,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.98291,
       "lng": 33.71689
     },
@@ -146,7 +146,7 @@
       "name": "PAMBINOS PETROL STATION LIMITED",
       "address": "Λεωφ. Γιάννου Κρανιδιώτη 7 Τ.Κ 3110 τηλ: 25822090",
       "district": "Λεμεσός",
-      "price": 1.379,
+      "price": 1.389,
       "isOffline": false,
       "lat": 34.698122,
       "lng": 33.009215
@@ -653,7 +653,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 20 Τ.Κ 7080 τηλ: 24661133",
       "district": "Πύλα",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.992258,
       "lng": 33.683025
     },
@@ -818,7 +818,7 @@
       "address": "Αγίου Γεωργίου 99 Τ.Κ 4180 τηλ: 25390691",
       "district": "Ύψωνας",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.682444,
       "lng": 32.952385
     },
@@ -927,7 +927,7 @@
       "name": "Ι. ΧΑΣΙΚΟΣ ΛΤΔ",
       "address": "Λεωφ. Γερίου Τ.Κ 2200 τηλ: 22488555",
       "district": "Γέρι",
-      "price": 1.309,
+      "price": 1.298,
       "isOffline": false,
       "lat": 35.1061438772506,
       "lng": 33.3969139903519
@@ -938,7 +938,7 @@
       "name": "Ι. ΧΑΣΙΚΟΣ ΛΤΔ",
       "address": "Λεωφ. Λευκωσίας 108 Τ.Κ 2540 τηλ: 22815686",
       "district": "Δάλι",
-      "price": 1.309,
+      "price": 1.298,
       "isOffline": false,
       "lat": 35.0342474332179,
       "lng": 33.4088325048936
@@ -2391,7 +2391,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
