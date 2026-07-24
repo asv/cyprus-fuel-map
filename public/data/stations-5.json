@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-24T03:47:33.000Z",
+  "fetchedAt": "2026-07-24T08:45:34.335Z",
   "avgPrice": 1.333,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -48,7 +48,7 @@
       "address": "Δημοκρατίας 91 Τ.Κ 8028 τηλ: 26221190",
       "district": "Πάφος",
       "price": 1.359,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.781441,
       "lng": 32.444345
     },
@@ -102,7 +102,7 @@
       "name": "M.T. EFTHIMIOU ENTERPRISES LTD",
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 4 Τ.Κ 8250 τηλ: 26273244",
       "district": "Έμπα",
-      "price": 1.339,
+      "price": 1.359,
       "isOffline": false,
       "lat": 34.790679,
       "lng": 32.421952
@@ -135,7 +135,7 @@
       "name": "PAMBINOS & SONS LIMITED",
       "address": "Νίκου και Δέσποινας Παττίχη 17 Τ.Κ 3071 τηλ: 25334111",
       "district": "Λεμεσός",
-      "price": 1.379,
+      "price": 1.389,
       "isOffline": false,
       "lat": 34.685832,
       "lng": 33.024152
@@ -433,7 +433,7 @@
       "address": "Γ. Κρανιδιώτη 5 Τ.Κ 2220 τηλ: 22489888",
       "district": "Λατσιά",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.116846,
       "lng": 33.377618
     },
@@ -499,7 +499,7 @@
       "address": "Πάφου 11 Τ.Κ 3052 τηλ: 25563791",
       "district": "Λεμεσός",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.673891,
       "lng": 33.015811
     },
@@ -653,7 +653,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 20 Τ.Κ 7080 τηλ: 24661133",
       "district": "Πύλα",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.992258,
       "lng": 33.683025
     },
@@ -850,7 +850,7 @@
       "name": "SPECTO LTD",
       "address": "Λεωφ. Έμπας 144 Τ.Κ 8250 τηλ: 26270301",
       "district": "Έμπα",
-      "price": 1.339,
+      "price": 1.359,
       "isOffline": false,
       "lat": 34.811703,
       "lng": 32.430424
@@ -862,7 +862,7 @@
       "address": "Λεωφ. Λεμεσού 21, Πέρα Χωριό Τ.Κ 2572 τηλ: 22524366",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.3,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.008912,
       "lng": 33.39358
     },
@@ -1049,7 +1049,7 @@
       "address": "Αρχ. Μακαρίου Γ΄ 42, Πέρα Χωριό Τ.Κ 2572 τηλ: 22521556",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.3,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.015708,
       "lng": 33.401891
     },
@@ -2391,7 +2391,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
