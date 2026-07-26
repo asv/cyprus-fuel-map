@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-26T13:59:40.903Z",
+  "fetchedAt": "2026-07-26T19:36:43.453Z",
   "avgPrice": 1.586,
   "minPrice": 1.488,
   "maxPrice": 1.779,
@@ -774,7 +774,7 @@
       "address": "Παραλιμνίου 56 Τ.Κ 5311 τηλ: 23742550",
       "district": "Σωτήρα",
       "price": 1.569,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.024897,
       "lng": 33.963177
     },
@@ -3127,7 +3127,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.583,
+      "price": 1.582,
       "isOffline": false,
       "lat": null,
       "lng": null

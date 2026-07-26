@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-26T13:59:55.596Z",
+  "fetchedAt": "2026-07-26T19:36:57.799Z",
   "avgPrice": 1.636,
   "minPrice": 1.548,
   "maxPrice": 1.792,
@@ -796,7 +796,7 @@
       "address": "Παραλιμνίου 56 Τ.Κ 5311 τηλ: 23742550",
       "district": "Σωτήρα",
       "price": 1.619,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.024897,
       "lng": 33.963177
     },
@@ -3182,7 +3182,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.615,
+      "price": 1.613,
       "isOffline": false,
       "lat": null,
       "lng": null
