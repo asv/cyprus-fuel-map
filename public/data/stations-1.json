@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-25T19:36:30.591Z",
+  "fetchedAt": "2026-07-26T08:40:05.251Z",
   "avgPrice": 1.516,
   "minPrice": 1.428,
   "maxPrice": 1.612,
@@ -796,7 +796,7 @@
       "address": "Παραλιμνίου 56 Τ.Κ 5311 τηλ: 23742550",
       "district": "Σωτήρα",
       "price": 1.519,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.024897,
       "lng": 33.963177
     },
@@ -1125,7 +1125,7 @@
       "name": "ΧΡΥΣΟΥΛΛΑ ΣΤΑΘΗ ΛΙΜΙΤΕΔ",
       "address": "1ης Απριλίου 138 Τ.Κ 5280 τηλ: 23821343",
       "district": "Παραλίμνι",
-      "price": 1.497,
+      "price": 1.519,
       "isOffline": false,
       "lat": 35.035846,
       "lng": 33.977612
@@ -1258,7 +1258,7 @@
       "address": "Ευαγόρα Παλληκαρίδη 53 Τ.Κ 8010 τηλ: 26933657",
       "district": "Πάφος",
       "price": 1.547,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.7779977652251,
       "lng": 32.4236665755325
     },
@@ -1324,7 +1324,7 @@
       "address": "Στροβόλου 19 Τ.Κ 2480 τηλ: 22385359",
       "district": "Τσέρι",
       "price": 1.528,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0787361111111,
       "lng": 33.3254490740741
     },
@@ -1335,7 +1335,7 @@
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
       "price": 1.527,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
     },
@@ -1357,7 +1357,7 @@
       "address": "Κολωνακίου 5 Τ.Κ 4103 τηλ: 25324880",
       "district": "Άγιος Αθανάσιος",
       "price": 1.515,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.696745040803,
       "lng": 33.0690321662705
     },
@@ -1500,7 +1500,7 @@
       "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
       "district": "Καϊμακλί",
       "price": 1.507,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1845138888889,
       "lng": 33.3895
     },
@@ -1577,7 +1577,7 @@
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
       "price": 1.527,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
     },
@@ -1654,7 +1654,7 @@
       "address": "Ασπρόκρεμου 10 Τ.Κ 8505 τηλ: 26222507",
       "district": "Νικόκλεια",
       "price": 1.518,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.727105,
       "lng": 32.569073
     },
@@ -1687,7 +1687,7 @@
       "address": "Ελευθερίας 28 Τ.Κ 2566 τηλ: 22521825",
       "district": "Λύμπια",
       "price": 1.499,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.9981508168812,
       "lng": 33.4547390932541
     },
@@ -1731,7 +1731,7 @@
       "address": "Λεωφ. Σπ. Χριστοδούλου 42 Τ.Κ 1020 τηλ: 22431925",
       "district": "Παλλουριώτισσα",
       "price": 1.497,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1755856806026,
       "lng": 33.3730663994056
     },
@@ -1753,7 +1753,7 @@
       "address": "Λεωφ. Στροβόλου 37 Τ.Κ 2018 τηλ: 22421248",
       "district": "Στρόβολος",
       "price": 1.475,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1487856870168,
       "lng": 33.346567328836
     },
@@ -1775,7 +1775,7 @@
       "address": "Λεωφ. Κυριάκου Μάτση 12 Τ.Κ 2368 τηλ: 22355727",
       "district": "Άγιος Δομέτιος",
       "price": 1.489,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1680794501581,
       "lng": 33.331874064418
     },
@@ -1929,7 +1929,7 @@
       "address": "14ος Δρόμος 40 Τ.Κ 4620 τηλ: 25932671",
       "district": "Επισκοπή",
       "price": 1.539,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
     },
@@ -1940,7 +1940,7 @@
       "address": "1ης Απριλίου 33 Τ.Κ 5320 τηλ: 23943060",
       "district": "Λιοπέτρι",
       "price": 1.525,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0125205261968,
       "lng": 33.8983047001923
     },
