@@ -3,8 +3,8 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-27T10:11:45.824Z",
-  "avgPrice": 1.637,
+  "fetchedAt": "2026-07-27T15:16:35.231Z",
+  "avgPrice": 1.638,
   "minPrice": 1.548,
   "maxPrice": 1.792,
   "stations": [
@@ -201,7 +201,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεώφ. Αγίου Αθανασίου 42 Τ.Κ 4102 τηλ: 25753385",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.619,
+      "price": 1.629,
       "isOffline": false,
       "lat": 34.701008,
       "lng": 33.059786
@@ -333,7 +333,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Σπ. Κυπριανού 28 Τ.Κ 4154 τηλ: 25822228",
       "district": "Κάτω Πολεμίδια",
-      "price": 1.619,
+      "price": 1.629,
       "isOffline": false,
       "lat": 34.685318,
       "lng": 33.013874
@@ -509,7 +509,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Σπ. Κυπριανού 5 Τ.Κ 4155 τηλ: 25332203",
       "district": "Λεμεσός",
-      "price": 1.619,
+      "price": 1.629,
       "isOffline": false,
       "lat": 34.686762,
       "lng": 33.015375
@@ -520,7 +520,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Φρ. Ρούσβελτ 29 Τ.Κ 3012 τηλ: 25819782",
       "district": "Λεμεσός",
-      "price": 1.599,
+      "price": 1.608,
       "isOffline": false,
       "lat": 34.670055,
       "lng": 33.030746
@@ -1202,7 +1202,7 @@
       "name": "Α. Ν. & Σ. ΕΥΘΥΜΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Λεμεσού 69 Τ.Κ 2121 τηλ: 22422670",
       "district": "Αγλαντζιά",
-      "price": 1.665,
+      "price": 1.675,
       "isOffline": false,
       "lat": 35.143044,
       "lng": 33.374496
@@ -1334,7 +1334,7 @@
       "name": "CADREC LTD",
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
-      "price": 1.665,
+      "price": 1.675,
       "isOffline": false,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
@@ -1851,7 +1851,7 @@
       "name": "Μ.Α.Ν.Ι. ΠΑΝΑΓΙΩΤΟΥ ΛΤΔ",
       "address": "Γιάννου Κρανιδιώτη 34 Τ.Κ 6051 τηλ: 24668111",
       "district": "Λάρνακα",
-      "price": 1.619,
+      "price": 1.649,
       "isOffline": false,
       "lat": 34.9255425378298,
       "lng": 33.6158680546311

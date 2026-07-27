@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-27T10:11:31.239Z",
+  "fetchedAt": "2026-07-27T15:16:10.314Z",
   "avgPrice": 1.572,
   "minPrice": 1.474,
   "maxPrice": 1.699,
@@ -1180,7 +1180,7 @@
       "name": "Α. Ν. & Σ. ΕΥΘΥΜΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Λεμεσού 69 Τ.Κ 2121 τηλ: 22422670",
       "district": "Αγλαντζιά",
-      "price": 1.599,
+      "price": 1.609,
       "isOffline": false,
       "lat": 35.143044,
       "lng": 33.374496
@@ -1312,7 +1312,7 @@
       "name": "CADREC LTD",
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
-      "price": 1.599,
+      "price": 1.609,
       "isOffline": false,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
@@ -1829,7 +1829,7 @@
       "name": "Μ.Α.Ν.Ι. ΠΑΝΑΓΙΩΤΟΥ ΛΤΔ",
       "address": "Γιάννου Κρανιδιώτη 34 Τ.Κ 6051 τηλ: 24668111",
       "district": "Λάρνακα",
-      "price": 1.557,
+      "price": 1.577,
       "isOffline": false,
       "lat": 34.9255425378298,
       "lng": 33.6158680546311
@@ -3127,7 +3127,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.552,
+      "price": 1.522,
       "isOffline": false,
       "lat": null,
       "lng": null
