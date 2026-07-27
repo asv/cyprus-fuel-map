@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-27T04:05:42.237Z",
+  "fetchedAt": "2026-07-27T10:12:15.105Z",
   "avgPrice": 1.333,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -334,7 +334,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 61, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22833573",
       "district": "Κοκκινοτριμιθιά",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.146893,
       "lng": 33.187866
     },
@@ -466,7 +466,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 162 Τ.Κ 3026 τηλ: 25381276",
       "district": "Λεμεσός",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.687006,
       "lng": 33.040061
     },
@@ -796,7 +796,7 @@
       "address": "Λεωφ. Αναλιόντα 155 Τ.Κ 2480 τηλ: 22521770",
       "district": "Τσέρι",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.053153,
       "lng": 33.325129
     },
@@ -993,7 +993,7 @@
       "name": "ΝΕΟΦΥΤΟΣ ΤΣΙΑΜΑΝΕΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄1, Κάτω Δευτερά Τ.Κ 2450 τηλ: 22621331",
       "district": "Δευτερά",
-      "price": 1.3,
+      "price": 1.299,
       "isOffline": false,
       "lat": 35.088858,
       "lng": 33.285772

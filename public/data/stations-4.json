@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-27T04:05:28.033Z",
+  "fetchedAt": "2026-07-27T10:12:00.502Z",
   "avgPrice": 1.378,
   "minPrice": 1.304,
   "maxPrice": 1.475,
@@ -102,7 +102,7 @@
       "name": "LESONI PETROLIUM LTD",
       "address": "Αρχ. Μακαρίου Γ΄ 18 (Παλαιός Δρόμος Λάρνακας-Λεμεσού) Τ.Κ 7571 τηλ: 24432522",
       "district": "Αγγλισίδες",
-      "price": 1.412,
+      "price": 1.362,
       "isOffline": false,
       "lat": 34.852791,
       "lng": 33.455066
@@ -345,7 +345,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 61, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22833573",
       "district": "Κοκκινοτριμιθιά",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.146893,
       "lng": 33.187866
     },
@@ -477,7 +477,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 162 Τ.Κ 3026 τηλ: 25381276",
       "district": "Λεμεσός",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.687006,
       "lng": 33.040061
     },
@@ -807,7 +807,7 @@
       "address": "Λεωφ. Αναλιόντα 155 Τ.Κ 2480 τηλ: 22521770",
       "district": "Τσέρι",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.053153,
       "lng": 33.325129
     },
@@ -1037,7 +1037,7 @@
       "name": "ΝΕΟΦΥΤΟΣ ΤΣΙΑΜΑΝΕΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄1, Κάτω Δευτερά Τ.Κ 2450 τηλ: 22621331",
       "district": "Δευτερά",
-      "price": 1.379,
+      "price": 1.389,
       "isOffline": false,
       "lat": 35.088858,
       "lng": 33.285772
@@ -2203,7 +2203,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Αρχ. Μακαρίου Γ΄ 17 Τ.Κ 2800 τηλ: 22922437",
       "district": "Κακοπετριά",
-      "price": 1.357,
+      "price": 1.304,
       "isOffline": false,
       "lat": 34.991233,
       "lng": 32.902827

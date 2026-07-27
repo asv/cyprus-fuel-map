@@ -11375,6 +11375,84 @@
       "isOffline": false,
       "price": 1.639,
       "stationKey": "station_e25c054138608945"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.639,
+      "stationKey": "station_0412b098af434e9a"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": true,
+      "price": 1.619,
+      "stationKey": "station_14372a31a225bf92"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.629,
+      "stationKey": "station_2b8a8302bfb0a311"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.617,
+      "stationKey": "station_2c753963c40cf676"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.612,
+      "stationKey": "station_32353ef76bddc2a9"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.629,
+      "stationKey": "station_579a534668dcad57"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.628,
+      "stationKey": "station_907b49480455ec18"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.612,
+      "stationKey": "station_9f833ed9647924ec"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": true,
+      "price": 1.617,
+      "stationKey": "station_b2c2fb2b404422ea"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.611,
+      "stationKey": "station_c5b71a7754ca60b6"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.607,
+      "stationKey": "station_cc98d8946a1a4375"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": false,
+      "price": 1.629,
+      "stationKey": "station_dc8cb9bac5426c4e"
+    },
+    {
+      "at": "2026-07-27T10:11:45.824Z",
+      "isOffline": true,
+      "price": 1.619,
+      "stationKey": "station_dd6d300fecdf5b8e"
     }
   ],
   "fuel": "3",

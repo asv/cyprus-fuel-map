@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-27T04:05:13.362Z",
+  "fetchedAt": "2026-07-27T10:11:45.824Z",
   "avgPrice": 1.637,
   "minPrice": 1.548,
   "maxPrice": 1.792,
@@ -367,7 +367,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 61, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22833573",
       "district": "Κοκκινοτριμιθιά",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.146893,
       "lng": 33.187866
     },
@@ -399,7 +399,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 35 Τ.Κ 6017 τηλ: 24652743",
       "district": "Λάρνακα",
-      "price": 1.619,
+      "price": 1.628,
       "isOffline": false,
       "lat": 34.922123,
       "lng": 33.636282
@@ -499,7 +499,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 162 Τ.Κ 3026 τηλ: 25381276",
       "district": "Λεμεσός",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.687006,
       "lng": 33.040061
     },
@@ -663,7 +663,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Νίκου Ευαγόρου 50 Τ.Κ 3091 τηλ: 25771999",
       "district": "Παλώδια",
-      "price": 1.587,
+      "price": 1.607,
       "isOffline": false,
       "lat": 34.745754,
       "lng": 32.998862
@@ -685,7 +685,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 20 Τ.Κ 7080 τηλ: 24661133",
       "district": "Πύλα",
-      "price": 1.619,
+      "price": 1.629,
       "isOffline": false,
       "lat": 34.992258,
       "lng": 33.683025
@@ -829,7 +829,7 @@
       "address": "Λεωφ. Αναλιόντα 155 Τ.Κ 2480 τηλ: 22521770",
       "district": "Τσέρι",
       "price": 1.617,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.053153,
       "lng": 33.325129
     },
@@ -1059,7 +1059,7 @@
       "name": "ΝΕΟΦΥΤΟΣ ΤΣΙΑΜΑΝΕΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄1, Κάτω Δευτερά Τ.Κ 2450 τηλ: 22621331",
       "district": "Δευτερά",
-      "price": 1.599,
+      "price": 1.629,
       "isOffline": false,
       "lat": 35.088858,
       "lng": 33.285772
@@ -1444,7 +1444,7 @@
       "name": "EUROORBIT LIMITED",
       "address": "Λεωφ. Γρηγόρη Αυξεντίου 29, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22622222",
       "district": "Δευτερά",
-      "price": 1.599,
+      "price": 1.617,
       "isOffline": false,
       "lat": 35.081014,
       "lng": 33.273498
@@ -1466,7 +1466,7 @@
       "name": "FREGIO LTD",
       "address": "Γρηγόρη Αυξεντίου 24, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22835192",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.618,
+      "price": 1.629,
       "isOffline": false,
       "lat": 35.1481674279843,
       "lng": 33.2034919828034
@@ -1994,7 +1994,7 @@
       "name": "JACKOSON ENTERPRISES LIMITED",
       "address": "Δρόμος Παλαιχωρίου - Αγρού Τ.Κ 4860",
       "district": "Αγρός",
-      "price": 1.619,
+      "price": 1.639,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2258,7 +2258,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Αρχ. Μακαρίου Γ΄ 17 Τ.Κ 2800 τηλ: 22922437",
       "district": "Κακοπετριά",
-      "price": 1.585,
+      "price": 1.612,
       "isOffline": false,
       "lat": 34.991233,
       "lng": 32.902827
@@ -2874,7 +2874,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.612,
+      "price": 1.611,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3182,7 +3182,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.613,
+      "price": 1.612,
       "isOffline": false,
       "lat": null,
       "lng": null
