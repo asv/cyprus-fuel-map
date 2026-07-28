@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-28T09:07:42.504Z",
+  "fetchedAt": "2026-07-28T14:41:19.251Z",
   "avgPrice": 1.379,
   "minPrice": 1.304,
   "maxPrice": 1.475,
@@ -1071,7 +1071,7 @@
       "address": "Λεωφ. Στροβόλου 223 Τ.Κ 2048 τηλ: 22326903",
       "district": "Στρόβολος",
       "price": 1.369,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.13313,
       "lng": 33.329338
     },
@@ -1103,7 +1103,7 @@
       "name": "ΧΡΥΣΟΥΛΛΑ ΣΤΑΘΗ ΛΙΜΙΤΕΔ",
       "address": "1ης Απριλίου 138 Τ.Κ 5280 τηλ: 23821343",
       "district": "Παραλίμνι",
-      "price": 1.359,
+      "price": 1.368,
       "isOffline": false,
       "lat": 35.035846,
       "lng": 33.977612
@@ -1137,7 +1137,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -2237,7 +2237,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.369,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2633,7 +2633,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.449,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2720,7 +2720,7 @@
       "name": "ΚΩΣΤΑΣ ΓΕΩΡΓΙΟΥ (ΒΙΤΤΗΣ)",
       "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24364365",
       "district": "Καλό Χωριό Λάρνακας",
-      "price": 1.369,
+      "price": 1.389,
       "isOffline": false,
       "lat": 34.92598333,
       "lng": 33.54103333
