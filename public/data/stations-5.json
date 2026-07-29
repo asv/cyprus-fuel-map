@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-29T03:44:05.900Z",
+  "fetchedAt": "2026-07-29T09:12:10.711Z",
   "avgPrice": 1.333,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -125,7 +125,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 31 Τ.Κ 8200 τηλ: 26962471",
       "district": "Γεροσκήπου",
       "price": 1.326,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.761499,
       "lng": 32.451182
     },
@@ -147,7 +147,7 @@
       "address": "Λεωφ. Γιάννου Κρανιδιώτη 7 Τ.Κ 3110 τηλ: 25822090",
       "district": "Λεμεσός",
       "price": 1.389,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.698122,
       "lng": 33.009215
     },
@@ -961,7 +961,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 61 Τ.Κ 4043 τηλ: 25311877",
       "district": "Γερμασόγεια",
       "price": 1.348,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.70479,
       "lng": 33.082823
     },
@@ -1368,7 +1368,7 @@
       "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
       "district": "Λευκωσία",
       "price": 1.319,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1668579182817,
       "lng": 33.3703520423279
     },
@@ -2391,7 +2391,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
