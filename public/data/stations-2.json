@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-29T14:33:16.733Z",
+  "fetchedAt": "2026-07-29T19:46:38.463Z",
   "avgPrice": 1.601,
   "minPrice": 1.529,
   "maxPrice": 1.799,
@@ -1137,7 +1137,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.599,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -2259,7 +2259,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.599,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2644,7 +2644,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.639,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -3248,7 +3248,7 @@
       "name": "ΚΥΡΙΑΚΟΣ ΚΟΜΠΟΣ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Ομονοίας 32 Τ.Κ 3052 τηλ: 25569893",
       "district": "Λεμεσός",
-      "price": 1.659,
+      "price": 1.679,
       "isOffline": false,
       "lat": null,
       "lng": null
