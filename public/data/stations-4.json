@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-31T09:18:56.956Z",
+  "fetchedAt": "2026-07-31T14:38:38.100Z",
   "avgPrice": 1.379,
   "minPrice": 1.304,
   "maxPrice": 1.475,
@@ -1620,7 +1620,7 @@
       "name": "SONSIRE HOLDINGS LTD",
       "address": "Ασπρόκρεμου 10 Τ.Κ 8505 τηλ: 26222507",
       "district": "Νικόκλεια",
-      "price": 1.375,
+      "price": 1.385,
       "isOffline": false,
       "lat": 34.727105,
       "lng": 32.569073
@@ -2996,7 +2996,7 @@
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
       "price": 1.379,
-      "isOffline": false,
+      "isOffline": true,
       "lat": null,
       "lng": null
     },

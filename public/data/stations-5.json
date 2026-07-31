@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-07-31T09:19:10.729Z",
+  "fetchedAt": "2026-07-31T14:38:52.288Z",
   "avgPrice": 1.333,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -344,7 +344,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "28ης Οκτωβρίου 12, Κόρνος Τ.Κ 7640 τηλ: 22533238",
       "district": "Κόρνος",
-      "price": 1.299,
+      "price": 1.298,
       "isOffline": false,
       "lat": 34.927328,
       "lng": 33.413823
