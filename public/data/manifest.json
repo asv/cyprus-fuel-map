@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-01T19:38:20.445Z",
+  "generatedAt": "2026-08-02T03:57:13.693Z",
   "city": "All",
   "fuels": [
     {
       "fuel": "1",
       "fuelName": "Unleaded 95",
       "path": "data/stations-1.json",
-      "fetchedAt": "2026-08-01T19:37:22.526Z",
+      "fetchedAt": "2026-08-02T03:56:16.116Z",
       "stationCount": 318,
       "mappedStationCount": 288,
       "avgPrice": 1.56,
@@ -31,7 +31,7 @@
       "fuel": "3",
       "fuelName": "Diesel",
       "path": "data/stations-3.json",
-      "fetchedAt": "2026-08-01T19:37:51.375Z",
+      "fetchedAt": "2026-08-02T03:56:45.072Z",
       "stationCount": 318,
       "mappedStationCount": 288,
       "avgPrice": 7.362,

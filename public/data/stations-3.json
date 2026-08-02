@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-01T19:37:51.375Z",
+  "fetchedAt": "2026-08-02T03:56:45.072Z",
   "avgPrice": 7.362,
   "minPrice": 1.61,
   "maxPrice": 1804,
@@ -69,7 +69,7 @@
       "name": "GREENOIL LIMITED",
       "address": "Γεωργίου Καλογεροπούλου 50 Τ.Κ 4007 τηλ: 25028563",
       "district": "Μέσα Γειτονιά",
-      "price": 1.685,
+      "price": 1.698,
       "isOffline": false,
       "lat": 34.708686,
       "lng": 33.038429
