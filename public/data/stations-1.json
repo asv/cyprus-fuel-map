@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-02T13:58:28.403Z",
+  "fetchedAt": "2026-08-02T19:36:25.930Z",
   "avgPrice": 1.56,
   "minPrice": 1.49,
   "maxPrice": 1.638,
@@ -59,7 +59,7 @@
       "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
       "district": "Αργάκα",
       "price": 1.589,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.065318,
       "lng": 32.467592
     },
@@ -3117,7 +3117,7 @@
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
       "price": 1.579,
-      "isOffline": false,
+      "isOffline": true,
       "lat": null,
       "lng": null
     },

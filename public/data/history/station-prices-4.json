@@ -7193,6 +7193,18 @@
       "isOffline": false,
       "price": 1.369,
       "stationKey": "station_fd7375753a390070"
+    },
+    {
+      "at": "2026-08-02T19:37:08.962Z",
+      "isOffline": true,
+      "price": 1.419,
+      "stationKey": "station_4bdbd3621fcde692"
+    },
+    {
+      "at": "2026-08-02T19:37:08.962Z",
+      "isOffline": true,
+      "price": 1.379,
+      "stationKey": "station_adf85b8e0e959bc4"
     }
   ],
   "fuel": "4",

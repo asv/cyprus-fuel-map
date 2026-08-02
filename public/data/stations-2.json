@@ -3,8 +3,8 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-02T13:58:43.326Z",
-  "avgPrice": 1.624,
+  "fetchedAt": "2026-08-02T19:36:40.391Z",
+  "avgPrice": 1.625,
   "minPrice": 1.545,
   "maxPrice": 1.799,
   "stations": [
@@ -1686,7 +1686,7 @@
       "name": "TROPALI PETROLEUM TWO LTD",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 31-35 Τ.Κ 1082 τηλ: 22761100",
       "district": "Λευκωσία",
-      "price": 1.569,
+      "price": 1.587,
       "isOffline": false,
       "lat": 35.1628065376475,
       "lng": 33.3572777748687
@@ -3062,7 +3062,7 @@
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
       "price": 1.729,
-      "isOffline": false,
+      "isOffline": true,
       "lat": null,
       "lng": null
     },
