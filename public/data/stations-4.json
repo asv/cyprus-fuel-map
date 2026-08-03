@@ -3,10 +3,10 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-03T10:08:09.846Z",
-  "avgPrice": 1.38,
+  "fetchedAt": "2026-08-03T15:19:33.099Z",
+  "avgPrice": 1.381,
   "minPrice": 1.305,
-  "maxPrice": 1.475,
+  "maxPrice": 1.545,
   "stations": [
     {
       "id": "22a8e387ee3e195c",
@@ -1147,7 +1147,7 @@
       "name": "P. DIOGENOUS PETROL STATION LTD",
       "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
       "district": "Μεσόγη",
-      "price": 1.418,
+      "price": 1.468,
       "isOffline": false,
       "lat": 34.805,
       "lng": 32.44541667
@@ -1202,7 +1202,7 @@
       "name": "ΝΙΚΟΣ & ΜΑΡΚΟΣ ΠΙΤΤΑΚΗΣ",
       "address": "1ης Απριλίου 237 Τ.Κ 5280 τηλ: 23821328",
       "district": "Παραλίμνι",
-      "price": 1.399,
+      "price": 1.459,
       "isOffline": false,
       "lat": 35.0269,
       "lng": 33.98285
@@ -2588,7 +2588,7 @@
       "name": "Α. ΑΡΓΥΡΟΥ ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΛΤΔ",
       "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.475,
+      "price": 1.545,
       "isOffline": false,
       "lat": 34.6901,
       "lng": 33.0733
@@ -2621,7 +2621,7 @@
       "name": "ΑΔΕΛΦΟΙ Π & Π ΧΡΙΣΤΟΔΟΥΛΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Κυριάκου Μάτση 28, Αγ.Ομολογητές Τ.Κ 1082 τηλ: 22317129",
       "district": "Λευκωσία",
-      "price": 1.344,
+      "price": 1.399,
       "isOffline": false,
       "lat": 35.1591,
       "lng": 33.35478333

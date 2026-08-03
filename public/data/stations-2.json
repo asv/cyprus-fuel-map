@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-03T10:07:39.903Z",
+  "fetchedAt": "2026-08-03T15:19:03.948Z",
   "avgPrice": 1.612,
   "minPrice": 1.538,
   "maxPrice": 1.799,
@@ -1147,7 +1147,7 @@
       "name": "P. DIOGENOUS PETROL STATION LTD",
       "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
       "district": "Μεσόγη",
-      "price": 1.608,
+      "price": 1.668,
       "isOffline": false,
       "lat": 34.805,
       "lng": 32.44541667
@@ -1202,7 +1202,7 @@
       "name": "ΝΙΚΟΣ & ΜΑΡΚΟΣ ΠΙΤΤΑΚΗΣ",
       "address": "1ης Απριλίου 237 Τ.Κ 5280 τηλ: 23821328",
       "district": "Παραλίμνι",
-      "price": 1.619,
+      "price": 1.649,
       "isOffline": false,
       "lat": 35.0269,
       "lng": 33.98285
@@ -1422,7 +1422,7 @@
       "name": "EUROORBIT LIMITED",
       "address": "Λεωφ. Γρηγόρη Αυξεντίου 29, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22622222",
       "district": "Δευτερά",
-      "price": 1.589,
+      "price": 1.604,
       "isOffline": false,
       "lat": 35.081014,
       "lng": 33.273498
@@ -2599,7 +2599,7 @@
       "name": "Α. ΑΡΓΥΡΟΥ ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΛΤΔ",
       "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.693,
+      "price": 1.725,
       "isOffline": false,
       "lat": 34.6901,
       "lng": 33.0733
@@ -2896,7 +2896,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Αποστόλου Λουκά 66 Τ.Κ 4632 τηλ: 25432188",
       "district": "Κολόσσι",
-      "price": 1.597,
+      "price": 1.609,
       "isOffline": false,
       "lat": 34.6708,
       "lng": 32.9342
@@ -3105,7 +3105,7 @@
       "name": "DEMETRIOS STAVROPOULOS LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 49 Τ.Κ 1065 τηλ: 22753252",
       "district": "Λευκωσία",
-      "price": 1.717,
+      "price": 1.667,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3138,7 +3138,7 @@
       "name": "N.P.M. GABRIEL LIMITED",
       "address": "Ηλία Καννάουρου 64 Τ.Κ 4188 τηλ: 25714801",
       "district": "Ύψωνας",
-      "price": 1.599,
+      "price": 1.609,
       "isOffline": false,
       "lat": null,
       "lng": null
