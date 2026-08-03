@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-03T03:58:01.228Z",
+  "fetchedAt": "2026-08-03T10:08:24.505Z",
   "avgPrice": 1.334,
   "minPrice": 1.169,
   "maxPrice": 1.449,
@@ -576,7 +576,7 @@
       "address": "Λεωφ. Σπύρου Κυπριανού 51 Τ.Κ 7040 τηλ: 24648082",
       "district": "Ορόκλινη",
       "price": 1.299,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.971337,
       "lng": 33.654541
     },
@@ -2137,7 +2137,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Αρχ. Μακαρίου Γ΄ 17 Τ.Κ 2800 τηλ: 22922437",
       "district": "Κακοπετριά",
-      "price": 1.283,
+      "price": 1.299,
       "isOffline": false,
       "lat": 34.991233,
       "lng": 32.902827

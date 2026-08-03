@@ -3,10 +3,10 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-03T03:57:32.734Z",
-  "avgPrice": 7.363,
-  "minPrice": 1.61,
-  "maxPrice": 1804,
+  "fetchedAt": "2026-08-03T10:07:54.938Z",
+  "avgPrice": 1.697,
+  "minPrice": 1.614,
+  "maxPrice": 1.804,
   "stations": [
     {
       "id": "30328eae8837f4da",
@@ -25,7 +25,7 @@
       "name": "C.N PETROL STATION LTD",
       "address": "Κάτω Πύργος Τ.Κ 2940",
       "district": "Κάτω Πύργος",
-      "price": 1804,
+      "price": 1.804,
       "isOffline": false,
       "lat": 35.184195,
       "lng": 32.681915
@@ -36,7 +36,7 @@
       "name": "D S KOMNINAKIS FUELS LTD",
       "address": "Κωνσταντινουπόλεως 85 Τ.Κ 7041 τηλ: 24333038",
       "district": "Δρόμος Καλαβασού - Ζυγίου",
-      "price": 1.697,
+      "price": 1.717,
       "isOffline": false,
       "lat": 34.742285,
       "lng": 33.326538
@@ -47,7 +47,7 @@
       "name": "G & K Kouppas Ltd",
       "address": "Κωνσταντινουπόλεως 2 Τ.Κ 8820 τηλ: 26321515",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.716,
+      "price": 1.736,
       "isOffline": false,
       "lat": 35.032195,
       "lng": 32.427352
@@ -59,7 +59,7 @@
       "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
       "district": "Αργάκα",
       "price": 1.716,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.065318,
       "lng": 32.467592
     },
@@ -597,7 +597,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Μανδριά Τ.Κ 8504 τηλ: 26422230",
       "district": "Μανδριά",
-      "price": 1.717,
+      "price": 1.737,
       "isOffline": false,
       "lat": 34.720734,
       "lng": 32.535053
@@ -609,7 +609,7 @@
       "address": "Λεωφ. Σπύρου Κυπριανού 51 Τ.Κ 7040 τηλ: 24648082",
       "district": "Ορόκλινη",
       "price": 1.699,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.971337,
       "lng": 33.654541
     },
@@ -619,7 +619,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Σπύρου Κυπριανού και Σωτηράκη Μαρκίδη Τ.Κ 8041 τηλ: 26949140",
       "district": "Πάφος",
-      "price": 1.717,
+      "price": 1.737,
       "isOffline": false,
       "lat": 34.760461,
       "lng": 32.422081
@@ -630,7 +630,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Μιχαλάκη Κυπριανού 121 Τ.Κ 8560 τηλ: 26343943",
       "district": "Πέγεια",
-      "price": 1.717,
+      "price": 1.737,
       "isOffline": false,
       "lat": 34.864528,
       "lng": 32.379294
@@ -806,7 +806,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
-      "price": 1.717,
+      "price": 1.737,
       "isOffline": false,
       "lat": 34.710452,
       "lng": 32.490238
@@ -839,7 +839,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Χλώρακας 104 - 106 Τ.Κ 8220 τηλ: 26967073",
       "district": "Χλώρακα",
-      "price": 1.717,
+      "price": 1.737,
       "isOffline": false,
       "lat": 34.80347222222222,
       "lng": 32.39747222222222
@@ -905,7 +905,7 @@
       "name": "Α/ΦΟΙ Α. & Ν. ΝΙΚΗΦΟΡΟΥ ΛΙΜΙΤΕΔ",
       "address": "Σώτος Χατζηπροκοπίου 22 Τ.Κ 5330 τηλ: 23723868",
       "district": "Αγία Νάπα",
-      "price": 1.699,
+      "price": 1.719,
       "isOffline": false,
       "lat": 34.991937,
       "lng": 33.96196
@@ -1059,7 +1059,7 @@
       "name": "ΝΕΟΦΥΤΟΣ ΤΣΙΑΜΑΝΕΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄1, Κάτω Δευτερά Τ.Κ 2450 τηλ: 22621331",
       "district": "Δευτερά",
-      "price": 1.699,
+      "price": 1.728,
       "isOffline": false,
       "lat": 35.088858,
       "lng": 33.285772
@@ -1411,7 +1411,7 @@
       "name": "DI FORCES TRADING LTD",
       "address": "Δρόμος Βάσεων Επισκοπής Τ.Κ 4153 τηλ: 25211547",
       "district": "Βάση Επισκοπής",
-      "price": 1.699,
+      "price": 1.719,
       "isOffline": false,
       "lat": 34.6753994208012,
       "lng": 32.8429807049629
@@ -1818,7 +1818,7 @@
       "name": "ΚΩΣΤΑΣ Σ. ΣΑΒΒΑ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΤΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 99 Τ.Κ 2565 τηλ: 22543375",
       "district": "Λυθροδόντας",
-      "price": 1.649,
+      "price": 1.699,
       "isOffline": false,
       "lat": 34.9493055555556,
       "lng": 33.3128657407407
@@ -2258,7 +2258,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Αρχ. Μακαρίου Γ΄ 17 Τ.Κ 2800 τηλ: 22922437",
       "district": "Κακοπετριά",
-      "price": 1.61,
+      "price": 1.614,
       "isOffline": false,
       "lat": 34.991233,
       "lng": 32.902827
@@ -2280,7 +2280,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Δρόμος Αμιάντου – Καρβουνά Τ.Κ 4876 τηλ: 25550055",
       "district": "Κυπερούντα",
-      "price": 1.698,
+      "price": 1.708,
       "isOffline": false,
       "lat": 34.940097,
       "lng": 32.931017
@@ -2874,7 +2874,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.628,
+      "price": 1.683,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2918,7 +2918,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Δρόμος Πάφου - Πόλης Χρυσοχούς Τ.Κ 8850 τηλ: 26021282",
       "district": "Γουδί",
-      "price": 1.715,
+      "price": 1.725,
       "isOffline": false,
       "lat": 34.994387,
       "lng": 32.448056
@@ -2929,7 +2929,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αμμοχώστου 58 Τ.Κ 5380 τηλ: 23821431",
       "district": "Δερύνεια",
-      "price": 1.697,
+      "price": 1.707,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2951,7 +2951,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Αποστόλου Λουκά 66 Τ.Κ 4632 τηλ: 25432188",
       "district": "Κολόσσι",
-      "price": 1.697,
+      "price": 1.709,
       "isOffline": false,
       "lat": 34.6708,
       "lng": 32.9342
@@ -2962,7 +2962,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αρτέμιδος 67 Τ.Κ 6027 τηλ: 24664409",
       "district": "Λάρνακα",
-      "price": 1.698,
+      "price": 1.708,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2973,7 +2973,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 57 Τ.Κ 6017 τηλ: 24652236",
       "district": "Λάρνακα",
-      "price": 1.698,
+      "price": 1.708,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2984,7 +2984,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 276 Τ.Κ 2311 τηλ: 22050045",
       "district": "Λακατάμεια",
-      "price": 1.695,
+      "price": 1.698,
       "isOffline": false,
       "lat": 35.103889,
       "lng": 33.302389
@@ -2995,7 +2995,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "28ης Οκτωβρίου 305 Τ.Κ 3105 τηλ: 25101128",
       "district": "Λεμεσός",
-      "price": 1.659,
+      "price": 1.679,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3017,7 +3017,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Σπ. Κυπριανού 135 Τ.Κ 3083 τηλ: 25333066",
       "district": "Λεμεσός",
-      "price": 1.697,
+      "price": 1.699,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3028,7 +3028,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Πάφου 37 Τ.Κ 3052 τηλ: 25566155",
       "district": "Λεμεσός",
-      "price": 1.697,
+      "price": 1.699,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3039,7 +3039,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Φρ. Ρούσβελτ 92 Τ.Κ 3011",
       "district": "Λεμεσός",
-      "price": 1.657,
+      "price": 1.669,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3083,7 +3083,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "1ης Απριλίου 372 Τ.Κ 5280 τηλ: 23723031",
       "district": "Παραλίμνι",
-      "price": 1.697,
+      "price": 1.707,
       "isOffline": false,
       "lat": 35.010508,
       "lng": 33.993417
@@ -3105,7 +3105,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 33 Τ.Κ 8820 τηλ: 26020010",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.715,
+      "price": 1.725,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3116,8 +3116,8 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
-      "price": 1.709,
-      "isOffline": true,
+      "price": 1.719,
+      "isOffline": false,
       "lat": null,
       "lng": null
     },
@@ -3149,7 +3149,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αμμοχώστου 83 Τ.Κ 5390 τηλ: 23828803",
       "district": "Σωτήρα",
-      "price": 1.697,
+      "price": 1.707,
       "isOffline": false,
       "lat": 35.037925,
       "lng": 33.955026
@@ -3193,7 +3193,7 @@
       "name": "N.P.M. GABRIEL LIMITED",
       "address": "Ηλία Καννάουρου 64 Τ.Κ 4188 τηλ: 25714801",
       "district": "Ύψωνας",
-      "price": 1.699,
+      "price": 1.709,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3204,7 +3204,7 @@
       "name": "OLSERVE LIMITED",
       "address": "Προμαχών Ελευθερίας 11 Τ.Κ 4103 τηλ: 25324935",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.699,
+      "price": 1.708,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3358,7 +3358,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
       "district": "Ευρύχου",
-      "price": 1.628,
+      "price": 1.683,
       "isOffline": false,
       "lat": 35.05938888888888,
       "lng": 32.91291666666667
@@ -3424,7 +3424,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
-      "price": 1.664,
+      "price": 1.669,
       "isOffline": false,
       "lat": 34.753826,
       "lng": 32.962765
@@ -3501,7 +3501,7 @@
       "name": "ARTEMIS A. GEORGIOU PETROL STATION LTD",
       "address": "Λεωφ. Κωνσταντίνου & Ευριπίδου 1 Τ.Κ 4651 τηλ: 25873040",
       "district": "Τραχώνι",
-      "price": 1.649,
+      "price": 1.698,
       "isOffline": false,
       "lat": 34.653749999999995,
       "lng": 32.97397222222222
