@@ -1,0 +1,16 @@
+# Xcode build products
+DerivedData/
+.build/
+build/
+*.dSYM
+*.xcarchive
+*.xcresult
+*.dSYM.zip
+.swiftpm/
+
+# Per-user Xcode state
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside

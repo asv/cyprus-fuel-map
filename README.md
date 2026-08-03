@@ -81,6 +81,16 @@ Fuel snapshots are refreshed by a separate scheduled workflow every 6 hours. Tha
 
 Telegram Mini App registration and deployment steps are documented in [docs/telegram-app-setup.md](docs/telegram-app-setup.md).
 
+## macOS desktop widget
+
+The native macOS 14+ app and medium WidgetKit widget live in [`macos/`](macos/README.md). The widget downloads public GitHub Pages snapshots and optional price history, supports automatic location or a manual city, and shows Cyprus-wide and nearby metrics alongside the nearest station. It also compares the Cyprus minimum with its value 24 hours earlier.
+
+Build and install it locally with:
+
+```bash
+./macos/install.sh
+```
+
 ## Development notes
 
 - TypeScript is strict.

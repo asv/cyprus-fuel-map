@@ -12,6 +12,7 @@ Before making non-trivial changes, read `MEMORY.md`. It contains the project con
 - Formatting/linting: Biome
 - Backend: Bun HTTP server in `src/server.ts`
 - Cache: JSON file in `.cache/fuel-cache.json`
+- Native desktop: SwiftUI companion app + medium WidgetKit extension in `macos/`
 
 ## Commands
 
@@ -65,6 +66,7 @@ src/backend/cache.ts     # JSON file cache
 src/scraper.ts           # compatibility re-export for fetchFuelStations
 test/                    # Bun tests and parser fixtures
 public/                  # static files and local Leaflet assets
+macos/                   # native macOS app, WidgetKit extension, shared Swift code
 .cache/                  # runtime JSON cache, gitignored
 ```
 
@@ -121,6 +123,8 @@ If changing parser logic, preserve support for both coordinate formats:
 - Use Biome formatting; do not hand-format against it.
 - Keep comments useful and sparse.
 
+Platform-specific macOS guidance is in `macos/AGENTS.md`.
+
 ## Git
 
 This directory is a git repo. Do not commit unless explicitly asked.
@@ -131,3 +135,4 @@ Ignored local/generated data includes:
 - `.cache/`
 - `.env*` except `.env.example`
 - build/coverage outputs
+- Xcode DerivedData, archives, and per-user state under `macos/`

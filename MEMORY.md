@@ -167,6 +167,17 @@ Tooling:
 - Browser `app.js` is bundled with `Bun.build` so client-side modules such as `src/theme.ts` can be imported safely.
 - Historical price data is designed as optional static files under `public/data/history/`; see `docs/history-data.md`.
 
+## Native macOS widget
+
+- The local macOS 14+ SwiftUI companion app and medium WidgetKit extension live in `macos/`.
+- The widget reads current snapshots and optional global history from GitHub Pages; it never calls the government HTML source directly.
+- It supports all fuel types, automatic authorized location, and five fixed-city fallbacks.
+- It shows the Cyprus minimum and average, the 15 km nearby average, and the nearest online station.
+- The Cyprus minimum includes an optional 24-hour direction and absolute delta derived from `data/history/global-*.json`.
+- Current and history responses use separate disk-cache fallbacks. History failure only hides the trend.
+- The adaptive Rich Emerald background has separate Light and Dark palettes while preserving WidgetKit system content margins.
+- `macos/install.sh` creates and installs an ad-hoc signed Apple Silicon build at `/Applications/CyprusFuel.app`; the companion app does not need to remain open.
+
 ## Suggested next improvements
 
 High-value next steps:
