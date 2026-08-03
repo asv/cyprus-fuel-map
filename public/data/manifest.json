@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-03T15:19:47.411Z",
+  "generatedAt": "2026-08-03T20:01:25.274Z",
   "city": "All",
   "fuels": [
     {
       "fuel": "1",
       "fuelName": "Unleaded 95",
       "path": "data/stations-1.json",
-      "fetchedAt": "2026-08-03T15:18:48.975Z",
+      "fetchedAt": "2026-08-03T20:00:19.377Z",
       "stationCount": 318,
       "mappedStationCount": 288,
       "avgPrice": 1.562,
@@ -19,7 +19,7 @@
       "fuel": "2",
       "fuelName": "Unleaded 98",
       "path": "data/stations-2.json",
-      "fetchedAt": "2026-08-03T15:19:03.948Z",
+      "fetchedAt": "2026-08-03T20:00:34.358Z",
       "stationCount": 312,
       "mappedStationCount": 282,
       "avgPrice": 1.612,
@@ -31,10 +31,10 @@
       "fuel": "3",
       "fuelName": "Diesel",
       "path": "data/stations-3.json",
-      "fetchedAt": "2026-08-03T15:19:18.264Z",
+      "fetchedAt": "2026-08-03T20:00:49.136Z",
       "stationCount": 318,
       "mappedStationCount": 288,
-      "avgPrice": 1.698,
+      "avgPrice": 1.699,
       "minPrice": 1.614,
       "maxPrice": 1.845,
       "stale": false
@@ -43,7 +43,7 @@
       "fuel": "4",
       "fuelName": "Heating oil",
       "path": "data/stations-4.json",
-      "fetchedAt": "2026-08-03T15:19:33.099Z",
+      "fetchedAt": "2026-08-03T20:01:05.354Z",
       "stationCount": 304,
       "mappedStationCount": 278,
       "avgPrice": 1.381,
@@ -55,12 +55,12 @@
       "fuel": "5",
       "fuelName": "Kerosene",
       "path": "data/stations-5.json",
-      "fetchedAt": "2026-08-03T15:19:47.389Z",
+      "fetchedAt": "2026-08-03T20:01:25.255Z",
       "stationCount": 278,
       "mappedStationCount": 262,
       "avgPrice": 1.334,
       "minPrice": 1.169,
-      "maxPrice": 1.449,
+      "maxPrice": 1.488,
       "stale": false
     }
   ]
