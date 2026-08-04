@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-04T03:41:16.845Z",
+  "generatedAt": "2026-08-04T14:42:22.092Z",
   "city": "All",
   "fuels": [
     {
       "fuel": "1",
       "fuelName": "Unleaded 95",
       "path": "data/stations-1.json",
-      "fetchedAt": "2026-08-04T03:40:18.775Z",
+      "fetchedAt": "2026-08-04T14:41:24.987Z",
       "stationCount": 318,
       "mappedStationCount": 288,
-      "avgPrice": 1.566,
+      "avgPrice": 1.57,
       "minPrice": 1.494,
       "maxPrice": 1.665,
       "stale": false
@@ -19,22 +19,22 @@
       "fuel": "2",
       "fuelName": "Unleaded 98",
       "path": "data/stations-2.json",
-      "fetchedAt": "2026-08-04T03:40:33.096Z",
+      "fetchedAt": "2026-08-04T14:41:39.085Z",
       "stationCount": 312,
       "mappedStationCount": 282,
-      "avgPrice": 1.629,
+      "avgPrice": 1.633,
       "minPrice": 1.554,
-      "maxPrice": 1.799,
+      "maxPrice": 1.829,
       "stale": false
     },
     {
       "fuel": "3",
       "fuelName": "Diesel",
       "path": "data/stations-3.json",
-      "fetchedAt": "2026-08-04T03:40:47.825Z",
+      "fetchedAt": "2026-08-04T14:41:53.891Z",
       "stationCount": 318,
       "mappedStationCount": 288,
-      "avgPrice": 1.708,
+      "avgPrice": 1.72,
       "minPrice": 1.614,
       "maxPrice": 1.845,
       "stale": false
@@ -43,10 +43,10 @@
       "fuel": "4",
       "fuelName": "Heating oil",
       "path": "data/stations-4.json",
-      "fetchedAt": "2026-08-04T03:41:02.169Z",
+      "fetchedAt": "2026-08-04T14:42:08.144Z",
       "stationCount": 304,
       "mappedStationCount": 278,
-      "avgPrice": 1.389,
+      "avgPrice": 1.394,
       "minPrice": 1.305,
       "maxPrice": 1.545,
       "stale": false
@@ -55,12 +55,12 @@
       "fuel": "5",
       "fuelName": "Kerosene",
       "path": "data/stations-5.json",
-      "fetchedAt": "2026-08-04T03:41:16.826Z",
+      "fetchedAt": "2026-08-04T14:42:22.073Z",
       "stationCount": 278,
       "mappedStationCount": 262,
       "avgPrice": 1.335,
       "minPrice": 1.169,
-      "maxPrice": 1.488,
+      "maxPrice": 1.489,
       "stale": false
     }
   ]
