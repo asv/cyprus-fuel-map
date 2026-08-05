@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-04T19:59:23.656Z",
+  "fetchedAt": "2026-08-05T07:14:26.174Z",
   "avgPrice": 1.335,
   "minPrice": 1.169,
   "maxPrice": 1.489,
@@ -147,7 +147,7 @@
       "address": "Λεωφ. Γιάννου Κρανιδιώτη 7 Τ.Κ 3110 τηλ: 25822090",
       "district": "Λεμεσός",
       "price": 1.389,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.698122,
       "lng": 33.009215
     },
@@ -279,7 +279,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -697,7 +697,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.299,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -774,7 +774,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.319,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -1005,7 +1005,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.408,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1065,17 +1065,6 @@
       "lng": 33.977612
     },
     {
-      "id": "ccbaf3419200c8c3",
-      "brand": "ENI",
-      "name": "COSTAS SAVVIDES (PETROL STATION) LIMITED",
-      "address": "Λεωφ. Λάρνακος 125 Τ.Κ 1048 τηλ: 22435320",
-      "district": "Παλλουριώτισσα",
-      "price": 1.299,
-      "isOffline": false,
-      "lat": 35.1658,
-      "lng": 33.3822
-    },
-    {
       "id": "e129d766946e1862",
       "brand": "ENI",
       "name": "KALL-ENI CITY GAS STATION LTD",
@@ -1093,7 +1082,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -2061,7 +2050,7 @@
       "address": "Αρσινόης & Αρχ. Μακαρίου Γ΄ 32 Τ.Κ 8830 τηλ: 26321331",
       "district": "Πόλης Χρυσοχούς",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.035702,
       "lng": 32.427888
     },
@@ -2171,7 +2160,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2358,7 +2347,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2391,7 +2380,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2545,7 +2534,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.44,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
