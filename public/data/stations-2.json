@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-06T12:58:24.843Z",
+  "fetchedAt": "2026-08-07T01:29:12.296Z",
   "avgPrice": 1.65,
   "minPrice": 1.554,
   "maxPrice": 1.829,
@@ -47,7 +47,7 @@
       "name": "GREENOIL LIMITED",
       "address": "Γεωργίου Καλογεροπούλου 50 Τ.Κ 4007 τηλ: 25028563",
       "district": "Μέσα Γειτονιά",
-      "price": 1.618,
+      "price": 1.635,
       "isOffline": false,
       "lat": 34.708686,
       "lng": 33.038429
@@ -1191,7 +1191,7 @@
       "name": "ΝΙΚΟΣ & ΜΑΡΚΟΣ ΠΙΤΤΑΚΗΣ",
       "address": "1ης Απριλίου 237 Τ.Κ 5280 τηλ: 23821328",
       "district": "Παραλίμνι",
-      "price": 1.649,
+      "price": 1.669,
       "isOffline": false,
       "lat": 35.0269,
       "lng": 33.98285
@@ -1994,7 +1994,7 @@
       "name": "ANTONIS KKOULOS PETROL STATION LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 4 Τ.Κ 7550 τηλ: 24422132",
       "district": "Κίτι",
-      "price": 1.679,
+      "price": 1.699,
       "isOffline": false,
       "lat": 34.84668333,
       "lng": 33.573
@@ -2599,7 +2599,7 @@
       "name": "Α. ΑΡΓΥΡΟΥ ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΛΤΔ",
       "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.725,
+      "price": 1.745,
       "isOffline": false,
       "lat": 34.6901,
       "lng": 33.0733
@@ -2731,7 +2731,7 @@
       "name": "ΚΩΣΤΑΣ ΓΕΩΡΓΙΟΥ (ΒΙΤΤΗΣ)",
       "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24364365",
       "district": "Καλό Χωριό Λάρνακας",
-      "price": 1.639,
+      "price": 1.659,
       "isOffline": false,
       "lat": 34.92598333,
       "lng": 33.54103333

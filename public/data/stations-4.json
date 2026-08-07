@@ -3,10 +3,10 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-06T12:58:52.499Z",
+  "fetchedAt": "2026-08-07T01:29:39.548Z",
   "avgPrice": 1.412,
   "minPrice": 1.305,
-  "maxPrice": 1.545,
+  "maxPrice": 1.585,
   "stations": [
     {
       "id": "22a8e387ee3e195c",
@@ -1136,7 +1136,7 @@
       "name": "P. DIOGENOUS PETROL STATION LTD",
       "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
       "district": "Μεσόγη",
-      "price": 1.468,
+      "price": 1.498,
       "isOffline": false,
       "lat": 34.805,
       "lng": 32.44541667
@@ -1444,7 +1444,7 @@
       "name": "G.K.S SAMATAS LIMITED",
       "address": "Αγίου Νικολάου 37 Τ.Κ 2408 τηλ: 22590586",
       "district": "Έγκωμη",
-      "price": 1.389,
+      "price": 1.409,
       "isOffline": false,
       "lat": 35.1641275288475,
       "lng": 33.3331814245369
@@ -1983,7 +1983,7 @@
       "name": "ANTONIS KKOULOS PETROL STATION LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 4 Τ.Κ 7550 τηλ: 24422132",
       "district": "Κίτι",
-      "price": 1.489,
+      "price": 1.509,
       "isOffline": false,
       "lat": 34.84668333,
       "lng": 33.573
@@ -2577,7 +2577,7 @@
       "name": "Α. ΑΡΓΥΡΟΥ ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΛΤΔ",
       "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.545,
+      "price": 1.585,
       "isOffline": false,
       "lat": 34.6901,
       "lng": 33.0733
@@ -2709,7 +2709,7 @@
       "name": "ΚΩΣΤΑΣ ΓΕΩΡΓΙΟΥ (ΒΙΤΤΗΣ)",
       "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24364365",
       "district": "Καλό Χωριό Λάρνακας",
-      "price": 1.429,
+      "price": 1.469,
       "isOffline": false,
       "lat": 34.92598333,
       "lng": 33.54103333
@@ -2940,7 +2940,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αμμοχώστου 57 Τ.Κ 1016 τηλ: 22347110",
       "district": "Παλλουριώτισσα",
-      "price": 1.398,
+      "price": 1.409,
       "isOffline": false,
       "lat": 35.170154,
       "lng": 33.397329
