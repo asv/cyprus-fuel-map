@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-07T12:32:00.458Z",
+  "fetchedAt": "2026-08-07T18:32:50.834Z",
   "avgPrice": 1.592,
   "minPrice": 1.494,
   "maxPrice": 1.685,
@@ -696,7 +696,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Αγίου Λουκά 7 Τ.Κ 7731 τηλ: 24333172",
       "district": "Σκαρίνου",
-      "price": 1.589,
+      "price": 1.569,
       "isOffline": false,
       "lat": 34.815172222222216,
       "lng": 33.36078055555556
@@ -872,7 +872,7 @@
       "name": "S. KALLIKAS LIMITED",
       "address": "Λεωφ. Αγ.Γεωργίου 82 Τ.Κ 8560 τηλ: 26621132",
       "district": "Πέγεια",
-      "price": 1.609,
+      "price": 1.619,
       "isOffline": false,
       "lat": 34.876967,
       "lng": 32.35534
@@ -1159,7 +1159,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1598,7 +1598,7 @@
       "name": "PYCEGA LTD",
       "address": "Λεωφ. Στροβόλου 327 Τ.Κ 2052 τηλ: 22327758",
       "district": "Στρόβολος",
-      "price": 1.599,
+      "price": 1.619,
       "isOffline": false,
       "lat": 35.1238564814815,
       "lng": 33.3221111111111
@@ -1719,7 +1719,7 @@
       "name": "TSOIL ENTERPRISES LIMITED",
       "address": "Βαρωσίων 39 Τ.Κ 5522 τηλ: 23962424",
       "district": "Βρυσούλες",
-      "price": 1.567,
+      "price": 1.597,
       "isOffline": false,
       "lat": 35.0810134192706,
       "lng": 33.8734175948288
@@ -2005,7 +2005,7 @@
       "name": "A. K. Konnaris Service Station Ltd",
       "address": "Παναγίας Ελεούσας 55 Τ.Κ 4730 τηλ: 25432020",
       "district": "Τριμίκλινη",
-      "price": 1.625,
+      "price": 1.645,
       "isOffline": false,
       "lat": 34.8458,
       "lng": 32.9121
@@ -2303,7 +2303,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2336,7 +2336,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.589,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.569,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2545,7 +2545,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2699,7 +2699,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.639,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2709,7 +2709,7 @@
       "name": "ΑΝΔΡΕΑΣ ΖΑΧΑΡΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ.Τιμίου Προδρόμου 44 Τ.Κ 7020 τηλ: 24426868",
       "district": "Δρομολαξιά",
-      "price": 1.628,
+      "price": 1.649,
       "isOffline": false,
       "lat": 34.876254,
       "lng": 33.595478
@@ -3182,7 +3182,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.557,
+      "price": 1.577,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3468,7 +3468,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Χλώρακας 70 Τ.Κ 8220 τηλ: 26812600",
       "district": "Χλώρακα",
-      "price": 1.596,
+      "price": 1.602,
       "isOffline": false,
       "lat": 34.79908333333333,
       "lng": 32.40002777777778
