@@ -1394,13 +1394,13 @@
       "stationCount": 318
     },
     {
-      "at": "2026-08-08T00:34:02.728Z",
-      "avgPrice": 1.775,
+      "at": "2026-08-08T06:30:48.133Z",
+      "avgPrice": 1.777,
       "mappedStationCount": 288,
       "maxPrice": 1.885,
       "medianPrice": 1.769,
-      "minPrice": 1.669,
-      "offlineCount": 11,
+      "minPrice": 1.685,
+      "offlineCount": 1,
       "p25Price": 1.767,
       "p75Price": 1.799,
       "stationCount": 318
