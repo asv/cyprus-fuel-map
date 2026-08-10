@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-09T12:30:38.680Z",
+  "fetchedAt": "2026-08-10T00:36:25.842Z",
   "avgPrice": 1.363,
   "minPrice": 1.169,
   "maxPrice": 1.503,
@@ -1257,7 +1257,7 @@
       "name": "C.K.M. PETROLEUM LIMITED",
       "address": "Στροβόλου 19 Τ.Κ 2480 τηλ: 22385359",
       "district": "Τσέρι",
-      "price": 1.348,
+      "price": 1.358,
       "isOffline": false,
       "lat": 35.0787361111111,
       "lng": 33.3254490740741
