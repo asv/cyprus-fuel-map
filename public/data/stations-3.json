@@ -3,8 +3,8 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-13T12:35:03.226Z",
-  "avgPrice": 1.798,
+  "fetchedAt": "2026-08-13T18:37:08.315Z",
+  "avgPrice": 1.799,
   "minPrice": 1.708,
   "maxPrice": 1.885,
   "stations": [
@@ -1159,7 +1159,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1444,7 +1444,7 @@
       "name": "EUROORBIT LIMITED",
       "address": "Λεωφ. Γρηγόρη Αυξεντίου 29, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22622222",
       "district": "Δευτερά",
-      "price": 1.745,
+      "price": 1.785,
       "isOffline": false,
       "lat": 35.081014,
       "lng": 33.273498
@@ -1796,7 +1796,7 @@
       "name": "ΘΕΟΠΕΤΡΟ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 35 Τ.Κ 7550 τηλ: 24828666",
       "district": "Κίτι",
-      "price": 1.799,
+      "price": 1.809,
       "isOffline": false,
       "lat": 34.8520915281319,
       "lng": 33.5795308018523
@@ -1862,7 +1862,7 @@
       "name": "Μ.Κ. ΓΕΝΕΘΛΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Γιάννου Κρανιδιώτη Τ.Κ 3110 τηλ: 25336300",
       "district": "Λεμεσός",
-      "price": 1.797,
+      "price": 1.807,
       "isOffline": false,
       "lat": 34.7043776604692,
       "lng": 33.003317245369
@@ -1884,7 +1884,7 @@
       "name": "ΝΙΚΟΣ Χ. ΠΙΕΡΙΔΗΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου, Ακάκι Τ.Κ 2720 τηλ: 22821449",
       "district": "Ακάκι",
-      "price": 1.798,
+      "price": 1.808,
       "isOffline": false,
       "lat": 35.1370534076704,
       "lng": 33.1417384202377
@@ -2303,7 +2303,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2336,7 +2336,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.799,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.768,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2545,7 +2545,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -3303,7 +3303,7 @@
       "name": "ΚΥΡΙΑΚΟΣ ΚΟΜΠΟΣ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Ομονοίας 32 Τ.Κ 3052 τηλ: 25569893",
       "district": "Λεμεσός",
-      "price": 1.819,
+      "price": 1.829,
       "isOffline": false,
       "lat": null,
       "lng": null
