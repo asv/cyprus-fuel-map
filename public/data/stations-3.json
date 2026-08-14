@@ -3,8 +3,8 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-14T06:48:16.202Z",
-  "avgPrice": 1.8,
+  "fetchedAt": "2026-08-14T12:32:01.735Z",
+  "avgPrice": 1.801,
   "minPrice": 1.708,
   "maxPrice": 1.885,
   "stations": [
@@ -25,7 +25,7 @@
       "name": "C.N PETROL STATION LTD",
       "address": "Κάτω Πύργος Τ.Κ 2940",
       "district": "Κάτω Πύργος",
-      "price": 1.838,
+      "price": 1.858,
       "isOffline": false,
       "lat": 35.184195,
       "lng": 32.681915
@@ -312,7 +312,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -730,7 +730,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -807,7 +807,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.828,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -971,7 +971,7 @@
       "name": "Ι. ΧΑΣΙΚΟΣ ΛΤΔ",
       "address": "Λεωφ. Λευκωσίας 108 Τ.Κ 2540 τηλ: 22815686",
       "district": "Δάλι",
-      "price": 1.738,
+      "price": 1.758,
       "isOffline": false,
       "lat": 35.0342474332179,
       "lng": 33.4088325048936
@@ -1015,7 +1015,7 @@
       "name": "ΚΥΡΙΑΚΟΣ Π. ΠΟΙΗΤΗΣ ΛΙΜΙΤΕΔ",
       "address": "Θεοκρίτου 57 Τ.Κ 7600 τηλ: 24523240",
       "district": "Αθιένου",
-      "price": 1.799,
+      "price": 1.812,
       "isOffline": false,
       "lat": 35.058083,
       "lng": 33.535842
@@ -1071,7 +1071,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.813,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1444,7 +1444,7 @@
       "name": "EUROORBIT LIMITED",
       "address": "Λεωφ. Γρηγόρη Αυξεντίου 29, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22622222",
       "district": "Δευτερά",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.081014,
       "lng": 33.273498
@@ -2995,7 +2995,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "28ης Οκτωβρίου 305 Τ.Κ 3105 τηλ: 25101128",
       "district": "Λεμεσός",
-      "price": 1.787,
+      "price": 1.797,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3006,7 +3006,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Θεσσαλονίκης 16 Τ.Κ 3025 τηλ: 25584639",
       "district": "Λεμεσός",
-      "price": 1.799,
+      "price": 1.807,
       "isOffline": false,
       "lat": 34.681925,
       "lng": 33.041939
@@ -3314,7 +3314,7 @@
       "name": "ΠΑΥΛΟΣ ΔΙΑΚΟΣ & ΥΙΟΙ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου Ακάκι Τ.Κ 2720 τηλ: 22821452",
       "district": "Ακάκι",
-      "price": 1.797,
+      "price": 1.807,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3336,7 +3336,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Καρύων 17 Τ.Κ 5510 τηλ: 23922182",
       "district": "Αυγόρου",
-      "price": 1.793,
+      "price": 1.805,
       "isOffline": false,
       "lat": 35.04402777777778,
       "lng": 33.840444444444444
@@ -3347,7 +3347,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Ακανθούς 4, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22575112",
       "district": "Δευτερά",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.090188221784366,
       "lng": 33.26715483191825
@@ -3369,7 +3369,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Δρομολαξιάς 61 Τ.Κ 7550 τηλ: 24828600",
       "district": "Κίτι",
-      "price": 1.796,
+      "price": 1.803,
       "isOffline": false,
       "lat": 34.861666666666665,
       "lng": 33.57580555555556
@@ -3380,7 +3380,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Αγίου Γεωργίου 107 Τ.Κ 2304 τηλ: 22371550",
       "district": "Λακατάμεια",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.11461111111111,
       "lng": 33.28791666666667
@@ -3391,7 +3391,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 54 Τ.Κ 2324 τηλ: 22780022",
       "district": "Λακατάμεια",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.11961111111111,
       "lng": 33.315999999999995
@@ -3402,7 +3402,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Πεύκου 71 Τ.Κ 2326 τηλ: 22313771",
       "district": "Λακατάμεια",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.09875,
       "lng": 33.31522222222222
@@ -3413,7 +3413,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Δημοκρατίας 40 Τ.Κ 3012 τηλ: 25370503",
       "district": "Λεμεσός",
-      "price": 1.763,
+      "price": 1.773,
       "isOffline": false,
       "lat": 34.66911111111111,
       "lng": 33.02386111111111
@@ -3424,7 +3424,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
-      "price": 1.779,
+      "price": 1.794,
       "isOffline": false,
       "lat": 34.753826,
       "lng": 32.962765
@@ -3435,7 +3435,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Γρηγόρη Αυξεντίου 29, Πέρα Ορεινής Τ.Κ 2650 τηλ: 22621264",
       "district": "Πέρα Ορεινής",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.04547222222222,
       "lng": 33.25463888888889
@@ -3446,7 +3446,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Μεγάλου Αλεξάνδρου 46, Παλιομέτοχο Τ.Κ 2682 τηλ: 22832066",
       "district": "Παλιομέτοχο",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.137166666666666,
       "lng": 33.21402777777778
@@ -3457,7 +3457,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Κώστα Μισιαούλη 168 Τ.Κ 2480 τηλ: 22370234",
       "district": "Τσέρι",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": 35.080333333333336,
       "lng": 33.305138888888884
@@ -3468,7 +3468,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Χλώρακας 70 Τ.Κ 8220 τηλ: 26812600",
       "district": "Χλώρακα",
-      "price": 1.803,
+      "price": 1.807,
       "isOffline": false,
       "lat": 34.79908333333333,
       "lng": 32.40002777777778
