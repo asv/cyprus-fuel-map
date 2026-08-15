@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-15T06:29:40.729Z",
+  "fetchedAt": "2026-08-15T12:29:13.189Z",
   "avgPrice": 1.801,
   "minPrice": 1.708,
   "maxPrice": 1.885,
@@ -312,7 +312,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -730,7 +730,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -807,7 +807,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.828,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -1071,7 +1071,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.813,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -2655,7 +2655,7 @@
       "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
       "district": "Άγιος Αθανάσιος",
       "price": 1.885,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.6901,
       "lng": 33.0733
     },
