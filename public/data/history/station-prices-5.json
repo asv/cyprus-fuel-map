@@ -8045,6 +8045,12 @@
       "isOffline": true,
       "price": 1.378,
       "stationKey": "station_cc51881e36380f6d"
+    },
+    {
+      "at": "2026-08-16T18:29:07.131Z",
+      "isOffline": false,
+      "price": 1.299,
+      "stationKey": "station_c5b71a7754ca60b6"
     }
   ],
   "fuel": "5",
