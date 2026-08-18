@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-18T06:29:40.512Z",
+  "fetchedAt": "2026-08-18T12:29:44.621Z",
   "avgPrice": 1.596,
   "minPrice": 1.515,
   "maxPrice": 1.685,
@@ -212,7 +212,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Κυριάκου Μάτση 22 Τ.Κ 2408 τηλ: 22354708",
       "district": "Έγκωμη",
-      "price": 1.589,
+      "price": 1.599,
       "isOffline": false,
       "lat": 35.168024,
       "lng": 33.32996
@@ -267,7 +267,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Γ.Γρίβα Διγενή 12 Τ.Κ 2614 τηλ: 22635005",
       "district": "Αρεδιού",
-      "price": 1.589,
+      "price": 1.597,
       "isOffline": false,
       "lat": 35.058393,
       "lng": 33.206986
@@ -312,7 +312,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.597,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -718,7 +718,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Αρχ.Μιχαήλ 43 (Παρισσινός) Τ.Κ 2057 τηλ: 22353335",
       "district": "Στρόβολος",
-      "price": 1.589,
+      "price": 1.599,
       "isOffline": false,
       "lat": 35.154783,
       "lng": 33.331971
@@ -730,7 +730,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.589,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -784,7 +784,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφόρος Αρχ. Μιχαήλ 17 Τ.Κ 2057 τηλ: 22876187",
       "district": "Στρόβολος",
-      "price": 1.589,
+      "price": 1.599,
       "isOffline": false,
       "lat": 35.156596,
       "lng": 33.335618
@@ -807,7 +807,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -1071,7 +1071,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.619,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1257,7 +1257,7 @@
       "name": "\"ΑΔΕΛΦΟΙ ΚΟΥΡΙΔΗ ΛΙΜΙΤΕΔ\"",
       "address": "Ευαγόρα Παλληκαρίδη 53 Τ.Κ 8010 τηλ: 26933657",
       "district": "Πάφος",
-      "price": 1.617,
+      "price": 1.619,
       "isOffline": false,
       "lat": 34.7779977652251,
       "lng": 32.4236665755325
@@ -1346,7 +1346,7 @@
       "address": "Λεωφ. Στροβόλου 278 Τ.Κ 2048 τηλ: 22322441",
       "district": "Στρόβολος",
       "price": 1.567,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1287232428282,
       "lng": 33.324758841803
     },
@@ -2627,17 +2627,6 @@
       "lng": 33.3711
     },
     {
-      "id": "6d1c6cac38cbc01e",
-      "brand": "PETROLINA",
-      "name": "V. Theodorou Bro Petrol Station LTD",
-      "address": "Αγίας Παρασκευής 15 Τ.Κ 7741 τηλ: 24322761",
-      "district": "Χοιροκιτία",
-      "price": 1.619,
-      "isOffline": false,
-      "lat": 34.80214,
-      "lng": 33.35117
-    },
-    {
       "id": "c9f0555d23c8d109",
       "brand": "PETROLINA",
       "name": "Z. ΖΗΝΩΝΟΣ & ΥΙΟΙ ΛΤΔ",
@@ -3155,17 +3144,6 @@
       "lng": 33.955026
     },
     {
-      "id": "23742c697b777b7d",
-      "brand": "SHELL",
-      "name": "DEMETRIOS STAVROPOULOS LTD",
-      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 49 Τ.Κ 1065 τηλ: 22753252",
-      "district": "Λευκωσία",
-      "price": 1.597,
-      "isOffline": false,
-      "lat": null,
-      "lng": null
-    },
-    {
       "id": "dd7128ea03e8c20f",
       "brand": "SHELL",
       "name": "INDEXICO LIMITED",
@@ -3205,6 +3183,17 @@
       "address": "Προμαχών Ελευθερίας 11 Τ.Κ 4103 τηλ: 25324935",
       "district": "Άγιος Αθανάσιος",
       "price": 1.598,
+      "isOffline": false,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "9b7fe4a960791641",
+      "brand": "SHELL",
+      "name": "OMNI FUEL POINT LTD",
+      "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 49 Τ.Κ 1065 τηλ: 22753252",
+      "district": "Λευκωσία",
+      "price": 1.597,
       "isOffline": false,
       "lat": null,
       "lng": null
