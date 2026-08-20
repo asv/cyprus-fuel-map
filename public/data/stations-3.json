@@ -3,10 +3,10 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-20T13:13:11.662Z",
+  "fetchedAt": "2026-08-20T19:02:12.709Z",
   "avgPrice": 1.811,
   "minPrice": 1.725,
-  "maxPrice": 1.885,
+  "maxPrice": 1.898,
   "stations": [
     {
       "id": "30328eae8837f4da",
@@ -1159,7 +1159,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1169,7 +1169,7 @@
       "name": "P. DIOGENOUS PETROL STATION LTD",
       "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
       "district": "Μεσόγη",
-      "price": 1.848,
+      "price": 1.858,
       "isOffline": false,
       "lat": 34.805,
       "lng": 32.44541667
@@ -1499,7 +1499,7 @@
       "name": "I.G. MAKRIS ENTERPRISES LTD",
       "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
       "district": "Καϊμακλί",
-      "price": 1.769,
+      "price": 1.799,
       "isOffline": false,
       "lat": 35.1845138888889,
       "lng": 33.3895
@@ -1543,7 +1543,7 @@
       "name": "LINERIA SERVICES LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 80 Τ.Κ 8221 τηλ: 26271020",
       "district": "Χλώρακα",
-      "price": 1.847,
+      "price": 1.867,
       "isOffline": false,
       "lat": 34.8018981481481,
       "lng": 32.4133842592593
@@ -1873,7 +1873,7 @@
       "name": "ΜΑΡΙΟΣ Γ. ΠΑΝΑΓΗ & ΣΙΑ ΛΤΔ",
       "address": "Λεωφ. Λάρνακος - Αμμοχώστου Τ.Κ 5523 τηλ: 24721122",
       "district": "Δασάκι της Άχνας",
-      "price": 1.809,
+      "price": 1.819,
       "isOffline": false,
       "lat": 35.0325305321652,
       "lng": 33.7577889277862
@@ -1929,7 +1929,7 @@
       "address": "14ος Δρόμος 40 Τ.Κ 4620 τηλ: 25932671",
       "district": "Επισκοπή",
       "price": 1.819,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
     },
@@ -2005,7 +2005,7 @@
       "name": "A. K. Konnaris Service Station Ltd",
       "address": "Παναγίας Ελεούσας 55 Τ.Κ 4730 τηλ: 25432020",
       "district": "Τριμίκλινη",
-      "price": 1.842,
+      "price": 1.862,
       "isOffline": false,
       "lat": 34.8458,
       "lng": 32.9121
@@ -2303,7 +2303,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2336,7 +2336,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.768,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2545,7 +2545,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.808,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2643,7 +2643,7 @@
       "name": "Α. ΑΡΓΥΡΟΥ ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΛΤΔ",
       "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.885,
+      "price": 1.898,
       "isOffline": false,
       "lat": 34.6901,
       "lng": 33.0733
@@ -2688,7 +2688,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.829,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
