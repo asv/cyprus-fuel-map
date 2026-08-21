@@ -3,8 +3,8 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-21T13:13:06.440Z",
-  "avgPrice": 1.661,
+  "fetchedAt": "2026-08-21T18:58:48.259Z",
+  "avgPrice": 1.66,
   "minPrice": 1.554,
   "maxPrice": 1.859,
   "stations": [
@@ -630,7 +630,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Σπ. Χριστοδούλου 47 Τ.Κ 1020 τηλ: 22344500",
       "district": "Παλλουριώτισσα",
-      "price": 1.639,
+      "price": 1.589,
       "isOffline": false,
       "lat": 35.175612,
       "lng": 33.373034
@@ -1137,7 +1137,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.659,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -2270,7 +2270,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.659,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2303,7 +2303,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.639,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2479,7 +2479,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.659,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.659,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2655,7 +2655,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.709,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2798,7 +2798,7 @@
       "address": "Λεωφ. Στροβόλου 60 Τ.Κ 2018 τηλ: 22422060",
       "district": "Στρόβολος",
       "price": 1.659,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.146567,
       "lng": 33.34512
     },
@@ -3127,7 +3127,7 @@
       "name": "MOROTON ENTERPRISES LIMITED",
       "address": "Αρχ. Μακαρίου Γ' 11 Τ.Κ 2800 τηλ: 22922335",
       "district": "Κακοπετριά",
-      "price": 1.707,
+      "price": 1.677,
       "isOffline": false,
       "lat": null,
       "lng": null
