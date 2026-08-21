@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-20T19:02:26.794Z",
+  "fetchedAt": "2026-08-21T02:00:07.132Z",
   "avgPrice": 1.456,
   "minPrice": 1.305,
   "maxPrice": 1.585,
@@ -1994,7 +1994,7 @@
       "name": "ANTONIS KKOULOS PETROL STATION LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 4 Τ.Κ 7550 τηλ: 24422132",
       "district": "Κίτι",
-      "price": 1.509,
+      "price": 1.529,
       "isOffline": false,
       "lat": 34.84668333,
       "lng": 33.573
