@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-22T07:01:45.776Z",
+  "fetchedAt": "2026-08-22T13:03:09.565Z",
   "avgPrice": 1.823,
   "minPrice": 1.725,
   "maxPrice": 1.898,
@@ -25,7 +25,7 @@
       "name": "C.N PETROL STATION LTD",
       "address": "Κάτω Πύργος Τ.Κ 2940",
       "district": "Κάτω Πύργος",
-      "price": 1.858,
+      "price": 1.873,
       "isOffline": false,
       "lat": 35.184195,
       "lng": 32.681915
@@ -146,7 +146,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.814,
+      "price": 1.812,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -312,7 +312,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.826,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -730,7 +730,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.826,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -807,7 +807,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.849,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -1071,7 +1071,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.833,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1081,7 +1081,7 @@
       "name": "ΝΤΙΝΟΣ ΑΠΟΣΤΟΛΟΥ ΛΙΜΙΤΕΔ",
       "address": "Ηλία Καννάουρου 20 Τ.Κ 4187 τηλ: 25391284",
       "district": "Ύψωνας",
-      "price": 1.819,
+      "price": 1.839,
       "isOffline": false,
       "lat": 34.683127,
       "lng": 32.966629
@@ -1268,7 +1268,7 @@
       "name": "ANGIO TRADING LIMITED",
       "address": "Λεωφ. Νίκης 37 Τ.Κ 1087 τηλ: 22490810",
       "district": "Ακρόπολη",
-      "price": 1.768,
+      "price": 1.788,
       "isOffline": false,
       "lat": 35.1565679511699,
       "lng": 33.3580602362457
@@ -1400,7 +1400,7 @@
       "name": "DERESIO PETROLEUM LTD",
       "address": "Ονησίλου 1 Τ.Κ 4532 τηλ: 25310136",
       "district": "Τουριστική Περ. Αγίου Τύχωνα",
-      "price": 1.839,
+      "price": 1.859,
       "isOffline": false,
       "lat": 34.7085527677969,
       "lng": 33.123785642714
@@ -1433,7 +1433,7 @@
       "name": "E&P PETROL STATION LTD",
       "address": "Αγίας Ζώνης 14 Τ.Κ 3027 τηλ: 25344263",
       "district": "Λεμεσός",
-      "price": 1.819,
+      "price": 1.839,
       "isOffline": false,
       "lat": 34.6829771920967,
       "lng": 33.0441996858444
@@ -1466,7 +1466,7 @@
       "name": "FREGIO LTD",
       "address": "Γρηγόρη Αυξεντίου 24, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22835192",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.818,
+      "price": 1.824,
       "isOffline": false,
       "lat": 35.1481674279843,
       "lng": 33.2034919828034
@@ -3347,7 +3347,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
       "district": "Ευρύχου",
-      "price": 1.814,
+      "price": 1.812,
       "isOffline": false,
       "lat": 35.05938888888888,
       "lng": 32.91291666666667
@@ -3358,7 +3358,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Δρομολαξιάς 61 Τ.Κ 7550 τηλ: 24828600",
       "district": "Κίτι",
-      "price": 1.816,
+      "price": 1.823,
       "isOffline": false,
       "lat": 34.861666666666665,
       "lng": 33.57580555555556
@@ -3490,8 +3490,8 @@
       "name": "ARTEMIS A. GEORGIOU PETROL STATION LTD",
       "address": "Λεωφ. Κωνσταντίνου & Ευριπίδου 1 Τ.Κ 4651 τηλ: 25873040",
       "district": "Τραχώνι",
-      "price": 1.807,
-      "isOffline": true,
+      "price": 1.825,
+      "isOffline": false,
       "lat": 34.653749999999995,
       "lng": 32.97397222222222
     }
