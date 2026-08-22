@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-21T18:59:01.762Z",
+  "fetchedAt": "2026-08-22T01:52:43.028Z",
   "avgPrice": 1.821,
   "minPrice": 1.725,
   "maxPrice": 1.898,
@@ -3369,7 +3369,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Αγίου Γεωργίου 107 Τ.Κ 2304 τηλ: 22371550",
       "district": "Λακατάμεια",
-      "price": 1.795,
+      "price": 1.823,
       "isOffline": true,
       "lat": 35.11461111111111,
       "lng": 33.28791666666667
@@ -3413,7 +3413,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
-      "price": 1.797,
+      "price": 1.803,
       "isOffline": true,
       "lat": 34.753826,
       "lng": 32.962765
@@ -3424,7 +3424,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Γρηγόρη Αυξεντίου 29, Πέρα Ορεινής Τ.Κ 2650 τηλ: 22621264",
       "district": "Πέρα Ορεινής",
-      "price": 1.795,
+      "price": 1.823,
       "isOffline": true,
       "lat": 35.04547222222222,
       "lng": 33.25463888888889
