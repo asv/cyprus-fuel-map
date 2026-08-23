@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-23T13:04:16.189Z",
+  "fetchedAt": "2026-08-23T18:50:30.702Z",
   "avgPrice": 1.823,
   "minPrice": 1.725,
   "maxPrice": 1.898,
@@ -1851,7 +1851,7 @@
       "name": "Μ.Α.Ν.Ι. ΠΑΝΑΓΙΩΤΟΥ ΛΤΔ",
       "address": "Γιάννου Κρανιδιώτη 34 Τ.Κ 6051 τηλ: 24668111",
       "district": "Λάρνακα",
-      "price": 1.809,
+      "price": 1.839,
       "isOffline": false,
       "lat": 34.9255425378298,
       "lng": 33.6158680546311
@@ -3106,7 +3106,7 @@
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
       "price": 1.837,
-      "isOffline": false,
+      "isOffline": true,
       "lat": null,
       "lng": null
     },

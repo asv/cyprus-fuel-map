@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-23T13:04:02.224Z",
+  "fetchedAt": "2026-08-23T18:50:17.185Z",
   "avgPrice": 1.66,
   "minPrice": 1.554,
   "maxPrice": 1.859,
@@ -3073,7 +3073,7 @@
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
       "price": 1.748,
-      "isOffline": false,
+      "isOffline": true,
       "lat": null,
       "lng": null
     },
