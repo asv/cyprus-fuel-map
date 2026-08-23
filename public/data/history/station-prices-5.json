@@ -9143,6 +9143,12 @@
       "isOffline": true,
       "price": 1.398,
       "stationKey": "station_c3165a13c9a1be9e"
+    },
+    {
+      "at": "2026-08-23T02:02:03.644Z",
+      "isOffline": false,
+      "price": 1.389,
+      "stationKey": "station_7185236f8eae161c"
     }
   ],
   "fuel": "5",

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T18:51:20.677Z",
+  "generatedAt": "2026-08-23T02:02:03.667Z",
   "city": "All",
   "fuels": [
     {
@@ -43,7 +43,7 @@
       "fuel": "4",
       "fuelName": "Heating oil",
       "path": "data/stations-4.json",
-      "fetchedAt": "2026-08-22T18:51:07.232Z",
+      "fetchedAt": "2026-08-23T02:01:49.889Z",
       "stationCount": 303,
       "mappedStationCount": 277,
       "avgPrice": 1.46,
@@ -55,7 +55,7 @@
       "fuel": "5",
       "fuelName": "Kerosene",
       "path": "data/stations-5.json",
-      "fetchedAt": "2026-08-22T18:51:20.655Z",
+      "fetchedAt": "2026-08-23T02:02:03.644Z",
       "stationCount": 277,
       "mappedStationCount": 261,
       "avgPrice": 1.373,
