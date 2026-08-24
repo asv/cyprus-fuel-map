@@ -3,8 +3,8 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-24T01:59:34.252Z",
-  "avgPrice": 1.823,
+  "fetchedAt": "2026-08-24T07:30:48.351Z",
+  "avgPrice": 1.825,
   "minPrice": 1.725,
   "maxPrice": 1.898,
   "stations": [
@@ -25,7 +25,7 @@
       "name": "C.N PETROL STATION LTD",
       "address": "Κάτω Πύργος Τ.Κ 2940",
       "district": "Κάτω Πύργος",
-      "price": 1.873,
+      "price": 1.879,
       "isOffline": false,
       "lat": 35.184195,
       "lng": 32.681915
@@ -47,7 +47,7 @@
       "name": "G & K Kouppas Ltd",
       "address": "Κωνσταντινουπόλεως 2 Τ.Κ 8820 τηλ: 26321515",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.846,
+      "price": 1.859,
       "isOffline": false,
       "lat": 35.032195,
       "lng": 32.427352
@@ -113,7 +113,7 @@
       "name": "LESONI PETROLIUM LTD",
       "address": "Αρχ. Μακαρίου Γ΄ 18 (Παλαιός Δρόμος Λάρνακας-Λεμεσού) Τ.Κ 7571 τηλ: 24432522",
       "district": "Αγγλισίδες",
-      "price": 1.826,
+      "price": 1.839,
       "isOffline": false,
       "lat": 34.852791,
       "lng": 33.455066
@@ -135,7 +135,7 @@
       "name": "M.T. EFTHIMIOU ENTERPRISES LTD",
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 4 Τ.Κ 8250 τηλ: 26273244",
       "district": "Έμπα",
-      "price": 1.869,
+      "price": 1.879,
       "isOffline": false,
       "lat": 34.790679,
       "lng": 32.421952
@@ -146,7 +146,7 @@
       "name": "Marios Miltiadous Petrol Station Ltd",
       "address": "Λεωφ. Σαριγιάννη Τ.Κ 2831 τηλ: 22933457",
       "district": "Ευρύχου",
-      "price": 1.812,
+      "price": 1.814,
       "isOffline": false,
       "lat": 35.070157,
       "lng": 32.930054
@@ -157,7 +157,7 @@
       "name": "N & C FAKONDIS BROS PETROLEUM LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 31 Τ.Κ 8200 τηλ: 26962471",
       "district": "Γεροσκήπου",
-      "price": 1.847,
+      "price": 1.859,
       "isOffline": false,
       "lat": 34.761499,
       "lng": 32.451182
@@ -312,7 +312,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.826,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -730,7 +730,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.826,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -807,7 +807,7 @@
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
       "price": 1.849,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.710452,
       "lng": 32.490238
     },
@@ -861,7 +861,7 @@
       "name": "S. KALLIKAS LIMITED",
       "address": "Δρόμος Κάθικα - Πάνω Αρόδες Τ.Κ 8703 τηλ: 26652654",
       "district": "Αρόδες",
-      "price": 1.846,
+      "price": 1.859,
       "isOffline": false,
       "lat": 34.926162,
       "lng": 32.418154
@@ -883,7 +883,7 @@
       "name": "SPECTO LTD",
       "address": "Λεωφ. Έμπας 144 Τ.Κ 8250 τηλ: 26270301",
       "district": "Έμπα",
-      "price": 1.869,
+      "price": 1.879,
       "isOffline": false,
       "lat": 34.811703,
       "lng": 32.430424
@@ -916,7 +916,7 @@
       "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΑΡΑΛΙΜΝΙ) ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Πρωταρά 161 Τ.Κ 5289 τηλ: 23822030",
       "district": "Παραλίμνι",
-      "price": 1.826,
+      "price": 1.839,
       "isOffline": false,
       "lat": 35.043444,
       "lng": 33.994804
@@ -927,7 +927,7 @@
       "name": "ΑΔΕΛΦΟΙ ΑΡΤΥΜΑΤΑ (ΠΡΩΤΑΡΑΣ) ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Πρωταρά - Κάβο Γκρέκο 280 Τ.Κ 5310 τηλ: 23814200",
       "district": "Πρωταράς",
-      "price": 1.826,
+      "price": 1.839,
       "isOffline": false,
       "lat": 35.025105,
       "lng": 34.035299
@@ -938,7 +938,7 @@
       "name": "ΑΝΔΡΕΑΣ Μ. ΚΟΜΜΑΤΟΣ ΛΙΜΙΤΕΔ",
       "address": "Λεώφ. Αποστόλου Παύλου 20 Τ.Κ 8046 τηλ: 26932437",
       "district": "Πάφος",
-      "price": 1.849,
+      "price": 1.859,
       "isOffline": false,
       "lat": 34.772555555555556,
       "lng": 32.41813888888888
@@ -949,7 +949,7 @@
       "name": "ΒΑΣΟΣ ΜΑΤΩΛΗΣ ΛΙΜΙΤΕΔ",
       "address": "Δρόμος προς Δασάκι Άχνας Τ.Κ 7510 τηλ: 24723940",
       "district": "Περιφερειακός Δρόμος Ξυλοτύμπου",
-      "price": 1.808,
+      "price": 1.826,
       "isOffline": false,
       "lat": 35.023449,
       "lng": 33.744123
@@ -1004,7 +1004,7 @@
       "name": "ΚΥΠΡΙΑΝΟΥ & ΠΡΟΚΟΠΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Σπ. Κυπριανού 61 Τ.Κ 4043 τηλ: 25311877",
       "district": "Γερμασόγεια",
-      "price": 1.837,
+      "price": 1.877,
       "isOffline": false,
       "lat": 34.70479,
       "lng": 33.082823
@@ -1071,7 +1071,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.833,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1092,7 +1092,7 @@
       "name": "ΠΑΝΑΓΙΩΤΗΣ ΘΕΟΔΟΣΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Στροβόλου 223 Τ.Κ 2048 τηλ: 22326903",
       "district": "Στρόβολος",
-      "price": 1.825,
+      "price": 1.838,
       "isOffline": false,
       "lat": 35.13313,
       "lng": 33.329338
@@ -1159,7 +1159,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.828,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1191,7 +1191,7 @@
       "name": "S.L. PETROLEUM SERVICES LTD",
       "address": "Αγίας Φυλάξεως 23-25 Τ.Κ 3025 τηλ: 25358282",
       "district": "Λεμεσός",
-      "price": 1.799,
+      "price": 1.823,
       "isOffline": false,
       "lat": 34.681279,
       "lng": 33.038879
@@ -1202,7 +1202,7 @@
       "name": "Α. Ν. & Σ. ΕΥΘΥΜΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Λεμεσού 69 Τ.Κ 2121 τηλ: 22422670",
       "district": "Αγλαντζιά",
-      "price": 1.824,
+      "price": 1.844,
       "isOffline": false,
       "lat": 35.143044,
       "lng": 33.374496
@@ -1279,7 +1279,7 @@
       "name": "ANMAS LTD",
       "address": "Λεωφ. Γρηγόρη Αυξεντίου 154 Τ.Κ 2365 τηλ: 22771034",
       "district": "Άγιος Δομέτιος",
-      "price": 1.819,
+      "price": 1.839,
       "isOffline": false,
       "lat": 35.1723546547892,
       "lng": 33.3232578673897
@@ -1334,7 +1334,7 @@
       "name": "CADREC LTD",
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
-      "price": 1.824,
+      "price": 1.844,
       "isOffline": false,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
@@ -1367,7 +1367,7 @@
       "name": "CHR. PELENDRIDES ENTERPRISES LTD",
       "address": "Αγίας Φυλάξεως 205 Τ.Κ 3083 τηλ: 25386476",
       "district": "Λεμεσός",
-      "price": 1.818,
+      "price": 1.838,
       "isOffline": false,
       "lat": 34.702301022437,
       "lng": 33.0279642974838
@@ -1378,7 +1378,7 @@
       "name": "DEANSON LIMITED",
       "address": "Θεόκριτου 67 Τ.Κ 7600 τηλ: 24522336",
       "district": "Αθιένου",
-      "price": 1.799,
+      "price": 1.839,
       "isOffline": false,
       "lat": 35.0552526086954,
       "lng": 33.5329100466271
@@ -1455,7 +1455,7 @@
       "name": "EWISE RETAIL LTD",
       "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
       "district": "Λευκωσία",
-      "price": 1.779,
+      "price": 1.799,
       "isOffline": false,
       "lat": 35.1668579182817,
       "lng": 33.3703520423279
@@ -1576,7 +1576,7 @@
       "name": "N.P PETROL STATION LTD",
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
-      "price": 1.839,
+      "price": 1.849,
       "isOffline": false,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
@@ -1730,7 +1730,7 @@
       "name": "TSOSACO OIL LIMITED",
       "address": "Λεωφ. Σπ. Χριστοδούλου 42 Τ.Κ 1020 τηλ: 22431925",
       "district": "Παλλουριώτισσα",
-      "price": 1.799,
+      "price": 1.835,
       "isOffline": false,
       "lat": 35.1755856806026,
       "lng": 33.3730663994056
@@ -1774,7 +1774,7 @@
       "name": "ΓΕΝΙΚΑΙ ΕΠΙΧΕΙΡΗΣΕΙΣ \"ΜΑΡΠΙΣΣΑ\" ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Κυριάκου Μάτση 12 Τ.Κ 2368 τηλ: 22355727",
       "district": "Άγιος Δομέτιος",
-      "price": 1.809,
+      "price": 1.839,
       "isOffline": false,
       "lat": 35.1680794501581,
       "lng": 33.331874064418
@@ -1862,7 +1862,7 @@
       "name": "Μ.Κ. ΓΕΝΕΘΛΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Γιάννου Κρανιδιώτη Τ.Κ 3110 τηλ: 25336300",
       "district": "Λεμεσός",
-      "price": 1.827,
+      "price": 1.837,
       "isOffline": false,
       "lat": 34.7043776604692,
       "lng": 33.003317245369
@@ -1972,7 +1972,7 @@
       "name": "KNM CITYOIL LIMITED",
       "address": "Λεωφ. Λάρνακος 184 Τ.Κ 2103 τηλ: 70070062",
       "district": "Αγλαντζιά",
-      "price": 1.729,
+      "price": 1.749,
       "isOffline": false,
       "lat": 35.146412,
       "lng": 33.418324
@@ -1983,7 +1983,7 @@
       "name": "M.G. PETROL SERVICES LTD",
       "address": "Σταδίου 9 (Χαλεπιανές) Τ.Κ 2571 τηλ: 22524580",
       "district": "Πέρα Χωριό Νήσου",
-      "price": 1.729,
+      "price": 1.749,
       "isOffline": false,
       "lat": 35.0533941,
       "lng": 33.3820345
@@ -1994,7 +1994,7 @@
       "name": "JACKOSON ENTERPRISES LIMITED",
       "address": "Δρόμος Παλαιχωρίου - Αγρού Τ.Κ 4860",
       "district": "Αγρός",
-      "price": 1.809,
+      "price": 1.829,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2082,7 +2082,7 @@
       "name": "Eleni Savva",
       "address": "Κώστα Λοϊζου 195 Τ.Κ τηλ: 26812900",
       "district": "Κάτω Πύργος",
-      "price": 1.827,
+      "price": 1.869,
       "isOffline": false,
       "lat": 35.17763,
       "lng": 32.69205
@@ -2258,7 +2258,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Αρχ. Μακαρίου Γ΄ 17 Τ.Κ 2800 τηλ: 22922437",
       "district": "Κακοπετριά",
-      "price": 1.781,
+      "price": 1.804,
       "isOffline": false,
       "lat": 34.991233,
       "lng": 32.902827
@@ -2303,7 +2303,7 @@
       "address": "Κιλκής 1, Πετρολίνα HQ Τ.Κ 6015 τηλ: 24848034",
       "district": "Λάρνακα",
       "price": 1.828,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.92283333,
       "lng": 33.6335
     },
@@ -2336,7 +2336,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.826,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2478,7 +2478,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Ευαγόρα Παλληκαρίδη 105 Τ.Κ 8010 τηλ: 26932185",
       "district": "Πάφος",
-      "price": 1.828,
+      "price": 1.848,
       "isOffline": false,
       "lat": 34.7798,
       "lng": 32.4248
@@ -2489,7 +2489,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Λεώφ. Αγίου Γεωργίου Τ.Κ 8560 τηλ: 26622612",
       "district": "Πέγεια",
-      "price": 1.828,
+      "price": 1.849,
       "isOffline": false,
       "lat": 34.87136,
       "lng": 32.36097
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.788,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2545,7 +2545,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.828,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2688,7 +2688,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.849,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2698,7 +2698,7 @@
       "name": "ΑΝΔΡΕΑΣ ΖΑΧΑΡΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ.Τιμίου Προδρόμου 44 Τ.Κ 7020 τηλ: 24426868",
       "district": "Δρομολαξιά",
-      "price": 1.838,
+      "price": 1.823,
       "isOffline": false,
       "lat": 34.876254,
       "lng": 33.595478
@@ -2841,7 +2841,7 @@
       "name": "ΠΑΝΑΓΙΩΤΗΣ ΠΕΓΛΙΤΣΗΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
       "address": "Κολωνακίου 27 Τ.Κ 4103 τηλ: 25322880",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.808,
+      "price": 1.828,
       "isOffline": false,
       "lat": 34.69845,
       "lng": 33.072361
@@ -2863,7 +2863,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.804,
+      "price": 1.812,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -2995,7 +2995,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Θεσσαλονίκης 16 Τ.Κ 3025 τηλ: 25584639",
       "district": "Λεμεσός",
-      "price": 1.819,
+      "price": 1.825,
       "isOffline": false,
       "lat": 34.681925,
       "lng": 33.041939
@@ -3106,7 +3106,7 @@
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
       "price": 1.837,
-      "isOffline": true,
+      "isOffline": false,
       "lat": null,
       "lng": null
     },
@@ -3193,7 +3193,7 @@
       "name": "OMNI FUEL POINT LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 49 Τ.Κ 1065 τηλ: 22753252",
       "district": "Λευκωσία",
-      "price": 1.839,
+      "price": 1.824,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3314,7 +3314,7 @@
       "name": "ΣΟΦΟΚΛΗΣ ΣΟΦΟΚΛΕΟΥΣ",
       "address": "Πουλίου και Καποτά 6 Τ.Κ 1035 τηλ: 22349984",
       "district": "Παλλουριώτισσα",
-      "price": 1.759,
+      "price": 1.839,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3347,7 +3347,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεώφ. Μητροπολίτη Χρύσανθου Σαριγιάννη 110 Τ.Κ 2831 τηλ: 22575173",
       "district": "Ευρύχου",
-      "price": 1.812,
+      "price": 1.814,
       "isOffline": false,
       "lat": 35.05938888888888,
       "lng": 32.91291666666667
