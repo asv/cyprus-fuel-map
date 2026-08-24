@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-23T18:50:30.702Z",
+  "fetchedAt": "2026-08-24T01:59:34.252Z",
   "avgPrice": 1.823,
   "minPrice": 1.725,
   "maxPrice": 1.898,
@@ -80,7 +80,7 @@
       "name": "J.K PETROL STATION AND CARWASH LTD",
       "address": "Δημοκρατίας 91 Τ.Κ 8028 τηλ: 26221190",
       "district": "Πάφος",
-      "price": 1.857,
+      "price": 1.869,
       "isOffline": false,
       "lat": 34.781441,
       "lng": 32.444345

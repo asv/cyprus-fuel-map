@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-23T18:50:57.348Z",
+  "generatedAt": "2026-08-24T02:00:01.198Z",
   "city": "All",
   "fuels": [
     {
@@ -31,7 +31,7 @@
       "fuel": "3",
       "fuelName": "Diesel",
       "path": "data/stations-3.json",
-      "fetchedAt": "2026-08-23T18:50:30.702Z",
+      "fetchedAt": "2026-08-24T01:59:34.252Z",
       "stationCount": 317,
       "mappedStationCount": 287,
       "avgPrice": 1.823,
