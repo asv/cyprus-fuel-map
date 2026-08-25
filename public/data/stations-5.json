@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-25T07:11:05.806Z",
+  "fetchedAt": "2026-08-25T13:14:05.410Z",
   "avgPrice": 1.374,
   "minPrice": 1.169,
   "maxPrice": 1.513,
@@ -279,7 +279,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.358,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -614,17 +614,6 @@
       "lng": 33.387661
     },
     {
-      "id": "89f380d21829f5c8",
-      "brand": "EKO",
-      "name": "R.A.M. OIL CYPRUS LIMITED",
-      "address": "Λεωφ. Σπ. Χριστοδούλου 47 Τ.Κ 1020 τηλ: 22344500",
-      "district": "Παλλουριώτισσα",
-      "price": 1.358,
-      "isOffline": false,
-      "lat": 35.175612,
-      "lng": 33.373034
-    },
-    {
       "id": "cc98d8946a1a4375",
       "brand": "EKO",
       "name": "R.A.M. OIL CYPRUS LIMITED",
@@ -697,7 +686,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.358,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -1005,7 +994,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.448,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1675,7 +1664,7 @@
       "name": "ΑΝΤΩΝΑΚΗΣ ΚΟΥΡΡΗΣ & ΥΙΟΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 50 Τ.Κ 5350 τηλ: 23821472",
       "district": "Φρέναρος",
-      "price": 1.379,
+      "price": 1.389,
       "isOffline": false,
       "lat": 35.0461658674545,
       "lng": 33.9290050382369

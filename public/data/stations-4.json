@@ -3,8 +3,8 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-25T07:10:52.163Z",
-  "avgPrice": 1.465,
+  "fetchedAt": "2026-08-25T13:13:51.943Z",
+  "avgPrice": 1.466,
   "minPrice": 1.305,
   "maxPrice": 1.585,
   "stations": [
@@ -290,7 +290,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.45,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -625,17 +625,6 @@
       "lng": 33.387661
     },
     {
-      "id": "89f380d21829f5c8",
-      "brand": "EKO",
-      "name": "R.A.M. OIL CYPRUS LIMITED",
-      "address": "Λεωφ. Σπ. Χριστοδούλου 47 Τ.Κ 1020 τηλ: 22344500",
-      "district": "Παλλουριώτισσα",
-      "price": 1.45,
-      "isOffline": false,
-      "lat": 35.175612,
-      "lng": 33.373034
-    },
-    {
       "id": "cc98d8946a1a4375",
       "brand": "EKO",
       "name": "R.A.M. OIL CYPRUS LIMITED",
@@ -708,7 +697,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.45,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -1049,7 +1038,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.499,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1730,7 +1719,7 @@
       "name": "ΑΝΤΩΝΑΚΗΣ ΚΟΥΡΡΗΣ & ΥΙΟΣ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 50 Τ.Κ 5350 τηλ: 23821472",
       "district": "Φρέναρος",
-      "price": 1.469,
+      "price": 1.479,
       "isOffline": false,
       "lat": 35.0461658674545,
       "lng": 33.9290050382369
@@ -3050,7 +3039,7 @@
       "name": "N.P.M. GABRIEL LIMITED",
       "address": "Ηλία Καννάουρου 64 Τ.Κ 4188 τηλ: 25714801",
       "district": "Ύψωνας",
-      "price": 1.445,
+      "price": 1.499,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3160,7 +3149,7 @@
       "name": "ΠΑΥΛΟΣ ΔΙΑΚΟΣ & ΥΙΟΙ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου Ακάκι Τ.Κ 2720 τηλ: 22821452",
       "district": "Ακάκι",
-      "price": 1.455,
+      "price": 1.479,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3270,7 +3259,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
-      "price": 1.417,
+      "price": 1.427,
       "isOffline": false,
       "lat": 34.753826,
       "lng": 32.962765

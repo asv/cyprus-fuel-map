@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-25T07:10:24.480Z",
+  "fetchedAt": "2026-08-25T13:13:24.279Z",
   "avgPrice": 1.66,
   "minPrice": 1.554,
   "maxPrice": 1.859,
@@ -290,7 +290,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.639,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -625,17 +625,6 @@
       "lng": 33.387661
     },
     {
-      "id": "89f380d21829f5c8",
-      "brand": "EKO",
-      "name": "R.A.M. OIL CYPRUS LIMITED",
-      "address": "Λεωφ. Σπ. Χριστοδούλου 47 Τ.Κ 1020 τηλ: 22344500",
-      "district": "Παλλουριώτισσα",
-      "price": 1.589,
-      "isOffline": false,
-      "lat": 35.175612,
-      "lng": 33.373034
-    },
-    {
       "id": "cc98d8946a1a4375",
       "brand": "EKO",
       "name": "R.A.M. OIL CYPRUS LIMITED",
@@ -708,7 +697,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.639,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -1049,7 +1038,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.659,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -2830,7 +2819,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.684,
+      "price": 1.683,
       "isOffline": false,
       "lat": null,
       "lng": null

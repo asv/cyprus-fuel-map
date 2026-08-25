@@ -22625,6 +22625,36 @@
       "isOffline": false,
       "price": 1.609,
       "stationKey": "station_fd8d2f8ddb048471"
+    },
+    {
+      "at": "2026-08-25T13:13:10.447Z",
+      "isOffline": true,
+      "price": 1.589,
+      "stationKey": "station_09b1d2feb7df9ebc"
+    },
+    {
+      "at": "2026-08-25T13:13:10.447Z",
+      "isOffline": true,
+      "price": 1.619,
+      "stationKey": "station_a4d84c6b7edc202d"
+    },
+    {
+      "at": "2026-08-25T13:13:10.447Z",
+      "isOffline": false,
+      "price": 1.574,
+      "stationKey": "station_c5b71a7754ca60b6"
+    },
+    {
+      "at": "2026-08-25T13:13:10.447Z",
+      "isOffline": true,
+      "price": 1.597,
+      "stationKey": "station_c7adf5ce5b0320c9"
+    },
+    {
+      "at": "2026-08-25T13:13:10.447Z",
+      "isOffline": false,
+      "price": 1.582,
+      "stationKey": "station_d5b7ecd1dfbb91fd"
     }
   ],
   "fuel": "1",
