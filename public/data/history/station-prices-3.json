@@ -28133,6 +28133,18 @@
       "isOffline": false,
       "price": 1.835,
       "stationKey": "station_fd7375753a390070"
+    },
+    {
+      "at": "2026-08-25T01:54:27.882Z",
+      "isOffline": false,
+      "price": 1.819,
+      "stationKey": "station_9f833ed9647924ec"
+    },
+    {
+      "at": "2026-08-25T01:54:27.882Z",
+      "isOffline": false,
+      "price": 1.863,
+      "stationKey": "station_c54ebfd89bbee489"
     }
   ],
   "fuel": "3",
