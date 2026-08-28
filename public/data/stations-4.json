@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-28T11:28:34.375Z",
+  "fetchedAt": "2026-08-28T22:24:21.114Z",
   "avgPrice": 1.467,
   "minPrice": 1.305,
   "maxPrice": 1.585,
@@ -1126,7 +1126,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.479,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1874,7 +1874,7 @@
       "address": "14ος Δρόμος 40 Τ.Κ 4620 τηλ: 25932671",
       "district": "Επισκοπή",
       "price": 1.489,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.6675050830376,
       "lng": 32.9093575055572
     },
@@ -2259,7 +2259,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.479,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2435,7 +2435,7 @@
       "address": "Λεωφ. Λεμεσού, Νήσου Τ.Κ 2571 τηλ: 22489548",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.469,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0424,
       "lng": 33.387107
     },
@@ -2468,7 +2468,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 42 Τ.Κ 5281 τηλ: 23730635",
       "district": "Παραλίμνι",
       "price": 1.479,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.04151667,
       "lng": 33.98011667
     },
@@ -2512,7 +2512,7 @@
       "address": "Λεωφ. Στροβόλου 279 Τ.Κ 2048 τηλ: 22326064",
       "district": "Στρόβολος",
       "price": 1.479,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.128309,
       "lng": 33.325049
     },
@@ -2622,7 +2622,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.549,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
