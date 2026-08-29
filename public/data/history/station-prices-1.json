@@ -24269,6 +24269,12 @@
       "isOffline": true,
       "price": 1.583,
       "stationKey": "station_f840331b5710e464"
+    },
+    {
+      "at": "2026-08-29T20:57:23.826Z",
+      "isOffline": true,
+      "price": 1.599,
+      "stationKey": "station_0cf330d35d6131c2"
     }
   ],
   "fuel": "1",
