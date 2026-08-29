@@ -25463,6 +25463,120 @@
       "isOffline": false,
       "price": 1.745,
       "stationKey": "station_dd7128ea03e8c20f"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.645,
+      "stationKey": "station_09b1d2feb7df9ebc"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.699,
+      "stationKey": "station_23bb2fb1d309cc31"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.636,
+      "stationKey": "station_23d5d9b6fe436d9d"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.636,
+      "stationKey": "station_3ba701e8c82cf7cb"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.709,
+      "stationKey": "station_756c5735c2cf0216"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.649,
+      "stationKey": "station_77144c99913e8d3c"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.636,
+      "stationKey": "station_81cddde47c16d65a"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.645,
+      "stationKey": "station_884f3e483b24413b"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.635,
+      "stationKey": "station_8c6d9789c36c06fd"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.636,
+      "stationKey": "station_8fcbe6d21c9de97c"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.642,
+      "stationKey": "station_9975fe1af4b57365"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": false,
+      "price": 1.645,
+      "stationKey": "station_99bae61ebc0d980d"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.649,
+      "stationKey": "station_a0ddc50832276137"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.659,
+      "stationKey": "station_a4d84c6b7edc202d"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.659,
+      "stationKey": "station_c3165a13c9a1be9e"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.645,
+      "stationKey": "station_c7adf5ce5b0320c9"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.619,
+      "stationKey": "station_e16fee582d3c3aa9"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.615,
+      "stationKey": "station_e3fa601590fd0276"
+    },
+    {
+      "at": "2026-08-29T16:45:23.150Z",
+      "isOffline": true,
+      "price": 1.635,
+      "stationKey": "station_f840331b5710e464"
     }
   ],
   "fuel": "2",
