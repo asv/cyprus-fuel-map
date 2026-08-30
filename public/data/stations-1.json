@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-30T11:57:46.653Z",
+  "fetchedAt": "2026-08-30T16:43:27.958Z",
   "avgPrice": 1.601,
   "minPrice": 1.535,
   "maxPrice": 1.685,
@@ -3337,7 +3337,7 @@
       "address": "Ακανθούς 4, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22575112",
       "district": "Δευτερά",
       "price": 1.582,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.090188221784366,
       "lng": 33.26715483191825
     },
@@ -3370,7 +3370,7 @@
       "address": "Λεωφ. Αγίου Γεωργίου 107 Τ.Κ 2304 τηλ: 22371550",
       "district": "Λακατάμεια",
       "price": 1.582,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.11461111111111,
       "lng": 33.28791666666667
     },
@@ -3403,7 +3403,7 @@
       "address": "Δημοκρατίας 40 Τ.Κ 3012 τηλ: 25370503",
       "district": "Λεμεσός",
       "price": 1.583,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.66911111111111,
       "lng": 33.02386111111111
     },
@@ -3414,7 +3414,7 @@
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
       "price": 1.583,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.753826,
       "lng": 32.962765
     },
@@ -3425,7 +3425,7 @@
       "address": "Γρηγόρη Αυξεντίου 29, Πέρα Ορεινής Τ.Κ 2650 τηλ: 22621264",
       "district": "Πέρα Ορεινής",
       "price": 1.582,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.04547222222222,
       "lng": 33.25463888888889
     },
@@ -3436,7 +3436,7 @@
       "address": "Μεγάλου Αλεξάνδρου 46, Παλιομέτοχο Τ.Κ 2682 τηλ: 22832066",
       "district": "Παλιομέτοχο",
       "price": 1.582,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.137166666666666,
       "lng": 33.21402777777778
     },
