@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-08-30T05:28:16.071Z",
+  "fetchedAt": "2026-08-30T11:58:00.486Z",
   "avgPrice": 1.665,
   "minPrice": 1.554,
   "maxPrice": 1.859,
@@ -290,7 +290,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.645,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -697,7 +697,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.645,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -1038,7 +1038,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.659,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1291,7 +1291,7 @@
       "address": "Στροβόλου 19 Τ.Κ 2480 τηλ: 22385359",
       "district": "Τσέρι",
       "price": 1.658,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0787361111111,
       "lng": 33.3254490740741
     },
@@ -1544,7 +1544,7 @@
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
       "price": 1.659,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
     },
@@ -1588,7 +1588,7 @@
       "address": "Φρ. Ρούσβελτ 263 Τ.Κ 3046 τηλ: 25713540",
       "district": "Λεμεσός",
       "price": 1.679,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.6575143350589,
       "lng": 33.0002166319466
     },
@@ -1643,7 +1643,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 26 Τ.Κ 4003 τηλ: 25752200",
       "district": "Μέσα Γειτονιά",
       "price": 1.667,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.6979547037033,
       "lng": 33.0435229086677
     },
@@ -1654,7 +1654,7 @@
       "address": "Ελευθερίας 28 Τ.Κ 2566 τηλ: 22521825",
       "district": "Λύμπια",
       "price": 1.637,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.9981508168812,
       "lng": 33.4547390932541
     },
@@ -1797,7 +1797,7 @@
       "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
       "district": "Λατσιά",
       "price": 1.647,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0976900488074,
       "lng": 33.3792905141556
     },
@@ -1808,7 +1808,7 @@
       "address": "1ης Απριλίου 165 Τ.Κ 5280 τηλ: 23822600",
       "district": "Παραλίμνι",
       "price": 1.659,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0226158167266,
       "lng": 33.9849366847252
     },
@@ -1874,7 +1874,7 @@
       "address": "Ελευθερίας 1 Τ.Κ 8550 τηλ: 26632440",
       "district": "Στρουμπί",
       "price": 1.699,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.8767212796671,
       "lng": 32.4822636908074
     },
@@ -2072,7 +2072,7 @@
       "address": "Γρηγόρη Αυξεντίου 30 Τ.Κ 2368 τηλ: 22775117",
       "district": "Άγιος Δομέτιος",
       "price": 1.67,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.17131667,
       "lng": 33.3369
     },
@@ -2699,7 +2699,7 @@
       "address": "Λεωφ. Λάρνακος 5 Τ.Κ 1035 τηλ: 22349326",
       "district": "Λευκωσία",
       "price": 1.615,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1727,
       "lng": 33.3726
     },
