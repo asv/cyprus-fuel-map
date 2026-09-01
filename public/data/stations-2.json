@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-01T11:42:40.216Z",
+  "fetchedAt": "2026-09-01T16:42:37.299Z",
   "avgPrice": 1.666,
   "minPrice": 1.589,
   "maxPrice": 1.789,
@@ -675,7 +675,7 @@
       "address": "Καλαμών 21 Τ.Κ 2032 τηλ: 22570720",
       "district": "Στρόβολος",
       "price": 1.645,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.124269,
       "lng": 33.372145
     },
@@ -1126,7 +1126,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.649,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1796,7 +1796,7 @@
       "name": "ΛΕΟΝΤΙΟΣ ΙΕΡΟΔΙΑΚΟΝΟΥ ΛΙΜΙΤΕΔ",
       "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
       "district": "Λατσιά",
-      "price": 1.619,
+      "price": 1.637,
       "isOffline": false,
       "lat": 35.0976900488074,
       "lng": 33.3792905141556
@@ -2093,7 +2093,7 @@
       "name": "MICHALIS KNEKNAS TRADING LTD",
       "address": "Γρηγόρη Αυξεντίου 76, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22834160",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.636,
+      "price": 1.645,
       "isOffline": false,
       "lat": 35.148666,
       "lng": 33.212235
@@ -2281,7 +2281,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.645,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2644,7 +2644,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.709,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },

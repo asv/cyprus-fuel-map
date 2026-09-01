@@ -3,8 +3,8 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-01T11:42:57.682Z",
-  "avgPrice": 1.856,
+  "fetchedAt": "2026-09-01T16:42:51.442Z",
+  "avgPrice": 1.857,
   "minPrice": 1.777,
   "maxPrice": 1.938,
   "stations": [
@@ -697,7 +697,7 @@
       "address": "Καλαμών 21 Τ.Κ 2032 τηλ: 22570720",
       "district": "Στρόβολος",
       "price": 1.859,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.124269,
       "lng": 33.372145
     },
@@ -1148,7 +1148,7 @@
       "address": "Λεωφ. Αμμοχώστου (Δρόμος Λάρνακας-Δεκέλειας) Τ.Κ 6019 τηλ: 24632200",
       "district": "Δρόμος Λάρνακας - Δεκέλειας",
       "price": 1.858,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.95398333,
       "lng": 33.65163333
     },
@@ -1818,7 +1818,7 @@
       "name": "ΛΕΟΝΤΙΟΣ ΙΕΡΟΔΙΑΚΟΝΟΥ ΛΙΜΙΤΕΔ",
       "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
       "district": "Λατσιά",
-      "price": 1.818,
+      "price": 1.838,
       "isOffline": false,
       "lat": 35.0976900488074,
       "lng": 33.3792905141556
@@ -2126,7 +2126,7 @@
       "name": "MICHALIS KNEKNAS TRADING LTD",
       "address": "Γρηγόρη Αυξεντίου 76, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22834160",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.838,
+      "price": 1.858,
       "isOffline": false,
       "lat": 35.148666,
       "lng": 33.212235
@@ -2314,7 +2314,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 66-68 Τ.Κ 6057 τηλ: 24661452",
       "district": "Λάρνακα",
       "price": 1.858,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.93068333,
       "lng": 33.62813333
     },
@@ -2677,7 +2677,7 @@
       "address": "Δρόμος Ζυγίου-Μαζωτού Τ.Κ 7577 τηλ: 24432650",
       "district": "Μαζωτός",
       "price": 1.869,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.80268333,
       "lng": 33.51053333
     },
@@ -2775,7 +2775,7 @@
       "name": "ΚΩΣΤΑΣ ΣΩΤΗΡΙΟΥ & ΥΙΟΣ (ΣΤΑΘΜΟΣ ΒΕΝΖΙΝΗΣ) ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 16 Τ.Κ 6010 τηλ: 24652402",
       "district": "Λάρνακα",
-      "price": 1.859,
+      "price": 1.879,
       "isOffline": false,
       "lat": 34.91798333,
       "lng": 33.62123333
@@ -3314,7 +3314,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Καρύων 17 Τ.Κ 5510 τηλ: 23922182",
       "district": "Αυγόρου",
-      "price": 1.841,
+      "price": 1.842,
       "isOffline": false,
       "lat": 35.04402777777778,
       "lng": 33.840444444444444
