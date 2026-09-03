@@ -3,8 +3,8 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-03T04:37:58.023Z",
-  "avgPrice": 1.385,
+  "fetchedAt": "2026-09-03T11:20:08.523Z",
+  "avgPrice": 1.386,
   "minPrice": 1.222,
   "maxPrice": 1.587,
   "stations": [
@@ -949,7 +949,7 @@
       "name": "ΚΥΠΡΙΑΝΟΥ & ΠΡΟΚΟΠΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Σπ. Κυπριανού 61 Τ.Κ 4043 τηλ: 25311877",
       "district": "Γερμασόγεια",
-      "price": 1.398,
+      "price": 1.485,
       "isOffline": false,
       "lat": 34.70479,
       "lng": 33.082823
@@ -1027,7 +1027,7 @@
       "address": "Λεωφ. Νίκης 25 Τ.Κ 1086 τηλ: 22490521",
       "district": "Ακρόπολη",
       "price": 1.368,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1579,
       "lng": 33.358068
     },
@@ -1191,7 +1191,7 @@
       "name": "ANGIO TRADING LIMITED",
       "address": "Λεωφ. Νίκης 37 Τ.Κ 1087 τηλ: 22490810",
       "district": "Ακρόπολη",
-      "price": 1.36,
+      "price": 1.39,
       "isOffline": false,
       "lat": 35.1565679511699,
       "lng": 33.3580602362457
@@ -1268,7 +1268,7 @@
       "name": "CC CRUDE ENERGY LTD",
       "address": "Λεωφ. Στροβόλου 278 Τ.Κ 2048 τηλ: 22322441",
       "district": "Στρόβολος",
-      "price": 1.349,
+      "price": 1.399,
       "isOffline": false,
       "lat": 35.1287232428282,
       "lng": 33.324758841803
@@ -1477,7 +1477,7 @@
       "name": "N.P PETROL STATION LTD",
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
-      "price": 1.389,
+      "price": 1.399,
       "isOffline": false,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
@@ -1532,7 +1532,7 @@
       "name": "SOFT \"N\" FOAMY CAR WASH LIMITED",
       "address": "Λεωφ. Αρχ. Μιχαήλ 37 (Παρισσινός) Τ.Κ 2057 τηλ: 22352414",
       "district": "Στρόβολος",
-      "price": 1.359,
+      "price": 1.439,
       "isOffline": false,
       "lat": 35.155440807824,
       "lng": 33.3337053472214
@@ -1598,7 +1598,7 @@
       "name": "TRIKENO LTD",
       "address": "Λεωφ.Γ.Γρίβα Διγενή 43 Τ.Κ 6045 τηλ: 24652200",
       "district": "Λάρνακα",
-      "price": 1.359,
+      "price": 1.385,
       "isOffline": false,
       "lat": 34.9187491493678,
       "lng": 33.6186334558197
@@ -2038,7 +2038,7 @@
       "name": "NIGHTGARDEN LTD",
       "address": "Αρσινόης & Αρχ. Μακαρίου Γ΄ 32 Τ.Κ 8830 τηλ: 26321331",
       "district": "Πόλης Χρυσοχούς",
-      "price": 1.358,
+      "price": 1.51,
       "isOffline": false,
       "lat": 35.035702,
       "lng": 32.427888
@@ -2988,6 +2988,17 @@
       "isOffline": false,
       "lat": 34.753826,
       "lng": 32.962765
+    },
+    {
+      "id": "5e852962b709fd52",
+      "brand": "STAROIL",
+      "name": "STAROIL (CYPRUS) LTD",
+      "address": "Έξοδος αυτοκινητοδρόμου προς Λιοπέτρι (δρόμος Ε309) Τ.Κ 5330 τηλ: 23833170",
+      "district": "Λιοπέτρι",
+      "price": 1.344,
+      "isOffline": false,
+      "lat": 34.982888888888894,
+      "lng": 33.89502777777778
     },
     {
       "id": "23d5d9b6fe436d9d",
