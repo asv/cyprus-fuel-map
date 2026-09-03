@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-03T11:20:08.523Z",
+  "fetchedAt": "2026-09-03T16:29:16.877Z",
   "avgPrice": 1.386,
   "minPrice": 1.222,
   "maxPrice": 1.587,
@@ -1125,7 +1125,7 @@
       "name": "Α. Ν. & Σ. ΕΥΘΥΜΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Λεμεσού 69 Τ.Κ 2121 τηλ: 22422670",
       "district": "Αγλαντζιά",
-      "price": 1.4,
+      "price": 1.42,
       "isOffline": false,
       "lat": 35.143044,
       "lng": 33.374496
@@ -1257,7 +1257,7 @@
       "name": "CADREC LTD",
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
-      "price": 1.4,
+      "price": 1.42,
       "isOffline": false,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
@@ -1741,7 +1741,7 @@
       "name": "Μ.Α.Ν.Ι. ΠΑΝΑΓΙΩΤΟΥ ΛΤΔ",
       "address": "Γιάννου Κρανιδιώτη 34 Τ.Κ 6051 τηλ: 24668111",
       "district": "Λάρνακα",
-      "price": 1.389,
+      "price": 1.399,
       "isOffline": false,
       "lat": 34.9255425378298,
       "lng": 33.6158680546311

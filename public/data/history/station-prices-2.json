@@ -28631,6 +28631,84 @@
       "isOffline": false,
       "price": 1.679,
       "stationKey": "station_fd5bf19426dc6fd8"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.775,
+      "stationKey": "station_259b68326cfb2d5c"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.667,
+      "stationKey": "station_2b8a8302bfb0a311"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.667,
+      "stationKey": "station_509d1a0c848bb24a"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.655,
+      "stationKey": "station_5e852962b709fd52"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.705,
+      "stationKey": "station_7a64d2da7f7d100e"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.642,
+      "stationKey": "station_827afeb5883d8011"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.659,
+      "stationKey": "station_87e0110e1d3b6fda"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.679,
+      "stationKey": "station_8b68e77c2a8f52a5"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.769,
+      "stationKey": "station_a17c87986a7bd888"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.637,
+      "stationKey": "station_a98fb390abf984da"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.775,
+      "stationKey": "station_af6fc589aff28c37"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.675,
+      "stationKey": "station_b6a3d89e1b765ddb"
+    },
+    {
+      "at": "2026-09-03T16:28:34.807Z",
+      "isOffline": false,
+      "price": 1.705,
+      "stationKey": "station_ed69aae17760c5be"
     }
   ],
   "fuel": "2",
