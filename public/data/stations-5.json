@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-04T11:23:10.402Z",
+  "fetchedAt": "2026-09-04T16:25:24.419Z",
   "avgPrice": 1.389,
   "minPrice": 1.222,
   "maxPrice": 1.587,
@@ -279,7 +279,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -1092,7 +1092,7 @@
       "name": "P. DIOGENOUS PETROL STATION LTD",
       "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
       "district": "Μεσόγη",
-      "price": 1.428,
+      "price": 1.448,
       "isOffline": false,
       "lat": 34.805,
       "lng": 32.44541667
@@ -1147,7 +1147,7 @@
       "name": "ΝΙΚΟΣ & ΜΑΡΚΟΣ ΠΙΤΤΑΚΗΣ",
       "address": "1ης Απριλίου 237 Τ.Κ 5280 τηλ: 23821328",
       "district": "Παραλίμνι",
-      "price": 1.428,
+      "price": 1.457,
       "isOffline": false,
       "lat": 35.0269,
       "lng": 33.98285
@@ -1774,7 +1774,7 @@
       "name": "ΝΙΚΟΣ Χ. ΠΙΕΡΙΔΗΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου, Ακάκι Τ.Κ 2720 τηλ: 22821449",
       "district": "Ακάκι",
-      "price": 1.399,
+      "price": 1.409,
       "isOffline": false,
       "lat": 35.1370534076704,
       "lng": 33.1417384202377
@@ -2467,7 +2467,7 @@
       "name": "Z. ΖΗΝΩΝΟΣ & ΥΙΟΙ ΛΤΔ",
       "address": "Διονυσίου Σολωμού 3 Τ.Κ 7741 τηλ: 24817478",
       "district": "Χοιροκιτία",
-      "price": 1.411,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.795864,
       "lng": 33.346365

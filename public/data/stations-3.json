@@ -3,10 +3,10 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-04T11:22:42.834Z",
+  "fetchedAt": "2026-09-04T16:24:57.376Z",
   "avgPrice": 1.875,
   "minPrice": 1.795,
-  "maxPrice": 1.939,
+  "maxPrice": 1.989,
   "stations": [
     {
       "id": "30328eae8837f4da",
@@ -312,7 +312,7 @@
       "address": "Λεωφ. Αρχ.Μακαρίου Γ' 158 Τ.Κ 5380 τηλ: 23828512",
       "district": "Δερύνεια",
       "price": 1.868,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.055028,
       "lng": 33.942739
     },
@@ -1202,7 +1202,7 @@
       "name": "Κ. ΜΑΡΜΑΡΑΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΙΜΙΤΕΔ",
       "address": "Τάφοι των Βασιλέων 108 Τ.Κ 8015 τηλ: 26932429",
       "district": "Τάφοι των Βασιλέων",
-      "price": 1.879,
+      "price": 1.909,
       "isOffline": false,
       "lat": 34.7839,
       "lng": 32.406
@@ -1213,7 +1213,7 @@
       "name": "ΝΙΚΟΣ & ΜΑΡΚΟΣ ΠΙΤΤΑΚΗΣ",
       "address": "1ης Απριλίου 237 Τ.Κ 5280 τηλ: 23821328",
       "district": "Παραλίμνι",
-      "price": 1.879,
+      "price": 1.909,
       "isOffline": false,
       "lat": 35.0269,
       "lng": 33.98285
@@ -1433,7 +1433,7 @@
       "name": "EUROORBIT LIMITED",
       "address": "Λεωφ. Γρηγόρη Αυξεντίου 29, Πάνω Δευτερά Τ.Κ 2460 τηλ: 22622222",
       "district": "Δευτερά",
-      "price": 1.856,
+      "price": 1.865,
       "isOffline": false,
       "lat": 35.081014,
       "lng": 33.273498
@@ -1532,7 +1532,7 @@
       "name": "LINERIA SERVICES LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 80 Τ.Κ 8221 τηλ: 26271020",
       "district": "Χλώρακα",
-      "price": 1.889,
+      "price": 1.899,
       "isOffline": false,
       "lat": 34.8018981481481,
       "lng": 32.4133842592593
@@ -1741,7 +1741,7 @@
       "name": "ΑΝΔΡΕΑΣ & ΚΩΣΤΑΣ ΙΩΑΝΝΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Στροβόλου 37 Τ.Κ 2018 τηλ: 22421248",
       "district": "Στρόβολος",
-      "price": 1.838,
+      "price": 1.848,
       "isOffline": false,
       "lat": 35.1487856870168,
       "lng": 33.346567328836
@@ -1829,7 +1829,7 @@
       "name": "ΛΕΥΤΕΡΗΣ ΚΑΜΗΛΑΡΗΣ (ΕΠΙΧΕΙΡΗΣΕΙΣ) ΛΙΜΙΤΕΔ",
       "address": "1ης Απριλίου 165 Τ.Κ 5280 τηλ: 23822600",
       "district": "Παραλίμνι",
-      "price": 1.879,
+      "price": 1.889,
       "isOffline": false,
       "lat": 35.0226158167266,
       "lng": 33.9849366847252
@@ -1873,7 +1873,7 @@
       "name": "ΝΙΚΟΣ Χ. ΠΙΕΡΙΔΗΣ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου, Ακάκι Τ.Κ 2720 τηλ: 22821449",
       "district": "Ακάκι",
-      "price": 1.878,
+      "price": 1.888,
       "isOffline": false,
       "lat": 35.1370534076704,
       "lng": 33.1417384202377
@@ -2621,7 +2621,7 @@
       "name": "Z. ΖΗΝΩΝΟΣ & ΥΙΟΙ ΛΤΔ",
       "address": "Διονυσίου Σολωμού 3 Τ.Κ 7741 τηλ: 24817478",
       "district": "Χοιροκιτία",
-      "price": 1.879,
+      "price": 1.909,
       "isOffline": false,
       "lat": 34.795864,
       "lng": 33.346365
@@ -2632,7 +2632,7 @@
       "name": "Α. ΑΡΓΥΡΟΥ ΠΡΑΤΗΡΙΟ ΒΕΝΖΙΝΗΣ ΛΤΔ",
       "address": "Προμαχών Ελευθερίας 17 Τ.Κ 4103 τηλ: 25324122",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.938,
+      "price": 1.989,
       "isOffline": false,
       "lat": 34.6901,
       "lng": 33.0733
@@ -2907,7 +2907,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Αμμοχώστου 58 Τ.Κ 5380 τηλ: 23821431",
       "district": "Δερύνεια",
-      "price": 1.878,
+      "price": 1.867,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3028,7 +3028,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Ευαγόρα Παλληκαρίδη 10 Τ.Κ 8010 τηλ: 26932494",
       "district": "Πάφος",
-      "price": 1.887,
+      "price": 1.898,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3358,7 +3358,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Αγίου Γεωργίου 107 Τ.Κ 2304 τηλ: 22371550",
       "district": "Λακατάμεια",
-      "price": 1.856,
+      "price": 1.865,
       "isOffline": false,
       "lat": 35.11461111111111,
       "lng": 33.28791666666667
