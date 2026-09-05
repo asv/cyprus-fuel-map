@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-05T04:35:19.658Z",
+  "fetchedAt": "2026-09-05T10:40:21.472Z",
   "avgPrice": 1.39,
   "minPrice": 1.222,
   "maxPrice": 1.534,
@@ -422,7 +422,7 @@
       "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
       "district": "Λακατάμεια",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.110876,
       "lng": 33.309251
     },
@@ -1247,7 +1247,7 @@
       "address": "Στροβόλου 19 Τ.Κ 2480 τηλ: 22385359",
       "district": "Τσέρι",
       "price": 1.408,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0787361111111,
       "lng": 33.3254490740741
     },
@@ -1258,7 +1258,7 @@
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
       "price": 1.42,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
     },
@@ -1478,7 +1478,7 @@
       "address": "Πάφου 21 Τ.Κ 3052 τηλ: 25562279",
       "district": "Λεμεσός",
       "price": 1.409,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.6744035108073,
       "lng": 33.013875861377
     },
@@ -1522,7 +1522,7 @@
       "address": "Φρ. Ρούσβελτ 263 Τ.Κ 3046 τηλ: 25713540",
       "district": "Λεμεσός",
       "price": 1.389,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.6575143350589,
       "lng": 33.0002166319466
     },
@@ -1533,7 +1533,7 @@
       "address": "Λεωφ. Αρχ. Μιχαήλ 37 (Παρισσινός) Τ.Κ 2057 τηλ: 22352414",
       "district": "Στρόβολος",
       "price": 1.439,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.155440807824,
       "lng": 33.3337053472214
     },
@@ -1588,7 +1588,7 @@
       "address": "Ελευθερίας 28 Τ.Κ 2566 τηλ: 22521825",
       "district": "Λύμπια",
       "price": 1.399,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.9981508168812,
       "lng": 33.4547390932541
     },
@@ -1610,7 +1610,7 @@
       "address": "Λεωφ. Γ.Γρίβα Διγενή 31-35 Τ.Κ 1082 τηλ: 22761100",
       "district": "Λευκωσία",
       "price": 1.399,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1628065376475,
       "lng": 33.3572777748687
     },
@@ -1731,7 +1731,7 @@
       "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
       "district": "Λατσιά",
       "price": 1.378,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0976900488074,
       "lng": 33.3792905141556
     },
@@ -1786,7 +1786,7 @@
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 65 Τ.Κ 1070 τηλ: 22375297",
       "district": "Λευκωσία",
       "price": 1.409,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1623148148148,
       "lng": 33.3666851851852
     },
@@ -1797,7 +1797,7 @@
       "address": "Ελευθερίας 1 Τ.Κ 8550 τηλ: 26632440",
       "district": "Στρουμπί",
       "price": 1.457,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.8767212796671,
       "lng": 32.4822636908074
     },
@@ -2610,7 +2610,7 @@
       "name": "ΚΩΣΤΑΣ ΓΕΩΡΓΙΟΥ (ΒΙΤΤΗΣ)",
       "address": "Λεωφ. Αμμοχώστου Τ.Κ 7643 τηλ: 24364365",
       "district": "Καλό Χωριό Λάρνακας",
-      "price": 1.41,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.92598333,
       "lng": 33.54103333
