@@ -8,6 +8,7 @@ import {
   mergeStationsIntoIndex,
   stationKey,
 } from "../src/history-generate";
+import { sortJsonValue } from "../src/history-storage";
 import type { FuelResponse, FuelStation, StationHistoryIndex } from "../src/shared";
 
 const station: FuelStation = {
@@ -54,6 +55,22 @@ describe("history generation", () => {
     expect(dedupeGlobalPoints([...first.points, duplicate])).toHaveLength(1);
   });
 
+  test("deduplicates global points after a disk round-trip (key order)", () => {
+    const first = appendGlobalFuelPoint(emptyGlobalFuelHistory("1"), response("2026-07-06T00:00:00.000Z"));
+
+    // Storage (writeHistoryJsonIfChanged) persists keys alphabetically sorted,
+    // while freshly built points use buildGlobalFuelPoint's field order. The
+    // dedupe must treat both as the same values, otherwise no-op fetches keep
+    // appending identical points.
+    const roundTripped = JSON.parse(JSON.stringify(sortJsonValue(first)));
+    const again = appendGlobalFuelPoint(
+      roundTripped as ReturnType<typeof emptyGlobalFuelHistory>,
+      response("2026-07-06T06:00:00.000Z"),
+    );
+
+    expect(again.points).toHaveLength(1);
+  });
+
   test("merges stations into a stable station index", () => {
     const index: StationHistoryIndex = { version: 1, stations: {} };
     const merged = mergeStationsIntoIndex(index, [station], "2026-07-06T00:00:00.000Z");
@@ -67,6 +84,21 @@ describe("history generation", () => {
       name: "Updated",
       firstSeenAt: "2026-07-06T00:00:00.000Z",
       lastSeenAt: "2026-07-07T00:00:00.000Z",
+    });
+  });
+
+  test("keeps lastSeenAt stable when station identity is unchanged", () => {
+    const index: StationHistoryIndex = { version: 1, stations: {} };
+    const merged = mergeStationsIntoIndex(index, [station], "2026-07-06T00:00:00.000Z");
+    const seenAgain = mergeStationsIntoIndex(merged, [{ ...station }], "2026-07-07T00:00:00.000Z");
+
+    expect(seenAgain.stations.station_abc).toMatchObject({
+      lastSeenAt: "2026-07-06T00:00:00.000Z",
+    });
+
+    const renamed = mergeStationsIntoIndex(seenAgain, [{ ...station, name: "Updated" }], "2026-07-08T00:00:00.000Z");
+    expect(renamed.stations.station_abc).toMatchObject({
+      lastSeenAt: "2026-07-08T00:00:00.000Z",
     });
   });
 

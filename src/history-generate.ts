@@ -1,4 +1,5 @@
 import { buildGlobalFuelPoint } from "./history-stats";
+import { sortJsonValue } from "./history-storage";
 import type {
   FuelResponse,
   FuelStation,
@@ -6,6 +7,7 @@ import type {
   GlobalFuelHistory,
   GlobalFuelPoint,
   StationFuelPriceHistory,
+  StationHistoryEntry,
   StationHistoryIndex,
   StationPriceChange,
 } from "./shared";
@@ -39,7 +41,11 @@ export function dedupeGlobalPoints(points: GlobalFuelPoint[]): GlobalFuelPoint[]
 export function sameGlobalPointValues(a: GlobalFuelPoint, b: GlobalFuelPoint): boolean {
   const { at: _aAt, ...aValues } = a;
   const { at: _bAt, ...bValues } = b;
-  return JSON.stringify(aValues) === JSON.stringify(bValues);
+  // JSON.stringify is sensitive to key order: points read back from disk arrive
+  // alphabetically sorted (sortJsonValue in history-storage), while freshly
+  // built points use buildGlobalFuelPoint's order. Normalize both sides so
+  // equal values compare equal regardless of storage round-trip.
+  return JSON.stringify(sortJsonValue(aValues)) === JSON.stringify(sortJsonValue(bValues));
 }
 
 export function stationKey(sourceHash: string): string {
@@ -56,6 +62,10 @@ export function mergeStationsIntoIndex(
   for (const station of stations) {
     const key = stationKey(station.id);
     const existing = next.stations[key];
+    // Bumping lastSeenAt for every station on every fetch rewrites the whole
+    // index each run, turning "no price change" runs into diff noise. Only
+    // touch it when the identity record actually changed.
+    const identityChanged = !existing || !sameStationIdentity(existing, station);
     next.stations[key] = {
       stationKey: key,
       currentSourceHash: station.id,
@@ -69,7 +79,7 @@ export function mergeStationsIntoIndex(
       lat: station.lat,
       lng: station.lng,
       firstSeenAt: existing?.firstSeenAt ?? seenAt,
-      lastSeenAt: seenAt,
+      lastSeenAt: identityChanged ? seenAt : (existing?.lastSeenAt ?? seenAt),
     };
   }
 
@@ -106,6 +116,19 @@ export function appendStationPriceChanges(
     ...history,
     changes: changes.sort((a, b) => compareText(a.at, b.at) || compareText(a.stationKey, b.stationKey)),
   };
+}
+
+function sameStationIdentity(entry: StationHistoryEntry, station: FuelStation): boolean {
+  return (
+    entry.currentSourceHash === station.id &&
+    entry.aliases.includes(station.id) &&
+    entry.brand === station.brand &&
+    entry.name === station.name &&
+    entry.address === station.address &&
+    entry.district === station.district &&
+    entry.lat === station.lat &&
+    entry.lng === station.lng
+  );
 }
 
 function compareText(a: string, b: string): number {
