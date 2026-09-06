@@ -10,6 +10,7 @@
     "data:generate": "bun run src/generate-data.ts",
     "typecheck": "tsc --noEmit",
     "lint": "biome lint .",
+    "lint:oxlint": "bun run --bun oxlint .",
     "format": "biome format --write .",
     "format:check": "biome format .",
     "test": "bun test",
@@ -18,7 +19,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.2",
+    "@oxlint/plugins": "1.81.0",
     "@types/bun": "latest",
-    "typescript": "latest"
+    "node-html-parser": "9.0.3",
+    "oxlint": "1.81.0",
+    "typescript": "latest",
+    "zod": "4.5.4"
   }
 }

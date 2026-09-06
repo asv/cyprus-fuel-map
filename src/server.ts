@@ -1,5 +1,5 @@
 import { fetchFuelStations } from "./backend/stations";
-import { type City, cities, type FuelType, fuelTypes } from "./shared";
+import { type City, cities, type FuelType, fuelTypes, type JsonValue } from "./shared";
 
 const port = Number(process.env.PORT ?? 3000);
 const publicDir = new URL("../public/", import.meta.url);
@@ -71,7 +71,7 @@ function isFuelType(value: string): value is FuelType {
 }
 
 function isCity(value: string): value is City {
-  return (cities as readonly string[]).includes(value);
+  return cities.some((city) => city === value);
 }
 
 async function serveStatic(pathname: string): Promise<Response | null> {
@@ -102,7 +102,7 @@ function apiError(code: string, message: string, status: number, retryable: bool
   return json({ error: { code, message, retryable } }, status);
 }
 
-function json(value: unknown, status = 200): Response {
+function json(value: JsonValue, status = 200): Response {
   return Response.json(value, {
     status,
     headers: {

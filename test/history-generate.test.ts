@@ -63,6 +63,7 @@ describe("history generation", () => {
     // dedupe must treat both as the same values, otherwise no-op fetches keep
     // appending identical points.
     const roundTripped = JSON.parse(JSON.stringify(sortJsonValue(first)));
+    // SAFETY: JSON round-trip preserves the history shape; it only changes key order.
     const again = appendGlobalFuelPoint(
       roundTripped as ReturnType<typeof emptyGlobalFuelHistory>,
       response("2026-07-06T06:00:00.000Z"),

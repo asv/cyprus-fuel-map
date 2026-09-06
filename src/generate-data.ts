@@ -1,4 +1,12 @@
 import { mkdir } from "node:fs/promises";
+import type { z } from "zod";
+import {
+  fuelResponseSchema,
+  globalFuelHistorySchema,
+  staticDataManifestSchema,
+  stationFuelPriceHistorySchema,
+  stationHistoryIndexSchema,
+} from "./backend/json-schemas";
 import { fetchFuelStations } from "./backend/stations";
 import {
   appendGlobalFuelPoint,
@@ -20,10 +28,8 @@ import {
   type FuelStation,
   type FuelType,
   fuelTypes,
-  type GlobalFuelHistory,
+  type JsonValue,
   type StaticDataManifest,
-  type StationFuelPriceHistory,
-  type StationHistoryIndex,
 } from "./shared";
 
 const dataDir = new URL("../public/data/", import.meta.url);
@@ -33,7 +39,7 @@ const requestDelayMs = 2_000;
 async function main(): Promise<void> {
   const fuels = selectedFuels();
   const city = selectedCity();
-  const existingManifest = await readJson<StaticDataManifest>("manifest.json");
+  const existingManifest = await readJson("manifest.json", staticDataManifestSchema);
   const manifest: StaticDataManifest = {
     version: 1,
     generatedAt: existingManifest?.generatedAt ?? new Date().toISOString(),
@@ -52,7 +58,7 @@ async function main(): Promise<void> {
     await updateStationIndex(response);
     await updateStationPriceHistory(fuel, response);
     const path = `stations-${fuel}.json`;
-    const existingResponse = await readJson<FuelResponse>(path);
+    const existingResponse = await readJson(path, fuelResponseSchema);
     const meaningfulDataChanged = !existingResponse || !sameFuelData(existingResponse, response);
     const snapshot = meaningfulDataChanged
       ? response
@@ -97,12 +103,12 @@ async function main(): Promise<void> {
 
 async function updateGlobalHistory(fuel: FuelType, response: FuelResponse): Promise<void> {
   const path = `global-${fuel}.json`;
-  const history = await readHistoryJson<GlobalFuelHistory>(path, emptyGlobalFuelHistory(fuel));
+  const history = await readHistoryJson(path, globalFuelHistorySchema, emptyGlobalFuelHistory(fuel));
   await writeHistoryJsonIfChanged(path, appendGlobalFuelPoint(history, response));
 }
 
 async function updateStationIndex(response: FuelResponse): Promise<void> {
-  const index = await readHistoryJson<StationHistoryIndex>("station-index.json", emptyStationHistoryIndex());
+  const index = await readHistoryJson("station-index.json", stationHistoryIndexSchema, emptyStationHistoryIndex());
   await writeHistoryJsonIfChanged(
     "station-index.json",
     mergeStationsIntoIndex(index, response.stations, response.fetchedAt),
@@ -111,18 +117,22 @@ async function updateStationIndex(response: FuelResponse): Promise<void> {
 
 async function updateStationPriceHistory(fuel: FuelType, response: FuelResponse): Promise<void> {
   const path = `station-prices-${fuel}.json`;
-  const history = await readHistoryJson<StationFuelPriceHistory>(path, emptyStationFuelPriceHistory(fuel));
+  const history = await readHistoryJson(path, stationFuelPriceHistorySchema, emptyStationFuelPriceHistory(fuel));
   await writeHistoryJsonIfChanged(path, appendStationPriceChanges(history, response.stations, response.fetchedAt));
 }
 
 function selectedFuels(): FuelType[] {
   const value = argValue("--fuel");
-  if (!value) return Object.keys(fuelTypes) as FuelType[];
+  if (!value) {
+    // SAFETY: fuelTypes is keyed by the FuelType union, so its keys are exactly the FuelType values.
+    return Object.keys(fuelTypes) as FuelType[];
+  }
 
   const fuels = value.split(",").map((fuel) => fuel.trim());
   for (const fuel of fuels) {
     if (!isFuelType(fuel)) throw new Error(`Unsupported fuel type: ${fuel}`);
   }
+  // SAFETY: every element passed isFuelType above, so the array holds only FuelType values.
   return fuels as FuelType[];
 }
 
@@ -142,7 +152,7 @@ function isFuelType(value: string): value is FuelType {
 }
 
 function isCity(value: string): value is City {
-  return (cities as readonly string[]).includes(value);
+  return cities.some((city) => city === value);
 }
 
 function toStaticFuelResponse(response: FuelResponse): FuelResponse {
@@ -182,13 +192,19 @@ function sameManifestData(a: StaticDataManifest, b: StaticDataManifest): boolean
   return JSON.stringify({ ...a, generatedAt: "" }) === JSON.stringify({ ...b, generatedAt: "" });
 }
 
-async function readJson<T>(path: string): Promise<T | null> {
+async function readJson<T>(path: string, schema: z.ZodType<T>): Promise<T | null> {
   const file = Bun.file(new URL(path, dataDir));
   if (!(await file.exists())) return null;
-  return (await file.json()) as T;
+  try {
+    return schema.parse(await file.json());
+  } catch (error) {
+    // Snapshot/manifest reads self-heal: invalid generated data is rebuilt on the next run.
+    console.warn(`Invalid static data file ${path}; regenerating:`, error);
+    return null;
+  }
 }
 
-async function writeJsonIfChanged(path: string, value: unknown): Promise<boolean> {
+async function writeJsonIfChanged(path: string, value: JsonValue): Promise<boolean> {
   const next = `${JSON.stringify(value, null, 2)}\n`;
   const file = Bun.file(new URL(path, dataDir));
   if ((await file.exists()) && (await file.text()) === next) return false;
@@ -197,7 +213,7 @@ async function writeJsonIfChanged(path: string, value: unknown): Promise<boolean
   return true;
 }
 
-async function writeJson(path: string, value: unknown): Promise<void> {
+async function writeJson(path: string, value: JsonValue): Promise<void> {
   await Bun.write(new URL(path, dataDir), `${JSON.stringify(value, null, 2)}\n`);
 }
 

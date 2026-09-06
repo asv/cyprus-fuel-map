@@ -140,6 +140,7 @@ Tooling:
 
 - TypeScript strict mode.
 - Biome for formatting/linting.
+- Runtime validation for the server/CLI world only: Zod schemas in `src/backend/json-schemas.ts`, DOM-based HTML parsing via `node-html-parser` in `src/backend/parser.ts` and `src/backend/upstream.ts`. Keep both imports out of anything reachable from `src/client.ts` (the Mini App bundle), and keep `src/shared.ts` free of runtime dependencies.
 - Bun tests cover parser behavior using `test/fixtures/petroleum-sample.html`.
 - Bun tests cover Telegram/theme token generation in `test/theme.test.ts`.
 - `.editorconfig` present.
@@ -149,8 +150,7 @@ Tooling:
 
 - This is a localhost-first project, not production infrastructure.
 - Do not hammer the government endpoint. Keep 6h cache unless there is a strong reason to change it.
-- The parser is regex-based because the app has no runtime DOM parser dependency. This is acceptable for now but fragile if upstream HTML changes.
-- Parser robustness is covered by fixture tests; add more fixtures when upstream HTML changes.
+- Upstream HTML is parsed with `node-html-parser` (table, labels, form token/action); only coordinate formats (decimal and DMS) remain string-regex based by design. Parser robustness is covered by fixture tests; add more fixtures when upstream HTML changes.
 - The app intentionally does not call the Cyprus source directly from the browser. Backend acts as proxy/parser to avoid CORS and token/cookie issues.
 - Some stations have no parseable coordinates. They are included in total count but not drawn on the map.
 - Leaflet CSS must be loaded. If the map appears as broken/tiled images, check `public/leaflet.css` and stylesheet loading first.

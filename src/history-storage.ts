@@ -1,9 +1,12 @@
 import { mkdir } from "node:fs/promises";
-import { type FuelType, fuelTypes, type HistoryManifest, type StationHistoryIndex } from "./shared";
+import type { z } from "zod";
+
+import { type FuelType, fuelTypes, type HistoryManifest, type JsonValue, type StationHistoryIndex } from "./shared";
 
 export const historyDir = new URL("../public/data/history/", import.meta.url);
 
 export function emptyHistoryManifest(generatedAt: string): HistoryManifest {
+  // SAFETY: fuelTypes is declared as const keyed by every FuelType, so its keys are exactly the FuelType union.
   return {
     version: 1,
     generatedAt,
@@ -21,13 +24,20 @@ export function emptyStationHistoryIndex(): StationHistoryIndex {
   return { version: 1, stations: {} };
 }
 
-export async function readHistoryJson<T>(path: string, fallback: T): Promise<T> {
+export async function readHistoryJson<T>(path: string, schema: z.ZodType<T>, fallback: T): Promise<T> {
   const file = Bun.file(new URL(path, historyDir));
   if (!(await file.exists())) return fallback;
-  return (await file.json()) as T;
+  try {
+    return schema.parse(await file.json());
+  } catch (error) {
+    // A corrupt or schema-drifting history file should not abort generation;
+    // rebuilding it fresh is safer than trusting unvalidated on-disk data.
+    console.warn(`Invalid history file ${path}; starting fresh:`, error);
+    return fallback;
+  }
 }
 
-export async function writeHistoryJsonIfChanged(path: string, value: unknown): Promise<boolean> {
+export async function writeHistoryJsonIfChanged(path: string, value: JsonValue): Promise<boolean> {
   await mkdir(historyDir, { recursive: true });
   const next = `${JSON.stringify(sortJsonValue(value), null, 2)}\n`;
   const file = Bun.file(new URL(path, historyDir));
@@ -37,13 +47,19 @@ export async function writeHistoryJsonIfChanged(path: string, value: unknown): P
   return true;
 }
 
-export function sortJsonValue(value: unknown): unknown {
-  if (Array.isArray(value)) return value.map(sortJsonValue);
-  if (!value || typeof value !== "object") return value;
+export function sortJsonValue(value: JsonValue): JsonValue {
+  if (Array.isArray(value)) return value.map((child) => sortJsonValue(child));
+  if (isJsonRecord(value)) {
+    return Object.fromEntries(
+      Object.entries(value)
+        .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+        .map(([key, child]) => [key, sortJsonValue(child)]),
+    );
+  }
+  return value;
+}
 
-  return Object.fromEntries(
-    Object.entries(value)
-      .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
-      .map(([key, child]) => [key, sortJsonValue(child)]),
-  );
+/** True for JSON objects (non-null, non-array), the branch sortJsonValue recurses into. */
+function isJsonRecord(value: JsonValue): value is { [key: string]: JsonValue } {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
 }

@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { type HTMLElement, parse } from "node-html-parser";
 import type { FuelResponse, FuelStation, FuelType } from "../shared";
 import { type City, fuelTypes } from "../shared";
 
@@ -17,7 +18,11 @@ export function parseFuelResponse(html: string, fuel: FuelType, city: City, fetc
 }
 
 export function parsePrices(html: string): Pick<FuelResponse, "avgPrice" | "minPrice" | "maxPrice"> {
-  const values = [...html.matchAll(/displayLabelValue">\s*([0-9.]+)\s*<\/label>/g)].map((m) => Number(m[1]));
+  // The upstream page renders avg/min/max summary prices as the first three
+  // labels carrying the displayLabelValue class, before the station table.
+  const values = parse(html)
+    .querySelectorAll(".displayLabelValue")
+    .map((label) => Number(label.text));
   return {
     avgPrice: Number.isFinite(values[0]) ? values[0]! : null,
     minPrice: Number.isFinite(values[1]) ? values[1]! : null,
@@ -26,25 +31,23 @@ export function parsePrices(html: string): Pick<FuelResponse, "avgPrice" | "minP
 }
 
 export function parseStations(html: string): FuelStation[] {
-  const tableMatch = html.match(/<table[^>]+id="petroleumPriceDetailsFootable"[\s\S]*?<tbody>([\s\S]*?)<\/tbody>/i);
-  if (!tableMatch?.[1]) return [];
-
-  return [...tableMatch[1].matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
-    .map((rowMatch) => parseStationRow(rowMatch[1] ?? ""))
+  return parse(html)
+    .querySelectorAll("#petroleumPriceDetailsFootable tbody tr")
+    .map(parseStationRow)
     .filter((station): station is FuelStation => station !== null);
 }
 
-function parseStationRow(rowHtml: string): FuelStation | null {
-  const cells = [...rowHtml.matchAll(/<td([^>]*)>([\s\S]*?)<\/td>/g)];
+function parseStationRow(row: HTMLElement): FuelStation | null {
+  const cells = row.querySelectorAll("td");
   if (cells.length < 5) return null;
 
-  const addressHtml = cells[2]?.[2] ?? "";
-  const coordinates = extractCoordinates(addressHtml);
-  const brand = cellText(cells[0]?.[2] ?? "");
-  const name = cellText(cells[1]?.[2] ?? "");
-  const address = cellText(addressHtml);
-  const district = cellText(cells[3]?.[2] ?? "");
-  const price = Number(cellText(cells[4]?.[2] ?? ""));
+  const addressCell = cells[2]!;
+  const coordinates = extractCoordinates(addressCell.innerHTML);
+  const brand = cellText(cells[0]!);
+  const name = cellText(cells[1]!);
+  const address = cellText(addressCell);
+  const district = cellText(cells[3]!);
+  const price = Number(cellText(cells[4]!));
 
   if (!brand || !name || !Number.isFinite(price)) return null;
 
@@ -55,7 +58,7 @@ function parseStationRow(rowHtml: string): FuelStation | null {
     address,
     district,
     price,
-    isOffline: cells.some((cell) => (cell[1] ?? "").includes("isOffLine")),
+    isOffline: row.querySelectorAll("td.isOffLine").length > 0,
     lat: coordinates?.lat ?? null,
     lng: coordinates?.lng ?? null,
   };
@@ -65,19 +68,16 @@ function stationId(...parts: string[]): string {
   return createHash("sha1").update(parts.join("\u001f")).digest("hex").slice(0, 16);
 }
 
-function cellText(html: string): string {
-  return htmlDecode(stripTags(html)).replace(/\s+/g, " ").trim();
-}
-
-function stripTags(html: string): string {
-  return html.replace(/<br\s*\/?>/gi, " ").replace(/<[^>]+>/g, " ");
+function cellText(cell: HTMLElement): string {
+  return cell.text.replace(/\s+/g, " ").trim();
 }
 
 export function extractCoordinates(html: string): { lat: number; lng: number } | null {
-  const hrefMatch = html.match(/DisplayMap\?coordinates=([^"]+)/i);
-  if (!hrefMatch?.[1]) return null;
+  const link = parse(html).querySelector("a[href*='coordinates=']");
+  const coordinatesParam = link?.getAttribute("href")?.match(/coordinates=([^&]+)/i)?.[1];
+  if (!coordinatesParam) return null;
 
-  const decoded = decodeURIComponent(htmlDecode(hrefMatch[1])).trim();
+  const decoded = decodeURIComponent(coordinatesParam).trim();
   const decimalMatch = decoded.match(/^\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*$/);
   if (decimalMatch?.[1] && decimalMatch[2]) {
     return validCyprusCoordinates(Number(decimalMatch[1]), Number(decimalMatch[2]));
@@ -102,14 +102,4 @@ function validCyprusCoordinates(lat: number, lng: number): { lat: number; lng: n
 function dmsToDecimal(degrees: number, minutes: number, seconds: number, hemisphere: string): number {
   const sign = /[SW]/i.test(hemisphere) ? -1 : 1;
   return sign * (degrees + minutes / 60 + seconds / 3600);
-}
-
-function htmlDecode(value: string): string {
-  return value
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)));
 }

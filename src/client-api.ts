@@ -5,7 +5,10 @@ export async function fetchStations(fuel: string, signal: AbortSignal): Promise<
     signal,
     cache: "no-cache",
   });
-  if (staticResponse.ok) return (await staticResponse.json()) as FuelResponse;
+  if (staticResponse.ok) {
+    // SAFETY: static snapshots are generated from the FuelResponse schema, versioned alongside the app.
+    return (await staticResponse.json()) as FuelResponse;
+  }
 
   if (!canUseBackendFallback()) {
     throw new Error(`Static fuel data not found for fuel type ${fuel}`);
@@ -13,6 +16,7 @@ export async function fetchStations(fuel: string, signal: AbortSignal): Promise<
 
   const apiResponse = await fetch(`api/stations?fuel=${encodeURIComponent(fuel)}`, { signal });
   if (!apiResponse.ok) throw new Error(await apiResponse.text());
+  // SAFETY: the backend /api/stations route serves the FuelResponse schema from src/shared.ts.
   return (await apiResponse.json()) as FuelResponse;
 }
 

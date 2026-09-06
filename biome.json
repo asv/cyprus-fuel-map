@@ -10,7 +10,9 @@
       "!bun.lock",
       "!public/leaflet.js",
       "!public/leaflet.css",
-      "!test/fixtures"
+      "!test/fixtures",
+      "!tools/oxlint",
+      "!.agents"
     ]
   },
   "formatter": {

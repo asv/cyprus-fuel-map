@@ -1,5 +1,6 @@
 import type { City, FuelResponse, FuelType } from "../shared";
 import { getCacheEntry, isFresh, setCacheEntry, withCacheMeta } from "./cache";
+import { fuelResponseSchema } from "./json-schemas";
 import { parseFuelResponse } from "./parser";
 import { fetchFuelHtml } from "./upstream";
 
@@ -27,6 +28,8 @@ async function fetchFuelStationsFromSource(
   try {
     const html = await fetchFuelHtml(fuel, city);
     const data = parseFuelResponse(html, fuel, city);
+    // Validate at the I/O boundary: never cache or serve a structurally broken upstream result.
+    fuelResponseSchema.parse(data);
     const entry = await setCacheEntry(cacheKey, data);
     return withCacheMeta(data, entry, { hit: false, stale: false });
   } catch (error) {

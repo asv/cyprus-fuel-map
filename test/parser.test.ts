@@ -2,6 +2,7 @@ import { describe, expect, test } from "bun:test";
 import { extractCoordinates, parseFuelResponse, parsePrices, parseStations } from "../src/backend/parser";
 
 const fixture = await Bun.file(new URL("./fixtures/petroleum-sample.html", import.meta.url)).text();
+const complexFixture = await Bun.file(new URL("./fixtures/petroleum-complex.html", import.meta.url)).text();
 
 describe("fuel parser", () => {
   test("parses summary prices", () => {
@@ -40,5 +41,48 @@ describe("fuel parser", () => {
 
   test("rejects coordinates outside Cyprus bounding box", () => {
     expect(extractCoordinates('<a href="/DisplayMap?coordinates=1%2C2">bad</a>')).toBeNull();
+  });
+
+  describe("realistic upstream-shaped HTML", () => {
+    test("filters the summary labels to the displayLabelValue cells only", () => {
+      expect(parsePrices(complexFixture)).toEqual({ avgPrice: 1.499, minPrice: 1.401, maxPrice: 1.662 });
+    });
+
+    test("strips nested tags and decodes text within cells", () => {
+      const stations = parseStations(complexFixture);
+      const station = stations[0]!;
+      expect(station.brand).toBe("EXXON");
+      expect(station.name).toBe("EXXON STATION LTD");
+      expect(station.address).toBe("Λεωφ. Αθαλάσσας 12");
+      expect(station.district).toBe("Λατσιά");
+      expect(station.price).toBe(1.411);
+      expect(station.lat).toBeCloseTo(35.2, 5);
+      expect(station.lng).toBeCloseTo(33.3, 5);
+    });
+
+    test("decodes address entities and DMS coordinates from an offline row", () => {
+      const offline = parseStations(complexFixture)[1]!;
+      expect(offline.brand).toBe("MOTOR OIL");
+      expect(offline.isOffline).toBe(true);
+      expect(offline.address).toBe("Γωνία Ελ. Βενιζέλου & Γλάδστωνος");
+      expect(offline.lat).toBeCloseTo(34.5, 5);
+      expect(offline.lng).toBeCloseTo(33.5, 5);
+    });
+
+    test("extracts coordinates from a parameter with extra query fields", () => {
+      const withSuffix = parseStations(complexFixture)[2]!;
+      expect(withSuffix.brand).toBe("SHELL");
+      expect(withSuffix.lat).toBeCloseTo(35.25, 5);
+      expect(withSuffix.lng).toBeCloseTo(33.35, 5);
+    });
+
+    test("keeps stations without coordinates and skips short rows", () => {
+      const stations = parseStations(complexFixture);
+      expect(stations).toHaveLength(4);
+      const withoutCoords = stations[3]!;
+      expect(withoutCoords.brand).toBe("NO COORDS");
+      expect(withoutCoords.lat).toBeNull();
+      expect(withoutCoords.lng).toBeNull();
+    });
   });
 });

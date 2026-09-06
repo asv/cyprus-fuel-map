@@ -1,7 +1,66 @@
-import { describe, expect, test } from "bun:test";
-import { emptyHistoryManifest, emptyStationHistoryIndex, sortJsonValue } from "../src/history-storage";
+import { afterEach, beforeEach, describe, expect, test } from "bun:test";
+import { rm } from "node:fs/promises";
+import { globalFuelHistorySchema } from "../src/backend/json-schemas";
+import { emptyHistoryManifest, emptyStationHistoryIndex, readHistoryJson, sortJsonValue } from "../src/history-storage";
+
+const historyFile = new URL("../public/data/history/readhistory-test.json", import.meta.url);
+const fallback = { version: 1, fuel: "1", points: [] };
+const validJson = JSON.stringify(
+  {
+    version: 1,
+    fuel: "1",
+    points: [
+      {
+        at: "t",
+        stationCount: 1,
+        mappedStationCount: 1,
+        avgPrice: 1.5,
+        minPrice: 1.5,
+        maxPrice: 1.5,
+        medianPrice: 1.5,
+        p25Price: 1.5,
+        p75Price: 1.5,
+        offlineCount: 0,
+      },
+    ],
+  },
+  null,
+  2,
+);
 
 describe("history storage helpers", () => {
+  beforeEach(async () => {
+    await rm(historyFile, { force: true });
+  });
+
+  afterEach(async () => {
+    await rm(historyFile, { force: true });
+  });
+
+  test("readHistoryJson returns the fallback when the file is missing", async () => {
+    expect(await readHistoryJson("readhistory-test.json", globalFuelHistorySchema, fallback)).toBe(fallback);
+  });
+
+  test("readHistoryJson parses a valid history file", async () => {
+    await Bun.write(historyFile, validJson);
+    const parsed = await readHistoryJson("readhistory-test.json", globalFuelHistorySchema, fallback);
+    expect(parsed.points).toHaveLength(1);
+    expect(parsed.fuel).toBe("1");
+  });
+
+  test("readHistoryJson self-heals a corrupt history file into the fallback", async () => {
+    await Bun.write(
+      historyFile,
+      JSON.stringify({ version: 1, fuel: "1", points: [{ at: "t", stationCount: "nope" }] }),
+    );
+    expect(await readHistoryJson("readhistory-test.json", globalFuelHistorySchema, fallback)).toBe(fallback);
+  });
+
+  test("readHistoryJson self-heals a non-JSON file into the fallback", async () => {
+    await Bun.write(historyFile, "broken {{ not json");
+    expect(await readHistoryJson("readhistory-test.json", globalFuelHistorySchema, fallback)).toBe(fallback);
+  });
+
   test("builds a manifest for all fuel types", () => {
     expect(emptyHistoryManifest("2026-07-06T00:00:00.000Z")).toMatchObject({
       version: 1,

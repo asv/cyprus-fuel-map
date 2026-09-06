@@ -2,7 +2,7 @@ import type { FuelStation } from "./shared";
 
 export type LatLng = { lat: number; lng: number };
 
-export function routeUrls(station: FuelStation): { waze: string } {
+export function routeUrls(station: FuelStation) {
   const lat = station.lat ?? 0;
   const lng = station.lng ?? 0;
   return {
@@ -46,12 +46,14 @@ export function escapeHtml(value: string): string {
 export function byId<T extends HTMLElement>(id: string): T {
   const element = document.getElementById(id);
   if (!element) throw new Error(`Element #${id} not found`);
+  // SAFETY: the throw above guarantees a non-null element for markup declaring the expected id.
   return element as T;
 }
 
 export function query<T extends HTMLElement>(selector: string): T {
   const element = document.querySelector(selector);
   if (!element) throw new Error(`Element ${selector} not found`);
+  // SAFETY: the throw above guarantees a non-null element for markup declaring the expected selector.
   return element as T;
 }
 

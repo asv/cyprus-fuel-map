@@ -1,13 +1,15 @@
 import { mkdir } from "node:fs/promises";
 import type { CacheMeta, FuelResponse } from "../shared";
 
+import { cacheEntrySchema } from "./json-schemas";
+
 type CacheEntry = { expiresAt: number; data: FuelResponse };
 type CacheFile = { version: 2; entries: Record<string, CacheEntry> };
 
 const cache = new Map<string, CacheEntry>();
 const cacheDir = new URL("../../.cache/", import.meta.url);
-const cacheFilePath = new URL("fuel-cache.json", cacheDir);
-let cacheLoaded = false;
+let cacheFilePath = new URL("fuel-cache.json", cacheDir);
+export let cacheLoaded = false;
 
 export const cacheTtlMs = 6 * 60 * 60 * 1000;
 
@@ -49,11 +51,15 @@ async function loadCache(): Promise<void> {
   if (!(await file.exists())) return;
 
   try {
-    const parsed = (await file.json()) as CacheFile;
-    if (parsed.version !== 2) return;
+    // SAFETY: the cast reads only the two fields guarded by the checks on the next line.
+    const rawFile = (await file.json()) as { version?: unknown; entries?: object };
+    if (rawFile.version !== 2 || !isRecord(rawFile.entries)) return;
 
-    for (const [key, entry] of Object.entries(parsed.entries)) {
-      if (isCacheEntry(entry)) cache.set(key, entry);
+    // Validate per entry rather than the whole file: one corrupt fuel type must
+    // not invalidate the rest of the cache, which would re-hit the upstream.
+    for (const [key, entryRaw] of Object.entries(rawFile.entries)) {
+      const entry = cacheEntrySchema.safeParse(entryRaw);
+      if (entry.success) cache.set(key, entry.data);
     }
   } catch (error) {
     console.warn("Failed to read fuel cache:", error);
@@ -67,14 +73,17 @@ async function saveCache(): Promise<void> {
   await Bun.write(cacheFilePath, JSON.stringify(cacheFile, null, 2));
 }
 
-function isCacheEntry(value: unknown): value is CacheEntry {
-  if (!value || typeof value !== "object") return false;
-  const entry = value as Partial<CacheEntry>;
-  return typeof entry.expiresAt === "number" && isFuelResponse(entry.data);
+/** True for JSON objects (non-null, non-array), as required for the cache entries map. */
+function isRecord(value: unknown): value is object {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
 }
 
-function isFuelResponse(value: unknown): value is FuelResponse {
-  if (!value || typeof value !== "object") return false;
-  const response = value as Partial<FuelResponse>;
-  return typeof response.fuel === "string" && Array.isArray(response.stations);
+/**
+ * Test-only: point the cache at a different file and reset the cached-load flag.
+ * Each test writes its own fixture, calls this, and reads through getCacheEntry.
+ */
+export function useCacheFileForTesting(path: string | URL): void {
+  cacheFilePath = new URL(path, import.meta.url);
+  cacheLoaded = false;
+  cache.clear();
 }

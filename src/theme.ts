@@ -138,6 +138,7 @@ function applyTelegramTheme(webApp: TelegramWebApp): void {
   if (!theme) return;
 
   for (const [name, value] of Object.entries(buildTelegramTokens(theme))) {
+    // SAFETY: buildTelegramTokens returns Partial<Record<CssToken, string>>, so entry names are CssTokens.
     setCssVar(name as CssToken, value);
   }
   if (webApp.colorScheme) document.documentElement.style.colorScheme = webApp.colorScheme;

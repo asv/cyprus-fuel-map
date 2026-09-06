@@ -32,5 +32,6 @@ async function fetchOptionalJson<T>(url: string, signal?: AbortSignal): Promise<
   const response = await fetch(url, { cache: "no-store", signal });
   if (response.status === 404) return null;
   if (!response.ok) throw new Error(`Failed to load ${url}: ${response.status}`);
+  // SAFETY: fetchOptionalJson callers pass a T matching the schema of the history file addressed by url.
   return (await response.json()) as T;
 }

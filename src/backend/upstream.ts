@@ -1,4 +1,6 @@
+import { parse } from "node-html-parser";
 import type { City, FuelType } from "../shared";
+
 import { sourceUrl } from "./parser";
 
 const sourceOrigin = "https://eforms.eservices.cyprus.gov.cy";
@@ -60,25 +62,13 @@ async function withRetry<T>(operation: () => Promise<T>): Promise<T> {
 }
 
 function getRequestVerificationToken(html: string): string {
-  const match = html.match(/name="__RequestVerificationToken"[^>]*value="([^"]+)"/);
-  if (!match?.[1]) throw new Error("Request verification token not found");
-  return htmlDecode(match[1]);
+  const token = parse(html).querySelector('input[name="__RequestVerificationToken"]')?.getAttribute("value");
+  if (!token) throw new Error("Request verification token not found");
+  return token;
 }
 
 function getFormAction(html: string): string {
-  const match = html.match(/<form[^>]+action="([^"]+)"/i);
-  if (!match?.[1]) return "/MCIT/MCIT/PetroleumPrices";
-  return htmlDecode(match[1]);
-}
-
-function htmlDecode(value: string): string {
-  return value
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)));
+  return parse(html).querySelector("form")?.getAttribute("action") ?? "/MCIT/MCIT/PetroleumPrices";
 }
 
 function cookieHeader(setCookie: string): string {

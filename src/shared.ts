@@ -131,3 +131,6 @@ export type ApiError = {
     retryable: boolean;
   };
 };
+
+/** Any value this app writes to JSON output; keeps write/sort helpers decoupled from concrete schemas. */
+export type JsonValue = null | boolean | number | string | readonly JsonValue[] | { [key: string]: JsonValue };
