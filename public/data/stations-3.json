@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-05T15:17:36.924Z",
+  "fetchedAt": "2026-09-06T20:27:21.965Z",
   "avgPrice": 1.877,
   "minPrice": 1.795,
   "maxPrice": 1.989,
@@ -455,7 +455,7 @@
       "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
       "district": "Λακατάμεια",
       "price": 1.839,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.110876,
       "lng": 33.309251
     },
@@ -1158,7 +1158,7 @@
       "name": "P. DIOGENOUS PETROL STATION LTD",
       "address": "Λεωφ. Μεσόγης 87 Τ.Κ 8280 τηλ: 26946925",
       "district": "Μεσόγη",
-      "price": 1.908,
+      "price": 1.938,
       "isOffline": false,
       "lat": 34.805,
       "lng": 32.44541667
