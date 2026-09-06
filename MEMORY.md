@@ -149,6 +149,9 @@ Tooling:
 ## Known constraints and decisions
 
 - This is a localhost-first project, not production infrastructure.
+- The dev server binds `127.0.0.1` by default (`HOST` env to override), rejects non-GET/HEAD with 405, and never echoes internal error details to clients. This keeps the server out of reach of the LAN and avoids turning it into an open proxy against the upstream.
+- All file writes (cache, generated static data, history) go through `atomicWrite` (src/backend/write-atomically.ts): write to a sibling `.tmp` then `rename`, so readers never see a partially written file and torn production static data cannot reach GitHub Pages.
+- Upstream HTML responses are size-capped (10 MB) before parsing/use, so a hostile or broken upstream cannot exhaust server memory.
 - Do not hammer the government endpoint. Keep 6h cache unless there is a strong reason to change it.
 - Upstream HTML is parsed with `node-html-parser` (table, labels, form token/action); only coordinate formats (decimal and DMS) remain string-regex based by design. Parser robustness is covered by fixture tests; add more fixtures when upstream HTML changes.
 - The app intentionally does not call the Cyprus source directly from the browser. Backend acts as proxy/parser to avoid CORS and token/cookie issues.
@@ -159,11 +162,12 @@ Tooling:
 
 ## Recent implementation notes
 
+- The HTTP surface is factored into a pure (dependency-injected) request handler in `src/backend/request-handler.ts` and a `createStaticFileServer` root in `src/backend/serve-static.ts`; both are covered by direct unit tests (405/400/404/500 handling, path traversal, content types).
 - Initial API test for Unleaded 95 returned about 319 stations, with roughly 289 mapped after coordinate parsing. Counts may vary over time.
 - Price values are in EUR/liter and are formatted with 3 decimals.
 - The frontend previously recreated markers on every slider move; this was optimized. Current filtering should show/hide existing markers instead of rebuilding them.
 - `AbortController` is used to avoid stale UI updates when switching fuel type quickly.
-- Static serving has basic path traversal protection and content-type handling.
+- Static serving lives in `src/backend/serve-static.ts` with explicit path-traversal guard and content-type mapping; covered by tests.
 - Browser `app.js` is bundled with `Bun.build` so client-side modules such as `src/theme.ts` can be imported safely.
 - Historical price data is designed as optional static files under `public/data/history/`; see `docs/history-data.md`.
 

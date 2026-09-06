@@ -6,6 +6,7 @@ import { sourceUrl } from "./parser";
 const sourceOrigin = "https://eforms.eservices.cyprus.gov.cy";
 const upstreamTimeoutMs = 30_000;
 const upstreamMaxAttempts = 3;
+const upstreamMaxBytes = 10 * 1024 * 1024;
 
 export async function fetchFuelHtml(fuel: FuelType, city: City): Promise<string> {
   return withRetry(async () => {
@@ -14,7 +15,7 @@ export async function fetchFuelHtml(fuel: FuelType, city: City): Promise<string>
     });
     if (!getResponse.ok) throw new Error(`Source GET failed: ${getResponse.status}`);
 
-    const getHtml = await getResponse.text();
+    const getHtml = await textWithLimit(getResponse, "GET");
     const token = getRequestVerificationToken(getHtml);
     const cookie = cookieHeader(getResponse.headers.get("set-cookie") ?? "");
     const action = getFormAction(getHtml);
@@ -38,8 +39,22 @@ export async function fetchFuelHtml(fuel: FuelType, city: City): Promise<string>
     });
     if (!postResponse.ok) throw new Error(`Source POST failed: ${postResponse.status}`);
 
-    return postResponse.text();
+    return textWithLimit(postResponse, "POST");
   });
+}
+
+/** Read a response body, capping its size to avoid unbounded memory from a hostile upstream. */
+async function textWithLimit(response: Response, phase: "GET" | "POST"): Promise<string> {
+  const declaredLength = Number(response.headers.get("content-length"));
+  if (Number.isFinite(declaredLength) && declaredLength > upstreamMaxBytes) {
+    throw new Error(`Upstream ${phase} response too large: ${declaredLength} bytes`);
+  }
+
+  const text = await response.text();
+  if (text.length > upstreamMaxBytes) {
+    throw new Error(`Upstream ${phase} response exceeds ${upstreamMaxBytes} byte limit`);
+  }
+  return text;
 }
 
 async function fetchWithTimeout(input: string | URL, init: RequestInit): Promise<Response> {
@@ -61,13 +76,13 @@ async function withRetry<T>(operation: () => Promise<T>): Promise<T> {
   throw lastError;
 }
 
-function getRequestVerificationToken(html: string): string {
+export function getRequestVerificationToken(html: string): string {
   const token = parse(html).querySelector('input[name="__RequestVerificationToken"]')?.getAttribute("value");
   if (!token) throw new Error("Request verification token not found");
   return token;
 }
 
-function getFormAction(html: string): string {
+export function getFormAction(html: string): string {
   return parse(html).querySelector("form")?.getAttribute("action") ?? "/MCIT/MCIT/PetroleumPrices";
 }
 

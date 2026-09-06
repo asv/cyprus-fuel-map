@@ -8,6 +8,7 @@ import {
   stationHistoryIndexSchema,
 } from "./backend/json-schemas";
 import { fetchFuelStations } from "./backend/stations";
+import { atomicWrite } from "./backend/write-atomically";
 import {
   appendGlobalFuelPoint,
   appendStationPriceChanges,
@@ -209,12 +210,12 @@ async function writeJsonIfChanged(path: string, value: JsonValue): Promise<boole
   const file = Bun.file(new URL(path, dataDir));
   if ((await file.exists()) && (await file.text()) === next) return false;
 
-  await Bun.write(new URL(path, dataDir), next);
+  await atomicWrite(new URL(path, dataDir), next);
   return true;
 }
 
 async function writeJson(path: string, value: JsonValue): Promise<void> {
-  await Bun.write(new URL(path, dataDir), `${JSON.stringify(value, null, 2)}\n`);
+  await atomicWrite(new URL(path, dataDir), `${JSON.stringify(value, null, 2)}\n`);
 }
 
 await main();

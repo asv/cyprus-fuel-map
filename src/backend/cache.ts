@@ -1,7 +1,6 @@
-import { mkdir } from "node:fs/promises";
 import type { CacheMeta, FuelResponse } from "../shared";
-
 import { cacheEntrySchema } from "./json-schemas";
+import { atomicWrite } from "./write-atomically";
 
 type CacheEntry = { expiresAt: number; data: FuelResponse };
 type CacheFile = { version: 2; entries: Record<string, CacheEntry> };
@@ -69,8 +68,7 @@ async function loadCache(): Promise<void> {
 async function saveCache(): Promise<void> {
   const cacheFile: CacheFile = { version: 2, entries: Object.fromEntries(cache) };
 
-  await mkdir(cacheDir, { recursive: true });
-  await Bun.write(cacheFilePath, JSON.stringify(cacheFile, null, 2));
+  await atomicWrite(cacheFilePath, `${JSON.stringify(cacheFile, null, 2)}\n`);
 }
 
 /** True for JSON objects (non-null, non-array), as required for the cache entries map. */

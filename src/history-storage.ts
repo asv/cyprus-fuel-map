@@ -1,6 +1,5 @@
-import { mkdir } from "node:fs/promises";
 import type { z } from "zod";
-
+import { atomicWrite } from "./backend/write-atomically";
 import { type FuelType, fuelTypes, type HistoryManifest, type JsonValue, type StationHistoryIndex } from "./shared";
 
 export const historyDir = new URL("../public/data/history/", import.meta.url);
@@ -38,12 +37,11 @@ export async function readHistoryJson<T>(path: string, schema: z.ZodType<T>, fal
 }
 
 export async function writeHistoryJsonIfChanged(path: string, value: JsonValue): Promise<boolean> {
-  await mkdir(historyDir, { recursive: true });
   const next = `${JSON.stringify(sortJsonValue(value), null, 2)}\n`;
   const file = Bun.file(new URL(path, historyDir));
   if ((await file.exists()) && (await file.text()) === next) return false;
 
-  await Bun.write(new URL(path, historyDir), next);
+  await atomicWrite(new URL(path, historyDir), next);
   return true;
 }
 
