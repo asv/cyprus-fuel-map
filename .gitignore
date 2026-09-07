@@ -4,6 +4,7 @@ node_modules/
 # Runtime cache / local data
 .cache/
 *.log
+*.tmp
 
 # Build outputs
 dist/

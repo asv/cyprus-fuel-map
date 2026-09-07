@@ -8,6 +8,9 @@ const upstreamTimeoutMs = 30_000;
 const upstreamMaxAttempts = 3;
 const upstreamMaxBytes = 10 * 1024 * 1024;
 
+/** Fatal upstream size violation: retrying will not make the response smaller. */
+class UpstreamResponseTooLargeError extends Error {}
+
 export async function fetchFuelHtml(fuel: FuelType, city: City): Promise<string> {
   return withRetry(async () => {
     const getResponse = await fetchWithTimeout(sourceUrl, {
@@ -43,18 +46,37 @@ export async function fetchFuelHtml(fuel: FuelType, city: City): Promise<string>
   });
 }
 
-/** Read a response body, capping its size to avoid unbounded memory from a hostile upstream. */
-async function textWithLimit(response: Response, phase: "GET" | "POST"): Promise<string> {
+/**
+ * Read a response body streaming byte-by-byte and abort as soon as the limit is
+ * exceeded. Tests against a fully buffered body are useless: by the time
+ * response.text() returned, the memory was already allocated. This read-loop
+ * bounds worst-case allocation to upstreamMaxBytes regardless of what the
+ * upstream sends, and cancels the reader so the connection is not left dangling.
+ */
+export async function textWithLimit(response: Response, phase: "GET" | "POST"): Promise<string> {
   const declaredLength = Number(response.headers.get("content-length"));
   if (Number.isFinite(declaredLength) && declaredLength > upstreamMaxBytes) {
-    throw new Error(`Upstream ${phase} response too large: ${declaredLength} bytes`);
+    throw new UpstreamResponseTooLargeError(`Upstream ${phase} response too large: ${declaredLength} bytes`);
   }
 
-  const text = await response.text();
-  if (text.length > upstreamMaxBytes) {
-    throw new Error(`Upstream ${phase} response exceeds ${upstreamMaxBytes} byte limit`);
+  const reader = response.body?.getReader();
+  if (!reader) return "";
+
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+
+    total += value.byteLength;
+    if (total > upstreamMaxBytes) {
+      await reader.cancel();
+      throw new UpstreamResponseTooLargeError(`Upstream ${phase} response exceeds ${upstreamMaxBytes} byte limit`);
+    }
+    chunks.push(value);
   }
-  return text;
+
+  return Buffer.concat(chunks).toString();
 }
 
 async function fetchWithTimeout(input: string | URL, init: RequestInit): Promise<Response> {
@@ -69,6 +91,8 @@ async function withRetry<T>(operation: () => Promise<T>): Promise<T> {
       return await operation();
     } catch (error) {
       lastError = error;
+      // An oversized response is not transient; re-fetching would only multiply allocation.
+      if (error instanceof UpstreamResponseTooLargeError) break;
       if (attempt < upstreamMaxAttempts) await Bun.sleep(1_000 * attempt);
     }
   }
