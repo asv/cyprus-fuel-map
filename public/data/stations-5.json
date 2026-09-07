@@ -3,9 +3,9 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-07T04:47:43.404Z",
-  "avgPrice": 1.396,
-  "minPrice": 1.222,
+  "fetchedAt": "2026-09-07T12:39:58.299Z",
+  "avgPrice": 1.395,
+  "minPrice": 0.411,
   "maxPrice": 1.573,
   "stations": [
     {
@@ -422,7 +422,7 @@
       "address": "Μελίνας Μερκούρη 22 Τ.Κ 2311 τηλ: 22388870",
       "district": "Λακατάμεια",
       "price": 1.358,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.110876,
       "lng": 33.309251
     },
@@ -510,7 +510,7 @@
       "address": "Γωνία Ναυαρίνου 2 & Ταγματάρχου Πουλίου Τ.Κ 1100 τηλ: 22774025",
       "district": "Λευκωσία",
       "price": 1.358,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.171615,
       "lng": 33.345687
     },
@@ -564,7 +564,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Μανδριά Τ.Κ 8504 τηλ: 26422230",
       "district": "Μανδριά",
-      "price": 1.378,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.720734,
       "lng": 32.535053
@@ -586,7 +586,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Σπύρου Κυπριανού και Σωτηράκη Μαρκίδη Τ.Κ 8041 τηλ: 26949140",
       "district": "Πάφος",
-      "price": 1.378,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.760461,
       "lng": 32.422081
@@ -597,7 +597,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Μιχαλάκη Κυπριανού 121 Τ.Κ 8560 τηλ: 26343943",
       "district": "Πέγεια",
-      "price": 1.378,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.864528,
       "lng": 32.379294
@@ -762,7 +762,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "εντός Διεθνούς Αεροδρομίου Πάφου Τ.Κ 8507 τηλ: 26222001",
       "district": "Τίμη",
-      "price": 1.378,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.710452,
       "lng": 32.490238
@@ -795,7 +795,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Χλώρακας 104 - 106 Τ.Κ 8220 τηλ: 26967073",
       "district": "Χλώρακα",
-      "price": 1.378,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.80347222222222,
       "lng": 32.39747222222222
@@ -894,7 +894,7 @@
       "name": "ΑΝΔΡΕΑΣ Μ. ΚΟΜΜΑΤΟΣ ΛΙΜΙΤΕΔ",
       "address": "Λεώφ. Αποστόλου Παύλου 20 Τ.Κ 8046 τηλ: 26932437",
       "district": "Πάφος",
-      "price": 1.378,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.772555555555556,
       "lng": 32.41813888888888
@@ -993,7 +993,7 @@
       "name": "ΝΙΚΟΣ ΓΕΡΑΣΙΜΟΥ ΛΙΜΙΤΕΔ",
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
-      "price": 1.46,
+      "price": 1.489,
       "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
@@ -1070,7 +1070,7 @@
       "name": "KALL-ENI CITY GAS STATION LTD",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 4 Τ.Κ 6010 τηλ: 24622133",
       "district": "Λάρνακα",
-      "price": 1.41,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.916723,
       "lng": 33.624357
@@ -1279,7 +1279,7 @@
       "name": "CEMARIUS LTD",
       "address": "Κολωνακίου 5 Τ.Κ 4103 τηλ: 25324880",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.289,
+      "price": 1.348,
       "isOffline": false,
       "lat": 34.696745040803,
       "lng": 33.0690321662705
@@ -1349,6 +1349,17 @@
       "isOffline": false,
       "lat": 35.081014,
       "lng": 33.273498
+    },
+    {
+      "id": "0cca76ae92acb3d0",
+      "brand": "ESSO",
+      "name": "EWISE RETAIL LTD",
+      "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
+      "district": "Λατσιά",
+      "price": 1.409,
+      "isOffline": false,
+      "lat": 35.0976900488074,
+      "lng": 33.3792905141556
     },
     {
       "id": "837127ad630e83aa",
@@ -1708,7 +1719,7 @@
       "name": "Κ & Α ΑΝΔΡΕΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφόρος Λεμεσού 4 Τ.Κ 7647 τηλ: 22533633",
       "district": "Μοσφιλωτή",
-      "price": 1.389,
+      "price": 1.409,
       "isOffline": false,
       "lat": 34.952087962963,
       "lng": 33.4192546296296
@@ -1723,17 +1734,6 @@
       "isOffline": false,
       "lat": 34.9493055555556,
       "lng": 33.3128657407407
-    },
-    {
-      "id": "64249051ef91af56",
-      "brand": "ESSO",
-      "name": "ΛΕΟΝΤΙΟΣ ΙΕΡΟΔΙΑΚΟΝΟΥ ΛΙΜΙΤΕΔ",
-      "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
-      "district": "Λατσιά",
-      "price": 1.378,
-      "isOffline": false,
-      "lat": 35.0976900488074,
-      "lng": 33.3792905141556
     },
     {
       "id": "509d1a0c848bb24a",
@@ -2269,7 +2269,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Φρ. Ρούσβελτ 245 Τ.Κ 3046 τηλ: 25391077",
       "district": "Λεμεσός",
-      "price": 1.389,
+      "price": 1.419,
       "isOffline": false,
       "lat": 34.65851667,
       "lng": 33.0028
@@ -2379,7 +2379,7 @@
       "name": "PETROLINA (HOLDINGS) PUBLIC LIMITED",
       "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
       "district": "Πεδουλάς",
-      "price": 1.41,
+      "price": 1.439,
       "isOffline": false,
       "lat": 34.97021,
       "lng": 32.82599
@@ -2489,7 +2489,7 @@
       "name": "Α. ΤΡΙΣΟΚΚΑΣ & ΥΙΟΣ ΛΙΜΙΤΕΔ",
       "address": "Γεωργίου Π.Κατσιάρη 100 Τ.Κ 5320 τηλ: 23942333",
       "district": "Λιοπέτρι",
-      "price": 1.41,
+      "price": 1.439,
       "isOffline": false,
       "lat": 35.00248333,
       "lng": 33.88023333
@@ -2665,7 +2665,7 @@
       "name": "Π. ΛΟΙΖΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Στροβόλου 60 Τ.Κ 2018 τηλ: 22422060",
       "district": "Στρόβολος",
-      "price": 1.41,
+      "price": 0.411,
       "isOffline": false,
       "lat": 35.146567,
       "lng": 33.34512
@@ -2687,7 +2687,7 @@
       "name": "CHRYSANTHOS CHRYSANTHOU BUSINESS LTD",
       "address": "Αρχ. Μακαρίου Γ' 126 Τ.Κ 2827 τηλ: 22924292",
       "district": "Γαλάτα",
-      "price": 1.409,
+      "price": 1.438,
       "isOffline": false,
       "lat": null,
       "lng": null

@@ -255,6 +255,21 @@
       "name": "Κ & Α ΑΝΔΡΕΟΥ ΛΙΜΙΤΕΔ",
       "stationKey": "station_0c3acd091c5a8960"
     },
+    "station_0cca76ae92acb3d0": {
+      "address": "Γιάννου Κρανιδιώτη 112 Τ.Κ 2235 τηλ: 22487507",
+      "aliases": [
+        "0cca76ae92acb3d0"
+      ],
+      "brand": "ESSO",
+      "currentSourceHash": "0cca76ae92acb3d0",
+      "district": "Λατσιά",
+      "firstSeenAt": "2026-09-07T12:39:01.576Z",
+      "lastSeenAt": "2026-09-07T12:39:01.576Z",
+      "lat": 35.0976900488074,
+      "lng": 33.3792905141556,
+      "name": "EWISE RETAIL LTD",
+      "stationKey": "station_0cca76ae92acb3d0"
+    },
     "station_0cf330d35d6131c2": {
       "address": "Μάρκου Δράκου 1 Τ.Κ 5510 τηλ: 23922335",
       "aliases": [
