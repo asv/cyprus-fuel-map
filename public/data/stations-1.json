@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-10T11:24:17.843Z",
+  "fetchedAt": "2026-09-10T16:27:11.823Z",
   "avgPrice": 1.641,
   "minPrice": 1.585,
   "maxPrice": 1.718,
@@ -520,7 +520,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Φρ. Ρούσβελτ 29 Τ.Κ 3012 τηλ: 25819782",
       "district": "Λεμεσός",
-      "price": 1.593,
+      "price": 1.598,
       "isOffline": false,
       "lat": 34.670055,
       "lng": 33.030746
@@ -993,7 +993,7 @@
       "name": "ΚΥΠΡΙΑΝΟΥ & ΠΡΟΚΟΠΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Σπ. Κυπριανού 61 Τ.Κ 4043 τηλ: 25311877",
       "district": "Γερμασόγεια",
-      "price": 1.655,
+      "price": 1.679,
       "isOffline": false,
       "lat": 34.70479,
       "lng": 33.082823

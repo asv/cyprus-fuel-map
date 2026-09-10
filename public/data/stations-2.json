@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-10T11:24:32.756Z",
+  "fetchedAt": "2026-09-10T16:27:26.558Z",
   "avgPrice": 1.709,
   "minPrice": 1.629,
   "maxPrice": 1.909,
@@ -971,7 +971,7 @@
       "name": "ΚΥΠΡΙΑΝΟΥ & ΠΡΟΚΟΠΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Σπ. Κυπριανού 61 Τ.Κ 4043 τηλ: 25311877",
       "district": "Γερμασόγεια",
-      "price": 1.735,
+      "price": 1.759,
       "isOffline": false,
       "lat": 34.70479,
       "lng": 33.082823
@@ -2654,7 +2654,7 @@
       "name": "ΑΝΔΡΕΑΣ ΖΑΧΑΡΙΟΥ & ΥΙΟΙ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ.Τιμίου Προδρόμου 44 Τ.Κ 7020 τηλ: 24426868",
       "district": "Δρομολαξιά",
-      "price": 1.699,
+      "price": 1.709,
       "isOffline": false,
       "lat": 34.876254,
       "lng": 33.595478
