@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-11T11:27:32.875Z",
+  "fetchedAt": "2026-09-11T16:32:23.800Z",
   "avgPrice": 1.445,
   "minPrice": 1.222,
   "maxPrice": 1.643,
@@ -674,7 +674,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Αρχ.Μιχαήλ 43 (Παρισσινός) Τ.Κ 2057 τηλ: 22353335",
       "district": "Στρόβολος",
-      "price": 1.398,
+      "price": 1.435,
       "isOffline": false,
       "lat": 35.154783,
       "lng": 33.331971
@@ -1059,7 +1059,7 @@
       "name": "COSTAS SAVVIDES (PETROL STATION) LIMITED",
       "address": "Λεωφ. Λάρνακος 125 Τ.Κ 1048 τηλ: 22435320",
       "district": "Παλλουριώτισσα",
-      "price": 1.398,
+      "price": 1.435,
       "isOffline": false,
       "lat": 35.1658,
       "lng": 33.3822
@@ -1125,7 +1125,7 @@
       "name": "Α. Ν. & Σ. ΕΥΘΥΜΙΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφ. Λεμεσού 69 Τ.Κ 2121 τηλ: 22422670",
       "district": "Αγλαντζιά",
-      "price": 1.449,
+      "price": 1.459,
       "isOffline": false,
       "lat": 35.143044,
       "lng": 33.374496
@@ -1257,7 +1257,7 @@
       "name": "CADREC LTD",
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
-      "price": 1.449,
+      "price": 1.459,
       "isOffline": false,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
@@ -1279,7 +1279,7 @@
       "name": "CEMARIUS LTD",
       "address": "Κολωνακίου 5 Τ.Κ 4103 τηλ: 25324880",
       "district": "Άγιος Αθανάσιος",
-      "price": 1.348,
+      "price": 1.399,
       "isOffline": false,
       "lat": 34.696745040803,
       "lng": 33.0690321662705
@@ -1994,7 +1994,7 @@
       "name": "J & S PETROL STATION LIMITED",
       "address": "Γρηγόρη Αυξεντίου 30 Τ.Κ 2368 τηλ: 22775117",
       "district": "Άγιος Δομέτιος",
-      "price": 1.44,
+      "price": 1.49,
       "isOffline": false,
       "lat": 35.17131667,
       "lng": 33.3369
@@ -2566,7 +2566,7 @@
       "name": "Δ. ΚΤΩΡΙΔΗΣ & ΥΙΟΣ ΛΤΔ",
       "address": "Λεωφ. Λάρνακος 5 Τ.Κ 1035 τηλ: 22349326",
       "district": "Λευκωσία",
-      "price": 1.398,
+      "price": 1.435,
       "isOffline": false,
       "lat": 35.1727,
       "lng": 33.3726
