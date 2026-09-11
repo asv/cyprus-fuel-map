@@ -3,8 +3,8 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-11T04:45:31.314Z",
-  "avgPrice": 1.709,
+  "fetchedAt": "2026-09-11T11:26:40.542Z",
+  "avgPrice": 1.71,
   "minPrice": 1.629,
   "maxPrice": 1.909,
   "stations": [
@@ -48,7 +48,7 @@
       "address": "Γεωργίου Καλογεροπούλου 50 Τ.Κ 4007 τηλ: 25028563",
       "district": "Μέσα Γειτονιά",
       "price": 1.695,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.708686,
       "lng": 33.038429
     },
@@ -92,7 +92,7 @@
       "address": "Αρχ. Μακαρίου Γ΄ 18 (Παλαιός Δρόμος Λάρνακας-Λεμεσού) Τ.Κ 7571 τηλ: 24432522",
       "district": "Αγγλισίδες",
       "price": 1.7,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.852791,
       "lng": 33.455066
     },
@@ -180,7 +180,7 @@
       "address": "Λεώφ. Αγίου Αθανασίου 42 Τ.Κ 4102 τηλ: 25753385",
       "district": "Άγιος Αθανάσιος",
       "price": 1.699,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.701008,
       "lng": 33.059786
     },
@@ -862,7 +862,7 @@
       "address": "Λεωφ. Λεμεσού 21, Πέρα Χωριό Τ.Κ 2572 τηλ: 22524366",
       "district": "Πέρα Χωριό Νήσου",
       "price": 1.7,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.008912,
       "lng": 33.39358
     },
@@ -1433,7 +1433,7 @@
       "name": "EWISE RETAIL LTD",
       "address": "Λεωφ. Διγενή Ακρίτα 43, Άγιος Αντώνιος Τ.Κ 1070 τηλ: 22751717",
       "district": "Λευκωσία",
-      "price": 1.669,
+      "price": 1.697,
       "isOffline": false,
       "lat": 35.1668579182817,
       "lng": 33.3703520423279
@@ -1609,7 +1609,7 @@
       "name": "SOFT \"N\" FOAMY CAR WASH LIMITED",
       "address": "Λεωφ. Αρχ. Μιχαήλ 37 (Παρισσινός) Τ.Κ 2057 τηλ: 22352414",
       "district": "Στρόβολος",
-      "price": 1.699,
+      "price": 1.729,
       "isOffline": false,
       "lat": 35.155440807824,
       "lng": 33.3337053472214
@@ -2501,7 +2501,7 @@
       "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
       "district": "Πεδουλάς",
       "price": 1.689,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.97021,
       "lng": 32.82599
     },
@@ -2984,7 +2984,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Φρ. Ρούσβελτ 92 Τ.Κ 3011",
       "district": "Λεμεσός",
-      "price": 1.743,
+      "price": 1.748,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3039,7 +3039,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Λευκωσίας 74, Περιστερώνα Τ.Κ 2731 τηλ: 22821555",
       "district": "Περιστερώνα",
-      "price": 1.785,
+      "price": 1.795,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3061,7 +3061,7 @@
       "name": "CORAL ENERGY PRODUCTS CYPRUS LTD",
       "address": "Λεωφ. Μονιάτη 2 Τ.Κ 4747 τηλ: 25433080",
       "district": "Σαϊτάς",
-      "price": 1.799,
+      "price": 1.808,
       "isOffline": false,
       "lat": null,
       "lng": null
@@ -3259,7 +3259,7 @@
       "name": "ΠΑΥΛΟΣ ΔΙΑΚΟΣ & ΥΙΟΙ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου Ακάκι Τ.Κ 2720 τηλ: 22821452",
       "district": "Ακάκι",
-      "price": 1.789,
+      "price": 1.795,
       "isOffline": false,
       "lat": null,
       "lng": null
