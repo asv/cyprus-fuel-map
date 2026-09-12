@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-12T04:39:54.826Z",
+  "fetchedAt": "2026-09-12T10:51:51.194Z",
   "avgPrice": 1.71,
   "minPrice": 1.629,
   "maxPrice": 1.909,
@@ -608,7 +608,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Μιχαλάκη Κυπριανού 121 Τ.Κ 8560 τηλ: 26343943",
       "district": "Πέγεια",
-      "price": 1.719,
+      "price": 1.689,
       "isOffline": false,
       "lat": 34.864528,
       "lng": 32.379294
@@ -1302,7 +1302,7 @@
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
       "price": 1.719,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
     },
@@ -2501,7 +2501,7 @@
       "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
       "district": "Πεδουλάς",
       "price": 1.689,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.97021,
       "lng": 32.82599
     },
@@ -3281,7 +3281,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Καρύων 17 Τ.Κ 5510 τηλ: 23922182",
       "district": "Αυγόρου",
-      "price": 1.685,
+      "price": 1.697,
       "isOffline": false,
       "lat": 35.04402777777778,
       "lng": 33.840444444444444

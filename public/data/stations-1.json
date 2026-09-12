@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-12T04:39:39.877Z",
+  "fetchedAt": "2026-09-12T10:51:35.528Z",
   "avgPrice": 1.642,
   "minPrice": 1.585,
   "maxPrice": 1.718,
@@ -366,7 +366,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 61, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22833573",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.645,
+      "price": 1.625,
       "isOffline": false,
       "lat": 35.146893,
       "lng": 33.187866
@@ -971,7 +971,7 @@
       "name": "Κ. ΜΙΧΑΗΛΑΣ & ΣΙΑ ΛΙΜΙΤΕΔ",
       "address": "Ελευθερίας 27 Τ.Κ 7102 τηλ: 24531780",
       "district": "Αραδίππου",
-      "price": 1.629,
+      "price": 1.619,
       "isOffline": false,
       "lat": 34.935446,
       "lng": 33.59272
@@ -1324,7 +1324,7 @@
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
       "price": 1.66,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
     },
@@ -2534,7 +2534,7 @@
       "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
       "district": "Πεδουλάς",
       "price": 1.649,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.97021,
       "lng": 32.82599
     },

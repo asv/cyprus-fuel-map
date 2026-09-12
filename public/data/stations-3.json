@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-12T04:40:09.401Z",
+  "fetchedAt": "2026-09-12T10:52:06.010Z",
   "avgPrice": 1.906,
   "minPrice": 1.825,
   "maxPrice": 1.989,
@@ -58,7 +58,7 @@
       "name": "G.M. (LEONTIOS) LIMITED",
       "address": "Γρίβα Διγενή 20 Τ.Κ 8873 τηλ: 26321500",
       "district": "Αργάκα",
-      "price": 1.915,
+      "price": 1.929,
       "isOffline": false,
       "lat": 35.065318,
       "lng": 32.467592
@@ -168,7 +168,7 @@
       "name": "PAMBINOS & SONS LIMITED",
       "address": "Νίκου και Δέσποινας Παττίχη 17 Τ.Κ 3071 τηλ: 25334111",
       "district": "Λεμεσός",
-      "price": 1.909,
+      "price": 1.919,
       "isOffline": false,
       "lat": 34.685832,
       "lng": 33.024152
@@ -190,7 +190,7 @@
       "name": "PETROU ENERGY SOLUTION LIMITED",
       "address": "Κυριάκου Μάτση 100 Τ.Κ 7102 τηλ: 24532888",
       "district": "Αραδίππου",
-      "price": 1.869,
+      "price": 1.889,
       "isOffline": false,
       "lat": 34.939014,
       "lng": 33.601698
@@ -366,7 +366,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ΄ 61, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22833573",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.885,
+      "price": 1.89,
       "isOffline": false,
       "lat": 35.146893,
       "lng": 33.187866
@@ -630,7 +630,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Μιχαλάκη Κυπριανού 121 Τ.Κ 8560 τηλ: 26343943",
       "district": "Πέγεια",
-      "price": 1.928,
+      "price": 1.919,
       "isOffline": false,
       "lat": 34.864528,
       "lng": 32.379294
@@ -729,7 +729,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Δημοκρατίας 54 Τ.Κ 2034 τηλ: 22429491",
       "district": "Στρόβολος",
-      "price": 1.889,
+      "price": 1.909,
       "isOffline": false,
       "lat": 35.131505,
       "lng": 33.361001
@@ -1037,7 +1037,7 @@
       "name": "ΜΙΧΑΛΑΚΗΣ ΙΑΚΩΒΟΥ ΛΙΜΙΤΕΔ",
       "address": "14ος Δρόμος 22 Τ.Κ 4620 τηλ: 25932665",
       "district": "Επισκοπή",
-      "price": 1.909,
+      "price": 1.919,
       "isOffline": false,
       "lat": 34.665401,
       "lng": 32.904576
@@ -1324,7 +1324,7 @@
       "address": "Λεωφ. Λεμεσού 73 Τ.Κ 2121 τηλ: 22421627",
       "district": "Αγλαντζιά",
       "price": 1.935,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1424861044572,
       "lng": 33.3745368742744
     },
@@ -2071,7 +2071,7 @@
       "name": "Eleni Savva",
       "address": "Κώστα Λοϊζου 195 Τ.Κ τηλ: 26812900",
       "district": "Κάτω Πύργος",
-      "price": 1.918,
+      "price": 1.938,
       "isOffline": false,
       "lat": 35.17763,
       "lng": 32.69205
@@ -2534,7 +2534,7 @@
       "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
       "district": "Πεδουλάς",
       "price": 1.919,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.97021,
       "lng": 32.82599
     },
@@ -2709,7 +2709,7 @@
       "name": "ΓΕΩΡΓΙΑ ΝΙΚΟΛΑΟΥ ΛΤΔ",
       "address": "Λεωφ. Γ.Γρίβα Διγενή 17 & Αγίας Λαύρας Τ.Κ 6010 τηλ: 24652638",
       "district": "Λάρνακα",
-      "price": 1.908,
+      "price": 1.919,
       "isOffline": false,
       "lat": 34.91728333,
       "lng": 33.62233333
@@ -3314,7 +3314,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Καρύων 17 Τ.Κ 5510 τηλ: 23922182",
       "district": "Αυγόρου",
-      "price": 1.894,
+      "price": 1.905,
       "isOffline": false,
       "lat": 35.04402777777778,
       "lng": 33.840444444444444
@@ -3347,7 +3347,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Λεωφ. Δρομολαξιάς 61 Τ.Κ 7550 τηλ: 24828600",
       "district": "Κίτι",
-      "price": 1.884,
+      "price": 1.904,
       "isOffline": false,
       "lat": 34.861666666666665,
       "lng": 33.57580555555556
@@ -3402,7 +3402,7 @@
       "name": "STAROIL (CYPRUS) LTD",
       "address": "Δρόμος Λεμεσού - Πλατρών Τ.Κ - τηλ: 25370120",
       "district": "Λεμεσός",
-      "price": 1.879,
+      "price": 1.895,
       "isOffline": false,
       "lat": 34.753826,
       "lng": 32.962765
