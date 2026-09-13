@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-12T15:34:38.822Z",
+  "fetchedAt": "2026-09-13T16:21:31.418Z",
   "avgPrice": 1.642,
   "minPrice": 1.585,
   "maxPrice": 1.718,
@@ -1818,7 +1818,7 @@
       "name": "ΚΩΣΤΑΣ Σ. ΣΑΒΒΑ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΤΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 99 Τ.Κ 2565 τηλ: 22543375",
       "district": "Λυθροδόντας",
-      "price": 1.627,
+      "price": 1.647,
       "isOffline": false,
       "lat": 34.9493055555556,
       "lng": 33.3128657407407

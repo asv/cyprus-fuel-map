@@ -3,7 +3,7 @@
   "fuelName": "Diesel",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-12T15:35:17.494Z",
+  "fetchedAt": "2026-09-13T16:22:01.053Z",
   "avgPrice": 1.906,
   "minPrice": 1.825,
   "maxPrice": 1.989,
@@ -1818,7 +1818,7 @@
       "name": "ΚΩΣΤΑΣ Σ. ΣΑΒΒΑ ΠΕΤΡΕΛΑΙΟΕΙΔΗ ΛΤΔ",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 99 Τ.Κ 2565 τηλ: 22543375",
       "district": "Λυθροδόντας",
-      "price": 1.889,
+      "price": 1.909,
       "isOffline": false,
       "lat": 34.9493055555556,
       "lng": 33.3128657407407

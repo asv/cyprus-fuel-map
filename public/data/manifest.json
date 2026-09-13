@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-12T15:35:55.171Z",
+  "generatedAt": "2026-09-13T16:22:29.824Z",
   "city": "All",
   "fuels": [
     {
       "fuel": "1",
       "fuelName": "Unleaded 95",
       "path": "data/stations-1.json",
-      "fetchedAt": "2026-09-12T15:34:38.822Z",
+      "fetchedAt": "2026-09-13T16:21:31.418Z",
       "stationCount": 317,
       "mappedStationCount": 287,
       "avgPrice": 1.642,
@@ -31,7 +31,7 @@
       "fuel": "3",
       "fuelName": "Diesel",
       "path": "data/stations-3.json",
-      "fetchedAt": "2026-09-12T15:35:17.494Z",
+      "fetchedAt": "2026-09-13T16:22:01.053Z",
       "stationCount": 317,
       "mappedStationCount": 287,
       "avgPrice": 1.906,
@@ -43,7 +43,7 @@
       "fuel": "4",
       "fuelName": "Heating oil",
       "path": "data/stations-4.json",
-      "fetchedAt": "2026-09-12T15:35:40.495Z",
+      "fetchedAt": "2026-09-13T16:22:15.295Z",
       "stationCount": 302,
       "mappedStationCount": 277,
       "avgPrice": 1.538,

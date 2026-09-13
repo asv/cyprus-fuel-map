@@ -23213,6 +23213,12 @@
       "isOffline": true,
       "price": 1.559,
       "stationKey": "station_fe99f74669361b6c"
+    },
+    {
+      "at": "2026-09-13T16:22:15.295Z",
+      "isOffline": false,
+      "price": 1.529,
+      "stationKey": "station_ec510d442a7bb62d"
     }
   ],
   "fuel": "4",
