@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-17T11:47:08.297Z",
+  "fetchedAt": "2026-09-17T17:03:48.533Z",
   "avgPrice": 1.47,
   "minPrice": 1.222,
   "maxPrice": 1.643,
@@ -1455,7 +1455,7 @@
       "name": "LINERIA SERVICES LTD",
       "address": "Λεωφ. Αρχ. Μακαρίου Γ' 80 Τ.Κ 8221 τηλ: 26271020",
       "district": "Χλώρακα",
-      "price": 1.455,
+      "price": 1.475,
       "isOffline": false,
       "lat": 34.8018981481481,
       "lng": 32.4133842592593
@@ -1554,7 +1554,7 @@
       "name": "SONSIRE HOLDINGS LTD",
       "address": "Γρίβα Διγενή 68 Τ.Κ 8873 τηλ: 26323237",
       "district": "Αργάκα",
-      "price": 1.506,
+      "price": 1.454,
       "isOffline": false,
       "lat": 35.0692333,
       "lng": 32.4743051
@@ -2039,7 +2039,7 @@
       "address": "Αρσινόης & Αρχ. Μακαρίου Γ΄ 32 Τ.Κ 8830 τηλ: 26321331",
       "district": "Πόλης Χρυσοχούς",
       "price": 1.51,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.035702,
       "lng": 32.427888
     },
@@ -2380,7 +2380,7 @@
       "address": "Κύριος Δρόμος Πεδουλά – Προδρόμου Τ.Κ 2850 τηλ: 22952639",
       "district": "Πεδουλάς",
       "price": 1.489,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.97021,
       "lng": 32.82599
     },
@@ -2885,7 +2885,7 @@
       "name": "ΠΑΥΛΟΣ ΔΙΑΚΟΣ & ΥΙΟΙ (ΠΕΤΡΕΛΑΙΟΕΙΔΗ) ΛΙΜΙΤΕΔ",
       "address": "Γρηγόρη Αυξεντίου Ακάκι Τ.Κ 2720 τηλ: 22821452",
       "district": "Ακάκι",
-      "price": 1.399,
+      "price": 1.455,
       "isOffline": false,
       "lat": null,
       "lng": null
