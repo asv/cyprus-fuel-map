@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 95",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-19T15:54:56.338Z",
+  "fetchedAt": "2026-09-19T20:44:27.990Z",
   "avgPrice": 1.674,
   "minPrice": 1.599,
   "maxPrice": 1.749,
@@ -69,7 +69,7 @@
       "name": "GREENOIL LIMITED",
       "address": "Γεωργίου Καλογεροπούλου 50 Τ.Κ 4007 τηλ: 25028563",
       "district": "Μέσα Γειτονιά",
-      "price": 1.675,
+      "price": 1.685,
       "isOffline": false,
       "lat": 34.708686,
       "lng": 33.038429
