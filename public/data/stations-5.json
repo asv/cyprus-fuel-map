@@ -3,7 +3,7 @@
   "fuelName": "Kerosene",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-19T15:55:54.634Z",
+  "fetchedAt": "2026-09-20T11:29:52.698Z",
   "avgPrice": 1.472,
   "minPrice": 1.222,
   "maxPrice": 1.643,
@@ -499,7 +499,7 @@
       "address": "Πάφου 11 Τ.Κ 3052 τηλ: 25563791",
       "district": "Λεμεσός",
       "price": 1.465,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.673891,
       "lng": 33.015811
     },
@@ -598,7 +598,7 @@
       "address": "Λεωφ. Μιχαλάκη Κυπριανού 121 Τ.Κ 8560 τηλ: 26343943",
       "district": "Πέγεια",
       "price": 1.475,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.864528,
       "lng": 32.379294
     },
@@ -631,7 +631,7 @@
       "address": "Μαργαρίτας 45 Τ.Κ 4878 τηλ: 25550025",
       "district": "Πελένδρι",
       "price": 1.465,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.890934,
       "lng": 32.957813
     },
@@ -741,7 +741,7 @@
       "address": "Λεωφόρος Αρχ. Μιχαήλ 17 Τ.Κ 2057 τηλ: 22876187",
       "district": "Στρόβολος",
       "price": 1.465,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.156596,
       "lng": 33.335618
     },
@@ -1609,7 +1609,7 @@
       "name": "TRIKENO LTD",
       "address": "Λεωφ.Γ.Γρίβα Διγενή 43 Τ.Κ 6045 τηλ: 24652200",
       "district": "Λάρνακα",
-      "price": 1.465,
+      "price": 1.475,
       "isOffline": false,
       "lat": 34.9187491493678,
       "lng": 33.6186334558197
