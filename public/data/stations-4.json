@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-20T11:29:38.370Z",
+  "fetchedAt": "2026-09-20T20:52:48.107Z",
   "avgPrice": 1.56,
   "minPrice": 1.395,
   "maxPrice": 1.655,
@@ -1774,7 +1774,7 @@
       "name": "Κ & Α ΑΝΔΡΕΟΥ ΛΙΜΙΤΕΔ",
       "address": "Λεωφόρος Λεμεσού 4 Τ.Κ 7647 τηλ: 22533633",
       "district": "Μοσφιλωτή",
-      "price": 1.529,
+      "price": 1.539,
       "isOffline": false,
       "lat": 34.952087962963,
       "lng": 33.4192546296296
