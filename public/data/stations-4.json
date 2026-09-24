@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-24T17:15:37.352Z",
+  "fetchedAt": "2026-09-24T21:34:04.778Z",
   "avgPrice": 1.6,
   "minPrice": 1.489,
   "maxPrice": 1.735,
@@ -1280,7 +1280,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 14 Τ.Κ 2033 τηλ: 22427528",
       "district": "Στρόβολος",
       "price": 1.619,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1292268518519,
       "lng": 33.3640740740741
     },
@@ -1346,7 +1346,7 @@
       "address": "Θεόκριτου 67 Τ.Κ 7600 τηλ: 24522336",
       "district": "Αθιένου",
       "price": 1.579,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0552526086954,
       "lng": 33.5329100466271
     },
@@ -1357,7 +1357,7 @@
       "address": "Πάφου 26 Τ.Κ 4607 τηλ: 25221010",
       "district": "Πισσούρι",
       "price": 1.578,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.68225,
       "lng": 32.7024953703704
     },
@@ -1467,7 +1467,7 @@
       "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
       "district": "Καϊμακλί",
       "price": 1.609,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1845138888889,
       "lng": 33.3895
     },
@@ -1522,7 +1522,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 219 Τ.Κ 2045 τηλ: 22322181",
       "district": "Στρόβολος",
       "price": 1.619,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1216151736056,
       "lng": 33.3404218637543
     },
@@ -1709,7 +1709,7 @@
       "address": "Γρηγόρη Αυξεντίου, Δρόμος Παρεκκλησιάς Τ.Κ τηλ: 25636261",
       "district": "Παρεκκλησιά",
       "price": 1.579,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.7180787037037,
       "lng": 33.1634259259259
     },
@@ -1742,7 +1742,7 @@
       "address": "Λεωφ. Κυριάκου Μάτση 12 Τ.Κ 2368 τηλ: 22355727",
       "district": "Άγιος Δομέτιος",
       "price": 1.579,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1680794501581,
       "lng": 33.331874064418
     },
