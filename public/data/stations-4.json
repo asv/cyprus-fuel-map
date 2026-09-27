@@ -3,7 +3,7 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-27T05:22:54.689Z",
+  "fetchedAt": "2026-09-27T12:07:51.288Z",
   "avgPrice": 1.613,
   "minPrice": 1.1,
   "maxPrice": 1.774,
@@ -697,7 +697,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.579,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -1038,7 +1038,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.699,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1346,7 +1346,7 @@
       "address": "Θεόκριτου 67 Τ.Κ 7600 τηλ: 24522336",
       "district": "Αθιένου",
       "price": 1.599,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.0552526086954,
       "lng": 33.5329100466271
     },
@@ -1357,7 +1357,7 @@
       "address": "Πάφου 26 Τ.Κ 4607 τηλ: 25221010",
       "district": "Πισσούρι",
       "price": 1.638,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.68225,
       "lng": 32.7024953703704
     },
@@ -1467,7 +1467,7 @@
       "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
       "district": "Καϊμακλί",
       "price": 1.639,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1845138888889,
       "lng": 33.3895
     },
@@ -1522,7 +1522,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 219 Τ.Κ 2045 τηλ: 22322181",
       "district": "Στρόβολος",
       "price": 1.659,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.1216151736056,
       "lng": 33.3404218637543
     },
@@ -1709,7 +1709,7 @@
       "address": "Γρηγόρη Αυξεντίου, Δρόμος Παρεκκλησιάς Τ.Κ τηλ: 25636261",
       "district": "Παρεκκλησιά",
       "price": 1.639,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.7180787037037,
       "lng": 33.1634259259259
     },
@@ -2082,7 +2082,7 @@
       "name": "MICHALIS KNEKNAS TRADING LTD",
       "address": "Γρηγόρη Αυξεντίου 76, Κοκκινοτριμιθιά Τ.Κ 2660 τηλ: 22834160",
       "district": "Κοκκινοτριμιθιά",
-      "price": 1.557,
+      "price": 1.577,
       "isOffline": false,
       "lat": 35.148666,
       "lng": 33.212235
