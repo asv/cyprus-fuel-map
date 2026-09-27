@@ -3,7 +3,7 @@
   "fuelName": "Unleaded 98",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-26T21:13:57.205Z",
+  "fetchedAt": "2026-09-27T05:22:27.365Z",
   "avgPrice": 1.78,
   "minPrice": 1.669,
   "maxPrice": 1.979,
@@ -498,7 +498,7 @@
       "name": "R.A.M. OIL CYPRUS LIMITED",
       "address": "Λεωφ. Φρ. Ρούσβελτ 29 Τ.Κ 3012 τηλ: 25819782",
       "district": "Λεμεσός",
-      "price": 1.749,
+      "price": 1.759,
       "isOffline": false,
       "lat": 34.670055,
       "lng": 33.030746
@@ -598,7 +598,7 @@
       "address": "Σπύρου Κυπριανού και Σωτηράκη Μαρκίδη Τ.Κ 8041 τηλ: 26949140",
       "district": "Πάφος",
       "price": 1.762,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.760461,
       "lng": 32.422081
     },
@@ -631,7 +631,7 @@
       "address": "Νίκου Ευαγόρου 50 Τ.Κ 3091 τηλ: 25771999",
       "district": "Παλώδια",
       "price": 1.759,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.745754,
       "lng": 32.998862
     },
@@ -697,7 +697,7 @@
       "address": "Λεωφ. Δημητρίου Βικέλα 97 Τ.Κ 2037 τηλ: 22570958",
       "district": "Στρόβολος",
       "price": 1.759,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.117444444444445,
       "lng": 33.356611111111114
     },
@@ -708,7 +708,7 @@
       "address": "Λεωφ. Δημοκρατίας 54 Τ.Κ 2034 τηλ: 22429491",
       "district": "Στρόβολος",
       "price": 1.759,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.131505,
       "lng": 33.361001
     },
@@ -796,7 +796,7 @@
       "address": "Λεωφ. Αναλιόντα 155 Τ.Κ 2480 τηλ: 22521770",
       "district": "Τσέρι",
       "price": 1.759,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.053153,
       "lng": 33.325129
     },
@@ -994,7 +994,7 @@
       "address": "Λεωφ. Προδρόμου 111 Τ.Κ 2063 τηλ: 22661444",
       "district": "Στρόβολος",
       "price": 1.759,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 35.162777,
       "lng": 33.347181
     },
@@ -1038,7 +1038,7 @@
       "address": "Αναστάσιου Μανώλη 77 Τ.Κ 7520 τηλ: 24725367",
       "district": "Ξυλοφάγου",
       "price": 1.762,
-      "isOffline": true,
+      "isOffline": false,
       "lat": 34.977696,
       "lng": 33.838823
     },
@@ -1346,7 +1346,7 @@
       "address": "Θεόκριτου 67 Τ.Κ 7600 τηλ: 24522336",
       "district": "Αθιένου",
       "price": 1.787,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.0552526086954,
       "lng": 33.5329100466271
     },
@@ -1357,7 +1357,7 @@
       "address": "Πάφου 26 Τ.Κ 4607 τηλ: 25221010",
       "district": "Πισσούρι",
       "price": 1.786,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.68225,
       "lng": 32.7024953703704
     },
@@ -1478,7 +1478,7 @@
       "address": "Καντάρας 58 Τ.Κ 1037 τηλ: 22433430",
       "district": "Καϊμακλί",
       "price": 1.787,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1845138888889,
       "lng": 33.3895
     },
@@ -1533,7 +1533,7 @@
       "address": "Λεωφ. Σπ. Κυπριανού 219 Τ.Κ 2045 τηλ: 22322181",
       "district": "Στρόβολος",
       "price": 1.799,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 35.1216151736056,
       "lng": 33.3404218637543
     },
@@ -1720,7 +1720,7 @@
       "address": "Γρηγόρη Αυξεντίου, Δρόμος Παρεκκλησιάς Τ.Κ τηλ: 25636261",
       "district": "Παρεκκλησιά",
       "price": 1.787,
-      "isOffline": false,
+      "isOffline": true,
       "lat": 34.7180787037037,
       "lng": 33.1634259259259
     },
