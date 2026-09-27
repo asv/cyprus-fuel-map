@@ -3,9 +3,9 @@
   "fuelName": "Heating oil",
   "city": "All",
   "sourceUrl": "https://eforms.eservices.cyprus.gov.cy/MCIT/MCIT/PetroleumPrices",
-  "fetchedAt": "2026-09-27T12:07:51.288Z",
-  "avgPrice": 1.613,
-  "minPrice": 1.1,
+  "fetchedAt": "2026-09-27T17:01:12.858Z",
+  "avgPrice": 1.614,
+  "minPrice": 1.529,
   "maxPrice": 1.774,
   "stations": [
     {
@@ -14,7 +14,7 @@
       "name": "C.N PETROL STATION LTD",
       "address": "Κάτω Πύργος Τ.Κ 2940",
       "district": "Κάτω Πύργος",
-      "price": 1.1,
+      "price": 1.653,
       "isOffline": false,
       "lat": 35.184195,
       "lng": 32.681915

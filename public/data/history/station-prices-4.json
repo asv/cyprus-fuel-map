@@ -33593,6 +33593,12 @@
       "isOffline": false,
       "price": 1.577,
       "stationKey": "station_d738d0755e3fa8b1"
+    },
+    {
+      "at": "2026-09-27T17:01:12.858Z",
+      "isOffline": false,
+      "price": 1.653,
+      "stationKey": "station_22a8e387ee3e195c"
     }
   ],
   "fuel": "4",

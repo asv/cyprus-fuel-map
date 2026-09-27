@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-27T12:08:05.317Z",
+  "generatedAt": "2026-09-27T17:01:26.833Z",
   "city": "All",
   "fuels": [
     {
@@ -43,11 +43,11 @@
       "fuel": "4",
       "fuelName": "Heating oil",
       "path": "data/stations-4.json",
-      "fetchedAt": "2026-09-27T12:07:51.288Z",
+      "fetchedAt": "2026-09-27T17:01:12.858Z",
       "stationCount": 302,
       "mappedStationCount": 277,
-      "avgPrice": 1.613,
-      "minPrice": 1.1,
+      "avgPrice": 1.614,
+      "minPrice": 1.529,
       "maxPrice": 1.774,
       "stale": false
     },
